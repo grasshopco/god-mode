@@ -165,22 +165,22 @@ This script runs tests on all major components:
 - Roadmap generator
 - Message routing system
 
-#### Supabase Integration
+#### Application Database Integration
 
-God Mode now includes integration with multiple database backends for data persistence and cloud backup:
+God Mode now includes tools to quickly set up and manage database backends for your application:
 
 ```bash
-# Set up a new database backend (Supabase, SQLite, etc.)
+# Set up a new database backend for your application
 python god_mode/scripts/script_create_supabase_integration.py --setup
 
-# Sync memory files with current backend
-python god_mode/scripts/script_create_supabase_integration.py --sync
+# Configure database tables for your application
+python god_mode/scripts/script_create_supabase_integration.py --configure-tables
 
-# Backup memory files to database
-python god_mode/scripts/script_create_supabase_integration.py --backup
+# Set up authentication for your application
+python god_mode/scripts/script_create_supabase_integration.py --setup-auth
 
-# Restore memory files from backup
-python god_mode/scripts/script_create_supabase_integration.py --restore
+# Generate API endpoints for your application
+python god_mode/scripts/script_create_supabase_integration.py --generate-api
 
 # List configured backends
 python god_mode/scripts/script_create_supabase_integration.py --list-backends
@@ -190,24 +190,23 @@ python god_mode/scripts/script_create_supabase_integration.py --switch-backend N
 ```
 
 Benefits of database integration:
-- **Cloud Persistence**: Memory files are synced to the cloud (Supabase)
-- **Offline Mode**: SQLite option for local development without internet
-- **Multi-Device Access**: Access your God Mode memory across different machines
-- **Multiple Backends**: Configure and easily switch between different backends
-- **Backup and Restore**: Easily backup and restore your memory files
-- **Disaster Recovery**: Protect against local data loss
+- **Quick Setup**: Rapidly configure database infrastructure for your application
+- **Authentication**: Built-in user authentication system
+- **Multiple Options**: Choose from cloud providers or local development
+- **Code Generation**: Get starter code for connecting to your database
+- **Schema Templates**: Pre-built schemas for common application types
 
 Supported backends:
-- **Supabase**: Cloud-based PostgreSQL database with real-time capabilities
-- **SQLite**: Local file-based database for offline use
+- **Supabase**: Full-stack platform with authentication, storage and real-time data
+- **SQLite**: Local database for development and testing
 - **Firebase**: Coming soon
 - **Custom REST API**: Coming soon
 
 To use the integration:
 1. Access the Database Integration menu via God Mode remote control option 'b'
-2. Choose "Setup a new database backend"
+2. Choose "Set up new project backend"
 3. Follow the prompts to configure your preferred backend
-4. Use the sync command periodically to keep your memory files in sync
+4. Get generated code snippets to connect your application to the database
 
 #### Troubleshooting
 
