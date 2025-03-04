@@ -235,22 +235,22 @@ EOF
     fi
 }
 
-# Create parent symlink if missing
-create_parent_symlinks() {
+# Create a symlink to the remote script if needed
+create_remote_symlink() {
     local parent_dir="$(dirname "$PROJECT_ROOT")"
     local remote_script="$parent_dir/god_mode_remote.sh"
     
     if [ ! -f "$remote_script" ] && [ ! -L "$remote_script" ]; then
         echo -e "${YELLOW}Creating symlink to remote script in parent directory...${NC}"
-        ln -s "$PROJECT_ROOT/god_mode_remote_fixed.sh" "$remote_script" 2>/dev/null
+        ln -s "$PROJECT_ROOT/god_mode_remote.sh" "$remote_script" 2>/dev/null
         
         if [ $? -eq 0 ]; then
             echo -e "${GREEN}✓ Created symlink at: $remote_script${NC}"
         else
-            echo -e "${RED}✗ Failed to create symlink at: $remote_script${NC}"
+            echo -e "${RED}✗ Failed to create symlink${NC}"
         fi
     else
-        echo -e "${GREEN}✓ Found remote script in parent directory: $remote_script${NC}"
+        echo -e "${GREEN}✓ Remote script symlink exists: $remote_script${NC}"
     fi
 }
 
@@ -262,7 +262,7 @@ check_all_files() {
     check_file "$SCRIPTS_DIR/route" || create_route_script
     check_file "$SCRIPTS_DIR/script_debug_router.py" || echo -e "${YELLOW}Debug script is missing, but not critical.${NC}"
     check_file "$SCRIPTS_DIR/script_install_dependencies.sh" || echo -e "${YELLOW}Dependencies installer is missing, but not critical.${NC}"
-    check_file "$PROJECT_ROOT/god_mode_remote_fixed.sh" || echo -e "${RED}Remote script is missing!${NC}"
+    check_file "$PROJECT_ROOT/god_mode_remote.sh" || echo -e "${RED}Remote script is missing!${NC}"
     
     # Create required directories
     echo -e "\nChecking required directories..."
@@ -292,7 +292,7 @@ check_all_files() {
     
     # Check symlinks
     echo -e "\nChecking symlinks..."
-    create_parent_symlinks
+    create_remote_symlink
     
     # Make all scripts executable
     echo -e "\nMaking all scripts executable..."
