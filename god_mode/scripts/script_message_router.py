@@ -6,6 +6,8 @@ Message Router Script for God Mode
 This script automatically routes structured AI outputs to the appropriate documentation 
 and log files based on special markers like [LOG_SUMMARY], [LOG_DETAIL], [MEMORY_UPDATE], etc.
 
+It now also tracks TAG compliance for reinforcement learning to ensure consistent TAG usage.
+
 Usage:
     python script_message_router.py --input "message.txt"
     python script_message_router.py --clipboard  # Read from clipboard
@@ -44,6 +46,26 @@ except ImportError as e:
     def add_routing_event(tag, file_path, content, line_number=None):
         # Stub function when tracking module is not available
         debug_log(f"Would track: {tag} -> {file_path}")
+        pass
+
+# Import tag feedback module (if available)
+try:
+    from script_tag_feedback import validate_message, log_tag_validation
+    TAG_FEEDBACK_AVAILABLE = True
+    debug_log("✅ Tag feedback module loaded successfully")
+except ImportError as e:
+    TAG_FEEDBACK_AVAILABLE = False
+    debug_log(f"⚠️ Tag feedback module not available: {str(e)}")
+    # Simple stub implementations if the module is not available
+    def validate_message(message):
+        # Basic validation - just checks if any tags exist
+        required_tags = ["LOG_SUMMARY", "LOG_DETAIL", "MEMORY_UPDATE"]
+        is_valid = any(f"[{tag}]" in message for tag in required_tags)
+        return is_valid, "Simple validation (without full tag feedback module)"
+    
+    def log_tag_validation(is_valid, reason):
+        # Stub that does nothing
+        debug_log(f"Would log validation: {is_valid}, reason: {reason}")
         pass
 
 # Check for required dependencies
@@ -457,6 +479,15 @@ def route_message(message):
     """Process a message and extract/route content based on markers."""
     updated_files = []
     
+    # Validate message structure before routing
+    if TAG_FEEDBACK_AVAILABLE:
+        is_valid, reason = validate_message(message)
+        log_tag_validation(is_valid, reason)
+        if not is_valid:
+            debug_log(f"⚠️ Message validation failed: {reason}")
+            # We still process the message even if validation fails
+            # This ensures content isn't lost, but the feedback loop will improve future messages
+    
     # Process multi-tag content first
     debug_log("Processing multi-tag content")
     multi_tag_matches = re.finditer(MULTI_TAG_PATTERN, message, re.DOTALL)
@@ -571,11 +602,10 @@ def read_from_clipboard():
         return None
 
 def watch_clipboard(interval=2.0):
-    """Watch clipboard for changes and process any content with markers."""
+    """Watch clipboard for changes and process routing when markers are detected."""
     try:
+        debug_log("Attempting to import pyperclip for clipboard watching")
         import pyperclip
-        
-        print(f"👀 Watching clipboard for markers (press Ctrl+C to stop)...")
         
         # Initial clipboard read with error handling
         try:
@@ -622,6 +652,18 @@ def watch_clipboard(interval=2.0):
                     # Check for doc update pattern
                     if not contains_marker and re.search(r"\[DOC_UPDATE\s*:\s*([^]]+)\]", current_content, re.DOTALL):
                         contains_marker = True
+                    
+                    # Validate message (even if no markers found, this helps catch missing tags)
+                    if TAG_FEEDBACK_AVAILABLE:
+                        is_valid, reason = validate_message(current_content)
+                        log_tag_validation(is_valid, reason)
+                        
+                        if not is_valid and not contains_marker:
+                            # Print validation warning only if no markers were found
+                            # (to avoid duplicate messages when routing happens)
+                            print("\n⚠️ Clipboard content missing required TAGs")
+                            print(f"Reason: {reason}")
+                            # We still update previous_content to avoid repeated warnings
                     
                     if contains_marker:
                         print("\n📋 New clipboard content detected with markers")

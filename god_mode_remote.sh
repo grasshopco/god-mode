@@ -183,21 +183,24 @@ show_menu() {
     check_god_mode_status_header
     echo
 
-    echo -e "${BLUE}======== GOD MODE COMMAND CENTER ========${NC}"
+    echo -e "${BLUE}=======================================${NC}"
+    echo -e "${BLUE}     God Mode Remote Control Menu     ${NC}"
+    echo -e "${BLUE}=======================================${NC}"
+    echo -e "Current target: ${GREEN}$TARGET_DIR${NC}"
     echo
-    echo -e "${YELLOW}SYSTEM MANAGEMENT:${NC}"
-    echo -e "1) ${CYAN}Start God Mode${NC} - Turn on AI assistant superpowers"
-    echo -e "2) ${CYAN}Stop God Mode${NC} - Turn off AI assistant background processes"
-    echo -e "3) ${CYAN}View God Mode status${NC} - Check if everything is working correctly"
-    echo -e "8) ${CYAN}Install dependencies${NC} - Install required Python packages for God Mode"
+    echo -e "${YELLOW}STATUS & CONTROL:${NC}"
+    echo -e "1) ${CYAN}Start God Mode${NC} - Activate AI superpowers in your project"
+    echo -e "2) ${CYAN}Stop God Mode${NC} - Turn off God Mode"
+    echo -e "3) ${CYAN}View God Mode status${NC} - Check if processes are running"
     echo
     echo -e "${YELLOW}CONTENT & MEMORY:${NC}"
-    echo -e "4) ${CYAN}Route clipboard content${NC} - Process text with [TAG] markers from clipboard"
-    echo -e "5) ${CYAN}View recent logs${NC} - See the latest activity and changes"
-    echo -e "6) ${CYAN}Update project structure${NC} - Refresh AI's understanding of your code"
-    echo -e "7) ${CYAN}Update Cursor rules${NC} - Refresh the AI assistant's instructions"
-    echo -e "r) ${CYAN}View routing activity${NC} - See what content went where with clickable links"
+    echo -e "4) ${CYAN}Route clipboard content${NC} - Process [TAG] markers in clipboard"
+    echo -e "5) ${CYAN}View recent logs${NC} - See recent activity and insights"
+    echo -e "6) ${CYAN}Update project structure${NC} - Refresh AI knowledge of your project"
+    echo -e "7) ${CYAN}Enhance prompt${NC} - Add context to your next AI prompt"
+    echo -e "8) ${CYAN}Create/update notepad${NC} - Manage notepads for reference info"
     echo -e "c) ${CYAN}Session continuity${NC} - Generate continuity for new chat sessions"
+    echo -e "t) ${CYAN}TAG compliance${NC} - View TAG usage metrics and reports"
     echo
     echo -e "${YELLOW}VERSION CONTROL:${NC}"
     echo -e "g) ${CYAN}GitHub repository management${NC} - Setup, connect, or switch GitHub repos"
@@ -286,6 +289,13 @@ show_help() {
     echo -e "• Tag System Guide: ${GREEN}$FULL_TARGET_PATH/god_mode/system_documentation/README_TAGS.md${NC}"
     echo -e "  This guide explains all available tags and how to use them effectively."
     echo -e "  To open it: ${YELLOW}open \"$FULL_TARGET_PATH/god_mode/system_documentation/README_TAGS.md\"${NC}"
+    echo
+    echo -e "${CYAN}t) TAG compliance${NC}"
+    echo -e "   Analyzes how well the TAG system is being used in the project."
+    echo -e "   Provides metrics on TAG usage, compliance rates, and trends."
+    echo -e "   This helps ensure that knowledge is being properly captured and"
+    echo -e "   that the AI's responses are consistently using the correct TAGs."
+    echo -e "   The system will automatically adjust reinforcement based on compliance."
     echo
     echo -e "Press Enter to return to the main menu..."
     read -r
@@ -622,6 +632,127 @@ manage_github_repo() {
     "$setup_script" --menu
 }
 
+# Function to run the tag feedback system
+run_tag_feedback() {
+    echo -e "${BLUE}=======================================${NC}"
+    echo -e "${BLUE}         TAG Compliance System        ${NC}"
+    echo -e "${BLUE}=======================================${NC}"
+    echo
+    
+    TAG_FEEDBACK_SCRIPT="$FULL_TARGET_PATH/god_mode/scripts/script_tag_feedback.py"
+    
+    # Check if the script exists
+    if [ ! -f "$TAG_FEEDBACK_SCRIPT" ]; then
+        echo -e "${RED}Error: TAG feedback script not found at:${NC}"
+        echo -e "${RED}$TAG_FEEDBACK_SCRIPT${NC}"
+        echo
+        echo -e "Press Enter to continue..."
+        read
+        return
+    fi
+    
+    # Show sub-menu for tag feedback options
+    echo -e "Select a TAG feedback option:"
+    echo -e "1) ${CYAN}View compliance report${NC} - See metrics and trends"
+    echo -e "2) ${CYAN}Validate a specific file${NC} - Check if a file uses proper TAGs"
+    echo -e "3) ${CYAN}Adjust reminder settings${NC} - Manually change enforcement level"
+    echo -e "4) ${CYAN}Return to main menu${NC}"
+    echo
+    echo -n "Enter your choice: "
+    read tag_choice
+    
+    case $tag_choice in
+        1)
+            # Run the report generation
+            echo -e "${YELLOW}Generating TAG compliance report...${NC}"
+            echo
+            
+            # Run the script with --report flag
+            python3 "$TAG_FEEDBACK_SCRIPT" --report
+            
+            echo
+            echo -e "${GREEN}Report generated successfully.${NC}"
+            ;;
+        2)
+            # Prompt for file to validate
+            echo -e "Enter the relative path of the file to validate (from $TARGET_DIR):"
+            read file_path
+            
+            # Check if the file exists
+            full_file_path="$FULL_TARGET_PATH/$file_path"
+            if [ ! -f "$full_file_path" ]; then
+                echo -e "${RED}Error: File not found at: $full_file_path${NC}"
+            else
+                echo -e "${YELLOW}Validating file: $file_path${NC}"
+                echo
+                
+                # Run the script with --validate flag
+                python3 "$TAG_FEEDBACK_SCRIPT" --validate "$full_file_path"
+            fi
+            ;;
+        3)
+            # Define levels
+            echo -e "${YELLOW}Adjust TAG reminder settings:${NC}"
+            echo -e "1) ${CYAN}Mild${NC} - Occasional gentle reminders"
+            echo -e "2) ${CYAN}Normal${NC} - Regular reminders (default)"
+            echo -e "3) ${CYAN}Severe${NC} - Strong, frequent reminders"
+            echo
+            echo -n "Enter your choice (1-3): "
+            read level_choice
+            
+            # Create config directory if it doesn't exist
+            CONFIG_DIR="$FULL_TARGET_PATH/god_mode/.cache"
+            mkdir -p "$CONFIG_DIR"
+            
+            # Create or update the config file
+            CONFIG_FILE="$CONFIG_DIR/tag_config.json"
+            
+            case $level_choice in
+                1) 
+                    level="mild"
+                    frequency=0.3
+                    ;;
+                2) 
+                    level="normal"
+                    frequency=0.7
+                    ;;
+                3) 
+                    level="severe"
+                    frequency=1.0
+                    ;;
+                *) 
+                    echo -e "${RED}Invalid choice. Using default (normal).${NC}"
+                    level="normal"
+                    frequency=0.7
+                    ;;
+            esac
+            
+            # Create JSON content
+            json_content="{
+  \"reminder_level\": \"$level\",
+  \"check_frequency\": $frequency,
+  \"last_updated\": \"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\",
+  \"compliance_rate\": 0.5,
+  \"trend\": \"flat\",
+  \"manually_set\": true
+}"
+            
+            # Write to file
+            echo "$json_content" > "$CONFIG_FILE"
+            
+            echo -e "${GREEN}Reminder level set to: $level (frequency: ${frequency}0%)${NC}"
+            ;;
+        4|*)
+            # Return to main menu
+            return
+            ;;
+    esac
+    
+    echo
+    echo -e "Press Enter to continue..."
+    read
+}
+
 # Display header with a welcome message
 echo -e "${BLUE}=======================================${NC}"
 echo -e "${BLUE}     God Mode Remote Control         ${NC}"
@@ -635,7 +766,7 @@ echo
 while true; do
     echo
     show_menu
-    read -r choice
+    read -n 1 choice
     echo
     
     case "$choice" in
@@ -656,6 +787,7 @@ while true; do
         q|Q) echo -e "${GREEN}Goodbye!${NC}"; exit 0 ;;
         c|C) echo -e "${YELLOW}Session continuity feature is not implemented yet.${NC}" ;;
         v|V) echo -e "${YELLOW}System verification feature is not implemented yet.${NC}" ;;
+        t|T) run_tag_feedback ;;
         *) echo -e "${RED}Invalid choice. Please try again.${NC}" ;;
     esac
     

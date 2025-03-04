@@ -6,6 +6,8 @@ This script enhances user prompts with context from memory files, recent discuss
 project structure, and learnings. It creates a more comprehensive prompt that provides
 the AI with better context awareness, making responses more accurate and "God-like."
 
+It now also includes TAG system reinforcement to ensure consistent TAG usage in AI responses.
+
 Usage:
     python script_enhance_prompt.py --prompt "Your prompt here"
     python script_enhance_prompt.py --input prompt_file.txt
@@ -22,6 +24,8 @@ import argparse
 from pathlib import Path
 import shutil
 import subprocess
+import datetime
+import random
 try:
     import pyperclip
     CLIPBOARD_AVAILABLE = True
@@ -48,12 +52,34 @@ MEMORY_CURSOR_FILE = MEMORY_DIR / "MEMORY_CURSOR.md"
 MEMORY_LEARNINGS_FILE = MEMORY_DIR / "memory_learnings.md"
 MEMORY_LOGS_ALL_FILE = MEMORY_DIR / "memory_logs_all.md"
 MEMORY_PROJECT_STRUCTURE_FILE = MEMORY_DIR / "memory_project_structure.md"
-MEMORY_ARCHITECTURE_FILE = MEMORY_DIR / "memory_architecture.md"
-MEMORY_CONVENTIONS_FILE = MEMORY_DIR / "memory_conventions.md"
+MEMORY_TAG_METRICS_FILE = MEMORY_DIR / "memory_tag_metrics.md"
 
 # Define cache directory
 CACHE_DIR = GOD_MODE_DIR / ".cache"
 CONTEXT_CACHE_FILE = CACHE_DIR / "context_cache.json"
+TAG_CONFIG_FILE = CACHE_DIR / "tag_config.json"
+
+# Attempt to import the tag feedback module
+try:
+    # First, try to import as a module
+    sys.path.insert(0, str(SCRIPT_DIR))
+    from script_tag_feedback import analyze_compliance, update_tag_config, ensure_metrics_file
+    TAG_FEEDBACK_AVAILABLE = True
+except ImportError:
+    # If that fails, define simplified versions of the functions
+    TAG_FEEDBACK_AVAILABLE = False
+    
+    def analyze_compliance():
+        """Simplified version if tag_feedback module is not available"""
+        return 0.5, "flat"
+    
+    def update_tag_config(compliance_rate, trend):
+        """Simplified version if tag_feedback module is not available"""
+        return {"reminder_level": "normal", "check_frequency": 1.0}
+    
+    def ensure_metrics_file():
+        """Simplified version if tag_feedback module is not available"""
+        return False
 
 def ensure_directory_exists(directory):
     """Ensure a directory exists, creating it if necessary."""
@@ -255,6 +281,116 @@ def save_cache(cache):
     except Exception as e:
         print(f"Error saving cache: {e}", file=sys.stderr)
 
+def check_tag_compliance():
+    """
+    Check if recent responses have been using TAGs properly
+    
+    Returns:
+        tuple: (compliance_rate, trend, config)
+    """
+    # Use tag_feedback module if available
+    if TAG_FEEDBACK_AVAILABLE:
+        compliance_rate, trend = analyze_compliance()
+        config = update_tag_config(compliance_rate, trend)
+        return compliance_rate, trend, config
+    
+    # Simplified version if module not available
+    # Check if the metrics file exists
+    if not MEMORY_TAG_METRICS_FILE.exists():
+        return 0.5, "flat", {"reminder_level": "normal", "check_frequency": 1.0}
+    
+    # Read the last few entries
+    try:
+        with open(MEMORY_TAG_METRICS_FILE, 'r') as f:
+            lines = f.readlines()
+        
+        # Extract and count compliant entries
+        entries = [line for line in lines if "| " in line and " | " in line][-5:]
+        if not entries:
+            return 0.5, "flat", {"reminder_level": "normal", "check_frequency": 1.0}
+        
+        compliant_count = sum(1 for entry in entries if "✅" in entry)
+        compliance_rate = compliant_count / len(entries)
+        
+        # Determine reminder level
+        if compliance_rate < 0.3:
+            reminder_level = "severe"
+        elif compliance_rate < 0.7:
+            reminder_level = "normal"
+        else:
+            reminder_level = "mild"
+        
+        config = {
+            "reminder_level": reminder_level,
+            "check_frequency": 1.0 if reminder_level == "severe" else 0.7 if reminder_level == "normal" else 0.3
+        }
+        
+        return compliance_rate, "flat", config
+    except Exception as e:
+        print(f"Error checking tag compliance: {e}")
+        return 0.5, "flat", {"reminder_level": "normal", "check_frequency": 1.0}
+
+def get_tag_reminder(reminder_level):
+    """
+    Get a TAG reminder based on the specified level
+    
+    Args:
+        reminder_level (str): The severity of the reminder ("mild", "normal", "severe")
+        
+    Returns:
+        str: The reminder text
+    """
+    tag_examples = [
+        "[LOG_SUMMARY]\nBrief summary of changes (1-2 sentences).\n",
+        "[LOG_DETAIL]\nDetailed explanation of changes:\n- What was changed\n- Why it was necessary\n- How it improves the system\n",
+        "[MEMORY_UPDATE]\nKey architectural decisions or context that should be remembered for future work.\n",
+        "[FEATURE_LOG: FeatureName]\nFeature-specific updates and progress.\n",
+        "[MULTI_TAG: LOG_SUMMARY, MEMORY_ARCHITECTURE]\nContent that should be routed to multiple destinations.\n"
+    ]
+    
+    # Choose an example randomly
+    example = random.choice(tag_examples)
+    
+    if reminder_level == "severe":
+        return f"""
+⚠️ CRITICAL REMINDER: You MUST use the proper TAG format in your response! ⚠️
+
+Every significant response MUST include at minimum:
+
+[LOG_SUMMARY]
+Brief summary (1-2 sentences)
+
+[LOG_DETAIL]
+Comprehensive explanation
+
+[MEMORY_UPDATE]
+Key architectural decisions
+
+You can also use specialized tags like [FEATURE_LOG: FeatureName] or [MULTI_TAG: TAG1, TAG2, ...].
+
+Example format:
+{example}
+
+Without these tags, your response cannot be properly processed by the God Mode system!
+"""
+    elif reminder_level == "normal":
+        return f"""
+REMINDER: Please include the required TAGs in your response:
+
+[LOG_SUMMARY] - Brief summary of the changes (1-2 sentences)
+[LOG_DETAIL] - Comprehensive explanation
+[MEMORY_UPDATE] - Key architectural decisions and context
+
+Example format:
+{example}
+
+These TAGs ensure your response is properly processed by the God Mode system.
+"""
+    else:  # mild
+        return f"""
+Note: Remember to use TAGs in your response ([LOG_SUMMARY], [LOG_DETAIL], [MEMORY_UPDATE], etc.).
+"""
+
 def enhance_prompt(prompt):
     """
     Enhance a user prompt with relevant context.
@@ -268,13 +404,25 @@ def enhance_prompt(prompt):
     # Load cache to avoid redundant context
     cache = load_cache()
     
+    # Check TAG compliance and determine if a reminder is needed
+    compliance_rate, trend, config = check_tag_compliance()
+    should_add_reminder = random.random() < config["check_frequency"]
+    
     # Build the enhanced prompt
-    enhanced_parts = [
+    enhanced_parts = []
+    
+    # Add TAG reminder if needed
+    if should_add_reminder:
+        tag_reminder = get_tag_reminder(config["reminder_level"])
+        enhanced_parts.append(tag_reminder)
+    
+    # Continue with regular enhancement
+    enhanced_parts.extend([
         "# ENHANCED CONTEXT FOR USER QUERY\n",
         "## Original User Query\n",
         prompt,
         "\n\n## Project Context\n"
-    ]
+    ])
     
     # Add core memory content
     cursor_memory = load_file_content(MEMORY_CURSOR_FILE)
@@ -318,12 +466,24 @@ def enhance_prompt(prompt):
         enhanced_parts.append("\n### System Information\n")
         enhanced_parts.append(get_system_context())
     
-    # Closing instruction
+    # Closing instruction with emphasize on TAGs if compliance is low
+    tag_instruction = ""
+    if compliance_rate < 0.7:
+        tag_instruction = (
+            "IMPORTANT: You MUST include the appropriate message router markers in your response:\n"
+            "- [LOG_SUMMARY] - Brief summary (1-2 sentences)\n"
+            "- [LOG_DETAIL] - Comprehensive explanation\n"
+            "- [MEMORY_UPDATE] - Key architectural decisions\n"
+            "- Any specialized tags as needed (e.g., [FEATURE_LOG: FeatureName])\n"
+            "- Remember the [MULTI_TAG: TAG1, TAG2, ...] format for routing to multiple destinations\n\n"
+        )
+    
     enhanced_parts.append(
         "\n\n# ACTION INSTRUCTION\n"
         "Use the above context to enhance your response to the user's query.\n"
         "DO NOT mention this additional context explicitly in your response.\n"
         "Respond directly and concisely to the user's query using this additional context implicitly.\n\n"
+        f"{tag_instruction}"
         "When your response contains significant information, code changes, or insights, include the appropriate\n"
         "message router markers ([LOG_SUMMARY], [LOG_DETAIL], [MEMORY_UPDATE], etc.) for automatic documentation.\n"
         "\n---\n\n"
