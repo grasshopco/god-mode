@@ -200,6 +200,7 @@ show_menu() {
     echo -e "7) ${CYAN}Enhance prompt${NC} - Add context to your next AI prompt"
     echo -e "8) ${CYAN}Create/update notepad${NC} - Manage notepads for reference info"
     echo -e "c) ${CYAN}Session continuity${NC} - Generate continuity for new chat sessions"
+    echo -e "n) ${CYAN}Continue conversation${NC} - Use predictive questions to continue"
     echo -e "t) ${CYAN}TAG compliance${NC} - View TAG usage metrics and reports"
     echo
     echo -e "${YELLOW}VERSION CONTROL:${NC}"
@@ -361,7 +362,7 @@ view_status() {
         echo -e "   This process handles text with [TAG] markers like [LOG_SUMMARY]"
     else
         echo -e "Message Router: ${RED}NOT RUNNING${NC} ✗"
-        echo -e "   ${YELLOW}Not working? Try running option 8 (Install dependencies)${NC}"
+        echo -e "   ${YELLOW}Not working? Try running option 8 to install dependencies${NC}"
         echo -e "   This process is needed to handle [TAG] markers in text"
     fi
     
@@ -753,6 +754,57 @@ run_tag_feedback() {
     read
 }
 
+# Function to run the continue conversation script
+run_continue_conversation() {
+    echo -e "${BLUE}=======================================${NC}"
+    echo -e "${BLUE}       Continue Conversation          ${NC}"
+    echo -e "${BLUE}=======================================${NC}"
+    echo
+    
+    CONTINUE_SCRIPT="$FULL_TARGET_PATH/god_mode/scripts/script_continue_conversation.py"
+    
+    # Check if the script exists
+    if [ ! -f "$CONTINUE_SCRIPT" ]; then
+        echo -e "${RED}Error: Continue conversation script not found at:${NC}"
+        echo -e "${RED}$CONTINUE_SCRIPT${NC}"
+        echo
+        echo -e "${YELLOW}Creating the script now...${NC}"
+        
+        # Create the script directory if it doesn't exist
+        mkdir -p "$(dirname "$CONTINUE_SCRIPT")"
+        
+        # Create a basic version of the script
+        cat > "$CONTINUE_SCRIPT" << 'EOF'
+#!/usr/bin/env python3
+"""
+Conversation Continuation Script
+
+This script makes it easy to continue conversations with the AI assistant.
+"""
+import sys
+print("This is a placeholder script. Please update to the full version.")
+sys.exit(1)
+EOF
+        
+        chmod +x "$CONTINUE_SCRIPT"
+        
+        echo -e "${YELLOW}A placeholder script has been created. Please update it to the full version.${NC}"
+        echo -e "Press Enter to continue..."
+        read
+        return
+    fi
+    
+    # Make the script executable
+    chmod +x "$CONTINUE_SCRIPT"
+    
+    # Run the script
+    python3 "$CONTINUE_SCRIPT"
+    
+    echo
+    echo -e "Press Enter to continue..."
+    read
+}
+
 # Display header with a welcome message
 echo -e "${BLUE}=======================================${NC}"
 echo -e "${BLUE}     God Mode Remote Control         ${NC}"
@@ -788,6 +840,7 @@ while true; do
         c|C) echo -e "${YELLOW}Session continuity feature is not implemented yet.${NC}" ;;
         v|V) echo -e "${YELLOW}System verification feature is not implemented yet.${NC}" ;;
         t|T) run_tag_feedback ;;
+        n|N) run_continue_conversation ;;
         *) echo -e "${RED}Invalid choice. Please try again.${NC}" ;;
     esac
     

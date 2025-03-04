@@ -159,14 +159,24 @@ def get_recent_changes():
     return content
 
 def get_system_context():
-    """Get information about the user's system."""
-    system_info = {
-        "os": os.name,
-        "platform": sys.platform,
-        "python_version": sys.version,
-    }
+    """Get system context information."""
+    system_info = []
     
-    return f"System Context: {json.dumps(system_info)}"
+    # Try to get OS info
+    try:
+        if os.name == 'posix':
+            # Unix/Linux/MacOS
+            system_info.append(f"OS: {os.uname().sysname} {os.uname().release}")
+        elif os.name == 'nt':
+            # Windows
+            system_info.append(f"OS: Windows {os.environ.get('OS', 'Unknown')}")
+    except:
+        system_info.append("OS: Unknown")
+    
+    # Add Python version
+    system_info.append(f"Python: {sys.version.split()[0]}")
+    
+    return "\n".join(system_info)
 
 def should_include_file(file_name, user_query):
     """
@@ -391,6 +401,77 @@ These TAGs ensure your response is properly processed by the God Mode system.
 Note: Remember to use TAGs in your response ([LOG_SUMMARY], [LOG_DETAIL], [MEMORY_UPDATE], etc.).
 """
 
+def generate_predictive_questions(user_query):
+    """
+    Generate predictive follow-up questions based on the user's query.
+    
+    Args:
+        user_query (str): The user's original query
+        
+    Returns:
+        str: A set of 2-4 predictive questions that might be relevant to the user's current task
+    """
+    # Common follow-up patterns based on query types
+    feature_questions = [
+        "Would you like me to implement this feature now?",
+        "Should I create tests for this feature as well?",
+        "Is there a specific part of this feature you'd like me to focus on first?",
+        "Are there any specific requirements or constraints for this implementation?",
+        "Would you like to see a sample implementation before proceeding with the full feature?"
+    ]
+    
+    bug_questions = [
+        "Would you like me to debug this issue further?",
+        "Should I create a fix for this bug?",
+        "Would you like to see the root cause analysis in more detail?",
+        "Should I suggest ways to prevent similar bugs in the future?",
+        "Would you like me to implement additional error handling for this case?"
+    ]
+    
+    explanation_questions = [
+        "Would you like me to explain any particular part in more detail?",
+        "Would you like to see some code examples to illustrate this concept?",
+        "Is there a specific aspect of this explanation that needs clarification?",
+        "Would you like me to relate this to another part of your project?",
+        "Should I provide alternative approaches or just focus on this one?"
+    ]
+    
+    architectural_questions = [
+        "Would you like me to suggest improvements to the current architecture?",
+        "Should I create a diagram to illustrate this architecture?",
+        "Would you like me to implement this architectural change?",
+        "Are there specific performance concerns I should address in this design?",
+        "Should we consider how this architecture would scale for future requirements?"
+    ]
+    
+    general_questions = [
+        "Is there anything specific about this you'd like me to elaborate on?",
+        "Would you like me to continue with the next steps?",
+        "Is this approach aligned with what you had in mind?",
+        "Would you prefer a different approach to solving this problem?",
+        "Do you want me to make any changes to the implementation we discussed?"
+    ]
+    
+    # Determine the type of query
+    query_lower = user_query.lower()
+    question_pool = general_questions
+    
+    if any(word in query_lower for word in ["implement", "create", "add", "build", "develop", "feature"]):
+        question_pool = feature_questions
+    elif any(word in query_lower for word in ["bug", "error", "fix", "issue", "problem", "crash", "exception"]):
+        question_pool = bug_questions
+    elif any(word in query_lower for word in ["explain", "how", "why", "what is", "understand", "clarify"]):
+        question_pool = explanation_questions
+    elif any(word in query_lower for word in ["architecture", "design", "structure", "pattern", "organization"]):
+        question_pool = architectural_questions
+    
+    # Randomly select 2-4 questions from the appropriate pool
+    num_questions = random.randint(2, 4)
+    selected_questions = random.sample(question_pool, min(num_questions, len(question_pool)))
+    
+    # Format the questions
+    return "\n\nPredictive Follow-up Questions:\n" + "\n".join(f"• {q}" for q in selected_questions)
+
 def enhance_prompt(prompt):
     """
     Enhance a user prompt with relevant context.
@@ -486,11 +567,20 @@ def enhance_prompt(prompt):
         f"{tag_instruction}"
         "When your response contains significant information, code changes, or insights, include the appropriate\n"
         "message router markers ([LOG_SUMMARY], [LOG_DETAIL], [MEMORY_UPDATE], etc.) for automatic documentation.\n"
+        "\n"
+        "IMPORTANT: You must think ahead and be predictive in your responses. Always conclude your response with \n"
+        "2-4 relevant follow-up questions that anticipate the user's next needs or potential questions.\n"
+        "These questions should help guide the conversation forward and demonstrate that you're thinking\n"
+        "several steps ahead of the current request.\n"
         "\n---\n\n"
     )
     
     # The actual query the user will see the AI respond to
     enhanced_parts.append(prompt)
+    
+    # Add predictive questions to the end of the prompt
+    predictive_questions = generate_predictive_questions(prompt)
+    enhanced_parts.append(predictive_questions)
     
     # Update cache with this context
     cache["last_enhanced_prompt"] = "\n".join(enhanced_parts)
