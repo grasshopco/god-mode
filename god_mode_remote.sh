@@ -297,6 +297,7 @@ show_menu() {
     echo -e "${YELLOW}SETTINGS & TOOLS:${NC}"
     echo -e "s) ${CYAN}Notification settings${NC} - Manage notifications and sounds"
     echo -e "i) ${CYAN}Install God Mode shortcut${NC} - Create 'godmode' command (option 2 recommended for beginners)"
+    echo -e "b) ${CYAN}Supabase integration${NC} - Set up database integration for God Mode"
     echo
     echo -e "${YELLOW}VERSION CONTROL:${NC}"
     echo -e "g) ${CYAN}GitHub repository management${NC} - Setup, connect, or switch GitHub repos"
@@ -387,11 +388,17 @@ show_help() {
     echo -e "  To open it: ${YELLOW}open \"$FULL_TARGET_PATH/god_mode/system_documentation/README_TAGS.md\"${NC}"
     echo
     echo -e "${CYAN}t) TAG compliance${NC}"
-    echo -e "   Analyzes how well the TAG system is being used in the project."
-    echo -e "   Provides metrics on TAG usage, compliance rates, and trends."
-    echo -e "   This helps ensure that knowledge is being properly captured and"
-    echo -e "   that the AI's responses are consistently using the correct TAGs."
-    echo -e "   The system will automatically adjust reinforcement based on compliance."
+    echo -e "   View statistics about TAG usage and check for messages without tags."
+    echo -e "   This helps ensure all messages have proper memory routing."
+    echo
+    echo -e "${CYAN}v) Verify system${NC}"
+    echo -e "   Run tests to ensure all God Mode components are working correctly."
+    echo -e "   This will check the Message Router, Cursor Watch, and dependencies."
+    echo
+    echo -e "${CYAN}b) Supabase integration${NC}"
+    echo -e "   Set up database integration to sync your memory files to the cloud."
+    echo -e "   This allows for persistence across machines and data backup."
+    echo -e "   Options include: setup, sync, backup, and restore operations."
     echo
     echo -e "Press Enter to return to the main menu..."
     read -r
@@ -1030,6 +1037,67 @@ run_system_verification() {
     return $exit_code
 }
 
+# Function to setup Supabase integration
+setup_supabase_integration() {
+    echo -e "${BLUE}=======================================${NC}"
+    echo -e "${BLUE}     Supabase Integration Setup       ${NC}"
+    echo -e "${BLUE}=======================================${NC}"
+    echo
+    
+    local supabase_script="$FULL_TARGET_PATH/god_mode/scripts/script_create_supabase_integration.py"
+    
+    # Check if the script exists
+    if [ ! -f "$supabase_script" ]; then
+        echo -e "${RED}Error: Supabase integration script not found at:${NC}"
+        echo -e "${RED}$supabase_script${NC}"
+        echo
+        echo -e "${YELLOW}Please make sure the script exists and try again.${NC}"
+        echo
+        echo -e "Press Enter to continue..."
+        read
+        return
+    fi
+    
+    # Make the script executable
+    chmod +x "$supabase_script"
+    
+    # Show submenu for Supabase integration
+    echo -e "Supabase Integration Options:"
+    echo -e "1) ${CYAN}Setup Supabase integration${NC}"
+    echo -e "2) ${CYAN}Sync with Supabase${NC}"
+    echo -e "3) ${CYAN}Backup to Supabase${NC}"
+    echo -e "4) ${CYAN}Restore from backup${NC}"
+    echo -e "5) ${CYAN}Return to main menu${NC}"
+    echo
+    echo -n "Enter your choice: "
+    read supabase_choice
+    
+    case $supabase_choice in
+        1)
+            echo -e "\n${YELLOW}Setting up Supabase integration...${NC}"
+            python3 "$supabase_script" --setup
+            ;;
+        2)
+            echo -e "\n${YELLOW}Syncing with Supabase...${NC}"
+            python3 "$supabase_script" --sync
+            ;;
+        3)
+            echo -e "\n${YELLOW}Backing up to Supabase...${NC}"
+            python3 "$supabase_script" --backup
+            ;;
+        4)
+            echo -e "\n${YELLOW}Restoring from backup...${NC}"
+            python3 "$supabase_script" --restore
+            ;;
+        5)
+            echo -e "\n${YELLOW}Returning to main menu...${NC}"
+            ;;
+        *)
+            echo -e "\n${RED}Invalid choice. Returning to main menu.${NC}"
+            ;;
+    esac
+}
+
 # Function to verify God Mode is running
 verify_god_mode() {
     echo -e "${BLUE}Verifying God Mode processes...${NC}"
@@ -1077,6 +1145,7 @@ while true; do
         n|N) run_continue_conversation ;;
         s|S) manage_notification_settings ;;
         i|I) install_godmode_shortcut ;;
+        b|B) setup_supabase_integration ;;
         *) echo -e "${RED}Invalid choice. Please try again.${NC}" ;;
     esac
     

@@ -26,13 +26,6 @@ import datetime
 import shutil
 from pathlib import Path
 
-# Try to import provider-specific modules
-try:
-    from supabase import create_client, Client
-    SUPABASE_AVAILABLE = True
-except ImportError:
-    SUPABASE_AVAILABLE = False
-
 # Get the directory of this script
 SCRIPT_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
 
@@ -61,6 +54,26 @@ def debug_log(message):
 def ensure_directory_exists(directory):
     """Ensure a directory exists, creating it if necessary."""
     os.makedirs(directory, exist_ok=True)
+
+def is_supabase_available():
+    """Check if the Supabase Python client is available."""
+    try:
+        from supabase import create_client, Client
+        return True
+    except ImportError:
+        return False
+
+def install_supabase():
+    """Install the Supabase Python client."""
+    try:
+        import pip
+        pip.main(["install", "supabase"])
+        print("Supabase Python client installed successfully.")
+        return True
+    except Exception as e:
+        print(f"Error installing Supabase Python client: {e}")
+        print("Please install it manually with: pip install supabase")
+        return False
 
 def load_db_config():
     """
@@ -124,7 +137,7 @@ def create_supabase_client():
     Returns:
         Client: The Supabase client, or None if not configured
     """
-    if not SUPABASE_AVAILABLE:
+    if not is_supabase_available():
         print("Error: Supabase Python client not installed")
         print("Install it with: pip install supabase")
         return None
@@ -136,6 +149,7 @@ def create_supabase_client():
         return None
     
     try:
+        from supabase import create_client
         return create_client(config["url"], config["key"])
     except Exception as e:
         print(f"Error creating Supabase client: {e}")
@@ -167,20 +181,12 @@ def setup_db_integration():
     
     if provider_choice == "1":
         # Supabase setup
-        if not SUPABASE_AVAILABLE:
+        if not is_supabase_available():
             print("Supabase Python client not installed.")
             install_choice = input("Would you like to install it now? (y/n): ")
             if install_choice.lower() == "y":
                 print("Installing Supabase Python client...")
-                try:
-                    import pip
-                    pip.main(["install", "supabase"])
-                    print("Supabase Python client installed successfully.")
-                    global SUPABASE_AVAILABLE
-                    SUPABASE_AVAILABLE = True
-                except Exception as e:
-                    print(f"Error installing Supabase Python client: {e}")
-                    print("Please install it manually with: pip install supabase")
+                if not install_supabase():
                     return
             else:
                 print("Please install the Supabase Python client manually with: pip install supabase")
@@ -208,6 +214,7 @@ def setup_db_integration():
         
         # Test connection
         try:
+            from supabase import create_client
             client = create_client(supabase_url, supabase_key)
             print("Supabase connection test successful!")
             

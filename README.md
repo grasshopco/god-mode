@@ -165,6 +165,38 @@ This script runs tests on all major components:
 - Roadmap generator
 - Message routing system
 
+#### Supabase Integration
+
+God Mode now includes integration with Supabase for database persistence and cloud backup:
+
+```bash
+# Set up Supabase integration
+python god_mode/scripts/script_create_supabase_integration.py --setup
+
+# Sync memory files with Supabase
+python god_mode/scripts/script_create_supabase_integration.py --sync
+
+# Backup memory files to Supabase
+python god_mode/scripts/script_create_supabase_integration.py --backup
+
+# Restore memory files from backup
+python god_mode/scripts/script_create_supabase_integration.py --restore
+```
+
+Benefits of Supabase integration:
+- **Cloud Persistence**: Memory files are synced to the cloud
+- **Multi-Device Access**: Access your God Mode memory across different machines
+- **Backup and Restore**: Easily backup and restore your memory files
+- **Disaster Recovery**: Protect against local data loss
+
+To use the integration:
+1. Create a free Supabase account at [supabase.com](https://supabase.com)
+2. Create a new project and get your URL and API key
+3. Run the setup command and follow the prompts
+4. Use the sync command periodically to keep your memory files in sync
+
+You can also access this feature through the God Mode remote control menu with option 'b'.
+
 #### Troubleshooting
 
 If you encounter issues with memory files:
@@ -290,6 +322,59 @@ You can also specify a different target project:
 - Control God Mode in multiple projects without context switching
 - Access God Mode features without changing directories
 - Keep chat history intact in your main workspace
+
+## ✨ Recent Enhancements
+
+### Automatic GitHub Integration
+- **Auto Commit**: God Mode now automatically commits changes to GitHub after each action
+- **Seamless Version Control**: Keep track of all changes without manual intervention
+- **Configurable**: Set your own commit message templates and patterns
+
+### Enhanced Continue Conversation
+- **Predefined Questions**: The system now remembers questions from previous responses
+- **Easy Selection**: Choose from a list of relevant questions to continue your conversation
+- **Custom Questions**: Add your own questions for future use
+
+### Improved Shortcuts
+- **Quick Access**: Install the 'god' command for system-wide access
+- **Custom Commands**: Create your own command aliases like 'zeus' or 'athena'
+- **Simple Installation**: Choose between system-wide or user-specific installation
+
+## 🔌 Advanced Integrations
+
+### CLI-based Chat Interaction
+
+God Mode now supports controlling the chat input directly from the terminal:
+
+```bash
+# Send a question to the AI directly from the terminal
+god c --custom "How do I implement feature X?"
+
+# Choose from preset questions
+god c
+
+# Add a new question to the preset list
+god c --add "How can I optimize this code?"
+```
+
+This allows you to stay in the terminal while interacting with the AI, creating a seamless workflow.
+
+### Cursor MCP Integration
+
+God Mode can be integrated with Cursor's Model Context Protocol (MCP) for enhanced capabilities:
+
+1. **Setup**: Go to Cursor Settings > Features > MCP and add a new MCP server
+2. **Configuration**: Use the following settings:
+   - Type: stdio
+   - Name: GodMode
+   - Command: `/path/to/your/project/god_mode/scripts/script_mcp_server.py`
+
+3. **Usage**: Once configured, you can use God Mode features directly in Cursor's Composer:
+   - Access memory files
+   - Route content with tags
+   - Generate documentation
+
+This integration allows the AI to directly access God Mode's capabilities without manual intervention.
 
 ## Customization
 
