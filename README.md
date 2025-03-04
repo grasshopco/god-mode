@@ -167,35 +167,47 @@ This script runs tests on all major components:
 
 #### Supabase Integration
 
-God Mode now includes integration with Supabase for database persistence and cloud backup:
+God Mode now includes integration with multiple database backends for data persistence and cloud backup:
 
 ```bash
-# Set up Supabase integration
+# Set up a new database backend (Supabase, SQLite, etc.)
 python god_mode/scripts/script_create_supabase_integration.py --setup
 
-# Sync memory files with Supabase
+# Sync memory files with current backend
 python god_mode/scripts/script_create_supabase_integration.py --sync
 
-# Backup memory files to Supabase
+# Backup memory files to database
 python god_mode/scripts/script_create_supabase_integration.py --backup
 
 # Restore memory files from backup
 python god_mode/scripts/script_create_supabase_integration.py --restore
+
+# List configured backends
+python god_mode/scripts/script_create_supabase_integration.py --list-backends
+
+# Switch to a different backend
+python god_mode/scripts/script_create_supabase_integration.py --switch-backend NAME
 ```
 
-Benefits of Supabase integration:
-- **Cloud Persistence**: Memory files are synced to the cloud
+Benefits of database integration:
+- **Cloud Persistence**: Memory files are synced to the cloud (Supabase)
+- **Offline Mode**: SQLite option for local development without internet
 - **Multi-Device Access**: Access your God Mode memory across different machines
+- **Multiple Backends**: Configure and easily switch between different backends
 - **Backup and Restore**: Easily backup and restore your memory files
 - **Disaster Recovery**: Protect against local data loss
 
-To use the integration:
-1. Create a free Supabase account at [supabase.com](https://supabase.com)
-2. Create a new project and get your URL and API key
-3. Run the setup command and follow the prompts
-4. Use the sync command periodically to keep your memory files in sync
+Supported backends:
+- **Supabase**: Cloud-based PostgreSQL database with real-time capabilities
+- **SQLite**: Local file-based database for offline use
+- **Firebase**: Coming soon
+- **Custom REST API**: Coming soon
 
-You can also access this feature through the God Mode remote control menu with option 'b'.
+To use the integration:
+1. Access the Database Integration menu via God Mode remote control option 'b'
+2. Choose "Setup a new database backend"
+3. Follow the prompts to configure your preferred backend
+4. Use the sync command periodically to keep your memory files in sync
 
 #### Troubleshooting
 

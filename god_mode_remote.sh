@@ -297,7 +297,12 @@ show_menu() {
     echo -e "${YELLOW}SETTINGS & TOOLS:${NC}"
     echo -e "s) ${CYAN}Notification settings${NC} - Manage notifications and sounds"
     echo -e "i) ${CYAN}Install God Mode shortcut${NC} - Create 'godmode' command (option 2 recommended for beginners)"
-    echo -e "b) ${CYAN}Supabase integration${NC} - Set up database integration for God Mode"
+    echo -e "b) ${CYAN}Database or Backend integration${NC} - Set up various database backends to sync your memory files."
+    echo -e "   Options include:"
+    echo -e "   - Cloud backends: Supabase, Firebase (coming soon)"
+    echo -e "   - Local backends: SQLite database for offline use"
+    echo -e "   - Multiple backends: Configure several and easily switch between them"
+    echo -e "   This allows for persistence across machines, data backup, and offline usage."
     echo
     echo -e "${YELLOW}VERSION CONTROL:${NC}"
     echo -e "g) ${CYAN}GitHub repository management${NC} - Setup, connect, or switch GitHub repos"
@@ -395,10 +400,13 @@ show_help() {
     echo -e "   Run tests to ensure all God Mode components are working correctly."
     echo -e "   This will check the Message Router, Cursor Watch, and dependencies."
     echo
-    echo -e "${CYAN}b) Supabase integration${NC}"
-    echo -e "   Set up database integration to sync your memory files to the cloud."
-    echo -e "   This allows for persistence across machines and data backup."
-    echo -e "   Options include: setup, sync, backup, and restore operations."
+    echo -e "${CYAN}b) Database or Backend integration${NC}"
+    echo -e "   Set up various database backends to sync your memory files."
+    echo -e "   Options include:"
+    echo -e "   - Cloud backends: Supabase, Firebase (coming soon)"
+    echo -e "   - Local backends: SQLite database for offline use"
+    echo -e "   - Multiple backends: Configure several and easily switch between them"
+    echo -e "   This allows for persistence across machines, data backup, and offline usage."
     echo
     echo -e "Press Enter to return to the main menu..."
     read -r
@@ -1037,19 +1045,19 @@ run_system_verification() {
     return $exit_code
 }
 
-# Function to setup Supabase integration
-setup_supabase_integration() {
+# Function to setup Database/Backend integration
+setup_database_integration() {
     echo -e "${BLUE}=======================================${NC}"
-    echo -e "${BLUE}     Supabase Integration Setup       ${NC}"
+    echo -e "${BLUE}     Database Integration Setup       ${NC}"
     echo -e "${BLUE}=======================================${NC}"
     echo
     
-    local supabase_script="$FULL_TARGET_PATH/god_mode/scripts/script_create_supabase_integration.py"
+    local integration_script="$FULL_TARGET_PATH/god_mode/scripts/script_create_supabase_integration.py"
     
     # Check if the script exists
-    if [ ! -f "$supabase_script" ]; then
-        echo -e "${RED}Error: Supabase integration script not found at:${NC}"
-        echo -e "${RED}$supabase_script${NC}"
+    if [ ! -f "$integration_script" ]; then
+        echo -e "${RED}Error: Database integration script not found at:${NC}"
+        echo -e "${RED}$integration_script${NC}"
         echo
         echo -e "${YELLOW}Please make sure the script exists and try again.${NC}"
         echo
@@ -1059,37 +1067,56 @@ setup_supabase_integration() {
     fi
     
     # Make the script executable
-    chmod +x "$supabase_script"
+    chmod +x "$integration_script"
     
-    # Show submenu for Supabase integration
-    echo -e "Supabase Integration Options:"
-    echo -e "1) ${CYAN}Setup Supabase integration${NC}"
-    echo -e "2) ${CYAN}Sync with Supabase${NC}"
-    echo -e "3) ${CYAN}Backup to Supabase${NC}"
-    echo -e "4) ${CYAN}Restore from backup${NC}"
-    echo -e "5) ${CYAN}Return to main menu${NC}"
+    # First check for latest versions
+    echo -e "${YELLOW}Checking for latest package versions...${NC}"
+    python3 "$integration_script" --check-version
+    
+    # Show main database options
+    echo -e "\nDatabase Integration Options:"
+    echo -e "1) ${CYAN}Setup a new database backend${NC}"
+    echo -e "2) ${CYAN}Manage existing backends${NC}"
+    echo -e "3) ${CYAN}Sync with current backend${NC}"
+    echo -e "4) ${CYAN}Backup to current backend${NC}"
+    echo -e "5) ${CYAN}Restore from backup${NC}"
+    echo -e "6) ${CYAN}Return to main menu${NC}"
     echo
     echo -n "Enter your choice: "
-    read supabase_choice
+    read db_choice
     
-    case $supabase_choice in
+    case $db_choice in
         1)
-            echo -e "\n${YELLOW}Setting up Supabase integration...${NC}"
-            python3 "$supabase_script" --setup
+            echo -e "\n${YELLOW}Setting up a new database backend...${NC}"
+            python3 "$integration_script" --setup
             ;;
         2)
-            echo -e "\n${YELLOW}Syncing with Supabase...${NC}"
-            python3 "$supabase_script" --sync
+            echo -e "\n${YELLOW}Managing existing backends...${NC}"
+            python3 "$integration_script" --list-backends
+            
+            # Ask if they want to switch backends
+            echo -e "\nWould you like to switch to a different backend? (y/n): "
+            read switch_choice
+            
+            if [ "$switch_choice" = "y" ]; then
+                echo -e "\nEnter the name of the backend to switch to: "
+                read backend_name
+                python3 "$integration_script" --switch-backend "$backend_name"
+            fi
             ;;
         3)
-            echo -e "\n${YELLOW}Backing up to Supabase...${NC}"
-            python3 "$supabase_script" --backup
+            echo -e "\n${YELLOW}Syncing with current backend...${NC}"
+            python3 "$integration_script" --sync
             ;;
         4)
-            echo -e "\n${YELLOW}Restoring from backup...${NC}"
-            python3 "$supabase_script" --restore
+            echo -e "\n${YELLOW}Backing up to current backend...${NC}"
+            python3 "$integration_script" --backup
             ;;
         5)
+            echo -e "\n${YELLOW}Restoring from backup...${NC}"
+            python3 "$integration_script" --restore
+            ;;
+        6)
             echo -e "\n${YELLOW}Returning to main menu...${NC}"
             ;;
         *)
@@ -1145,7 +1172,7 @@ while true; do
         n|N) run_continue_conversation ;;
         s|S) manage_notification_settings ;;
         i|I) install_godmode_shortcut ;;
-        b|B) setup_supabase_integration ;;
+        b|B) setup_database_integration ;;
         *) echo -e "${RED}Invalid choice. Please try again.${NC}" ;;
     esac
     
