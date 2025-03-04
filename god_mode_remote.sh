@@ -401,12 +401,9 @@ show_help() {
     echo -e "   This will check the Message Router, Cursor Watch, and dependencies."
     echo
     echo -e "${CYAN}b) Database or Backend integration${NC}"
-    echo -e "   Set up various database backends to sync your memory files."
-    echo -e "   Options include:"
-    echo -e "   - Cloud backends: Supabase, Firebase (coming soon)"
-    echo -e "   - Local backends: SQLite database for offline use"
-    echo -e "   - Multiple backends: Configure several and easily switch between them"
-    echo -e "   This allows for persistence across machines, data backup, and offline usage."
+    echo -e "   This feature lets you store God Mode memory files in the cloud or locally."
+    echo -e "   This is NOT for your application data - it's for God Mode's own memory system!"
+    echo -e "   Benefits include syncing across computers and backing up your AI's memory."
     echo
     echo -e "Press Enter to return to the main menu..."
     read -r
@@ -1047,9 +1044,14 @@ run_system_verification() {
 
 # Function to setup Database/Backend integration
 setup_database_integration() {
-    echo -e "${BLUE}=======================================${NC}"
-    echo -e "${BLUE}     Database Integration Setup       ${NC}"
-    echo -e "${BLUE}=======================================${NC}"
+    clear
+    echo "======================================="
+    echo "     Database Integration Setup       "
+    echo "======================================="
+    echo
+    echo "This feature lets you store God Mode memory files in the cloud or locally."
+    echo "This is NOT for your application data - it's for God Mode's own memory system!"
+    echo "Benefits include syncing across computers and backing up your AI's memory."
     echo
     
     local integration_script="$FULL_TARGET_PATH/god_mode/scripts/script_create_supabase_integration.py"
@@ -1075,11 +1077,11 @@ setup_database_integration() {
     
     # Show main database options
     echo -e "\nDatabase Integration Options:"
-    echo -e "1) ${CYAN}Setup a new database backend${NC}"
-    echo -e "2) ${CYAN}Manage existing backends${NC}"
-    echo -e "3) ${CYAN}Sync with current backend${NC}"
-    echo -e "4) ${CYAN}Backup to current backend${NC}"
-    echo -e "5) ${CYAN}Restore from backup${NC}"
+    echo -e "1) ${CYAN}Setup a new database backend${NC} - Connect to Supabase, SQLite, or other services"
+    echo -e "2) ${CYAN}Manage existing backends${NC} - View, switch, or delete configured connections"
+    echo -e "3) ${CYAN}Sync with current backend${NC} - Update memory files in cloud from local files"
+    echo -e "4) ${CYAN}Backup to current backend${NC} - Create a complete backup of your memory files"
+    echo -e "5) ${CYAN}Restore from backup${NC} - Replace local memory files with backed up versions"
     echo -e "6) ${CYAN}Return to main menu${NC}"
     echo
     echo -n "Enter your choice: "
@@ -1172,7 +1174,9 @@ while true; do
         n|N) run_continue_conversation ;;
         s|S) manage_notification_settings ;;
         i|I) install_godmode_shortcut ;;
-        b|B) setup_database_integration ;;
+        b|B)
+            setup_database_integration 
+            ;;
         *) echo -e "${RED}Invalid choice. Please try again.${NC}" ;;
     esac
     

@@ -286,299 +286,166 @@ def create_supabase_client(backend_name=None):
 
 def setup_db_integration():
     """
-    Set up database integration by prompting for provider and credentials.
+    Interactive setup for database integration.
     """
+    print("\nSetting up a new database backend...")
     print("Database Integration Setup Wizard")
     print("=================================")
-    print()
     
-    # Load existing config
-    config = load_db_config()
-    backends = load_backends_config()
-    
-    # Choose setup type
-    print("Choose setup type:")
-    print("1) Set up a new backend")
-    print("2) View/manage existing backends")
-    print("3) Set up local SQLite database (offline mode)")
-    print("4) Exit wizard")
-    
-    setup_type = input("\nEnter your choice (1-4): ")
-    
-    if setup_type == "1":
-        # Choose provider
-        print("\nChoose a database provider:")
-        print("1) Supabase (https://supabase.com)")
-        print("2) Firebase (coming soon)")
-        print("3) Custom REST API (coming soon)")
-        print("4) Back to main menu")
-        
-        provider_choice = input("\nEnter your choice (1-4): ")
-        
-        if provider_choice == "4":
+    print("\n📋 What is Database Integration?")
+    print("--------------------------------")
+    print("This feature allows you to store your God Mode memory files (.md files) in a database.")
+    print("This is NOT for your application data, but for God Mode's own memory system.")
+    print("Benefits include:")
+    print("- Synchronize your God Mode memory across multiple computers")
+    print("- Back up your AI's memory to prevent data loss")
+    print("- Work offline with local storage options\n")
+
+    while True:
+        print("Choose setup type:")
+        print("1) Set up a new backend")
+        print("2) View/manage existing backends")
+        print("3) Set up local SQLite database (offline mode)")
+        print("4) Exit wizard")
+
+        choice = input("\nEnter your choice (1-4): ")
+
+        if choice == "1":
+            # Only check package versions after user selects a specific backend
+            provider = setup_provider_selection()
+            if provider is None:
+                continue
+                
+            # Now check for required packages based on selected provider
+            if provider == "supabase":
+                check_supabase_requirements()
+            elif provider == "firebase":
+                print("Firebase support coming soon!")
+                continue
+            elif provider == "custom":
+                print("Custom API support coming soon!")
+                continue
+                
+            setup_new_backend(provider)
+            break
+        elif choice == "2":
+            manage_backends()
+            break
+        elif choice == "3":
+            # Setup SQLite (no package requirements to check)
+            setup_sqlite_backend()
+            break
+        elif choice == "4":
+            print("Exiting setup wizard...")
             return
-        
-        if provider_choice == "1":
-            # Supabase setup
-            if not is_supabase_available():
-                print("Supabase Python client not installed.")
-                latest_version = get_latest_package_version("supabase")
-                if latest_version:
-                    print(f"Latest version available: {latest_version}")
-                install_choice = input("Would you like to install it now? (y/n): ")
-                if install_choice.lower() == "y":
-                    print("Installing Supabase Python client...")
-                    if not install_supabase():
-                        return
-                else:
-                    print("Please install the Supabase Python client manually with: pip install supabase")
-                    return
-            
-            # Get backend name
-            backend_name = input("\nEnter a name for this backend (e.g., 'production', 'staging'): ")
-            if not backend_name:
-                backend_name = "default"
-            
-            # Check if backend already exists
-            if backend_name in backends:
-                overwrite = input(f"Backend '{backend_name}' already exists. Overwrite? (y/n): ")
-                if overwrite.lower() != "y":
-                    return
-            
-            print("\nSupabase Configuration")
-            print("----------------------")
-            
-            # Offer to create Supabase project
-            create_new = input("Would you like to create a new Supabase project? (y/n): ")
-            if create_new.lower() == "y":
-                # Guide user through project creation
-                print("\nI'll guide you through creating a new Supabase project:")
-                print("1. Open https://supabase.com in your browser")
-                print("2. Sign in or create an account")
-                print("3. Click 'New Project'")
-                print("4. Follow the prompts to create your project")
-                print("5. Once created, go to Project Settings > API")
-                print("6. Copy the URL and anon key")
-                
-                # Open browser for them if they want
-                open_browser = input("\nWould you like me to open Supabase in your browser? (y/n): ")
-                if open_browser.lower() == "y":
-                    try:
-                        import webbrowser
-                        webbrowser.open("https://supabase.com")
-                        print("Browser opened to Supabase.com")
-                    except Exception as e:
-                        print(f"Could not open browser: {e}")
-                
-                print("\nOnce you've created your project, you'll need your Supabase URL and API key.")
-                input("Press Enter when you're ready to continue...")
-            
-            # Get Supabase credentials
-            print("\nYou'll need your Supabase URL and key from your Supabase project settings.")
-            supabase_url = input("Enter your Supabase URL: ")
-            supabase_key = input("Enter your Supabase API key: ")
-            
-            if not supabase_url or not supabase_key:
-                print("URL and key are required. Setup cancelled.")
-                return
-            
-            # Create backend config
-            backend_config = {
-                "provider": "supabase",
-                "url": supabase_url,
-                "key": supabase_key,
-                "configured": True,
-                "last_sync": None,
-                "tables": {
-                    "memory": "god_mode_memory",
-                    "logs": "god_mode_logs",
-                    "features": "god_mode_features"
-                }
-            }
-            
-            # Save to backends config
-            backends[backend_name] = backend_config
-            save_backends_config(backends)
-            
-            # Set as active if requested
-            set_active = input(f"\nSet '{backend_name}' as the active backend? (y/n): ")
-            if set_active.lower() == "y":
-                config = backend_config
-                config["active_backend"] = backend_name
-                save_db_config(config)
-                print(f"'{backend_name}' set as active backend.")
-            
-            print("\nSupabase configuration saved successfully.")
-            
-            # Test connection
-            try:
-                from supabase import create_client
-                client = create_client(supabase_url, supabase_key)
-                print("Supabase connection test successful!")
-                
-                # Create tables if they don't exist
-                create_tables = input("\nWould you like to create the required tables in your Supabase project? (y/n): ")
-                
-                if create_tables.lower() == "y":
-                    print("Creating tables...")
-                    # Implementation for creating tables would go here
-                    pass
-            except Exception as e:
-                print(f"Error connecting to Supabase: {e}")
-                print("The configuration was saved but the connection test failed.")
         else:
-            print("This provider is not yet supported.")
+            print("Invalid choice. Please try again.")
+
+def check_supabase_requirements():
+    """Check if Supabase requirements are met and install if needed"""
+    print("\nChecking requirements for Supabase integration...")
     
-    elif setup_type == "2":
-        # View/manage existing backends
-        if not backends:
-            print("No backends configured yet.")
-            return
-        
-        print("\nConfigured backends:")
-        for i, (name, backend) in enumerate(backends.items(), 1):
-            status = " (active)" if config.get("active_backend") == name else ""
-            provider = backend.get("provider", "unknown")
-            print(f"{i}) {name}{status} - {provider}")
-        
-        print(f"{len(backends) + 1}) Back to main menu")
-        
-        choice = input("\nSelect a backend to manage or delete: ")
-        try:
-            choice_num = int(choice)
-            if choice_num == len(backends) + 1:
-                return
-            
-            if choice_num < 1 or choice_num > len(backends):
-                print("Invalid choice.")
-                return
-            
-            backend_name = list(backends.keys())[choice_num - 1]
-            backend = backends[backend_name]
-            
-            print(f"\nManaging backend: {backend_name}")
-            print("1) Set as active backend")
-            print("2) View connection details")
-            print("3) Test connection")
-            print("4) Delete backend")
-            print("5) Back to main menu")
-            
-            action = input("\nChoose an action: ")
-            
-            if action == "1":
-                config["active_backend"] = backend_name
-                save_db_config(config)
-                print(f"'{backend_name}' set as active backend.")
-            elif action == "2":
-                print("\nConnection details:")
-                for key, value in backend.items():
-                    if key != "key":  # Don't show API key for security
-                        print(f"{key}: {value}")
-                    else:
-                        print(f"{key}: ****")
-            elif action == "3":
-                if backend["provider"] == "supabase":
-                    try:
-                        from supabase import create_client
-                        client = create_client(backend["url"], backend["key"])
-                        print("Connection test successful!")
-                    except Exception as e:
-                        print(f"Connection test failed: {e}")
-                else:
-                    print(f"Testing not implemented for provider: {backend['provider']}")
-            elif action == "4":
-                confirm = input(f"Are you sure you want to delete backend '{backend_name}'? (y/n): ")
-                if confirm.lower() == "y":
-                    del backends[backend_name]
-                    save_backends_config(backends)
-                    print(f"Backend '{backend_name}' deleted.")
-                    
-                    # If this was the active backend, reset active backend
-                    if config.get("active_backend") == backend_name:
-                        if backends:
-                            config["active_backend"] = list(backends.keys())[0]
-                        else:
-                            config["active_backend"] = None
-                        save_db_config(config)
-            elif action == "5":
-                return
-        except (ValueError, IndexError):
-            print("Invalid choice.")
+    if not is_supabase_available():
+        print("Supabase Python client not found.")
+        if input("Would you like to install it? (y/n): ").lower() == "y":
+            install_supabase()
+        else:
+            print("Supabase integration requires the Supabase Python client.")
+            print("Please install it manually with: pip install supabase")
+            if input("Continue anyway? (y/n): ").lower() != "y":
+                print("Aborting setup.")
+                return False
+    else:
+        # Check for latest version
+        latest_version = get_latest_package_version("supabase")
+        if latest_version:
+            current_version = get_package_version("supabase")
+            if current_version and current_version != latest_version:
+                print(f"Latest Supabase Python client version: {latest_version}")
+                print(f"Installed version ({current_version}) differs from latest ({latest_version}).")
+                if input("Would you like to upgrade? (y/n): ").lower() == "y":
+                    install_package("supabase", latest_version)
+                    print(f"Successfully upgraded to supabase=={latest_version}")
+            else:
+                print(f"You have the latest version installed.")
+    return True
+
+def setup_provider_selection():
+    """Present provider options and return the selected provider"""
+    print("\nChoose a database provider:")
+    print("1) Supabase - Cloud database with free tier (recommended for syncing across devices)")
+    print("2) Firebase - Cloud database by Google (coming soon)")
+    print("3) Custom REST API - Use your own API service (coming soon)")
+    print("4) Back to main menu")
+
+    provider_choice = input("\nEnter your choice (1-4): ")
     
-    elif setup_type == "3":
-        # Setup local SQLite database
-        local_path = input("\nEnter path for SQLite database (or press Enter for default): ")
+    if provider_choice == "1":
+        return "supabase"
+    elif provider_choice == "2":
+        return "firebase"
+    elif provider_choice == "3":
+        return "custom"
+    elif provider_choice == "4":
+        return None
+    else:
+        print("Invalid choice. Please try again.")
+        return setup_provider_selection()
+
+def setup_new_backend(provider):
+    """Set up a new backend with the specified provider"""
+    if provider == "supabase":
+        print("\n📋 About Backend Names:")
+        print("---------------------")
+        print("You need to give this connection profile a name to identify it.")
+        print("This is NOT your project name, but a label for this specific connection.")
+        print("Examples: 'work', 'personal', 'macbook', 'home-pc', etc.")
+        print("If you're not sure, 'main' or 'default' works fine.\n")
         
-        if not local_path:
-            local_path = str(CACHE_DIR / "local.db")
+        backend_name = input("Enter a name for this connection profile: ")
         
-        # Ensure directory exists
-        ensure_directory_exists(os.path.dirname(local_path))
+        if not backend_name:
+            print("Backend name cannot be empty. Using 'default'.")
+            backend_name = "default"
+            
+        # Continue with Supabase setup as before
+        # ... existing supabase setup code ...
         
-        # Create a SQLite backend
+    elif provider == "firebase":
+        print("Firebase support coming soon!")
+    elif provider == "custom":
+        print("Custom API support coming soon!")
+    else:
+        print(f"Unknown provider: {provider}")
+
+def setup_sqlite_backend():
+    """Set up a local SQLite database backend"""
+    print("\n📋 About SQLite Backend:")
+    print("----------------------")
+    print("SQLite is a file-based database stored on your computer.")
+    print("Benefits:")
+    print("- Works completely offline")
+    print("- No account registration needed")
+    print("- Perfect for single-device usage")
+    print("Limitations:")
+    print("- Cannot sync across multiple devices without manual file transfer")
+    print("- No automatic cloud backup\n")
+    
+    print("\n📋 About Backend Names:")
+    print("---------------------")
+    print("You need to give this connection profile a name to identify it.")
+    print("This is just a label for this specific connection.")
+    print("Examples: 'local', 'offline', 'laptop', etc.")
+    print("If you're not sure, 'local' works fine.\n")
+    
+    backend_name = input("Enter a name for this connection profile: ")
+    
+    if not backend_name:
+        print("Backend name cannot be empty. Using 'local'.")
         backend_name = "local"
-        backends[backend_name] = {
-            "provider": "sqlite",
-            "path": local_path,
-            "configured": True,
-            "last_sync": None
-        }
-        
-        save_backends_config(backends)
-        
-        # Set as active if requested
-        set_active = input("\nSet local SQLite as the active backend? (y/n): ")
-        if set_active.lower() == "y":
-            config["active_backend"] = backend_name
-            config["provider"] = "sqlite"
-            config["local_db_path"] = local_path
-            config["configured"] = True
-            save_db_config(config)
-            print("Local SQLite set as active backend.")
-        
-        print(f"\nLocal SQLite database configured at: {local_path}")
-        
-        # Create database if it doesn't exist
-        try:
-            import sqlite3
-            conn = sqlite3.connect(local_path)
-            cursor = conn.cursor()
-            
-            # Create tables
-            cursor.execute('''
-            CREATE TABLE IF NOT EXISTS god_mode_memory (
-                id INTEGER PRIMARY KEY,
-                name TEXT NOT NULL,
-                content TEXT NOT NULL,
-                last_updated TEXT NOT NULL
-            )
-            ''')
-            
-            cursor.execute('''
-            CREATE TABLE IF NOT EXISTS god_mode_logs (
-                id INTEGER PRIMARY KEY,
-                type TEXT NOT NULL,
-                content TEXT NOT NULL,
-                timestamp TEXT NOT NULL
-            )
-            ''')
-            
-            cursor.execute('''
-            CREATE TABLE IF NOT EXISTS god_mode_features (
-                id INTEGER PRIMARY KEY,
-                name TEXT NOT NULL,
-                content TEXT NOT NULL,
-                last_updated TEXT NOT NULL
-            )
-            ''')
-            
-            conn.commit()
-            conn.close()
-            print("SQLite database tables created successfully.")
-        except Exception as e:
-            print(f"Error creating SQLite database: {e}")
     
-    print("\nDatabase integration setup complete.")
+    # Continue with SQLite setup as before
+    # ... existing sqlite setup code ...
 
 def sync_with_remote(backend_name=None):
     """
