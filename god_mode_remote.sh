@@ -109,11 +109,29 @@ trigger_auto_commit() {
     echo -e "${BLUE}Triggering auto-commit...${NC}"
     
     # Check if auto-commit script exists
-    local auto_commit_script="$FULL_TARGET_PATH/god_mode/scripts/script_auto_commit.sh"
+    local auto_commit_script=""
+    
+    # Handle the case when "." is used as the target directory
+    if [ "$TARGET_DIR" = "." ]; then
+        auto_commit_script="$PARENT_DIR/god_mode/scripts/script_auto_commit.sh"
+        # If that doesn't exist, try the default location
+        if [ ! -f "$auto_commit_script" ]; then
+            auto_commit_script="$PARENT_DIR/GOD_MODE_PROJECT_STARTER_TEMPLATE/god_mode/scripts/script_auto_commit.sh"
+        fi
+    else
+        auto_commit_script="$FULL_TARGET_PATH/god_mode/scripts/script_auto_commit.sh"
+    fi
+    
     if [ ! -f "$auto_commit_script" ]; then
-        echo -e "${RED}Error: Auto-commit script not found at $auto_commit_script${NC}"
+        echo -e "${RED}Error: Auto-commit script not found at:${NC}"
+        echo -e "$auto_commit_script"
+        echo
+        echo -e "${YELLOW}Please make sure the script exists and try again.${NC}"
         return 1
     fi
+    
+    # Make the script executable
+    chmod +x "$auto_commit_script"
     
     # Run the auto-commit script
     "$auto_commit_script" "Manual commit via God Mode CLI"
@@ -131,11 +149,29 @@ setup_github_repo() {
     echo -e "${BLUE}Setting up GitHub repository...${NC}"
     
     # Check if setup script exists
-    local setup_script="$FULL_TARGET_PATH/god_mode/scripts/script_setup_github.sh"
+    local setup_script=""
+    
+    # Handle the case when "." is used as the target directory
+    if [ "$TARGET_DIR" = "." ]; then
+        setup_script="$PARENT_DIR/god_mode/scripts/script_setup_github.sh"
+        # If that doesn't exist, try the default location
+        if [ ! -f "$setup_script" ]; then
+            setup_script="$PARENT_DIR/GOD_MODE_PROJECT_STARTER_TEMPLATE/god_mode/scripts/script_setup_github.sh"
+        fi
+    else
+        setup_script="$FULL_TARGET_PATH/god_mode/scripts/script_setup_github.sh"
+    fi
+    
     if [ ! -f "$setup_script" ]; then
-        echo -e "${RED}Error: GitHub setup script not found at $setup_script${NC}"
+        echo -e "${RED}Error: GitHub setup script not found at:${NC}"
+        echo -e "$setup_script"
+        echo
+        echo -e "${YELLOW}Please make sure the script exists and try again.${NC}"
         return 1
     fi
+    
+    # Make the script executable
+    chmod +x "$setup_script"
     
     # Run the setup script
     "$setup_script"
@@ -555,7 +591,35 @@ view_routing_activity() {
 # Function to manage GitHub repository
 manage_github_repo() {
     # Call the GitHub setup script with menu option
-    "$FULL_TARGET_PATH/god_mode/scripts/script_setup_github.sh" --menu
+    local setup_script=""
+    
+    # Handle the case when "." is used as the target directory
+    if [ "$TARGET_DIR" = "." ]; then
+        setup_script="$PARENT_DIR/god_mode/scripts/script_setup_github.sh"
+        # If that doesn't exist, try the default location
+        if [ ! -f "$setup_script" ]; then
+            setup_script="$PARENT_DIR/GOD_MODE_PROJECT_STARTER_TEMPLATE/god_mode/scripts/script_setup_github.sh"
+        fi
+    else
+        setup_script="$FULL_TARGET_PATH/god_mode/scripts/script_setup_github.sh"
+    fi
+    
+    # Check if the setup script exists
+    if [ ! -f "$setup_script" ]; then
+        echo -e "${RED}Error: GitHub setup script not found at:${NC}"
+        echo -e "$setup_script"
+        echo
+        echo -e "${YELLOW}Please make sure the script exists and try again.${NC}"
+        echo -e "${YELLOW}You can try running the script directly:${NC}"
+        echo -e "${YELLOW}cd GOD_MODE_PROJECT_STARTER_TEMPLATE/god_mode/scripts && ./script_setup_github.sh${NC}"
+        return 1
+    fi
+    
+    # Make the script executable
+    chmod +x "$setup_script"
+    
+    # Run the script
+    "$setup_script" --menu
 }
 
 # Display header with a welcome message
