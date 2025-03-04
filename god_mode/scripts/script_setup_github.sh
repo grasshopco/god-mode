@@ -130,8 +130,21 @@ check_github_auth() {
       
       # Check if auth was successful
       if gh auth status &> /dev/null; then
-        echo -e "${GREEN}✓ Successfully authenticated with GitHub!${NC}"
-        return 0
+        # Verify API access works
+        local api_test
+        api_test=$(gh api user -q .login 2>&1)
+        if [[ "$api_test" == *"Bad credentials"* ]] || [[ "$api_test" == *"401"* ]]; then
+          echo -e "${RED}✗ Authentication succeeded but API access has issues.${NC}"
+          echo -e "${YELLOW}Please run 'gh auth login' manually and ensure you select all required scopes:${NC}"
+          echo -e "- ${CYAN}repo${NC}: Full control of private repositories"
+          echo -e "- ${CYAN}read:org${NC}: Read organization access"
+          echo -e "- ${CYAN}workflow${NC}: Update GitHub Action workflows"
+          return 1
+        else
+          echo -e "${GREEN}✓ Successfully authenticated with GitHub!${NC}"
+          echo -e "${GREEN}✓ Logged in as: ${CYAN}$api_test${NC}"
+          return 0
+        fi
       else
         echo -e "${RED}✗ Authentication failed or was cancelled.${NC}"
         return 1
@@ -141,8 +154,49 @@ check_github_auth() {
       return 1
     fi
   else
-    echo -e "${GREEN}✓ Already authenticated with GitHub${NC}"
-    return 0
+    # Verify API access works
+    local api_test
+    api_test=$(gh api user -q .login 2>&1)
+    if [[ "$api_test" == *"Bad credentials"* ]] || [[ "$api_test" == *"401"* ]]; then
+      echo -e "${RED}✗ GitHub authentication exists but has token permission issues.${NC}"
+      echo -e "${YELLOW}Would you like to re-authenticate to fix this? (y/n)${NC}"
+      read -r reauth
+      
+      if [[ "$reauth" =~ ^[Yy]$ ]]; then
+        echo -e "${YELLOW}Removing existing credentials first...${NC}"
+        gh auth logout --hostname github.com 2>/dev/null
+        
+        echo -e "${BLUE}Starting GitHub authentication...${NC}"
+        echo -e "${YELLOW}When prompted, make sure to select these scopes:${NC}"
+        echo -e "- ${CYAN}repo${NC}: Full control of private repositories"
+        echo -e "- ${CYAN}read:org${NC}: Read organization access"
+        echo -e "- ${CYAN}workflow${NC}: Update GitHub Action workflows"
+        
+        gh auth login
+        
+        # Check if re-auth was successful
+        if gh auth status &> /dev/null; then
+          # Verify API access works now
+          api_test=$(gh api user -q .login 2>&1)
+          if [[ "$api_test" == *"Bad credentials"* ]] || [[ "$api_test" == *"401"* ]]; then
+            echo -e "${RED}✗ Authentication still has issues.${NC}"
+            return 1
+          else
+            echo -e "${GREEN}✓ Successfully re-authenticated with GitHub!${NC}"
+            echo -e "${GREEN}✓ Logged in as: ${CYAN}$api_test${NC}"
+            return 0
+          fi
+        else
+          echo -e "${RED}✗ Re-authentication failed or was cancelled.${NC}"
+          return 1
+        fi
+      else
+        return 1
+      fi
+    else
+      echo -e "${GREEN}✓ Already authenticated with GitHub as: ${CYAN}$api_test${NC}"
+      return 0
+    fi
   fi
 }
 
@@ -382,25 +436,46 @@ show_github_menu() {
   
   # Check authentication status without showing output
   local is_authenticated=false
+  local auth_issue=false
+  local error_message=""
+  
   if gh auth status &> /dev/null; then
     is_authenticated=true
-    echo -e "${GREEN}✓ GitHub authentication status: Logged in${NC}"
-    # Display logged in user if possible
-    local gh_user
-    gh_user=$(gh api user -q .login 2>/dev/null)
-    if [ -n "$gh_user" ]; then
-      echo -e "${GREEN}✓ Logged in as: ${CYAN}$gh_user${NC}"
+    echo -e "${GREEN}✓ GitHub authentication detected${NC}"
+    
+    # Test if authentication is actually working by making an API call
+    local api_test
+    api_test=$(gh api user -q .login 2>&1)
+    if [[ "$api_test" == *"Bad credentials"* ]] || [[ "$api_test" == *"401"* ]]; then
+      echo -e "${RED}⚠ Authentication issue detected: Token might be expired or has insufficient permissions${NC}"
+      is_authenticated=false
+      auth_issue=true
+      error_message="$api_test"
+    elif [[ "$api_test" == *"error"* ]] || [[ "$api_test" == *"fatal"* ]]; then
+      echo -e "${YELLOW}⚠ API connection issue: $api_test${NC}"
+      auth_issue=true
+      error_message="$api_test"
+    else
+      echo -e "${GREEN}✓ Logged in as: ${CYAN}$api_test${NC}"
     fi
   else
     echo -e "${YELLOW}⚠ GitHub authentication status: Not logged in${NC}"
   fi
+  
+  # Display clearer message for authentication issues
+  if [ "$auth_issue" = true ]; then
+    echo -e "${YELLOW}GitHub API reported an error: ${NC}"
+    echo -e "${RED}$error_message${NC}"
+    echo -e "${YELLOW}You may need to re-authenticate to fix this issue.${NC}"
+  fi
+  
   echo
   
   echo -e "${YELLOW}What would you like to do?${NC}"
   
-  # Show authentication option if not authenticated
-  if [ "$is_authenticated" = false ]; then
-    echo -e "0) ${CYAN}Authenticate with GitHub${NC} ← ${YELLOW}Recommended first step${NC}"
+  # Show authentication option if not authenticated or auth issues
+  if [ "$is_authenticated" = false ] || [ "$auth_issue" = true ]; then
+    echo -e "0) ${CYAN}Authenticate with GitHub${NC} ← ${YELLOW}Recommended to fix credential issues${NC}"
   fi
   
   echo -e "1) ${CYAN}Create a new GitHub repository${NC}"
@@ -415,13 +490,44 @@ show_github_menu() {
   case "$github_choice" in
     0)
       # Authenticate with GitHub
-      if [ "$is_authenticated" = false ]; then
+      if [ "$is_authenticated" = false ] || [ "$auth_issue" = true ]; then
         echo -e "${BLUE}Starting GitHub authentication...${NC}"
+        
+        # If there's an auth issue, suggest token scope fix
+        if [ "$auth_issue" = true ]; then
+          echo -e "${YELLOW}Since there was an issue with your credentials, we recommend:${NC}"
+          echo -e "1. ${CYAN}Choose 'GitHub.com' when prompted${NC}"
+          echo -e "2. ${CYAN}Select 'HTTPS' for preferred protocol${NC}"
+          echo -e "3. ${CYAN}Choose 'Y' to authenticate with your GitHub credentials${NC}"
+          echo -e "4. ${CYAN}Select 'repo', 'read:org', and 'workflow' scopes for full access${NC}"
+        fi
+        
+        echo -e "${YELLOW}(If browser doesn't open automatically, copy the URL that will be displayed)${NC}"
+        echo
+        
+        # Log out first if there's an auth issue to ensure clean re-auth
+        if [ "$auth_issue" = true ]; then
+          echo -e "${YELLOW}Removing existing credentials first...${NC}"
+          gh auth logout --hostname github.com 2>/dev/null
+        fi
+        
+        # Start authentication
         gh auth login
         
         # Check if auth was successful
         if gh auth status &> /dev/null; then
-          echo -e "${GREEN}✓ Successfully authenticated with GitHub!${NC}"
+          # Test API access
+          local api_test
+          api_test=$(gh api user -q .login 2>&1)
+          if [[ "$api_test" == *"Bad credentials"* ]] || [[ "$api_test" == *"401"* ]]; then
+            echo -e "${RED}✗ Authentication succeeded but API access still has issues.${NC}"
+            echo -e "${YELLOW}Try again and make sure to select all the required scopes (repo, read:org, workflow).${NC}"
+          else
+            echo -e "${GREEN}✓ Successfully authenticated with GitHub!${NC}"
+            echo -e "${GREEN}✓ Logged in as: ${CYAN}$api_test${NC}"
+            is_authenticated=true
+            auth_issue=false
+          fi
         else
           echo -e "${RED}✗ Authentication failed or was cancelled.${NC}"
         fi
