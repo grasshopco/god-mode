@@ -1,0 +1,237 @@
+# Cursor IDE "God Mode" Configuration
+# This file serves as the central instruction set for Cursor AI to operate in "God Mode"
+
+## CORE BEHAVIOR
+- Always approach tasks with a first-principles thinking mindset.
+- Break down complex problems into manageable components.
+- Consider edge cases and potential failure modes in all solutions.
+- Strive for clean, maintainable, and efficient code.
+- Follow DRY (Don't Repeat Yourself) principles.
+- Prioritize readability and maintainability over clever code.
+
+## MEMORY MANAGEMENT
+- After each significant code change, update CURSOR_MEMORY.md with key architectural decisions.
+- Reference CURSOR_MEMORY.md at the start of each coding session to maintain context.
+- For project-wide context, reference project_structure.md to understand the codebase organization.
+- Use learnings.md to record lessons and insights discovered during development.
+
+## LOGGING SYSTEM
+- After each code change, add a summarized entry to all_logs.md.
+- Add detailed explanations to in_depth_logs.md and the relevant feature_log_<feature_name>.md.
+- Log format should include: timestamp, files modified, and purpose of changes.
+- For feature-specific work, maintain dedicated log files in the logs/ directory.
+- When starting work on a new feature:
+  1. Create a new feature log file based on logs/feature_log_template.md.
+  2. Name it logs/feature_log_<feature_name>.md.
+  3. Fill in the feature overview section at the bottom.
+- When updating an existing feature:
+  1. Add a new entry to both the summary and detailed sections of the relevant feature log.
+  2. Include timestamp, files changed, and comprehensive explanations.
+
+## AUTONOMOUS OPERATION
+- When appropriate, run Git commands to commit and push changes:
+  ```bash
+  git add .
+  git commit -m "[AI] <descriptive message about changes>"
+  git push
+  ```
+- Before creating new files, check project_structure.md to avoid duplication.
+- After creating or modifying files, update project_structure.md accordingly.
+- Run tests after making significant changes to verify functionality.
+- Follow this workflow for autonomous operation:
+  1. Read and understand the task requirements
+  2. Check existing code and documentation for context
+  3. Plan the implementation approach
+  4. Make necessary code changes
+  5. Test the changes
+  6. Update documentation
+  7. Commit and push changes if appropriate
+
+## CODE QUALITY
+- Follow project-specific coding standards.
+- Run linting and formatting tools before committing changes.
+- Conduct self-review of generated code, identifying potential improvements.
+- When fixing bugs, document the root cause in learnings.md.
+
+## MESSAGE TAGGING SYSTEM
+- ALWAYS include the following tags in your responses when making significant changes:
+  - [LOG_SUMMARY] - Brief summary of the changes (1-2 sentences)
+  - [LOG_DETAIL] - Detailed explanation of what was changed and why
+  - [MEMORY_UPDATE] - Key architectural decisions and context for future reference
+  
+- For feature-specific work, include:
+  - [FEATURE_LOG: FeatureName] - Feature-specific updates
+
+- For documentation updates, include:
+  - [DOC_UPDATE: DocumentType] - Updates to project documentation
+
+- For content that should go to multiple destinations, use the multi-tag format:
+  - [MULTI_TAG: TAG1, TAG2, ...] - Routes the same content to multiple destinations
+
+- Always place tags on their own line, followed by the content for that tag
+- These tags enable automatic documentation and ensure persistent memory
+
+## SELF-IMPROVEMENT
+- Limit self-improvement iterations to 3 attempts before requesting human intervention.
+- When faced with a new pattern or challenge, document it in learnings.md.
+- Update this rules file as project needs evolve, with proper documentation of changes.
+
+## EXTERNAL INTEGRATIONS
+- Use @Web to search for documentation when needed.
+- Use @Docs for project-specific documentation.
+- Reference external documentation using standardized notation in comments.
+
+## GRASSHOP PROJECT SPECIFICS
+- This is the Grasshop project, a platform focused on learning and knowledge management.
+- Key technologies include: React, Next.js, TypeScript, Supabase, and various modern web technologies.
+- Follow TypeScript best practices, including proper typing and interface definitions.
+- Consider mobile responsiveness in all UI implementations. 
+
+
+# Message Router Markers
+All comprehensive responses that contain significant code changes, design decisions, 
+or insights MUST include markup with appropriate markers for the message router:
+
+1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
+2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
+3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
+4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
+5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
+6. Use specific memory markers for specialized updates:
+   - [MEMORY_LEARNINGS] - For insights and lessons learned
+   - [MEMORY_ARCHITECTURE] - For architecture changes
+   - [MEMORY_REQUIREMENTS] - For requirement changes
+   - [MEMORY_ROADMAP] - For roadmap updates
+   - [MEMORY_CONVENTIONS] - For convention changes
+   - [MEMORY_DEPENDENCIES] - For dependency changes
+   - [MEMORY_GLOSSARY] - For terminology updates
+   - [MEMORY_TESTING] - For testing updates
+   - [MEMORY_SECURITY] - For security updates
+   - [MEMORY_PERFORMANCE] - For performance updates
+   - [MEMORY_ACCESSIBILITY] - For accessibility updates
+7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
+   without repeating yourself. For example:
+   
+   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
+   Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+[LOG_SUMMARY]
+Brief summary of the changes in 1-2 sentences.
+
+[LOG_DETAIL]
+Detailed explanation of changes with markdown formatting.
+- What was implemented
+- Why it was done this way
+- Any alternatives considered
+
+[MEMORY_UPDATE]
+Important architectural decisions or context that future sessions should be aware of.
+
+Example with multi-tag:
+[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
+The system now uses a microservice architecture with service discovery.
+
+
+
+# Message Router Markers
+All comprehensive responses that contain significant code changes, design decisions, 
+or insights MUST include markup with appropriate markers for the message router:
+
+1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
+2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
+3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
+4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
+5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
+6. Use specific memory markers for specialized updates:
+   - [MEMORY_LEARNINGS] - For insights and lessons learned
+   - [MEMORY_ARCHITECTURE] - For architecture changes
+   - [MEMORY_REQUIREMENTS] - For requirement changes
+   - [MEMORY_ROADMAP] - For roadmap updates
+   - [MEMORY_CONVENTIONS] - For convention changes
+   - [MEMORY_DEPENDENCIES] - For dependency changes
+   - [MEMORY_GLOSSARY] - For terminology updates
+   - [MEMORY_TESTING] - For testing updates
+   - [MEMORY_SECURITY] - For security updates
+   - [MEMORY_PERFORMANCE] - For performance updates
+   - [MEMORY_ACCESSIBILITY] - For accessibility updates
+7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
+   without repeating yourself. For example:
+   
+   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
+   Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+[LOG_SUMMARY]
+Brief summary of the changes in 1-2 sentences.
+
+[LOG_DETAIL]
+Detailed explanation of changes with markdown formatting.
+- What was implemented
+- Why it was done this way
+- Any alternatives considered
+
+[MEMORY_UPDATE]
+Important architectural decisions or context that future sessions should be aware of.
+
+Example with multi-tag:
+[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
+The system now uses a microservice architecture with service discovery.
+
+
+
+# Message Router Markers
+All comprehensive responses that contain significant code changes, design decisions, 
+or insights MUST include markup with appropriate markers for the message router:
+
+1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
+2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
+3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
+4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
+5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
+6. Use specific memory markers for specialized updates:
+   - [MEMORY_LEARNINGS] - For insights and lessons learned
+   - [MEMORY_ARCHITECTURE] - For architecture changes
+   - [MEMORY_REQUIREMENTS] - For requirement changes
+   - [MEMORY_ROADMAP] - For roadmap updates
+   - [MEMORY_CONVENTIONS] - For convention changes
+   - [MEMORY_DEPENDENCIES] - For dependency changes
+   - [MEMORY_GLOSSARY] - For terminology updates
+   - [MEMORY_TESTING] - For testing updates
+   - [MEMORY_SECURITY] - For security updates
+   - [MEMORY_PERFORMANCE] - For performance updates
+   - [MEMORY_ACCESSIBILITY] - For accessibility updates
+7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
+   without repeating yourself. For example:
+   
+   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
+   Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+[LOG_SUMMARY]
+Brief summary of the changes in 1-2 sentences.
+
+[LOG_DETAIL]
+Detailed explanation of changes with markdown formatting.
+- What was implemented
+- Why it was done this way
+- Any alternatives considered
+
+[MEMORY_UPDATE]
+Important architectural decisions or context that future sessions should be aware of.
+
+Example with multi-tag:
+[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
+The system now uses a microservice architecture with service discovery.

@@ -1,0 +1,49 @@
+
+
+## Current UTC timestamp: 2025-03-04 06:07 UTC
+ISO format: 2025-03-04T06:07:41.313001+00:00
+Filename format: 20250304_060741
+Log format: 2025-03-04 06:07:41 UTC
+
+Implemented JWT authentication with refresh token rotation.
+The system now supports secure authentication using JWT tokens with automatic refresh.
+```
+
+This will route the content to:
+- memory_logs_all.md
+- memory_logs_detailed.md
+- memory_log_feature_authentication.md
+
+### Example 3: Combining with Standard Tags
+
+You can use multi-tags alongside standard tags in the same message:
+
+```
+
+
+## Current UTC timestamp: 2025-03-04 07:29 UTC
+ISO format: 2025-03-04T07:29:42.431308+00:00
+Filename format: 20250304_072942
+Log format: 2025-03-04 07:29:42 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 07:29 UTC
+ISO format: 2025-03-04T07:29:42.852246+00:00
+Filename format: 20250304_072942
+Log format: 2025-03-04 07:29:42 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:

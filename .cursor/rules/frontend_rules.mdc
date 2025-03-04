@@ -1,0 +1,48 @@
+// Frontend Rules
+Description: Rules for frontend React/Next.js components and UI files
+Globs: **/*.tsx, **/*.jsx, **/*.css, **/*.scss, grasshop-app/components/**, grasshop-ui/src/**, grasshop-app/app/**
+
+# UI Development Context
+Always refer to @notepads/UI_guidelines.md for UI styling and component design guidelines.
+UI components should follow the established patterns in @notepads/common_patterns.md.
+Consider mobile and responsive design for all UI components.
+
+# React/Next.js Best Practices
+Use functional components with hooks.
+Separate UI from business logic when possible.
+Ensure components are properly typed with TypeScript.
+Break large components into smaller, reusable ones.
+Use React Context for state that needs to be shared across many components.
+Handle loading and error states for data fetching.
+
+# Performance Guidelines
+Optimize re-renders by memoizing when appropriate (React.memo, useMemo, useCallback).
+Use virtualization for long lists.
+Lazy load components when they're not immediately needed.
+Keep bundle size in mind - avoid unnecessary imports.
+
+# Accessibility
+Ensure all UI components meet accessibility standards:
+- Use semantic HTML
+- Provide alternative text for images
+- Ensure adequate color contrast
+- Make interactive elements keyboard accessible
+- Test with screen readers when possible
+
+# CSS/Styling Guidelines
+Use the project's styling conventions (Tailwind, CSS modules, etc.).
+Maintain consistent spacing and layout.
+Follow the color system specified in the UI guidelines.
+Ensure responsive behavior across all breakpoints.
+
+# Component Documentation
+All components should include:
+- Clear prop definitions with TypeScript
+- Comments explaining complex logic
+- Example usage when helpful
+
+# When making UI changes:
+1. Check existing components for reusability before creating new ones
+2. Update UI_guidelines.md if establishing new patterns
+3. Test on multiple screen sizes
+4. Add to the component library if it's reusable across the application 

@@ -1,0 +1,377 @@
+Reinforcing feedback loop
+SYSTEMS THINKING
+Understand the force behind exponential changes.
+Reinforcing feedback loops are found whenever behaviours or events inside the loop reinforce one another. These loops amplify the effect of the process.
+
+That's a mouthful, but you can find real-world examples all around you. The compound interest is a very common one. The more money you have in the bank, the more you earn on interest. That money is added to your balance and so you earn on interest even more.
+
+Effects of reinforcing feedback loops are exponential, not linear. They lead to exponential increases or decreases, whereas balancing feedback loops lead to plateaus – their goal is stability. Often, these two loops exist together within a system.
+
+How reinforcing feedback loops work
+The basic characteristic of all feedback loops is that the output of one cycle is the input for the next cycle. In the case of reinforcing loops, this input amplifies the next output.
+
+Inside the loop, there are at least two variables. These variables reinforce each other. However, there can be also external variables that influence the loop. It's best to illustrate this with a simple example.
+
+Example
+The compound interest is a very common example of a reinforcing feedback loop. The more money you have in a bank account, the more you earn on interest. That money is added to your balance and so you earn on interest even more later on. The cycle repeats.
+
+In this example, you have two variables inside the loop: the balance on the account and the interest earnings. An external variable influences this loop – the interest rate. This variable will influence the output of the feedback loop but doesn't change the core mechanism of the loop.
+
+Takeaway
+Reinforcing feedback loop is a key tool for understanding systems because it's everywhere. It explains exponential changes.
+
+In reality, systems are often made up of some combination of reinforcing feedback loops and balancing feedback loops, so it's useful to learn about both.
+
+Sources
+"Thinking in Systems: A Primer" by Donnella Meadows
+"Visualizing the systems behind our designs" by Justin Farrugia
+"Feedback loops" by James Clear
+"Reinforcing and Balancing loops: Building blocks of dynamic systems" on Systems Thinker
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Visualizing the systems behind our designs
+Tangible systems thinking that goes beyond buttons.
+Justin Farrugia
+UX Collective
+Justin Farrugia
+
+·
+Follow
+
+Published in
+UX Collective
+
+10 min read
+·
+Feb 25, 2020
+
+Listen
+
+
+Share
+
+
+More
+
+
+A button on the left which is what we see, and a complex casual loop diagram on the right which is what’s actually happening
+Systems thinking is often heralded in different circles as a competency that’s worth investing in. Having a wider lens and being able to model the systems that influence inputs, outputs and the patterns of behavior for people using the products we build is how we can deliver real value.
+
+Most product designers tend to default to design systems as a proxy for systems thinking. They’re not entirely wrong. The ecology around building design systems does require maintainers to think systematically. They need to deeply understand the core needs of the product team, to deliver reusable component libraries coupled with accompanying guidelines, processes, and documentation.
+
+However, this doesn’t mean that building a design system is the only natural outcome of thinking in systems. Far from it.
+
+Beyond buttons
+As of writing, few people in history have had the surreal experience of being able to witness the Earth from space in person. Astronauts often recall the overwhelming experience they felt when looking at the fragile blue ball they called home. Their front row seats enabled them to see the world through a different lens, one where all life was interconnected and every system they’ve come to know was working in concert.
+
+Astronomy author Frank White called this experience, ‘The Overview effect’.
+
+An astronaut saying ‘Woah’ whilst looking at Earth,
+Whilst not nearly as life-changing of an experience, zooming out from our narrowly focused product domains and realizing every design decision’s ripple effect in the ecosystem we operate in, can have a similar effect. Designing software often requires us to situate ourselves at both a macro and micro level. Yet, sometimes there’s a tendency to over-index on the latter at the expense of a broader set of goals.
+
+As a result, we risk becoming distracted with the details when we can’t afford to do so. The tools, products and service experiences we’re shaping today are responsible for far more than just the daily metric movements relative to the bottom line. They inhabit already complex systems such as political landscapes or socioeconomic hierarchies and sometimes unconsciously introduce new dynamics that have outsized impacts.
+
+We are surrounded by systems that we’ve directly or indirectly shaped or been a product of.
+
+That being said we’ve done very little to represent any of them. By doing so we can peel back the layers and uncover patterns, boundaries, behaviors and even points of leverage where we can infer our influence. The good news is that we have an underdeveloped muscle which we ought to flex more often that can help us out.
+
+Tools of the trade
+We often picture systems in a linear fashion where A leads to B. Needless to say this is a reductive way of describing relationships and causality, as it overlooks the fact that each node may disrupt or restore the balance in uniquely different ways. In other words, systems are messy.
+
+Linear Systems Thinking versus Loop Based Systems Thinking
+Instead of A leading to B, it’s more likely you’ll find something like, A can cause B and C given a set of conditions, both of which reinforce D which restarts the cycle. Now trying to articulate all that through text isn’t exactly the best way to explain what’s actually going on. That’s where system diagramming can come in handy. Below are a few examples.
+
+Behavior Over Time Graph
+You’ve probably already seen this type of diagram being plotted somewhere on an office whiteboard. This graph helps us see patterns and interrelationships that emerge over a specific period of time. We can use it to observe how and why something is happening.
+
+Let’s use something we’re all too familiar with as an example — product debt. Two things that we can use as variables in our graph are the cost of building features which keeps rising exponentially as the product matures, and customer value delivered which is inversely proportional due to fragmentation and debt that the team is spending time wrestling with.
+
+A behaviour over time graph that indicates when a product team should address its mounting debt.
+Despite ancillary efforts to revive that delivery curve from declining further, it most likely wouldn’t be enough to curb the overhead. The intersection point between the two curves signals the necessity for a cadence of refactoring or even a commitment towards building a design system.
+
+Quadrant Matrix
+This is another common diagram, that also has likely donned a few whiteboards. It is mainly used to represent the strength of relationships between several different items. You’ve likely seen it being used to chart the impact versus effort of doing something in a bid to inform the decision-making process.
+
+A quadrant of usability issues with repetition versus impact
+Let’s say you’ve finished up a moderated usability testing session and you’ve come away with a few insights. To start applying what you’ve learned you’ll need to rank your findings against a few different dimensions namely repetition and impact. Using a quadrant matrix will help you synthesize the raw data you’ve collected and visually make sense of what issues were the most severe and iron them out through iteration.
+
+Iceberg Model
+The iceberg model is a tool that can be used to show the four levels of abstraction within a specific setting that can allow us to uncover the root cause of why something is actually happening the way it is. It helps us go beyond the observable events that anyone can notice, and help us realize the patterns that might have contributed to those events, the structures that have influenced those patterns and the underlying mental models that keep those structures in place.
+
+Often times when we try to address a problem, we do it on an event level which in turn leads to suboptimization. It’s not enough to swap things around, change information flow or incentives. You’ll need to expand the perception and shift mental models to have leverage and upend the system.
+
+Let’s take a real-world example of a product team that’s trying to meet a deadline. An event would be that the team doesn’t ship in time. The natural tendency is to be reactive and start to find people to blame. Instead of playing the blame game start looking at the trends that might have led to this.
+
+The Iceberg Model representing the Events, Patterns, Structures and Mental Models behind a product team missing a deadline.
+A pattern might be looking at recurring evidence like the team’s collective track record and finding that three of the last five things they’ve worked on have had overrun dates. The structures that might be causing these patterns could be bandwidth issues with engineers and designers needing to context switch due to commitments outside the team.
+
+What’s keeping this system in place is the mental model each team member holds, which might normalize the balancing act of being first responders instead of establishing a cadence coupled with some boundaries.
+
+Reinforcing Feedback Loops
+However intentional it might have been, you’ve probably designed a reinforcing feedback loop. As the name suggests, these kinds of loops have self-reinforcing behavior where the actions of one variable reinforce another. I’d be remiss to not mention the Hooked model as an example of a reinforcing loop that optimizes user stickiness and engagement.
+
+The Hooked Model by Nir Eyal.
+Unsurprisingly, reinforcing feedback loops are used and abused. Most consumer products with some kind of social component and a healthy network effect have reinforcing feedback loops baked into the fabric of the core experience. Products like TikTok have predictive models, computer vision and matrix factorization algorithms each built-in to perfect the content recommendation loop and have our attention.
+
+TikTok’s reinforcing feedback loop.
+Even though it has a cold start problem, after only a few seconds of watching and a series of swipes TikTok has collected enough data points and spun that loop so many times, that the content suddenly becomes unmissable. The diagram above illustrates this example.
+
+Balancing Feedback Loops
+Instead of creating a snowball effect, balancing feedback loops counter an input with an opposite output. These loops can correct an oversupply or undersupply, indicate that a plateau has been reached or restore the lost stability back to the system. Like reinforcing feedback loops however, the outcome of balancing feedback loops might not always lead to positive outcomes depending on prior inputs.
+
+Some teams seem to jump the gun when it comes to bridging the gap between their customer success representatives and the customers. Access to an agent is either obscured by a messy navigation system or else it’s available at all times even when unnecessary. Both are examples of a balancing feedback loop.
+
+The ramifications of introducing a chat bubble representing as a balancing feedback loop.
+The former being the increase in customer frustration in trying to flag an issue by jumping through a few hoops which leads to an inevitable decrease in experiential and customer satisfaction measures. The latter shows a complete disregard for the time spent in answering repeatable queries which increases given there is no FAQ-like system in place which in turn leads to customer success agents availability decreasing, diminishing the likelihood of being a first responder for high-value accounts.
+
+External Factors, Gaps, and Delays in Causal Loops
+In the ever-increasing complexity of the systems we build towards, loops rarely ever have equally defined units of input or output. There are usually things that happen in between or outside of the model that have an effect. What better way to represent concepts like gaps and delays than an unpredictable complex landscape like healthcare, specifically the use of software in aiding care decisions.
+
+Electronic Health Records or EHRs are real-time robust systems used in hospitals that contain the medical history of a patient. Their goal is to ultimately chip away at the mundanity of paperwork and enable a meaningful patient to physician interaction. If you zoom out far enough, the most basic loop you can make out is the one where the effects of introducing an EHR into a previously paper-run practice become visible.
+
+Diagram of a reinforcing feedback loop that shows the effects of introducing an Electronic Health Record or EHR.
+As can be seen in the diagram above, the impact of introducing an EHR into the mix has saved staff time which in turn has increased the patient treatment quality. As a result, the better the treatment quality, the more time will be saved in preventing adverse drug events or readmissions.
+
+Diagram representing a delay within a causal loop.
+Now that’s not going to happen overnight, the staff on hand needs to be gradually onboarded onto the new system and get familiar. That’s why this feedback loop will likely have delays which we can represent by marking the arc with a double line.
+
+Diagram representing an external factor, in this case an update to the software.
+Our feedback loop is still looking a bit too convenient. Let’s introduce another component, such as an update to the EHR software. That in itself might eat up some of that time the staff is saving since there might need to be retraining. That’s called an external factor. Gaps can also be another feature of causal feedback loops. A gap can exist between the actual quality and the actions we’re taking to improve that quality.
+
+Representing Gaps in EHR causal loops
+In our example for patient treatment quality to improve, the gap in between, as shown in the diagram, is the secure migration of the patient records from paper to digital records. This, in turn, enables more confidence to adopt and inevitably invest in the software beyond just procurement, but also designing training programs for practitioners and defining performance targets such as decreasing error rates or patient treatment time.
+
+
+Cause and Effect Diagram, Onion Model Diagram and a Hierarchy
+These are just a select few of the tools available in your systems utility belt. Needless to say, there’s an abundance of other ways you can visualize systems. If you’re trying to bring clarity to a post mortem, you can use a cause and effect diagram to isolate what went wrong during a project. A stock and flow diagram can help you simulate the impact of your design decisions, whereas an onion model or hierarchy can help us see top-down or bottom-up causality, and chart the flow of influence.
+
+Each of these visual aids helps us see things we couldn’t have possibly seen through a block of text, especially when co-created with people outside our discipline. They enable us to align viewpoints, understand root causality, synthesize, generate options and even simulate design decisions within our product experiences and organizations. Quite frankly, being able to produce these artifacts is a superpower.
+
+That superpower, however, shouldn’t go unchecked. Systems can also be consciously designed to manipulate, cheat and sometimes even harm people. This underscores our responsibility to make we have a full understanding of the chain reaction our design decisions cause beyond canvas and code.
+
+Just like the astronauts whose new perspective of our planet engendered a new sense of responsibility for the environment, we can use whatever palette of system diagrams to shape, tug or prune systems in small but impactful increments and become catalysts for sustainable and ethical change.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How to Master the Invisible Hand That Shapes Our Lives
+written by James Clear
+Behavioral Psychology Continuous Improvement Self-Improvement
+Looking back, the most surprising thing about Robert Wadlow was his normal height and weight at birth. When he was born on February 22, 1918, Wadlow weighed 8 lbs 6 ounces (3.8 kg) and was 20 inches tall (0.51 m).
+
+There was nothing normal about what happened next.
+
+Within six months, Wadlow had doubled in height and quadrupled in weight. As a one-year-old, he was over 3 feet tall and weighed the same as the five-year-olds in his neighborhood. By the age of five, Wadlow had exploded to 5 feet 6 inches tall. On his first day of kindergarten he wore clothes made for a seventeen-year-old.
+
+Wadlow suffered from an overproduction of human growth hormone caused by hyperplasia of his pituitary gland. To put it more simply: most humans have an internal feedback loop that regulates the production of growth hormone, but Wadlow’s feedback loop was broken.
+
+Instead of regulating and balancing the production of growth hormone, Wadlow’s pituitary gland reinforced the production of the chemical. The more he grew, the more his body released growth hormone. It was like a car going downhill without a brake. His growth kept picking up speed.
+
+By the age of 12, Wadlow was over 7 feet tall (2.18 m) and weighed nearly 300 pounds (130 kg). When his uncontrolled growth propelled him over 8 feet (2.54 m) at the age of 18, he went on a tour around the United States with Ringling Brothers Circus.
+
+Sadly, but not unexpectedly, the rest of his body could not keep pace. Wadlow outgrew his nervous system and began to lose feeling in his legs and feet. His immune system began to shut down. When Wadlow died at the age of 22, he was the tallest human in recorded history at 8 feet and 11.1 inches (2.72 m) and by all indications he was still growing.
+
+Robert Wadlow (Feedback Loops)
+Robert Wadlow pictured with his normal-sized father, who was 5 feet 11 inches (1.82 m). (Photographer: Unknown)
+The Hidden Power of Feedback Loops
+The human body is governed by a wide range of feedback loops. These systems maintain a careful balance of everything from the amount of water in your cells to the amount of hormones released into your bloodstream.
+
+Feedback loops are always running in the background of our lives, but they influence our bodies and minds in profound ways. When each process works as intended, our bodies function properly and we remain balanced. When something in the system breaks, we steadily slip away from equilibrium. In extreme cases, things spiral out of control — like the growth of Robert Wadlow.
+
+Here’s the important part:
+
+Feedback loops are not only at the core of human biology, but also at the center of human behavior. Like the biological processes mentioned above, psychological feedback loops often run unnoticed in the background of our daily lives. They can influence everything from how fast we drive to how frequently we take our medications to how often we check social media. In fact, I would say that feedback loops are the invisible forces that shape human behavior.
+
+In this article, we’re going to talk about how you can harness the hidden power of these systems and use feedback loops to stick with good habits and break bad ones.
+
+The Two Types of Feedback Loops
+“Feedback loops provide people with information about their actions in real time, then give them a chance to change those actions, pushing them toward better behaviors.”
+
+—Thomas Goetz
+
+We can divide feedback loops into two different types:
+
+Balancing Feedback Loops: we will use these to moderate bad habits.
+Reinforcing Feedback Loops: we will use these to build good habits.
+Generally speaking, balancing feedback loops are associated with maintaining equilibrium or oscillating around a desired level. Meanwhile, reinforcing feedback loops are associated with continuous increases or decreases. Let’s break down each type and discuss how to use it to improve your habits.
+
+1. Balancing Feedback Loops
+Balancing feedback loops pull behavior back on track and help to stabilize a system around a desired level. These systems can be very effective at both moderating bad habits and kickstarting good habits.
+
+Here’s a common example:
+
+Let’s say you are driving just a little too fast and you pass a digital radar sign that says, “Your Speed Is…” and displays the current speed of your car as you pass.
+
+You might not expect it, but these signs are incredibly reliable and effective ways to change the behavior of drivers. On average, “Your Speed” signs decrease the driving speed by 10 percent. Not only that, but drivers continue to drive more slowly for miles down the road.
+
+These signs are one example of a balancing feedback loop. The output of your current behavior (driving too fast) becomes the input for your new behavior (slowing down).
+
+The thermostat is another example:
+
+Imagine that you set your thermostat to 68 degrees Fahrenheit (20 degrees Celsius). When the temperature of the room dips below your setting, the heater comes on and warms up the room. When the temperature rises above your setting, the air conditioning kicks on and cools the room. The thermostat acts as a balancing feedback loop and keeps the temperature oscillating between a narrow range.
+
+How can we apply balancing feedback loops to governing bad habits and building good ones?
+
+Here are a few examples:
+
+Want to spend less time staring at a screen? Buy an outlet timer and set it to turn off one hour before your desired bedtime each night. When the power shuts down, this feedback loop is reminding you not to spend too much time staying up late and staring at your computer screen or television.
+Want to improve your posture? Assume an upright stance and place a piece of tape across your shoulder so that it tugs on your shirt if your shoulders sag. This simple balancing feedback loop will trigger a reminder to stand up straight each time you feel a tug.
+Want to make more sales? The paper clip strategy is a simple way to build a feedback loop that will measure your progress on daily sales calls. (In fact, it can work for any repeated task.)
+Balancing feedback loops are fantastic at regulating bad habits because, similar to a thermostat, they can attack the problem from two sides. On one side, they can keep unproductive or unhealthy behaviors in check by making you aware of your mistakes (like displaying your speed or automatically shutting off your outlets). On the other side, they can remind you to perform good behaviors rather than slipping back into old patterns (like a piece of tape pulling on your slumping shoulder or a paper clip sitting in a bin on your desk).
+
+2. Reinforcing Feedback Loops
+Reinforcing feedback loops increase the effect of a particular system or process. These systems can be great for building good habits and achieving peak performance because they naturally amplify and strengthen their own behavior.
+
+Here’s one example from my own life:
+
+I am the happy owner of a Honda Accord. On the dashboard of my car, there is a light that circles the speedometer. This light changes color based on how I am driving. If I drive aggressively and accelerate quickly, the light is white. If I accelerate moderately, the color changes to light green. If I drive in a fuel efficient manner, the light turns bright green. Whenever I see the green light around my speedometer, I know that I’m saving gas and driving in the most fuel efficient way possible.
+
+When I first bought the car, I didn’t think much of it, but now this simple light has essentially turned driving into a game where I am constantly trying to live in the green zone. The light is a reinforcing feedback loop that emphasizes many good behaviors: I save gas, I save money, and I probably drive safer and more slowly as well.
+
+Compound interest is another example of a reinforcing feedback loop:
+
+Let’s say you start with $1.00 and get paid 10 percent interest each year. After one year, you have $1.10. The next time around, you get paid 10 percent interest on $1.10 and now you have $1.21. And so the cycle continues with each run through the feedback loop compounding into larger and larger growth. Of course, reinforcing feedback loops can amplify the impact of harmful behaviors as well. The more people hear an untrue rumor, the more the rumor spreads. Gossip is a self-reinforcing feedback loop.
+
+How to Build Your Own Feedback Loops
+I would like to offer a simple three-step method for building feedback loops in your life.
+
+Measure
+Compare
+Adjust
+Let’s break down each step of this framework.
+
+Measurement is the foundation of every feedback loop. All feedback loops have one key characteristic: the output from one cycle becomes the input for the next cycle. In other words, all feedback loops measure something and that measurement becomes the starting point for the next cycle of behavior. Data improves awareness and awareness is the first step to behavior change.
+
+Comparison is essential for making sense of your feedback loop. Measuring something is useless if it’s not relevant to you. Remember the “Your Speed Is…” sign from earlier? That reading of your current speed is only relevant when compared to the actual speed limit. It is the comparison between where measurement says you are and where you want to be that makes the next step clear. Effective feedback loops help you make comparisons that are personal and relevant.
+
+Adjustment is the action that closes the feedback loop. Adjustments should be made as quickly as possible. The more rapid the change, the tighter the feedback loop. In the words of Seth Godin, “The best way to change long-term behavior is with short-term feedback.”
+
+feedback loops
+
+Why Some Feedback Loops Work While Others Fail
+One bad habit that commonly frustrates physicians is when a patient doesn’t take their medications as frequently as prescribed. A few years ago, a company called Vitality launched a new product called the GlowCap, which was intended to help solve this problem.
+
+Here’s how WIRED Magazine described the product:
+
+“The device is simple. When a patient is prescribed a medication, a physician or pharmacy provides a GlowCap to go on top of the pill bottle, replacing the standard childproof cap. The GlowCap … connects to a database that knows the patient’s particular dosage directions—say, two pills twice a day, at 8 am and 8 pm. When 8 am rolls around, the GlowCap and the night-light start to pulse with a gentle orange light. A few minutes later, if the pill bottle isn’t opened, the light pulses a little more urgently. A few minutes more and the device begins to play a melody—not an annoying buzz or alarm. Finally, if more time elapses (the intervals are adjustable), the patient receives a text message or a recorded phone call reminding them to pop the GlowCap. The overall effect is a persistent feedback loop urging patients to take their meds.”
+
+—WIRED
+
+When feedback loops fail, it is often because of one of these three problems:
+
+Measurement isn’t automatic.
+Comparison is irrelevant.
+Feedback is slow.
+The GlowCap solves all three of these problems and that makes it an excellent feedback loop. First, it tracks your consumption and reminds you when to take your pills automatically, so you don’t have to worry about measurement. Second, it is specifically tailored to your prescription, which makes it instantly relevant to your needs. Third, it provides feedback quickly when you get off track: first the light, then the music, and finally the text message or phone call. Solving these three problems is essential to building an effective feedback loop.
+
+Rapid Feedback Leads to Rapid Change
+Here’s a simple fact: most people, most of the time, don’t know where they stand on the issues that are important to them.
+
+People want to lose weight, but don’t know how many calories they eat each day. People want to learn a new language, but they don’t know how many hours they practiced last month. People want to write a best-selling book, but don’t know how many words they wrote last week. People want to build a successful business, but don’t know how many sales calls their team made yesterday. People want to get stronger, but don’t know how much weight they lifted at the gym last week. Most people don’t measure things, and a feedback loop can’t happen without measurement.
+
+My argument is that we should spend less time letting feedback loops shape our lives in invisible ways and more time designing the feedback loops we want and need.
+
+In the unexamined life, it can be easy to slide into a downward spiral of bad habits and unproductive behaviors because of poorly designed feedback loops that trigger us to eat more, smoke often, and worry too much. Thankfully, the reverse is true as well. Carefully designed feedback loops can help us stick with good habits and regulate behaviors that would be unhealthy if they spiraled out of control.
+
+Feedback loops influence everything from the bodies we live in to the choices we make on a daily basis, but most of the time we are victims of the feedback loops that surround us not the architects of them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reinforcing and Balancing Loops: Building Blocks of Dynamic Systems
+By
+ Daniel Kim
+   
+In the book The Double Helix James Watson describes the process through which he and Robert Crick “cracked” the DNA code. While others were searching for complex structures to explain the diversity of life forms, Watson and Crick explored more simple geometrical designs. They eventually received a Nobel Prize for revealing the double helix structure that is the genetic basis for all life. Through their research, Watson and Crick proved that the infinite variations we see in nature can all be produced by one simple, elegant structure.
+
+Similarly, two basic loops — reinforcing and balancing — can be seen as the equivalent building blocks of complex social and economic systems. These simple structures combine in an infinite variety of ways to produce the complex systems that we as managers are expected to control.
+
+Engines of Growth and Decay
+Reinforcing loops produce both growth and decay. That is, they compound change in one direction with even more change. For example, in the employee-supervisor reinforcing loop below, positive reinforcement from the supervisor is capable of producing good employee performance, while negative reinforcement can produce poor employee performance over time.
+
+Goal-Seeking Processes
+Of course, most things in life cannot continue growing forever. There are other forces — balancing loops — which resist further increases in a given direction. Balancing loops try to bring things to a desired state and keep them there, much like a thermostat regulates the temperature in a house.
+
+Employee-Supervisor Reinforcing Loop
+Employee-Supervisor Reinforcing Loop
+
+
+An equivalent example in manufacturing involves maintaining buffer inventory levels between production stages. In this situation, there is a desired inventory level which is maintained by adjusting the actual inventory whenever there is too much or too little.
+
+Inventory Control Balancing Loop
+Inventory Control Balancing Loop
+
+
+Using the Building Blocks
+To see how these two basic loops can combine to form more complex structure-behavior pairs, let’s revisit the employee-supervisor feedback loop. Clearly the employee’s performance will not improve indefinitely just because the supervisor is supportive. The employee may have been putting Negative in longer hours in Reinforcement order to continue Time impressing the supervisor. Over a period of time, the increased work hours may begin to wear down the employee’s energy level. If this continues, at some point the supervisor’s supportive behavior will be eclipsed by the sheer energy drain of working long hours. Improved performance will gradually be offset by the effects of burnout, until finally the balancing loop connecting energy level and hours worked becomes dominant. At this point the employee’s performance will either plateau or decline.
+
+Reinforcing Loop Coupled with a Balancing Loop
+Reinforcing Loop Coupled with a Balancing Loop
+
+
+Summary Points
+All complex dynamic behavior is produced by two loops: reinforcing and balancing. Behind every growth or decay is at least one reinforcing loop. For every goal-seeking behavior, there is a balancing loop.
+
+A period of growth followed by a slowdown in growth is usually caused by a shift in dominance from a reinforcing to a balancing loop.
+
+Next issue: Balancing loops with delays.

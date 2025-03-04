@@ -1,0 +1,63 @@
+// Backend Rules
+Description: Rules for server-side, API, and database code
+Globs: **/api/**, **/server/**, **/lib/**, grasshop-app/lib/supabase/**, grasshop-embeddings/**, grasshop-agents/**
+
+# Architecture Context
+Always refer to @notepads/architecture.md for overall system architecture.
+API and server functions should follow the patterns in @notepads/common_patterns.md.
+Consider security, performance, and scalability in all backend code.
+
+# API Design
+Follow RESTful principles for API routes when appropriate.
+Use appropriate HTTP methods (GET, POST, PUT, DELETE).
+Return consistent response formats:
+- Success: { data: any, meta?: object }
+- Error: { error: string, details?: any }
+Use appropriate status codes.
+Version APIs when making breaking changes.
+
+# Database Access
+Use the Supabase client for database operations.
+Implement row-level security policies at the database level.
+Write efficient queries to minimize database load.
+Handle database errors appropriately.
+Use transactions when performing multiple related operations.
+
+# Authentication & Authorization
+Validate user authentication for protected routes.
+Check authorization before performing sensitive operations.
+Don't expose sensitive data in responses.
+Implement appropriate rate limiting.
+
+# Error Handling
+Catch and handle errors appropriately.
+Log errors for debugging.
+Return user-friendly error messages.
+Do not expose internal error details to clients.
+
+# Performance Guidelines
+Cache expensive operations when appropriate.
+Use pagination for large data sets.
+Optimize database queries.
+Monitor and optimize slow operations.
+
+# Security Guidelines
+Validate all input data.
+Sanitize outputs to prevent XSS.
+Use parameterized queries to prevent SQL injection.
+Implement appropriate CORS policies.
+Do not store secrets in code.
+
+# AI Integration Guidelines
+Handle AI credentials securely.
+Implement retry logic for AI service calls.
+Validate AI inputs and sanitize outputs.
+Cache AI results when appropriate to reduce costs.
+Handle errors from AI services gracefully.
+
+# When implementing backend code:
+1. Check for existing utility functions before creating new ones
+2. Document complex logic and algorithms
+3. Test edge cases
+4. Consider error scenarios
+5. Follow the established patterns in common_patterns.md 

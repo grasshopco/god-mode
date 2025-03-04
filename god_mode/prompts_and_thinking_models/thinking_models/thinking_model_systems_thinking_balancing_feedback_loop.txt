@@ -1,0 +1,287 @@
+Balancing feedback loop
+SYSTEMS THINKING
+Mechanism that pushes back against a change to create stability.
+Balancing feedback loop is a mechanism that resists further changes in one direction. It counters change in one direction with a change in the opposite direction. It seeks to stabilize a system.
+
+Often in systems, you will find this balancing loop together with the reinforcing feedback loop, which does the opposite and creates exponential changes.
+
+How balancing loops work
+Balancing feedback loops have three important components:
+
+the goal or desired level
+the actual level
+the gap between those two
+Basic illustration of a balancing feedback loop
+When the balancing loop sees a gap, it will trigger corrective actions to bring the actual level of something closer to the desired level.
+
+The key to understanding a specific balancing loop is finding out its goal. That may not always explicit or immediately visible.
+
+Example
+The thermostat is a very practical example of a balancing feedback loop. It monitors the temperature in a room (the actual level) and when it goes below or above a certain threshold (the desired level), it will start to heat or cool the room to keep the temperature within the thresholds.
+
+Thermostat as an example of a balancing feedback loop
+In this case, the whole loop is intentional and the corrective action is designed. You will also find many natural balancing loops. Take the cooling of tea for example. When you make tea and leave it be, it will gradually cool down from its initially high temperature (the actual level) until it reaches the room temperature (the desired level). In this case, the corrective action would be the heat transfer between the tea and the air around. This will happen naturally, there's no intention behind it.
+
+Takeaway
+Balancing feedback loops seek to stabilize systems. They trigger corrective actions to reach a certain goal – they're self-correcting.
+
+They are the opposite of the reinforcing feedback loops, which produce exponential changes.
+
+Sources
+"Thinking in Systems: A Primer" by Donnella Meadows
+"Visualizing the systems behind our designs" by Justin Farrugia
+"Reinforcing and Balancing loops: Building blocks of dynamic systems" on Systems Thinker
+"Balancing loops basics" on Systems Thinker
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Visualizing the systems behind our designs
+Tangible systems thinking that goes beyond buttons.
+Justin Farrugia
+UX Collective
+Justin Farrugia
+
+·
+Follow
+
+Published in
+UX Collective
+
+10 min read
+·
+Feb 25, 2020
+
+Listen
+
+
+Share
+
+
+More
+
+
+A button on the left which is what we see, and a complex casual loop diagram on the right which is what’s actually happening
+Systems thinking is often heralded in different circles as a competency that’s worth investing in. Having a wider lens and being able to model the systems that influence inputs, outputs and the patterns of behavior for people using the products we build is how we can deliver real value.
+
+Most product designers tend to default to design systems as a proxy for systems thinking. They’re not entirely wrong. The ecology around building design systems does require maintainers to think systematically. They need to deeply understand the core needs of the product team, to deliver reusable component libraries coupled with accompanying guidelines, processes, and documentation.
+
+However, this doesn’t mean that building a design system is the only natural outcome of thinking in systems. Far from it.
+
+Beyond buttons
+As of writing, few people in history have had the surreal experience of being able to witness the Earth from space in person. Astronauts often recall the overwhelming experience they felt when looking at the fragile blue ball they called home. Their front row seats enabled them to see the world through a different lens, one where all life was interconnected and every system they’ve come to know was working in concert.
+
+Astronomy author Frank White called this experience, ‘The Overview effect’.
+
+An astronaut saying ‘Woah’ whilst looking at Earth,
+Whilst not nearly as life-changing of an experience, zooming out from our narrowly focused product domains and realizing every design decision’s ripple effect in the ecosystem we operate in, can have a similar effect. Designing software often requires us to situate ourselves at both a macro and micro level. Yet, sometimes there’s a tendency to over-index on the latter at the expense of a broader set of goals.
+
+As a result, we risk becoming distracted with the details when we can’t afford to do so. The tools, products and service experiences we’re shaping today are responsible for far more than just the daily metric movements relative to the bottom line. They inhabit already complex systems such as political landscapes or socioeconomic hierarchies and sometimes unconsciously introduce new dynamics that have outsized impacts.
+
+We are surrounded by systems that we’ve directly or indirectly shaped or been a product of.
+
+That being said we’ve done very little to represent any of them. By doing so we can peel back the layers and uncover patterns, boundaries, behaviors and even points of leverage where we can infer our influence. The good news is that we have an underdeveloped muscle which we ought to flex more often that can help us out.
+
+Tools of the trade
+We often picture systems in a linear fashion where A leads to B. Needless to say this is a reductive way of describing relationships and causality, as it overlooks the fact that each node may disrupt or restore the balance in uniquely different ways. In other words, systems are messy.
+
+Linear Systems Thinking versus Loop Based Systems Thinking
+Instead of A leading to B, it’s more likely you’ll find something like, A can cause B and C given a set of conditions, both of which reinforce D which restarts the cycle. Now trying to articulate all that through text isn’t exactly the best way to explain what’s actually going on. That’s where system diagramming can come in handy. Below are a few examples.
+
+Behavior Over Time Graph
+You’ve probably already seen this type of diagram being plotted somewhere on an office whiteboard. This graph helps us see patterns and interrelationships that emerge over a specific period of time. We can use it to observe how and why something is happening.
+
+Let’s use something we’re all too familiar with as an example — product debt. Two things that we can use as variables in our graph are the cost of building features which keeps rising exponentially as the product matures, and customer value delivered which is inversely proportional due to fragmentation and debt that the team is spending time wrestling with.
+
+A behaviour over time graph that indicates when a product team should address its mounting debt.
+Despite ancillary efforts to revive that delivery curve from declining further, it most likely wouldn’t be enough to curb the overhead. The intersection point between the two curves signals the necessity for a cadence of refactoring or even a commitment towards building a design system.
+
+Quadrant Matrix
+This is another common diagram, that also has likely donned a few whiteboards. It is mainly used to represent the strength of relationships between several different items. You’ve likely seen it being used to chart the impact versus effort of doing something in a bid to inform the decision-making process.
+
+A quadrant of usability issues with repetition versus impact
+Let’s say you’ve finished up a moderated usability testing session and you’ve come away with a few insights. To start applying what you’ve learned you’ll need to rank your findings against a few different dimensions namely repetition and impact. Using a quadrant matrix will help you synthesize the raw data you’ve collected and visually make sense of what issues were the most severe and iron them out through iteration.
+
+Iceberg Model
+The iceberg model is a tool that can be used to show the four levels of abstraction within a specific setting that can allow us to uncover the root cause of why something is actually happening the way it is. It helps us go beyond the observable events that anyone can notice, and help us realize the patterns that might have contributed to those events, the structures that have influenced those patterns and the underlying mental models that keep those structures in place.
+
+Often times when we try to address a problem, we do it on an event level which in turn leads to suboptimization. It’s not enough to swap things around, change information flow or incentives. You’ll need to expand the perception and shift mental models to have leverage and upend the system.
+
+Let’s take a real-world example of a product team that’s trying to meet a deadline. An event would be that the team doesn’t ship in time. The natural tendency is to be reactive and start to find people to blame. Instead of playing the blame game start looking at the trends that might have led to this.
+
+The Iceberg Model representing the Events, Patterns, Structures and Mental Models behind a product team missing a deadline.
+A pattern might be looking at recurring evidence like the team’s collective track record and finding that three of the last five things they’ve worked on have had overrun dates. The structures that might be causing these patterns could be bandwidth issues with engineers and designers needing to context switch due to commitments outside the team.
+
+What’s keeping this system in place is the mental model each team member holds, which might normalize the balancing act of being first responders instead of establishing a cadence coupled with some boundaries.
+
+Reinforcing Feedback Loops
+However intentional it might have been, you’ve probably designed a reinforcing feedback loop. As the name suggests, these kinds of loops have self-reinforcing behavior where the actions of one variable reinforce another. I’d be remiss to not mention the Hooked model as an example of a reinforcing loop that optimizes user stickiness and engagement.
+
+The Hooked Model by Nir Eyal.
+Unsurprisingly, reinforcing feedback loops are used and abused. Most consumer products with some kind of social component and a healthy network effect have reinforcing feedback loops baked into the fabric of the core experience. Products like TikTok have predictive models, computer vision and matrix factorization algorithms each built-in to perfect the content recommendation loop and have our attention.
+
+TikTok’s reinforcing feedback loop.
+Even though it has a cold start problem, after only a few seconds of watching and a series of swipes TikTok has collected enough data points and spun that loop so many times, that the content suddenly becomes unmissable. The diagram above illustrates this example.
+
+Balancing Feedback Loops
+Instead of creating a snowball effect, balancing feedback loops counter an input with an opposite output. These loops can correct an oversupply or undersupply, indicate that a plateau has been reached or restore the lost stability back to the system. Like reinforcing feedback loops however, the outcome of balancing feedback loops might not always lead to positive outcomes depending on prior inputs.
+
+Some teams seem to jump the gun when it comes to bridging the gap between their customer success representatives and the customers. Access to an agent is either obscured by a messy navigation system or else it’s available at all times even when unnecessary. Both are examples of a balancing feedback loop.
+
+The ramifications of introducing a chat bubble representing as a balancing feedback loop.
+The former being the increase in customer frustration in trying to flag an issue by jumping through a few hoops which leads to an inevitable decrease in experiential and customer satisfaction measures. The latter shows a complete disregard for the time spent in answering repeatable queries which increases given there is no FAQ-like system in place which in turn leads to customer success agents availability decreasing, diminishing the likelihood of being a first responder for high-value accounts.
+
+External Factors, Gaps, and Delays in Causal Loops
+In the ever-increasing complexity of the systems we build towards, loops rarely ever have equally defined units of input or output. There are usually things that happen in between or outside of the model that have an effect. What better way to represent concepts like gaps and delays than an unpredictable complex landscape like healthcare, specifically the use of software in aiding care decisions.
+
+Electronic Health Records or EHRs are real-time robust systems used in hospitals that contain the medical history of a patient. Their goal is to ultimately chip away at the mundanity of paperwork and enable a meaningful patient to physician interaction. If you zoom out far enough, the most basic loop you can make out is the one where the effects of introducing an EHR into a previously paper-run practice become visible.
+
+Diagram of a reinforcing feedback loop that shows the effects of introducing an Electronic Health Record or EHR.
+As can be seen in the diagram above, the impact of introducing an EHR into the mix has saved staff time which in turn has increased the patient treatment quality. As a result, the better the treatment quality, the more time will be saved in preventing adverse drug events or readmissions.
+
+Diagram representing a delay within a causal loop.
+Now that’s not going to happen overnight, the staff on hand needs to be gradually onboarded onto the new system and get familiar. That’s why this feedback loop will likely have delays which we can represent by marking the arc with a double line.
+
+Diagram representing an external factor, in this case an update to the software.
+Our feedback loop is still looking a bit too convenient. Let’s introduce another component, such as an update to the EHR software. That in itself might eat up some of that time the staff is saving since there might need to be retraining. That’s called an external factor. Gaps can also be another feature of causal feedback loops. A gap can exist between the actual quality and the actions we’re taking to improve that quality.
+
+Representing Gaps in EHR causal loops
+In our example for patient treatment quality to improve, the gap in between, as shown in the diagram, is the secure migration of the patient records from paper to digital records. This, in turn, enables more confidence to adopt and inevitably invest in the software beyond just procurement, but also designing training programs for practitioners and defining performance targets such as decreasing error rates or patient treatment time.
+
+
+Cause and Effect Diagram, Onion Model Diagram and a Hierarchy
+These are just a select few of the tools available in your systems utility belt. Needless to say, there’s an abundance of other ways you can visualize systems. If you’re trying to bring clarity to a post mortem, you can use a cause and effect diagram to isolate what went wrong during a project. A stock and flow diagram can help you simulate the impact of your design decisions, whereas an onion model or hierarchy can help us see top-down or bottom-up causality, and chart the flow of influence.
+
+Each of these visual aids helps us see things we couldn’t have possibly seen through a block of text, especially when co-created with people outside our discipline. They enable us to align viewpoints, understand root causality, synthesize, generate options and even simulate design decisions within our product experiences and organizations. Quite frankly, being able to produce these artifacts is a superpower.
+
+That superpower, however, shouldn’t go unchecked. Systems can also be consciously designed to manipulate, cheat and sometimes even harm people. This underscores our responsibility to make we have a full understanding of the chain reaction our design decisions cause beyond canvas and code.
+
+Just like the astronauts whose new perspective of our planet engendered a new sense of responsibility for the environment, we can use whatever palette of system diagrams to shape, tug or prune systems in small but impactful increments and become catalysts for sustainable and ethical change.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reinforcing and Balancing Loops: Building Blocks of Dynamic Systems
+By
+ Daniel Kim
+   
+In the book The Double Helix James Watson describes the process through which he and Robert Crick “cracked” the DNA code. While others were searching for complex structures to explain the diversity of life forms, Watson and Crick explored more simple geometrical designs. They eventually received a Nobel Prize for revealing the double helix structure that is the genetic basis for all life. Through their research, Watson and Crick proved that the infinite variations we see in nature can all be produced by one simple, elegant structure.
+
+Similarly, two basic loops — reinforcing and balancing — can be seen as the equivalent building blocks of complex social and economic systems. These simple structures combine in an infinite variety of ways to produce the complex systems that we as managers are expected to control.
+
+Engines of Growth and Decay
+Reinforcing loops produce both growth and decay. That is, they compound change in one direction with even more change. For example, in the employee-supervisor reinforcing loop below, positive reinforcement from the supervisor is capable of producing good employee performance, while negative reinforcement can produce poor employee performance over time.
+
+Goal-Seeking Processes
+Of course, most things in life cannot continue growing forever. There are other forces — balancing loops — which resist further increases in a given direction. Balancing loops try to bring things to a desired state and keep them there, much like a thermostat regulates the temperature in a house.
+
+Employee-Supervisor Reinforcing Loop
+Employee-Supervisor Reinforcing Loop
+
+
+An equivalent example in manufacturing involves maintaining buffer inventory levels between production stages. In this situation, there is a desired inventory level which is maintained by adjusting the actual inventory whenever there is too much or too little.
+
+Inventory Control Balancing Loop
+Inventory Control Balancing Loop
+
+
+Using the Building Blocks
+To see how these two basic loops can combine to form more complex structure-behavior pairs, let’s revisit the employee-supervisor feedback loop. Clearly the employee’s performance will not improve indefinitely just because the supervisor is supportive. The employee may have been putting Negative in longer hours in Reinforcement order to continue Time impressing the supervisor. Over a period of time, the increased work hours may begin to wear down the employee’s energy level. If this continues, at some point the supervisor’s supportive behavior will be eclipsed by the sheer energy drain of working long hours. Improved performance will gradually be offset by the effects of burnout, until finally the balancing loop connecting energy level and hours worked becomes dominant. At this point the employee’s performance will either plateau or decline.
+
+Reinforcing Loop Coupled with a Balancing Loop
+Reinforcing Loop Coupled with a Balancing Loop
+
+
+Summary Points
+All complex dynamic behavior is produced by two loops: reinforcing and balancing. Behind every growth or decay is at least one reinforcing loop. For every goal-seeking behavior, there is a balancing loop.
+
+A period of growth followed by a slowdown in growth is usually caused by a shift in dominance from a reinforcing to a balancing loop.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Balancing Loop Basics
+By
+ Kellie Wardman
+   
+Reinforcing processes, which we covered in last month’s issue, are only one of the building blocks of complex systems. While the snowballing effect of reinforcing loops destabilizes systems, balancing processes are generally stabilizing or goal-seeking. They resist change in one direction by producing change in the opposite direction. In causal loop diagrams, balancing loops are noted by a “B,” a “—,” or a scale icon in the center of a loop.
+
+The Structure of Balancing Loops
+There is always an inherent goal in a balancing process, whether it is visible or not. The basic structure of a balancing loop involves a gap between the goal (or desired level) and the actual level. As the discrepancy between the two increases, corrective actions adjust the actual level until the gap decreases. In this sense, balancing processes always try to bring conditions into equilibrium.
+
+producing change in the opposite direction
+
+Nature is full of balancing processes. The human body consists of thousands of stabilizing processes that keep our temperature steady, our oxygen level adequate, and ensure that our body’s food and water requirements are met. Organizations also have balancing processes that try to keep supply level with demand, workforce comparable to work requirements, and to keep inventory levels in balance. But if our objectives are contrary to the implicit goal of the system, our efforts to create change will be frustrated.
+
+TIP: The key to recognizing and managing a balancing process is to identify the goal of the system. Because the goal in o balancing loop is often implicit, it can be difficult to realize that o balancing process is at work. To uncover implicit goals in the system, ask, ‘ What is the rationale that is driving our actions?’
+
+Coffee Cooling
+corrective actions adjust the actual level
+
+To understand how balancing processes work, think about a cup of hot coffee sitting on a table. The “goal” of the coffee is to cool to room temperature (whether you want it to or not!). The desired state is room temperature and the actual state is the coffee temperature. The natural corrective action, according to the laws of thermodynamics, is a heat transfer between the coffee and the surrounding air. Coffee cooling is thus a natural balancing process that will occur without any explicit corrective action. Osmosis or the diffusion of fragrance in a room are other examples of this move toward equilibrium.
+
+Automatic Climate Control
+this move toward equilibrium
+
+Another commonly-used example of a balancing process is that of a thermostat. In this case, the room temperature is the actual state, the thermostat setting is the desired state, and the corrective action is the output of a furnace or air conditioning system. Whenever there is a gap between the actual and desired temperature, the furnace or air conditioning unit turns on automatically until the gap between actual temperature and desired temperature is close to zero and the room is at the desired level of comfort. This is an example of a balancing process in which we have actually created a device to more actively control the desired state.
+
+Lean Production
+example of a balancing process
+
+Inventory control, especially as it is used in lean production, is a high-leverage attempt to closely and carefully manage the corrective action of a natural balancing process. To avoid tying up capital in large stockpiles of inventory, the goal is to have just enough product on hand to fill current orders. As sales increase, production (the corrective action) is increased until the actual inventory nears the required inventory, and then production is slowed until more inventory is required.
+
+The challenge here, as in any balancing process, is to manage the delays Time in adjusting to the desired levels (more on delays will appear in future issues).
+
+then production is slowed until
+
+All balancing processes share the same goal-seeking structure. In some, such as the coffee example, the corrective action is so passive it appears non-existent. Other examples, such as inventory control, have a more explicit corrective action. Learning to identify balancing processes in your organization can help you understand why some systems seem to resist change despite the best of intentions. Once you understand the structure of a balancing process and how it can be counteracted by other loops, you can design strategies for effective action.
+

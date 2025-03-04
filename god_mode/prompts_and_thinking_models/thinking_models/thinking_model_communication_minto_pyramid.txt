@@ -1,0 +1,151 @@
+Minto Pyramid
+COMMUNICATION
+Make your communication more efficient and clear.
+In business, communication needs to be clear and efficient. People are busy and don't have time to read long walls of text or listen to long presentations where the key info is shared at the very end.
+
+Use the Minto Pyramid to give your communication a top-down structure and get your message across quickly and clearly. Lead with the conclusion, then provide key arguments and finally support them with detailed information.
+
+Minto Pyramid communication framework: Conclusion > Key arguments > Detailed information
+How it works
+See what I did there? I shared the main takeaway with you already. That's the idea of this tool – cutting to the chase. Now let's look at it in more detail.
+
+1. Start with the conclusion
+Capture your audience's attention early on by first telling them the main takeaway, message, recommendation or simply your conclusion. This may be the opposite to how we've been taught to communicate but it's more efficient, especially in writing and with audiences who have limited time or attention.
+
+This principle is also called BLUF – "bottom line up front". It originated in the military but is now widely used in the business world.
+
+2. Provide key points
+With the main takeaway already communicated, it's time to support it with key arguments or main points. These should still be fairly short. Write them as summaries of your main points. This part should explain the "why" behind your conclusion or recommendation.
+
+3. Support points with detailed information
+You might still need to make your key points credible. Do that by giving more detailed information that support them: facts, evidence, numbers, results. This is the part where you can really go into detail if you want to.
+
+The busier people are, the more likely they are to skip this part but sometimes it's necessary in order for the conclusion to be accepted or acted on.
+
+Sometimes, you might want to skip the detailed information if your key arguments are enough to justify your conclusion and you know that your audience will understand them well enough.
+
+Example
+It's always best to see how such a tool looks like in practice. Let's see an example of a researcher who just completed a study and wants to share the results with their colleagues, along with their recommendation.
+
+Here's how you might write a message to your team using the Minto Pyramid tool:
+
+Example of a message written using the Minto Pyramid – conclusion is written first, followed by key arguments and supporting details.
+As you can see, there's a very clear recommendation given up front. It's explained with the key findings and those are supported by detailed data, evidence and results. This way, the audience immediately gets the most important information first. They only need to consume the details if they choose to, not in order to get to the main point.
+
+Takeaway
+To sum up, the Minto Pyramid is a tool to give your (written) communication more clarity and efficiency. You'll lead with the conclusion, provide key arguments and support them with details. Your busy audience will thank you.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BLUF: The Military Standard That Can Make Your Writing More Powerful
+September 9, 2019 by Jan-Erik Asplund inWriting
+
+BLUF is a military communications acronym—it stands for “bottom line up front”—that’s designed to enforce speed and clarity in reports and emails.
+
+The basic idea is simple: put the most important details first. Don’t tease or delay your main point because people are busy and their time is valuable. And make it clear—life-or-death decisions could be made using your information.
+
+​
+Get our weekly content writing newsletter 👇
+
+Your email address
+
+Subscribe
+"The Animalz newsletter is 100% required reading for senior content pros.” —Dan Levy, Zendesk
+
+While the decisions you make may not be life-or-death, you probably also spend a lot of your time communicating with people who are busy, whose time is valuable, and who deserve at least the same level of consideration. That’s why BLUF is such a useful model. Whether you’re writing for your company’s blog, writing Slack messages to co-workers, or writing emails to customers, BLUF can help you cut through the noise and connect.
+
+But BLUF is more than a simple communications tactic. It’s not, as the name might imply, simply about finding your “bottom line” and sticking it at the top of whatever you’re writing.
+
+BLUF, if you apply it consistently throughout your writing, is a way of organizing your thoughts and understanding the narrative that lets you yield your central points to your reader as quickly as possible. It is a “full body” writing exercise, not a quick and dirty copy and paste.
+
+Include All the Context Your Reader Needs to Act
+Whether you’re asking for help or organizing a call, BLUF your communications with your co-workers by reducing the amount of work that your recipient has to do to help you. Secondarily, try to reduce the overall amount of context-switching necessary to help you (remember that Slack is fundamentally distractive if you’re writing, coding, etc).
+
+This is a good example of what not to do:
+
+
+Asking if someone has time to chat or if they have time to answer a question, on its own, forces a context-switch with no immediate resolution. Now your recipient has to read your message, type in “Great, what’s your question?” and wait for your response before they can help you. That may not sound like a lot of work. Add up dozens of instances over the course of a day or week, plus time lost getting in and out of a flow state, however, and this kind of sloppy communication can become a considerable time sink.
+
+Avoid this kind of thing, too, where you offer slightly more context but still not enough for it to be an actionable request for your recipient:
+
+
+This time, at least there’s an actual question embedded in the first Slack message, but it’s too general to answer. It demands more context in order to be properly answered.
+
+Instead, give as much context to the ask as you can, and do it in one message:
+
+
+This kind of ask gives the recipient enough information that they can fully address your need and help you out without having to exchange multiple messages looking for context.
+
+It gives a clear what (“examples of thought leadership”) and a clear why (“putting together a proposal for Acme”) that, together, let the recipient infer more or less the asker's exact need. By thinking about BLUF when we communicate internally, we put our concluding thought—often, our ask—at the beginning.
+
+Make Your Ask and Your Tone Clear
+Email was one of the original contexts in which BLUF was first imagined, so it is a natural fit for the method.
+
+For a large percentage of the kind of emails that you’re likely to send at work, BLUF is relatively simple to apply. Don’t hem and haw at the beginning of your email. Begin with the ask. Give supporting details and context after that. Then, your recipient doesn’t have to scan your email up and down looking for what they actually have to do.
+
+The first few sentences of any customer email should clearly explain the purpose and reason for the email, as well as (our desired or intended) next steps.
+
+
+But not all communication, especially with clients, is so transactional. Sometimes we need to do more than convey a request. Sometimes we need to convey our excitement, or a sense of urgency, or penance.
+
+In these cases, you still want to BLUF and make the purpose of the email clear. Giving your email an emotional edge doesn’t mean putting extra processing time between your recipient and the point of the email.
+
+You also want to use one of the central principles behind BLUF—that information higher up in the reader’s visual hierarchy is more likely to be understood and retained—to effectively get across the emotion you want to convey.
+
+Check out the example below, sent to a new customer at Animalz. After some confusion around the first article we produced for them, our main goal was demonstrating a sense of urgency about making things right and getting back on track as fast as possible. So after the first line—the BLUF—we explain our reasoning for the email in a way that makes that urgency as clear as possible:
+
+
+It’s a natural human tendency, when there's any kind of problem, to only cautiously admit it even exists—to approach it gingerly, if at all. Over email, this kind of approach doesn't convey what you want it to. It creates confused communication. You have to actively resist that impulse and attack problems head-on using BLUF if you want to pitch solutions to problems rather than wallowing in them.
+
+In the final draft, we begin from the assumption that there is a problem—as there always is, if a customer of ours is not actively publishing the content we create with them—and use the first few precious sentences at the beginning of the email to make it abundantly clear that we want to fix it. Most importantly, we show that we have a vision for what fixing it looks like.
+
+Revise Until Your Thinking Is Off the Page
+Virtually all content marketing is put out there to help people. Often, however, those people are busy, with a million things pulling at their attention.
+
+That’s why it is not enough to just write something useful—your content needs to communicate efficiently with readers.
+
+Therefore, you should BLUF your content marketing the same way you BLUF your internal and external communications. Organize your writing so that it delivers context and meaning to readers as quickly as possible.
+
+In the example below, the introduction to this article analyzing SaaS homepage language should lay out a theory for why clear language is so important to great homepages.
+
+Why Clear Language Is the Secret to a Great Homepage
+
+Your homepage serves as the welcome mat for your SaaS business. Its clarity can make the difference between taking a new user through your signup process to conversion, and having them abandon your site, never to come back.
+
+In two sentences, we do that. Clear language is important because your homepage is the first impression of your product—the most critical juncture in the relationship.
+
+In the next example below, the same article gets an introduction that contains more words, appears to say more, and appears to get into more detail—but in the end, doesn’t convey a clear point.
+
+Why Clear Language Is the Secret to a Great Homepage
+
+By keeping your language and design clear and concise for all users, whether they are new or not, you can make sure that everyone understands the core value of your product. By choosing simple language to describe your product, you will be able to communicate with everyone, whether they totally understand your field, or are novices just looking for the best product for their business.
+
+Instead, it’s muddled, distinguishing for no clear reason between new and not-new users, conflating language and design, and failing to draw a conclusion as to why clear language is so important. We make the point that we’ll be able to “communicate with everyone,“ but that’s, arguably, synonymous with the idea of ”clear language“ itself.
+
+The root difference between these two introductions is simple. One was written by a writer who knew what exactly what the article to come was going to contain, and one was written by a writer who didn’t. When you know the main point you’re going to make, you can come right out and start talking about them from the beginning. When you don’t, you have to resort to making general points that live in approximately the same neighborhood as your main point.
+
+See the two article introductions below for an example:
+
+
+The article introduction on the left proceeds the way that many of our first drafts do: languorously and inductively. After some throat-clearing, it eventually gets to the point. Who knows if the reader would still be interested.
+
+The introduction on the right—this is the actual introduction of Paul Graham's article Relentlessly Resourceful—begins with the main point that we’re trying to make: “A couple days ago I finally got being a good startup founder down to two words: relentlessly resourceful." Graham goes on to explain how he reached the conclusion and what its implications are for founders, but the weight of the piece sits in the first sentence.
+
+In the version on the left, the reader has to concentrate. They have to follow along with the writer’s thought process. Many first drafts do this, because the first draft is where we write to figure out what we know.
+
+When you go back and revise, one of your biggest priorities should be finding places where evidence of your own research process and thinking persists. You want your writing to communicate with maximum effectiveness to its reader, not reveal the exact route you took to reach your conclusions. That’s what will make a piece of content feel polished and complete.

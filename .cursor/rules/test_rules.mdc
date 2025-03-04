@@ -1,0 +1,91 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+// Test Rules
+Description: Rules for test files and testing-related code
+Globs: **/*.test.ts, **/*.test.tsx, **/*.spec.ts, **/*.spec.tsx, **/tests/**, **/test/**, **/jest/**
+
+# Testing Context
+Always refer to @notepads/common_patterns.md for established testing patterns.
+Tests should be comprehensive, readable, and maintainable.
+Focus on testing behavior, not implementation details.
+
+# Test Organization
+Group tests logically using describe blocks.
+Use clear and descriptive test names that explain the expected behavior.
+Follow the AAA pattern: Arrange, Act, Assert.
+Keep tests independent of each other - no shared state.
+
+# Frontend Testing Guidelines
+Use React Testing Library for component tests:
+- Test from a user perspective
+- Query elements by accessibility roles, text, or test IDs
+- Test component interactions
+- Avoid testing implementation details
+
+Mock external dependencies:
+- API calls
+- Browser APIs
+- Complex utility functions
+
+Test accessibility where appropriate:
+- Form validation
+- Keyboard navigation
+- Screen reader compatibility
+
+# Backend Testing Guidelines
+Test all API endpoints:
+- Valid inputs
+- Invalid inputs
+- Authentication/authorization scenarios
+- Success and error responses
+
+Test database operations:
+- Data creation
+- Data retrieval
+- Data updates
+- Data deletion
+- Constraints and validations
+
+Use database mocking or test databases, not production databases.
+
+# Test Data Management
+Use factories or fixtures for generating test data.
+Clean up test data after tests run.
+Don't rely on specific database IDs or hard-coded values.
+Consider using snapshots for complex data structures.
+
+# Mocking Best Practices
+Mock external services and APIs.
+Be explicit about what you're mocking and why.
+Verify mock calls when behavior depends on them.
+Restore mocks after tests complete.
+
+# Error Testing
+Test error handling:
+- Expected errors
+- Edge cases
+- Boundary conditions
+- Malformed inputs
+
+Verify that appropriate error messages are returned.
+
+# Performance Testing (when relevant)
+Test performance-critical code paths.
+Set explicit timeouts for performance expectations.
+Consider load testing for critical endpoints.
+
+# Integration vs Unit Tests
+Write both unit and integration tests:
+- Unit tests for individual functions and components
+- Integration tests for how components work together
+- End-to-end tests for critical user flows
+
+# When writing tests:
+1. Cover happy paths and error scenarios
+2. Mock external dependencies
+3. Use descriptive test names
+4. Maintain test independence
+5. Follow the testing patterns in common_patterns.md 

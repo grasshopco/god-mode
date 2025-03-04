@@ -1,0 +1,114 @@
+Impact-Effort Matrix
+DECISION MAKING
+Prioritize by weighing impact against the effort required.
+The Impact-Effort Matrix is a powerful decision-making tool that helps you prioritize based on their potential impact and the effort required to complete them. It's particularly useful when you have a long list of tasks and need to determine where to focus your energy for the best results.
+
+How to use it
+The Impact-Effort Matrix consists of four quadrants along two axes: impact and effort. For every task or project, ask yourself: How impactful will this be? How much effort will it require?
+
+Based on your answers, place the task in the appropriate quadrant. The quadrant will help you decide what to do with the task:
+
+High Impact, Low Effort → Quick Wins
+These are the tasks or projects that you should tackle first. They offer the highest return on investment for your effort.
+Examples include minor improvements that significantly enhance user experience or simple bug fixes that prevent major issues.
+High Impact, High Effort → Major Projects
+These items are important but require significant time and resources. Plan and execute them after the quick wins.
+Examples include developing new features, launching a marketing campaign, or redesigning a website.
+Low Impact, Low Effort → Fill-ins
+These can be done when you have spare time. They won't make a big difference but are easy to complete.
+Examples include routine admin work, small optimisations, or minor updates.
+Low Impact, High Effort → Thankless Tasks
+These tasks require a lot of effort but don't provide much return. Avoid or minimise these tasks whenever possible.
+Examples include overly complex processes that could be simplified or unnecessary meetings.
+This matrix is flexible and can be used for both professional and personal tasks. It helps in identifying tasks that are worth your time and energy, and those that are not.
+
+You can also use it on different timescales: for daily planning, weekly reviews, or long-term project management.
+
+Additional tips
+Get accurate inputs
+Assess tasks realistically in terms of impact and effort. Avoid underestimating effort or overestimating impact. Try to get external inputs when needed.
+Review Regularly
+Revisit your matrix periodically to ensure tasks are still accurately placed as priorities and circumstances change.
+Combine with Other Tools
+Use the Impact-Effort Matrix in conjunction with other frameworks like the Eisenhower Matrix to refine your prioritisation further.
+Example
+Here are some examples of tasks that might go into the Impact-Effort Matrix:
+
+
+Low Effort	High Effort
+High Impact	Quick Wins:	Major Projects:
+
+- Fixing minor bugs	- Developing new features
+
+- Enhancing user interface	- Redesigning the website
+Low Impact	Fill-ins:	Thankless Tasks:
+
+- Routine admin work	- Overcomplicated processes
+
+- Small optimisations	- Unnecessary meetings
+Takeaway
+The Impact-Effort Matrix helps you be more effective by prioritizing tasks that offer the best return on your effort. If you often find yourself working hard but not seeing significant results, this tool can help you identify where to focus for maximum impact. Use it to streamline your workload and ensure that your efforts are directed towards the most beneficial tasks.
+
+Template for Impact-Effort Matrix
+I created a handy worksheet to help you put this tool into practice. It comes with a simple how-to guide including an example. Get it in a bundle with 9 other useful tools:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Impact vs. effort: a simple matrix for prioritising tasks
+Library → Models and frameworks → Impact/effort prioritsation matrix
+
+Whether you’re getting to grips with your personal time management, or thinking more strategically as a team manager, prioritising tasks effectively is crucial.
+
+One valuable framework to manage tasks thoughtfully is through the use of an Impact-Effort Matrix, a simple tool that can transform the way we approach work, yielding maximised productivity and minimised stress.
+
+The impact vs. effort matrix
+Let’s take a look at this simple template. ‘(Impact’ is sometimes known as ‘benefit’ or ‘value’, while ‘effort’ is roughly synonymous with ‘complexity’, ‘cost’, ‘feasibility.’ So an analysis like this could also be known as ‘value vs effort’ or ‘benefit vs cost.’ )
+
+
+The Impact-Effort Matrix is a 2x2 grid that sorts tasks by their anticipated 'impact' — the benefits they're likely to provide — and 'effort' —  the work they require to complete. This matrix gives us four quadrants:
+
+Quick wins
+These tasks offer a major impact for not very much effort – the dream! These easy pickings are hard to find, but will naturally be a priority.
+
+Major projects
+These initiatives also offer a major impact, but with an attendant amount of hard work. Before you begin, you’ll want to be confident your impact estimate is on solid ground. 
+
+Fill-in jobs
+These jobs don’t move the needle all that much, but they don’t require much work either. They aren’t a huge priority, but most roles involve a fair amount of ‘fill-in jobs’ – it’s all about keeping them under control.
+
+It’s important not to put in more effort on these than justified – bear in mind, it’s all time you could be spending on more high-impact work. One method to control fill-in jobs is to time-box them: for instance, you might schedule a daily hour for admin and minor requests, leaving the rest of the time to focus on high-impact work. On a bigger scale, a tech or design team might devote a two-week period each quarter to fixing minor bugs, fulfilling odd requests and generally tidying up code.
+
+Thankless tasks
+These low-impact, high-effort tasks are where dreams go to die, and should be avoided wherever possible. But it’s not always that easy. A major project that delivers less impact than predicted, or a fill-in job that drags on for longer than you thought, are both thankless tasks in disguise.
+
+Estimating effort and impact
+A successful application of the Impact-Effort Matrix, like many project management frameworks, relies heavily on accurate estimates of impact and effort for each task. 'Impact' could be measured by the potential return on investment, client satisfaction, or progress towards strategic goals, depending on the specific context. 'Effort', on the other hand, could include time, cost, or resources required.
+
+Think outside your role:  A piece of work may not seem all that ‘impactful’ from where you sit, but try to understand the wider business context – it could make a big difference to someone else. On the other hand, this can leave you vulnerable to Endless ‘Serious’ Requests where everyone is trying to convince you precisely how important their request is. If you deal with a lot of incoming requests, try to build a rough framework to triage them by effort and impact, share the criteria, and be open about how this influences your response time.
+
+Make impact more specific: Impact is a pretty vague and generic term, so if you or your team have a particular set of targets, you should refer to these instead. For example, if you’re a customer service team targeted on ‘customer satisfaction score’, ‘time spent per issue’ and ‘response time’, you can assess how each initiative is like to impact each of the three metrics. If one metric is more important than the others, you can use weighting to give it additional sway in the prioritisation.
+
+Be granular, if needed: Sorting tasks into four boxes can be a bit simplistic. Instead, you could give an impact score out of 5 and ‘hours estimated’ to arrive at a more accurate prioritisation.
+
+Consider changing the tasks themselves: If you can make a Thankless Tasks easier or more impactful, then they’ll become worthy of consideration. Similarly, a Fill-In Job that makes an additional impact, or a Major Project that you find an easier way to accomplish, could become a high priority Quick Win. Use the ‘Five Whys’ framework to zoom out (what is the task ACTUALLY trying to accomplish?) and then see if you can find a differently-designed solution that can be accomplished more swiftly.
+
+Tasks can move through the matrix once they’re underway: if a Fill-In Job starts to take more effort than expected, or a Major Project is failing to make an impact, it may have become a Thankless Task. So it might be worth re-thinking, imposing a ‘hard stop’ to limit further work, or abandoning altogether, even if you’ve already started. Don’t be a hostage to the Sunk Cost Fallacy.
+
+Watch out for bias: Most of us are natural optimists, prone to under-estimating the work required and over-estimating possible benefits. On a personal level, other cognitive shortcuts like the anchoring bias, recency bias or Dunning-Kruger effect can impact our decision-making for the worse. And we’re all especially bad at estimating tasks that we don’t have much experience with. Where appropriate, seek input from others who may use different priors to make their estimates.

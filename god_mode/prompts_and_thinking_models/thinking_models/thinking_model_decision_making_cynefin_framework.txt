@@ -1,0 +1,335 @@
+Cynefin framework
+DECISION MAKING
+Make sense of different situations to choose an appropriate response.
+Different situations typically require different responses. The Cynefin framework (pronounced /kəˈnɛvɪn/ - "kuh-nev-in") is there to help you make sense of the situation in front of you and make a decision that's appropriate for the type of situation you're dealing with. It was developed by Dave Snowden in 1999. 
+
+How to use it
+The framework identifies five domains to categorise problems or situations: clear, complicated, complex, chaotic and disorder.
+
+The idea is to identify which domain you're in and then choose the appropriate action based on its characteristics. So let's look at each domain in detail.
+
+Cynefin framework consisting of Complex, Complicated, Chaotic and Clear quadrants
+Clear
+Also known as obvious or simple, this is the domain of best practices. This is where problems are familiar and clearly defined, cause-and-effect relationships are clear and the situations are stable. Many process-oriented situations and problems would fall into this domain. It's a domain of "known knowns".
+
+Solutions are usually clear in these situations and don't require much expertise.  
+
+The right approach would be sense–categorise–respond: understand the situation (sense), categorize it, then respond by applying a best-practice solution.
+
+Complicated
+In this domain, there might be multiple right answers but aren't immediately visible. It's a domain of "known unknowns" – when questions are clear but it takes work to answer them.
+
+That's why the best approach is to sense-analyze-respond. Because analysis is needed, the situations here typically require expert knowledge. Experts should assess the situation, investigate possible options and choose a course of action.
+
+Complex
+In this domain, there are "unknown unknowns". The situation cannot be understood by analysis because we don't yet know enough about it. It's not clear what needs to be answered in the first place.
+
+So the right approach is to experiment first, learn about the problem. Then sense what you're dealing with and respond appropriately. The goal should be to understand enough so that the problem or situation moves to the complicated domain where it's easier to deal with.
+
+Chaotic
+When things aren't under control, the situation falls into the chaotic domain. It's when cause and effect relationships are unclear. Here it's necessary to first act to establish some stability, to contain the situation. Only then assess the situation and work on bringing enough order to it to move it into the complex domain. Act–sense–respond.
+
+The chaotic domain also presents an opportunity to try novel solutions as people might be more open to them in this context.
+
+Disorder
+If you don't know where you stand, you're in the disorder domain. The goal should be to quickly identify the right domain and move forward from there. It can be helpful to break down the problem or situation into multiple parts and assign each to a specific domain.
+
+Determining which domain you're in
+It's best to get more familiar with each domain to learn when characteristics of a problem/situation apply to a particular domain. The sources below are a good place to start.
+
+Here's a set of questions that can also help point you to the right domain:
+
+Do you know what causes the situation?
+Is the situation under control?
+How much do you know about it?
+Does solving it require expert knowledge?
+Takeaway
+The key idea of the Cynefin framework is that different kinds of situations or problems require different kinds of responses. You should identify what kind of a situation you're dealing with and—with the help of this framework—choose an appropriate response.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Decision making and problem solving
+A Leader’s Framework for Decision Making
+by David J. Snowden and Mary E. Boone
+
+From the Magazine (November 2007)
+
+Summary.   Reprint: R0711C Many executives are surprised when previously successful leadership approaches fail in new situations, but different contexts call for different kinds of responses....more
+In January 1993, a gunman murdered seven people in a fast-food restaurant in Palatine, a suburb of Chicago. In his dual roles as an administrative executive and spokesperson for the police department, Deputy Chief Walter Gasior suddenly had to cope with several different situations at once. He had to deal with the grieving families and a frightened community, help direct the operations of an extremely busy police department, and take questions from the media, which inundated the town with reporters and film crews. “There would literally be four people coming at me with logistics and media issues all at once,” he recalls. “And in the midst of all this, we still had a department that had to keep running on a routine basis.”
+
+Though Gasior was ultimately successful in juggling multiple demands, not all leaders achieve the desired results when they face situations that require a variety of decisions and responses. All too often, managers rely on common leadership approaches that work well in one set of circumstances but fall short in others. Why do these approaches fail even when logic indicates they should prevail? The answer lies in a fundamental assumption of organizational theory and practice: that a certain level of predictability and order exists in the world. This assumption, grounded in the Newtonian science that underlies scientific management, encourages simplifications that are useful in ordered circumstances. Circumstances change, however, and as they become more complex, the simplifications can fail. Good leadership is not a one-size-fits-all proposition.
+
+We believe the time has come to broaden the traditional approach to leadership and decision making and form a new perspective based on complexity science. (For more on this, see the sidebar “Understanding Complexity.”) Over the past ten years, we have applied the principles of that science to governments and a broad range of industries. Working with other contributors, we developed the Cynefin framework, which allows executives to see things from new viewpoints, assimilate complex concepts, and address real-world problems and opportunities. (Cynefin, pronounced ku-nev-in, is a Welsh word that signifies the multiple factors in our environment and our experience that influence us in ways we can never understand.) Using this approach, leaders learn to define the framework with examples from their own organization’s history and scenarios of its possible future. This enhances communication and helps executives rapidly understand the context in which they are operating.
+
+Understanding Complexity
+Complexity is more a way of thinking about the world than a new way of working with mathematical models. Over a century ago, Frederick Winslow Taylor, the father of scientific
+
+...
+
+The U.S. Defense Advanced Research Projects Agency has applied the framework to counterterrorism, and it is currently a key component of Singapore’s Risk Assessment and Horizon Scanning program. Over time, the framework has evolved through hundreds of applications, from helping a pharmaceutical company develop a new product strategy to assisting a Canadian provincial government in its efforts to engage employees in policy making.
+
+The framework sorts the issues facing leaders into five contexts defined by the nature of the relationship between cause and effect. Four of these—simple, complicated, complex, and chaotic—require leaders to diagnose situations and to act in contextually appropriate ways. The fifth—disorder—applies when it is unclear which of the other four contexts is predominant.
+
+Using the Cynefin framework can help executives sense which context they are in so that they can not only make better decisions but also avoid the problems that arise when their preferred management style causes them to make mistakes. In this article, we focus on the first four contexts, offering examples and suggestions about how to lead and make appropriate decisions in each of them. Since the complex domain is much more prevalent in the business world than most leaders realize—and requires different, often counterintuitive, responses—we concentrate particularly on that context. Leaders who understand that the world is often irrational and unpredictable will find the Cynefin framework particularly useful.
+
+Simple Contexts: The Domain of Best Practice
+Simple contexts are characterized by stability and clear cause-and-effect relationships that are easily discernible by everyone. Often, the right answer is self-evident and undisputed. In this realm of “known knowns,” decisions are unquestioned because all parties share an understanding. Areas that are little subject to change, such as problems with order processing and fulfillment, usually belong here.
+
+Simple contexts, properly assessed, require straightforward management and monitoring. Here, leaders sense, categorize, and respond. That is, they assess the facts of the situation, categorize them, and then base their response on established practice. Heavily process-oriented situations, such as loan payment processing, are often simple contexts. If something goes awry, an employee can usually identify the problem (when, say, a borrower pays less than is required), categorize it (review the loan documents to see how partial payments must be processed), and respond appropriately (either not accept the payment or apply the funds according to the terms of the note). Since both managers and employees have access to the information necessary for dealing with the situation in this domain, a command-and-control style for setting parameters works best. Directives are straightforward, decisions can be easily delegated, and functions are automated. Adhering to best practices or process reengineering makes sense. Exhaustive communication among managers and employees is not usually required because disagreement about what needs to be done is rare.
+
+Nevertheless, problems can arise in simple contexts. First, issues may be incorrectly classified within this domain because they have been oversimplified. Leaders who constantly ask for condensed information, regardless of the complexity of the situation, particularly run this risk.
+
+Second, leaders are susceptible to entrained thinking, a conditioned response that occurs when people are blinded to new ways of thinking by the perspectives they acquired through past experience, training, and success.
+
+Third, when things appear to be going smoothly, leaders often become complacent. If the context changes at that point, a leader is likely to miss what is happening and react too late. In the exhibit “The Cynefin Framework,” the simple domain lies adjacent to the chaotic—and for good reason. The most frequent collapses into chaos occur because success has bred complacency. This shift can bring about catastrophic failure—think of the many previously dominant technologies that were suddenly disrupted by more dynamic alternatives.
+
+The Cynefin Framework
+
+The Cynefin framework helps leaders determine the prevailing operative context so that they can make appropriate choices. Each domain requires different actions. Simple and
+
+...
+
+Leaders need to avoid micromanaging and stay connected to what is happening in order to spot a change in context. By and large, line workers in a simple situation are more than capable of independently handling any issues that may arise. Indeed, those with years of experience also have deep insight into how the work should be done. Leaders should create a communication channel—an anonymous one, if necessary—that allows dissenters to provide early warnings about complacency.
+
+Finally, it’s important to remember that best practice is, by definition, past practice. Using best practices is common, and often appropriate, in simple contexts. Difficulties arise, however, if staff members are discouraged from bucking the process even when it’s not working anymore. Since hindsight no longer leads to foresight after a shift in context, a corresponding change in management style may be called for.
+
+Complicated Contexts: The Domain of Experts
+Complicated contexts, unlike simple ones, may contain multiple right answers, and though there is a clear relationship between cause and effect, not everyone can see it. This is the realm of “known unknowns.” While leaders in a simple context must sense, categorize, and respond to a situation, those in a complicated context must sense, analyze, and respond. This approach is not easy and often requires expertise: A motorist may know that something is wrong with his car because the engine is knocking, but he has to take it to a mechanic to diagnose the problem.
+
+Because the complicated context calls for investigating several options—many of which may be excellent—good practice, as opposed to best practice, is more appropriate. For example, the customary approach to engineering a new cell phone might emphasize feature A over feature B, but an alternative plan—emphasizing feature C—might be equally valuable.
+
+Another example is the search for oil or mineral deposits. The effort usually requires a team of experts, more than one place will potentially produce results, and the location of the right spots for drilling or mining involves complicated analysis and understanding of consequences at multiple levels.
+
+Entrained thinking is a danger in complicated contexts, too, but it is the experts (rather than the leaders) who are prone to it, and they tend to dominate the domain. When this problem occurs, innovative suggestions by nonexperts may be overlooked or dismissed, resulting in lost opportunities. The experts have, after all, invested in building their knowledge, and they are unlikely to tolerate controversial ideas. If the context has shifted, however, the leader may need access to those maverick concepts. To get around this issue, a leader must listen to the experts while simultaneously welcoming novel thoughts and solutions from others. Executives at one shoe manufacturer did this by opening up the brainstorming process for new shoe styles to the entire company. As a result, a security guard submitted a design for a shoe that became one of their best sellers.
+
+Another potential obstacle is “analysis paralysis,” where a group of experts hits a stalemate, unable to agree on any answers because of each individual’s entrained thinking—or ego.
+
+Working in unfamiliar environments can help leaders and experts approach decision making more creatively. For instance, we put retail marketing professionals in several military research environments for two weeks. The settings were unfamiliar and challenging, but they shared a primary similarity with the retail environment: In both cases, the marketers had to work with large volumes of data from which it was critical to identify small trends or weak signals. They discovered that there was little difference between, say, handling outgoing disaffected customers and anticipating incoming ballistic missiles. The exercise helped the marketing group learn how to detect a potential loss of loyalty and take action before a valued customer switched to a competitor. By improving their strategy, the marketers were able to retain far more high-volume business.
+
+Games, too, can encourage novel thinking. We created a game played on a fictional planet that was based on the culture of a real client organization. When the executives “landed” on the alien planet, they were asked to address problems and opportunities facing the inhabitants. The issues they encountered were disguised but designed to mirror real situations, many of which were controversial or sensitive. Because the environment seemed so foreign and remote, however, the players found it much easier to come up with fresh ideas than they otherwise might have done. Playing a metaphorical game increases managers’ willingness to experiment, allows them to resolve issues or problems more easily and creatively, and broadens the range of options in their decision-making processes. The goal of such games is to get as many perspectives as possible to promote unfettered analysis.
+
+Reaching decisions in the complicated domain can often take a lot of time, and there is always a trade-off between finding the right answer and simply making a decision. When the right answer is elusive, however, and you must base your decision on incomplete data, your situation is probably complex rather than complicated.
+
+Complex Contexts: The Domain of Emergence
+In a complicated context, at least one right answer exists. In a complex context, however, right answers can’t be ferreted out. It’s like the difference between, say, a Ferrari and the Brazilian rainforest. Ferraris are complicated machines, but an expert mechanic can take one apart and reassemble it without changing a thing. The car is static, and the whole is the sum of its parts. The rainforest, on the other hand, is in constant flux—a species becomes extinct, weather patterns change, an agricultural project reroutes a water source—and the whole is far more than the sum of its parts. This is the realm of “unknown unknowns,” and it is the domain to which much of contemporary business has shifted.
+
+Most situations and decisions in organizations are complex because some major change—a bad quarter, a shift in management, a merger or acquisition—introduces unpredictability and flux. In this domain, we can understand why things happen only in retrospect. Instructive patterns, however, can emerge if the leader conducts experiments that are safe to fail. That is why, instead of attempting to impose a course of action, leaders must patiently allow the path forward to reveal itself. They need to probe first, then sense, and then respond.
+
+There is a scene in the film Apollo 13 when the astronauts encounter a crisis (“Houston, we have a problem”) that moves the situation into a complex domain. A group of experts is put in a room with a mishmash of materials—bits of plastic and odds and ends that mirror the resources available to the astronauts in flight. Leaders tell the team: This is what you have; find a solution or the astronauts will die. None of those experts knew a priori what would work. Instead, they had to let a solution emerge from the materials at hand. And they succeeded. (Conditions of scarcity often produce more creative results than conditions of abundance.)
+
+Another example comes from YouTube. The founders could not possibly have predicted all the applications for streaming video technology that now exist. Once people started using YouTube creatively, however, the company could support and augment the emerging patterns of use. YouTube has become a popular platform for expressing political views, for example. The company built on this pattern by sponsoring a debate for presidential hopefuls with video feeds from the site.
+
+As in the other contexts, leaders face several challenges in the complex domain. Of primary concern is the temptation to fall back into traditional command-and-control management styles—to demand fail-safe business plans with defined outcomes. Leaders who don’t recognize that a complex domain requires a more experimental mode of management may become impatient when they don’t seem to be achieving the results they were aiming for. They may also find it difficult to tolerate failure, which is an essential aspect of experimental understanding. If they try to overcontrol the organization, they will preempt the opportunity for informative patterns to emerge. Leaders who try to impose order in a complex context will fail, but those who set the stage, step back a bit, allow patterns to emerge, and determine which ones are desirable will succeed. (See the sidebar “Tools for Managing in a Complex Context.”) They will discern many opportunities for innovation, creativity, and new business models.
+
+Tools for Managing in a Complex Context
+Given the ambiguities of the complex domain, how can leaders lead effectively? Open up the discussion. Complex contexts require more interactive communication than any of the
+
+...
+
+Chaotic Contexts: The Domain of Rapid Response
+In a chaotic context, searching for right answers would be pointless: The relationships between cause and effect are impossible to determine because they shift constantly and no manageable patterns exist—only turbulence. This is the realm of unknowables. The events of September 11, 2001, fall into this category.
+
+In the chaotic domain, a leader’s immediate job is not to discover patterns but to stanch the bleeding. A leader must first act to establish order, then sense where stability is present and from where it is absent, and then respond by working to transform the situation from chaos to complexity, where the identification of emerging patterns can both help prevent future crises and discern new opportunities. Communication of the most direct top-down or broadcast kind is imperative; there’s simply no time to ask for input.
+
+Unfortunately, most leadership “recipes” arise from examples of good crisis management. This is a mistake, and not only because chaotic situations are mercifully rare. Though the events of September 11 were not immediately comprehensible, the crisis demanded decisive action. New York’s mayor at the time, Rudy Giuliani, demonstrated exceptional effectiveness under chaotic conditions by issuing directives and taking action to reestablish order. However, in his role as mayor—certainly one of the most complex jobs in the world—he was widely criticized for the same top-down leadership style that proved so enormously effective during the catastrophe. He was also criticized afterward for suggesting that elections be postponed so he could maintain order and stability. Indeed, a specific danger for leaders following a crisis is that some of them become less successful when the context shifts because they are not able to switch styles to match it.
+
+Moreover, leaders who are highly successful in chaotic contexts can develop an overinflated self-image, becoming legends in their own minds. When they generate cultlike adoration, leading actually becomes harder for them because a circle of admiring supporters cuts them off from accurate information.
+
+Yet the chaotic domain is nearly always the best place for leaders to impel innovation. People are more open to novelty and directive leadership in these situations than they would be in other contexts. One excellent technique is to manage chaos and innovation in parallel: The minute you encounter a crisis, appoint a reliable manager or crisis management team to resolve the issue. At the same time, pick out a separate team and focus its members on the opportunities for doing things differently. If you wait until the crisis is over, the chance will be gone.
+
+Leadership Across Contexts
+Good leadership requires openness to change on an individual level. Truly adept leaders will know not only how to identify the context they’re working in at any given time but also how to change their behavior and their decisions to match that context. They also prepare their organization to understand the different contexts and the conditions for transition between them. Many leaders lead effectively—though usually in only one or two domains (not in all of them) and few, if any, prepare their organizations for diverse contexts.
+
+Decisions in Multiple Contexts: A Leader’s Guide
+
+Effective leaders learn to shift their decision-making styles to match changing business environments. Simple, complicated, complex, and chaotic contexts each call for different
+
+...
+
+During the Palatine murders of 1993, Deputy Chief Gasior faced four contexts at once. He had to take immediate action via the media to stem the tide of initial panic by keeping the community informed (chaotic); he had to help keep the department running routinely and according to established procedure (simple); he had to call in experts (complicated); and he had to continue to calm the community in the days and weeks following the crime (complex). That last situation proved the most challenging. Parents were afraid to let their children go to school, and employees were concerned about safety in their workplaces. Had Gasior misread the context as simple, he might just have said, “Carry on,” which would have done nothing to reassure the community. Had he misread it as complicated, he might have called in experts to say it was safe—risking a loss of credibility and trust. Instead, Gasior set up a forum for business owners, high school students, teachers, and parents to share concerns and hear the facts. It was the right approach for a complex context: He allowed solutions to emerge from the community itself rather than trying to impose them.• • •
+
+Business schools and organizations equip leaders to operate in ordered domains (simple and complicated), but most leaders usually must rely on their natural capabilities when operating in unordered contexts (complex and chaotic). In the face of greater complexity today, however, intuition, intellect, and charisma are no longer enough. Leaders need tools and approaches to guide their firms through less familiar waters.
+
+In the complex environment of the current business world, leaders often will be called upon to act against their instincts. They will need to know when to share power and when to wield it alone, when to look to the wisdom of the group and when to take their own counsel. A deep understanding of context, the ability to embrace complexity and paradox, and a willingness to flexibly change leadership style will be required for leaders who want to make things happen in a time of increasing uncertainty.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Understanding the Cynefin framework – a basic intro
+September 29, 2013 / Julia Wester / 12 Comments
+It was Kaizen Camp  when I first learned about the Cynefin framework. The first thing you might be wondering is how the heck you pronounce Cynefin. I know that was my first question. It is Kih-neh-vihn (/ˈkʌnɨvɪn/). The word is Welsh in origin and was coined by Dave Snowden in 1999.
+
+What is it for?
+In simplest terms, the Cynefin framework exists to help us realize that all situations are not created equal and to help us understand that different situations require different responses to successfully navigate them.
+
+Different problems warrant different solutions
+
+How often have you seen someone try to handle a difficult situation in an overly-simplistic way and then be really confused when it failed? If so, they could really benefit from an introduction to the Cynefin framework.
+
+
+Cynefin visualized…
+
+Dave Snowden, released under CC BY 3.0
+
+ 
+
+You can see in the above diagram that there are 5 domains. What? You only see four? Don’t forget the dark mass of Disorder at the center.
+
+The 5 domains explained
+Cynefin categorizes problems into 5 domains…
+
+bulleted descriptions below are [largely] as described in On Sense-Making, And Cynefin:
+
+Obvious (formerly known as Simple) is the domain of best practices.
+Characteristics: Problems are well understood and solutions are evident. Solving problems requires minimal expertise. Many issues addressed by help desks fall into this category. They are handled via pre-written scripts.
+Approach: Problems here are well known. The correct approach is to sense the situation, categorize it into a known bucket, and apply a well-known, and potentially scripted, solution.
+Complicated is the domain of good practices.
+Characteristics: You have a general idea of the known unknowns — you likely know the questions you need to answer and how to obtain the answers. Assessing the situation requires expert knowledge to determine the appropriate course of action. Given enough time, you could reasonably identify known risk and devise a relatively accurate plan. Expertise is required, but the work is evolutionary, not revolutionary.
+Approach: Sense the problem and analyze. Apply expert knowledge to assess the situation and determine a course of action. Execute the plan.
+Complex is the domain of emergent solutions.
+Characteristics: There are unknown unknowns — you don’t even know the right questions to ask. Even beginning to understand the problem requires experimentation. The final solution is only apparent once discovered. In hindsight it seems obvious, but it was not apparent at the outset. No matter how much time you spend in analysis, it is not possible to identify the risks or accurately predict the solution or effort required to solve the problem.
+Approach: Develop and experiment to gather more knowledge. Execute and evaluate. As you gather more knowledge, determine your next steps. Repeat as necessary, with the goal of moving your problem into the “Complicated” domain.
+Chaotic is the domain of novel solutions.
+Characteristics: As the name implies, this is where things get a bit crazy. Things have gone off the rails and the immediate priority is containment. Example: Production defects. Your initial focus is to correct the problem and contain the issue. Your initial solution may not be the best, but as long as it works, it’s good enough. Once you’ve stopped the bleeding, you can take a breath and determine a real solution.
+Approach: Triage. Once you have a measure of control, assess the situation and determine next steps. Take action to remediate or move your problem to another domain.
+Disorder is the space in the middle.
+Characteristics: If you don’t know where you are, you’re in “Disorder.” Priority one is to move you to a known domain.
+Approach: Gather more info on what you know or identify what you don’t know. Get enough info to move to a more defined domain.
+The boundaries of these domains are not hard. Based on activity, situations can bounce between domains or live on the borderlands between two domains.
+
+Summary
+So, the framework not only tells us how to approach a set of different situations, but the characteristics also explain enough to help us recognize the situation in which we currently reside. You can have great solutions, but if they are applied in the incorrect context, they will be worthless or worse, harmful.
+
+This framework isn’t only useful for pointy-haired management people, it is useful for software developers and all other humans! This can be applied to many different vectors of life experiences. The net takeaway is that you need to pair the right approach with the corresponding situation to achieve optimal outcomes!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cynefin Framework Template
+Navigate different types of problems and guide your decision-making. Use the Cynefin Framework to see things from different viewpoints and make conceptual decisions.
+
+Use template
+About the Cynefin Framework Template
+Complex problems leave even the most experienced decision-makers unsure where to even begin or what questions to ask. The Cynefin Framework, developed by Dave Snowden at IBM in 1999, can help you navigate those problems and find the appropriate response.  Managers and executives in numerous different industries use the Cynefin Framework to devise sound strategies. You can apply this Decision-Making Template to all types of challenges, especially unexpected challenges that require a swift response.
+
+What is the Cynefin Framework?
+The Cynefin Framework allows you to think through a situation and understand the appropriate response to it. It outlines five domains — Obvious, Complicated, Complex, Chaotic, and Disorder. 
+
+The Obvious domain encompasses situations you’ve seen before and for which you have best practices. 
+
+The Complicated domain applies to situations in which you don’t know what’s happening, but you possess the skills necessary to analyze the situation and figure out what must be done. 
+
+The Complex domain has elements that are novel and may be unknown at the outset. Probing via questions and experimentation is required just to understand the problem. The solution comes through iteration.
+
+In Chaotic situations, the environment is unstable, and you must act quickly. 
+
+The Disorder domain describes any situation in which you cannot determine the nature of the environment. The framework provides a model for a leader’s behavior in each domain. 
+
+How is the Cynefin Framework set up?
+There are five domains in the Cynefin Framework: obvious, complicated, complex, chaotic, and disorder. Obvious problems are well understood, and their solutions are evident, so they can be solved by applying a well-known, potentially scripted solution. 
+
+With complicated problems, you generally have a sense of the questions that need to be answered. To solve these types of problems, you can apply expert knowledge and decide what to do next. 
+
+With complex problems, there’s a lot you don’t know—you aren’t even sure which questions to ask. To solve complex problems, you’ll need to experiment, evaluate, and gather more knowledge. 
+
+With chaotic problems, your immediate priority is to contain them and then find a long-term solution. 
+
+Disorder refers to the space in the middle of the framework. If you don’t know where you are in the framework, you’re currently in Disorder, and your priority is to move to one of the other domains.  
+
+When would you use the Cynefin Framework?
+The Cynefin Framework is a powerful, flexible model of behavior. You can use the template any time you need to categorize a problem or decision and figure out the appropriate response. Many organizations use the framework to aid in product development, marketing plans, and organizational strategy.
+
+The framework is also useful in responding to a crisis or any unforeseen event. Use the template to train new hires on how to react to such an event or to run through worst-case scenarios.
+
+What are the benefits of using the Cynefin Framework?
+Here are some reasons why the Cynefin Framework is so popular and how it can help you.
+
+The Cynefin Framework is an excellent training tool for virtually all industries. It’s ideally suited to developing critical-thinking skills in future leaders or otherwise honing the thought processes of existing leaders. Working with the Framework ultimately creates leaders that are comfortable when faced with expected and unexpected challenges.
+
+The Cynefin Framework assists leaders in thinking outside of the norm, helping them avoid a “one-solution-fits-all-challenges” mentality. It keeps minds fresh and keeps approaches dynamic.
+
+The Cynefin Framework is the perfect way to focus a group into the correct mindset. It can effectively be used as a jumping-off point in broader projects, allowing for a swift, organized approach.
+
+The Framework can be used to bring order to an unexpected turn of events. Simply walking through the steps is a good way to calm what could otherwise be an environment of panic. 
+
+General communication between leaders and staff is improved due to a proper understanding of any given situation. The same applies when a unified team walks through the Cynefin Framework looking for the best approach to a group project.
+
+The method takes into account the past behavior of the leader and staff and the organization’s history of dealing with challenges. In this way, the proven solutions of the past are brought to the table, examined, and used as a mirror for a new set of circumstances.
+
+The Framework is easily adaptable and may be adjusted as a challenge continues to evolve. Tweaking the approach is as simple as adjusting applicable factors on the fly.
+
+How to use the Cynefin Framework Template
+The Miro Cynefin Framework Template is divided into four sections that correlate with each domain. The text boxes can be assigned to Complex, Complicated, Chaotic, and Obvious. If you aren’t sure where to start, the initial section would be Disorder. Steps can be taken to move from Disorder to another, more defined section. 
+
+Your first step is to decide where the current challenge resides. For example, it may be an Obvious challenge, meaning that the solution is well known and easily applicable. If this is the case, write your challenge on a digital sticky note and add it to the Obvious quadrant. Feel free to add additional information, such as previously-used solutions.
+
+The problem may otherwise be Complicated, meaning that it is a challenge with unanswered questions. In the Complicated section of the template, you can apply the necessary expert knowledge to determine the appropriate course of action. 
+
+With more information provided or sourced, the Complicated challenge may start to become more approachable, and a solution can be settled on.
+
+If a challenge falls into the Complex category, experimentation, analysis, and evaluation are necessary. Based on this deep analysis, the goal is to move your problem into the Complicated domain. This will pave the way to an appropriate solution.
+
+If a problem falls within the Chaotic quadrant, the initial challenge is to control the problem. Taking swift action to contain the issue and finding a rapid solution that’s ‘good enough’ is the priority.
+
+Use case of the Cynefin Framework
+The world has faced numerous unexpected challenges and changes in the past few years. Business leaders have had to act fast and make decisions not just in an emergency but also in the wake of unprecedented events. This is an excellent example of where leaders can benefit from the Cynefin Framework. 
+
+Using the Cynefin Framework to make decisions in an emergency can help make sense of a situation and outline the way forward. When an emergency arises, it usually falls into the Chaotic section, and the Act - Sense - Respond format is followed. There is no relationship between cause and effect, so the primary goal is to create order and stability.
+
+When the pandemic arrived, businesses had to act fast. Decisions such as closing up shop or switching to remote work were taken almost instantaneously to address the most pressing issue — creating social distance. 
+
+Once these measures were in place, there was a need to make sense of the situation. In some cases, this meant reopening key areas of businesses where workers could don PPE or operate without coming into contact with others. In the remote work environment, it meant ensuring that all workers had access to an internet connection, the software required to complete their work, and other necessary tools. 
+
+In some cases, experts were needed to make sense of operational issues and focus on finding and creating solutions. This fulfilled the response criteria, as an adequate response to current issues was formulated and executed. 
+
+Cynefin Framework FAQs
+Why do you need a decision-making framework?
+Decision-making frameworks such as the Cynefin Framework are the perfect starting point for tackling any challenge. Regardless of whether the challenge seems familiar, completely unfamiliar, or even an emergency, a decision-making framework starts to quickly bring the matter into clearer focus. The challenge may seem simple on the surface and appear as if a standard approach is applicable. But a closer look may reveal that not everything is as it seems, and you may need additional information. Obvious, Complicated, or otherwise, using the Cynefin Framework helps organize the approach into something more well thought out.

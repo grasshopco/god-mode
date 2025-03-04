@@ -1,0 +1,188 @@
+OODA loop
+DECISION MAKING
+Make faster decisions with incomplete data.
+In the real world and especially in business, you rarely have all the information to make a decision. The OODA loop is a framework that helps you make decisions fast and adapt in quickly changing and competitive environments.
+
+It was developed by Colonel John Boyd, a military strategist with the US Air Force. This framework was originally intended for training solders to make time-sensitive decisions rapidly when there may not be time to gather all the information. Nowadays, it is being applied across industries and is just as relevant for business.
+
+How to use it
+OODA stands for:
+
+Observe
+Orient
+Decide
+Act
+The original framework as presented by Boyd (shown below) is much more complex but the foundation lies in these four phases. Let's look at each phase in detail.
+
+OODA loop (source: Wikimedia)
+Observe
+You start by gathering available information and data. This includes the situation around you, wider context, any outside information but also feedback from a previous loop (more on this below). Note that data can become obsolete so it's important to gather data quickly, otherwise you run the risk of making a decision based on something that's no longer relevant or true.
+
+Orient
+Orientation is about analysing and synthesising the information gathered. It's where you consider your options, leveraging your experience, knowledge, and analysis to understand the situation. This phase often involves challenging status quo and considering the perspectives of others to form a comprehensive view.
+
+Decide
+The decision phase is where you choose a course of action based on your observation and orientation. In this phase, you are basically making a hypothesis and you will test by acting on it. It's crucial to balance speed with thoroughness – decisions must be timely but also informed and strategic.
+
+Act
+Finally, acting on your decision is about implementation. This phase tests the validity of your previous phases – you'll quickly learn if your observations and decisions were accurate.
+
+Going through the loops
+While being able to make decisions faster than your competition is important, speed alone isn't the only factor to focus on. Perhaps more important is getting into a good rhythm of going through the loops continuously because it generates unpredictability. 
+
+That makes it difficult for your competition to understand and orient themselves to what happens next. Going through OODA loops with more tempo than the competition gives an organization more control of the environment and a better chance of succeeding.
+
+Example
+Imagine a software company, 'TechGenius', that has recently launched a new project management tool. Suddenly, a competitor releases a similar tool with a unique feature that's gaining attention in the market.
+
+Observe: The product team at TechGenius quickly gathers data. They monitor customer feedback, analyse market trends, and review the competitor's new feature. They also assess the impact of this feature on their own product's performance and customer satisfaction.
+
+Orient: The team synthesises this information. They consider how this new feature fits into the broader market trends and what it means for their product strategy. They draw on their experience with past updates, current technology capabilities, and customer preferences. The team challenges their initial assumptions about their product's unique selling points and considers whether they need to pivot their strategy.
+
+Decide: After thorough analysis, the team decides to develop a new feature that not only matches the competitor's offering but also integrates seamlessly with their tool's existing functionalities, offering added value to their customers.
+
+Act: TechGenius quickly mobilises its development team to start working on the new feature. They set clear milestones and a timeline for development and launch. The marketing team begins preparing a campaign to announce the upcoming feature, aiming to recapture market attention.
+
+As the new feature is developed and released, the team doesn't stop there. They re-enter the OODA loop, observing customer reactions, orienting themselves based on this feedback, deciding on any necessary adjustments, and acting to implement these changes.
+
+In this scenario, TechGenius utilised the OODA Loop to rapidly respond to a competitive challenge. By swiftly moving through the observe-orient-decide-act phases, they were not only able to counter a competitor's move but also enhance their own product's value proposition, demonstrating the power of agility and adaptability in the fast-paced tech industry.
+
+Takeaway
+The OODA loop provides guidance to make fast decisions in quickly changing and competitive environments. You observe, orient, decide and act. It's important to go through the loop continuously, especially as you are competing with others. The faster you can do that, the better the chance of outmanoeuvring your competition.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Essence of Winning and Losing
+John R. Boyd
+For information on this edition, please
+see the last page.
+Edited by Chet Richards and Chuck Spinney
+Produced and designed by Ginger Richards
+September 2012
+www.dnipogo.org
+[Original dated
+“January 1996”]
+Key Statements
+• Without our genetic heritage, cultural traditions, and previous experiences,
+we do not possess an implicit repertoire of psychophysical skills shaped by
+environments and changes that have been previously experienced.
+• Without analyses and synthesis across a variety of domains or across a
+variety of competing/independent channels of information, we cannot evolve new
+repertoires to deal with unfamiliar phenomena or unforeseen change.
+• Without a many-sided, implicit cross-referencing process of projection,
+empathy, correlation, and rejection (across these many different domains or
+channels of information), we cannot even do analysis and synthesis.
+• Without OODA loops, we can neither sense, hence observe, thereby collect a
+variety of information for the above processes, nor decide as well as implement
+actions in accord with these processes.
+Or put another way:
+Without OODA loops embracing all of the above and without the ability to get
+inside other OODA loops (or other environments), we will find it impossible to
+comprehend, shape, adapt to and in turn be shaped by an unfolding evolving
+reality that is uncertain, everchanging, and unpredictable
+1
+2
+We can further clarify these statements and their
+interactions by the following sketch.
+Insights:
+Note how orientation shapes observation, shapes decision, shapes action, and in turn is shaped by the feedback and
+other phenomena coming into our sensing or observing window.
+Also note how the entire “loop” (not just orientation) is an ongoing many-sided implicit cross-referencing process
+of projection, empathy, correlation, and rejection.
+Feed
+Forward
+Observations Decision
+(Hypothesis)
+Action
+(Test)
+Cultural
+Traditions
+Genetic
+Heritage
+New
+Information Previous
+Experience
+Analyses &
+Synthesis Feed
+Forward Feed
+Forward
+Implicit
+Guidance
+& Control
+Implicit
+Guidance
+& Control
+Unfolding
+Interaction
+With
+Unfolding Environment
+Interaction
+With
+Environment Feedback
+Feedback
+Outside
+Information
+Unfolding
+Circumstances
+Observe Orient Decide Act
+The OODA “Loop” Sketch
+3
+Illumination
+By pulling all this together, we can see that the key
+statements, OODA loop sketch, and related
+insights represent an evolving, open-ended, farfrom-equilibrium process of self-organization,
+emergence, and natural selection.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+About this edition
+This edition of “The Essence of Winning and Losing “ is a PDF of an Apple Keynote rendering of the
+version that appeared for years in HTML on the now-defunct web site belisarius.com. Boyd’s first
+edition carried the date “28 June 1995,” and the last appeared sometime in January 1996, a little
+over a year before Colonel Boyd died. This was the only one of Boyd’s briefings that was originally
+created in PowerPoint and it was later published on the web as an HTML frameset.
+If you have read any of the biographies of John Boyd, you may remember this briefing as “the big
+squeeze.” If you develop a deep understanding of this work, you’ll have the essence of Boyd.
+About the Editors
+Chuck Spinney was a colleague of Boyd’s both in the Air Force and in the Office of the Secretary of
+Defense, where he participated in every edition of the Discourse. Chuck is the author of Defense
+Facts of Life and numerous monographs and op-eds. His commentaries on defense issues appear
+from time to time in his blog, http://chuckspinney.blogspot.com/.
+Chet Richards worked with Col Boyd on his first paper, “Destruction and Creation,” on his later
+presentations, Conceptual Spiral and The Essence of Winning and Losing, and near the end of
+Boyd’s life, on business applications. He is a retired colonel in the Air Force, and wrote a book,
+Certain to Win (2004), that applies Boyd’s concepts to business. He is also the author of three
+books on defense policy.
+Ginger Richards was co-owner and president of Kettle Creek Corporation and created the layouts
+for the PowerPoint and Keynote versions of all Boyd’s briefings.

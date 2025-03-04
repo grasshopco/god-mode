@@ -1,0 +1,183 @@
+Ladder of inference
+DECISION MAKING
+Avoid jumping to conclusions. Make decisions based on reality.
+We act and make decisions based on the conclusions we make. But we tend to jump to these conclusions and skip important parts of the reasoning process.
+
+Ladder of inference, developed by a former Harvard professor Chris Argyris, is a tool that helps you fill the gaps in your thinking and make decisions based on reality. It's also helpful to challenge the thinking of others and reach better conclusions together.
+
+The ladder
+There are 7 steps on the ladder that represent our mental processes. Here's what it looks like from the bottom up:
+
+Available data
+This is the reality we are able to observe.
+Selected data
+We select what we pay attention to based on our prior experiences and existing beliefs. We don't have the mental capacity to take in every piece of data available, so we have to make this selection.
+Interpretations
+We give facts meaning. We paraphrase what we see or hear to make sense of it.
+Assumptions
+Based on our interpretation, we make our own personal assumptions.
+Conclusions
+We draw conclusions from our assumptions.
+Beliefs
+Our beliefs are then developed from the conclusions we make.
+Actions
+Finally, we take actions that are rooted in what we believe to be true.
+These processes usually happen unconsciously and very quickly in our brain. Applying this ladder consciously allows you to take a step back and see where you're jumping to conclusions.
+
+How to use it
+Whenever you make a conclusion about something or are making decisions based on your conclusions, it's good to stop and question your reasoning.
+
+The Ladder of Inference
+First, identify on which step of the ladder you currently are. Are you about to take action and you're not sure if it's the right one? Or perhaps you're aware of some of the assumptions you're making?
+
+Then work your way down before building your reasoning up again. To work your way down the ladder, use these guiding questions for each step:
+
+Actions:
+Why do I believe this to be the right action? What are some alternative options?
+Beliefs:
+What beliefs do I hold about this? What conclusions are they based on?
+Conclusions:
+Why did I conclude this? What are my assumptions there?
+Assumptions:
+Are my assumptions valid? Why am I assuming this? 
+Interpretations:
+Am I looking at this data objectively? What other meanings could they have?
+Selected data:
+What did I ignore or didn't pay attention to? Are there other sources of data I didn't consider?
+As you answer these, you may find that your reasoning changes along the way and that's good. When you reach the bottom of the ladder, work your way back up again, this time more consciously and deliberately.
+
+Example
+Let's see how applying the ladder of inference looks like on a practical example.
+
+Suppose I'm managing a team of developers. One of them hasn't been performing well recently. He's been missing deadlines and several projects were delayed because of this. I conclude he's not cut out for the job and decide to fire him.
+
+However, I stop and ask myself: Is this the right thing to do? I can now apply the ladder of inference to unpack my thinking and perhaps make a better decision. I ask myself the guiding questions:
+
+Why do I believe that firing this person is the right action? Because it's clear to me he's not right for the job.
+What conclusions is this belief based on? That he's not a good developer.
+What are my assumptions here? I assumed that his recent results are representative of his qualities (or lack thereof).
+Why am I assuming this? Because missed deadlines mean he's not efficient.
+What other meanings could the data I'm looking at have? Missed deadlines might also mean the deadlines are unreasonable or he's taking extra time to deliver quality code.
+Are there other sources of data I didn't consider? I haven't asked him directly yet. When I do, I might find out the real reason he's been missing deadlines.
+This is a simplified example but it shows the kind of jumping to conclusions I want to avoid: missed deadlines → inefficient → not a good developer → should be fired. By unpacking my thinking, I can look at the situation more objectively and I may discover different reasons for what's happening: perhaps the deadlines are too tight or he's going through some personal issues. Neither of which should be a reason to fire him.
+
+The ladder of influence has just helped me avoid making a bad and premature decision.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Translator: tom carter Reviewer: Bedirhan Cinar Imagine a microscopic-sized ladder contained in the part of our brain that we'll label our subconscious. The Ladder of Inference, which was first proposed by Harvard professor Chris Argyris, is the basis of this model. Every time we interact with someone, that experience enters the ladder at the bottom. That same experience zips up the ladder in the blink of an eye, exiting at the top. This process happens thousands of times a day without us knowing it.
+
+Let's focus on what happens on each rung of the ladder. On the first rung, we have the raw data and observations of our experience. This is very similar to what someone watching a video recording of our experience would see. Moving up to the second rung, we filter in specific information and details from our experience. We unknowingly filter based on our preferences, tendencies, and many other aspects that we believe are important. On to the third rung. We assign meaning to the information we have filtered through.
+
+This is where we start to interpret what our information is telling us. On our fourth rung, a very crucial thing happens. We develop assumptions based on the meaning we created on the previous rung, and we start to blur the distinction between what is fact and what is story. On the fifth rung, we develop conclusions based on our assumptions. This is also where our emotional reactions are created. On the sixth rung, we adjust our beliefs about the world around us, including the person or people involved
+
+in our experience of the moment. On the seventh and final rung, we take action based on our adjusted beliefs. Still with me? Great! Let's take a real-life example and run it up the ladder to see how this all works. Have you ever been cut off in a parking lot, signal light on as you steer toward your coveted spot, only to slam on your brakes at the last minute as someone pulls in front of you and steals your spot away? Imagine that experience and notice all of the data and observations landing on the first rung of your ladder.
+
+Now let's watch what we pay attention to on the second rung. Who cares that it's sunny out and the birds are chirping? The 50% off sign outside of your favorite store is meaningless. You filter in the sensation of your grip tightening on the wheel, you feel your blood pressure rise, you hear the squeal of your brakes, and you notice the expression on the face of the other driver as he pulls in front of you and quickly looks away. Time for our third rung. Ever since you were young, your parents taught you the importance of waiting in line
+
+and taking your turn. You live and die by the rule of first come, first served. And now this guy has just stolen your spot. What gives? Up to the fourth rung we go. Watch closely as our assumptions take over and our story creates itself. "That stupid jerk, didn't his parents teach him anything? How could he not see my signal light? He must never pay attention! Why does he think he's more important than anyone else?" Jumping quickly to the fifth rung, we conclude that this guy is heartless, inconsiderate,
+
+he needs to be taught a lesson and put in his place. We feel angry, frustrated, vindictive, justified. On our sixth rung, we adjust our beliefs based on the experience. "That's the last time I give in! Next time someone tries to cut me off, tires will be smoking on the pavement as I squeal past them into my spot." And finally our last rung: we take action. We back up, pull up behind his car, honk our horn, and roll down our window to scream a few choice words as well. Now imagine, he walks over quickly, apologizing.
+
+His wife, who's almost due with their first baby, called him from inside the mall to say she is in labor and needs to get to the hospital immediately. We're momentarily shocked, apologize profusely, and wish him luck as he rushes toward the entrance. What just happened here? What changed? Why is this so significant? In our parking lot example, our beliefs were short-circuited by the ladder of the other individual. "My wife is in labor, I need to get there quick, there's a parking spot. Whew! Oh, jeez, I cut someone off.
+
+I'd better apologize quickly so they don't think I'm a jerk." But what if we were able to short-circuit our ladders ourselves? Proactively, by choice? Guess what? We can! Let's return to our unique human function of free will. Next time you notice yourself reacting to your experience, pay focused attention to your ladder. Ask yourself what beliefs are at play, where do they come from? What data and observations did you filter in as a result of your beliefs, and why? Are your assumptions valid and supported by facts?
+
+Would a different set of assumptions create different feelings, and result in new and better conclusions and actions? We all have our own unique ladder. Be mindful of yours, and help others to see theirs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Ladder of Inference
+By
+The Systems Thinker
+   
+How we act depends on how we understand the situation we are in. Our understandings often seem obvious to us, as if they were given by the situation itself. But people can come to very different understandings, depending on what aspects of the situation they notice and how they interpret what is going on. The Ladder of Inference is a model of the steps we use to make sense of situations in order to act. It helps us to think about our thinking and to coordinate our thinking with others.
+
+.It helps us to think about our thinking and to coordinate
+
+Available Data: All the directly observable data that surround us in daily life, including people’s words, tone of voice, and body movement; statistical results from a marketing survey; accounting reports; and so on.
+
+Example: Karen responds to your suggestion by pausing a moment and then saying, “That sounds like a rational approach.”
+
+Select Data: Because we can’t pay attention to all available data, we sometimes make conscious choices about what data to select and what to ignore. More often, though, the selection process occurs subconsciously.
+
+Example: You notice that Karen paused and then described the suggestion as “a rational approach.”
+
+Paraphrase Data: When the data we select have to do with human interaction—including spoken language, written communication, and gesture—we next put into our own (unspoken) words what the person is saying or doing. This paraphrasing occurs as we listen and is fundamental to how we interpret the meaning of people’s actions.
+
+Example: You say to yourself, “Karen is saying that there is a problem with my suggestion. While it is rational, it does not address the emotions involved.”
+
+Name What Is Happening: The naming step continues the interpretation process by characterizing what is happening as belonging to a more general category.
+
+Example: You characterize Karen’s actions as “Having doubts about my suggestion and covering them up.”
+
+Explain/Evaluate What Is Happening: Having named what is happening, we then explain why it is happening by drawing on our stock of causal theories. We may also evaluate it as good or bad by drawing on our value system.
+
+Example: You make the assessment that “Karen is uncomfortable with conflict and is politely preventing us from being of more help to her.”
+
+Decide What to Do: Based on how we explain and/or evaluate what is happening, and drawing on our repertoire of actions, we decide what to do.
+
+Example: You decide to stop offering suggestions.
+
+Reflexive Loop: Our assumptions, values, and beliefs influence how we select data, interpret what is happening, and decide what to do. Our interpretations and decisions then feedback to reinforce (usually) our assumptions, values, and beliefs. We act on the basis of our interpretations, and our actions affect what data is available to us. So our ways of understanding and acting in the world create a self-reinforcing system, insulating us from alternative ways of understanding.
+
+USING THE LADDER
+The Impact of Jumping Up the Ladder
+Our own conclusions seem obviously right to us.
+People can and do reach different conclusions. When they each view their own conclusions as obvious, they don’t see a need to say how they reached them.
+People see the different conclusions of others as obviously wrong, and invent reasons to explain why others say things that are so obviously wrong.
+When people disagree, they often hurl conclusions at each other from the top of their respective ladders, making it hard to resolve differences and to learn from one another.
+General Guidelines
+Notice your conclusions as conclusions based on your inferences, not as self-evident facts.
+Assume your reasoning process could have gaps or errors that you do not see.
+Use examples to illustrate the data you select that led to your conclusions.
+Paraphrase (out loud) the meanings you hear in what others say, so that you can check if you are understanding correctly.
+Explain the steps in your thinking that take you from the data you select and the meanings you paraphrase to the conclusions you reach.
+Ask others if they have other ways of interpreting the data or if they see gaps in your thinking.
+Assume that others may reach different conclusions because they have their own Ladder of Inference with a logic that makes sense to them.
+Ask others to illustrate the data they select and the meanings they paraphrase.
+Ask others to explain the steps in their thinking.

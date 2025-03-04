@@ -1,0 +1,159 @@
+Hard choice model
+DECISION MAKING
+Figure out what kind of a decision you're making.
+The hard choice model can help you see the kind of a decision you're making – whether it's a no-brainer, a hard choice or something in between. It will enable you to move forward with your decision. 
+
+How to use it
+Think about two factors of your decision:
+
+How impactful it is
+How easy it is to compare the options
+There are four kinds of decisions that you can make. This model places them based on those two factors:
+
+Hard choice model by Wes O'Haire
+No-brainer
+Decision with low-impact where it's easy to compare the options.
+
+Here you can move fast and go with your gut feeling.
+
+Apples/Oranges choice
+Decision with low-impact where it's hard to compare the options.
+
+You should refine your options based on what is really important to you.
+
+Big choice
+Decision with high-impact where it's easy to compare the options.
+
+You need to gain confidence before making the decision.
+
+Hard choice
+Decision with high-impact where it's hard to compare the options.
+
+In this case, a tool like the decision matrix can help you carefully evaluate options based on different factors.
+
+Move forward
+When you can categorize your decision using this model, it will enable you to take the appropriate action.
+
+Sources
+"Mental models for designers" by Wes O'Haire
+
+
+
+
+
+
+
+
+
+
+Article — Product Design
+
+Mental models for designers
+Written by Wes O'Haire — Photograph by Charlotte Ratel
+
+Mental Models
+
+
+
+Brand
+Writing
+Design Research
+Product Design
+Creative Culture
+Process & Practice
+Published:
+
+December 8, 2019
+
+Curious about product design at Dropbox? Here’s a look at tools we use for solving problems, making decisions, and communicating ideas.
+
+A few years ago, I was getting ready to present some new designs to a few executives for review. The research was thorough. The interactions were thoughtful. The pixels were polished.
+
+But as I started to explain our team’s design direction, things went south. People were slightly confused and weren’t sure how we were making decisions. Ultimately, they had a hard time buying in, and it was all on me.
+
+After the review, I realized that:
+
+I hadn’t shown how we solved the problem
+I hadn’t created a clear decision framework
+I hadn’t crafted a narrative around our solution
+Turns out, there’s a lot more to being a designer than designing.
+
+So how can you operate outside of your core design skills? Use mental models: simple explanations of how something in the world works. Like supply and demand, which helps us understand the economy, or the Pareto Principle, which helps us understand cause and effect.
+
+To get you started, I’ve put together a set of seven of my favorite mental models that I use daily as a designer. They’ll help you solve problems, make decisions, and communicate ideas.
+
+Models for problem-solving
+First principles
+
+Do you need an innovative solution to a complex problem? Try approaching the problem from first principles.
+
+To do this, take your problem and:
+
+Break it down into its fundamental parts
+Reconfigure those parts to build a solution
+Problem and solution
+I did this on a project last year where we started with our problem statement. From there, I broke it down into its fundamental parts, then addressed each part, and reconfigured it to build up a solution. More on first princples here.
+
+Problem map
+Inversion
+
+Are you solving for only the best-case scenario? Try inversion to get a 360-degree view of your problem. To do this, instead of thinking of ideal solutions, think of bad solutions then ask yourself, “How might we avoid these?”
+
+This method is great in situations when you want to approach a problem from an alternative point of view, or when you want to make sure you avoid worst-case scenarios.
+
+Inversion map
+We did this with our Customer Experience team, which handles all of customer support. Before the project started, we met with two of our top-tier agents, and they helped us brainstorm all the ways in which the feature could potentially go wrong for our users. They helped us round out our view of the problem, instead of locking in to an early idea. Read more examples of inversion here.
+
+Pre-Moretem
+Abstraction laddering
+
+Want to make sure you see the forest for the trees? Try abstraction laddering to get above your problem.
+
+Abstraction laddering
+Start with your original problem statement: Design a better can opener
+Then ask “how” questions to get to more concrete statements. How might we design a better can opener? → Make it more appealing. Paint it red and add a bow!
+You can also ask “why” questions to get more abstract statements. Why might someone need a can opener? → To get soup out of a can
+Now ask “how” from a higher level How might we design a better way to get soup out of a can → We could redesign the top of the can itself to be a pop top
+why how cycle
+Models for decision-making
+Hard choice model
+
+What kind of decision are you making? The hard choice model is a great way to figure this out.
+
+Take your decision and look at:
+
+How impactful the decision is
+How easy it is to compare the options
+Hard Choices
+I find that many times I think I’m making a Hard Choice, but in reality it’s a Big Choice or an Apples/Oranges Choice. This framework can help you differentiate between these types of decisions.
+
+Confidence decides speed vs. quality
+
+Should you be optimizing for speed or quality? This is a question we ask ourselves a lot. And it comes down to two things: your confidence that you’re solving the right problem, and your confidence in the solution you’re designing.
+
+Confidence Map
+Low confidence in the importance of the problem? Focus on speed.
+High confidence in the problem but low confidence in your solution? Focus equally on speed and quality.
+High confidence in the problem and the solution? Focus on quality.
+More on this model from Brandon Chu here.
+
+Models for communicating
+What, so what, now what?
+
+Are you giving quick feedback? What, so what, now what is a lightweight way to structure your feedback.
+
+So what now
+The diamond model
+
+Are you preparing long-form content (like presentations or big docs)? The diamond model works great for putting a structure around your main idea.
+
+Diamond Model
+Attention: Start with a story, statistic, or something similar
+Main topic: Briefly introduce the main topic you’ll cover
+Previews: Give quick previews of your subtopics
+Subtopics: Go into depth with your subtopics
+Summaries: Recap your subtopics
+Conclusion: Paint an ideal vision of the future
+Call to action: Invite your audience to act or make a decision
+Try them out
+These models are valuable only if they’re used. So when you’re at your desk this week and trying to solve a problem, make a decision, or communicate an idea, try one of these mental models. If you practice several of these models, you'll be well-equipped for your next big design challenge.

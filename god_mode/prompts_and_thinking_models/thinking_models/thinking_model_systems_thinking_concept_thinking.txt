@@ -1,0 +1,556 @@
+Concept map
+SYSTEMS THINKING
+Understand relationships between entities in a concept or system.
+Concept mapping is a great way to visualise understanding of a concept or system and understand the relationships between its entities.
+
+It has many uses as the tool's authors, Joseph Novak and Alberto Caňas, describe:
+"Concept mapping has been shown to help learners learn, researchers create new knowledge, administrators to better structure and manage organizations, writers to write, and evaluators assess learning."
+
+You can use this tool alone but it's also very useful in group workshops. In groups, it can help you find differences between how individuals understand certain concepts and find alignment.
+
+How to use it
+Before you go ahead and create a concept map, it's important to make sure that you're in a domain of knowledge you're familiar with so the map would be accurate. It doesn't mean you need to know everything before you start creating it, but it's useful to have a good amount of starting knowledge.
+
+1. Formulate a 'focus question'
+Concept maps need context and focus questions can really help you formulate what you need to answer or use the concept map for. You can ask things like:
+
+How does X work?
+What's the context in which Y exists?
+You'll also find that you can look at things from different angles. It's useful to find which angle specifically you want to understand: is it perhaps the inner workings of something or rather the interacting relationships around?
+
+2. Identify key entities
+Within the context of your domain or system and your focus question, identify the key entities that play a role in it: people, places, organizations, actions, processes, activities, methods etc.
+
+Just write them down in a simple list. It's typically enough to find 15 to 25 entities but it's fine to have more if you're dealing with a complex concept.
+
+3. Sort the list of entities
+This is an intermediary step before actually creating the map. Sort your list from the most general items to the most specific ones. This will help you create a better hierarchy in your map.
+
+4. Begin to outline the map
+Write the entities on post-its and lay them out on a (virtual) whiteboard. It's important to be able to move them around as you'll be trying to capture the relationships between them.
+
+Connect the entities with lines to visualise the relationships. Use linking verbs or phrases (e.g. "contributes to", "is made of" or "creates") to represent the relationships more specifically.
+
+5. Continue to fill in the rest of the map
+At this point, if you take two entities in a map, you should be able to read their relationship as a meaningful sentence (e.g. "Designer creates a concept map").
+
+Try to complete the map in the same way as until now. It can take a few tries as you'll be developing better understanding of the entities and their relationships along the way.
+
+You might identify gaps in your knowledge along the way and you'll have to fill them before continuing. That can also be a valuable outcome.
+
+Now let's see how all of this looks like a on a simple example.
+
+Example
+Suppose you're starting in a new role in a company that makes B2B software. You're trying to understand the product, specifically sharing permissions.
+
+You formulate your focus question as: "How do sharing permissions work in this product?"
+
+Then you go on to list all the entities that play a role in that and you sort the list as well:
+
+Example of a list when creating a concept map
+You may find that in your case, the list can get pretty long. It's good to keep referring to your focus question to see if the items you are listing are still relevant to it.
+
+Sorting the items is the first step toward mapping the hierarchy and relationships.
+
+You can now begin to outline the map in a more visual way and capture the relationships. You can use a flowchart software for this or just sketch it out on paper.
+
+Example of a concept map
+With this in hand, you can now ask if your understanding is complete or if there's more to the concept. You can also start questioning how it might work better.
+
+This is a very simplified example and some of the concept maps you'll create might be quite larger. But this should give you an idea how this thinking tool can help you.
+
+Takeaway
+We've seen that a concept map is a very universal and useful tool for capturing and developing an understanding of concepts or systems. It makes your mental model explicit and helps you identify gaps in knowledge.
+
+You can apply this tool to pretty much any concept and beyond the learning use-case, it can also enable you to think how something might be designed or improved.
+
+Sources
+"The Theory Underlying Concept Maps and How to Construct and Use Them" by Joseph Novak and Alberto Caňas
+"Exposing the Magic of Design" by Jon Kolko
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Theory Underlying Concept Maps and How to Construct and Use Them1
+PDF Spanish Portuguese
+Joseph D. Novak & Alberto J. Cañas
+
+Institute for Human and Machine Cognition
+Pensacola Fl, 32502
+www.ihmc.us
+
+Technical Report IHMC CmapTools 2006-01 Rev 2008-01
+
+Introduction
+Concept maps are graphical tools for organizing and representing knowledge. They include concepts, usually enclosed in circles or boxes of some type, and relationships between concepts indicated by a connecting line linking two concepts. Words on the line, referred to as linking words or linking phrases, specify the relationship between the two concepts. We define concept as a perceived regularity in events or objects, or records of events or objects, designated by a label. The label for most concepts is a word, although sometimes we use symbols such as + or %, and sometimes more than one word is used. Propositions are statements about some object or event in the universe, either naturally occurring or constructed. Propositions contain two or more concepts connected using linking words or phrases to form a meaningful statement. Sometimes these are called semantic units, or units of meaning. Figure 1 shows an example of a concept map that describes the structure of concept maps and illustrates the above characteristics.
+
+
+
+Figure 1. A concept map showing the key features of concept maps. Concept maps tend to be read progressing from the top downward.
+
+(click on the image to display a larger image)
+
+Another characteristic of concept maps is that the concepts are represented in a hierarchical fashion with the most inclusive, most general concepts at the top of the map and the more specific, less general concepts arranged hierarchically below. The hierarchical structure for a particular domain of knowledge also depends on the context in which that knowledge is being applied or considered. Therefore, it is best to construct concept maps with reference to some particular question we seek to answer, which we have called a focus question. The concept map may pertain to some situation or event that we are trying to understand through the organization of knowledge in the form of a concept map, thus providing the context for the concept map.
+
+Another important characteristic of concept maps is the inclusion of cross-links. These are relationships or links between concepts in different segments or domains of the concept map. Cross-links help us see how a concept in one domain of knowledge represented on the map is related to a concept in another domain shown on the map. In the creation of new knowledge, cross-links often represent creative leaps on the part of the knowledge producer. There are two features of concept maps that are important in the facilitation of creative thinking: the hierarchical structure that is represented in a good map and the ability to search for and characterize new cross-links.
+
+A final feature that may be added to concept maps is specific examples of events or objects that help to clarify the meaning of a given concept. Normally these are not included in ovals or boxes, since they are specific events or objects and do not represent concepts.
+
+Concept maps were developed in 1972 in the course of Novak’s research program at Cornell where he sought to follow and understand changes in children’s knowledge of science (Novak & Musonda, 1991). During the course of this study the researchers interviewed many children, and they found it difficult to identify specific changes in the children’s understanding of science concepts by examination of interview transcripts. This program was based on the learning psychology of David Ausubel (1963; 1968; Ausubel et al., 1978). The fundamental idea in Ausubel’s cognitive psychology is that learning takes place by the assimilation of new concepts and propositions into existing concept and propositional frameworks held by the learner. This knowledge structure as held by a learner is also referred to as the individual’s cognitive structure. Out of the necessity to find a better way to represent children’s conceptual understanding emerged the idea of representing children’s knowledge in the form of a concept map. Thus was born a new tool not only for use in research, but also for many other uses.
+
+Psychological Foundations of Concept Maps
+The question sometimes arises as to the origin of our first concepts. These are acquired by children during the ages of birth to three years, when they recognize regularities in the world around them and begin to identify language labels or symbols for these regularities (Macnamara, 1982). This early learning of concepts is primarily a discovery learning process, where the individual discerns patterns or regularities in events or objects and recognizes these as the same regularities labeled by older persons with words or symbols. This is a phenomenal ability that is part of the evolutionary heritage of all normal human beings. After age 3, new concept and propositional learning is mediated heavily by language, and takes place primarily by a reception learning process where new meanings are obtained by asking questions and getting clarification of relationships between old concepts and propositions and new concepts and propositions. This acquisition is mediated in a very important way when concrete experiences or props are available; hence the importance of “hands-on” activity for science learning with young children, but this is also true with learners of any age and in any subject matter domain.
+
+In addition to the distinction between the discovery learning process, where the attributes of concepts are identified autonomously by the learner, and the reception learning process, where attributes of concepts are described using language and transmitted to the learner, Ausubel made the very important distinction between rote learning and meaningful learning. Meaningful learning requires three conditions:
+
+The material to be learned must be conceptually clear and presented with language and examples relatable to the learner’s prior knowledge. Concept maps can be helpful to meet this condition, both by identifying large general concepts held by the learner prior to instruction on more specific concepts, and by assisting in the sequencing of learning tasks though progressively more explicit knowledge that can be anchored into developing conceptual frameworks.
+The learner must possess relevant prior knowledge. This condition can be met after age 3 for virtually any domain of subject matter, but it is necessary to be careful and explicit in building concept frameworks if one hopes to present detailed specific knowledge in any field in subsequent lessons. We see, therefore, that conditions (1) and (2) are interrelated and both are important.
+The learner must choose to learn meaningfully. The one condition over which the teacher or mentor has only indirect control is the motivation of students to choose to learn by attempting to incorporate new meanings into their prior knowledge, rather than simply memorizing concept definitions or propositional statements or computational procedures. The indirect control over this choice is primarily in instructional strategies used and the evaluation strategies used. Instructional strategies that emphasize relating new knowledge to the learner’s existing knowledge foster meaningful learning. Evaluation strategies that encourage learners to relate ideas they possess with new ideas also encourage meaningful learning. Typical objective tests seldom require more than rote learning (Bloom, 1956; Holden, 1992). In fact, the worst forms of objective tests, or short-answers tests, require verbatim recall of statements and this may be impeded by meaningful learning where new knowledge is assimilated into existing frameworks, making it difficult to recall specific, verbatim definitions or descriptions. This kind of problem was recognized years ago in Hoffman’s (1962) The Tyranny of Testing.
+As noted above, it is important to recognize that because individuals vary in the quantity and quality of the relevant knowledge they possess, and in the strength of their motivation to seek ways to incorporate new knowledge into relevant knowledge they already possess, the rote-meaningful distinction is not a simple dichotomy but rather a continuum. Creativity can be seen as a very high level of meaningful learning, and we will discuss this further. These ideas are shown in Figure 2.
+
+
+
+Figure 2. Learning can vary from hightly rote to highly meaningful. Creativity results from very high levels of meaningful learning.
+
+(click on the image to display a larger image)
+
+People often confuse rote learning and meaningful learning with teaching approaches that can vary on a continuum from direct presentation of information (which may be conceptually obscure or conceptually explicit) to autonomous discovery approaches where the learner perceives the regularities and constructs her/his own concepts. Both direct presentation and discovery teaching methods can lead to highly rote or highly meaningful learning by the learner, depending on the disposition of the learner and the organization of the instructional materials. These distinctions are shown in Figure 3. There is the mistaken notion that “inquiry” studies will assure meaningful learning. The reality is that unless students possess at least a rudimentary conceptual understanding of the phenomenon they are investigating, the activity may lead to little or no gain in their relevant knowledge and may be little more than busy work. In fact, the research basis for support of widely recommended inquiry learning is largely absent (Mayer, 2004; Kirschner et al., 2006; Sweller et al., 2007).
+
+ 
+
+Figure 3. The Rote-Meaningful learning continuum is not the same as the Reception-Discovery instructional continuum.
+
+(click on the image to display a larger image)
+
+One of the powerful uses of concept maps is not only as a learning tool but also as an evaluation tool, thus encouraging students to use meaningful-mode learning patterns (Mintzes et al., 2000; Novak, 1990; Novak & Gowin, 1984). Concept maps are also effective in identifying both valid and invalid ideas held by students, and this will be discussed further in another section. They can be as effective as more time-consuming clinical interviews for identifying the relevant knowledge a learner possesses before or after instruction (Edwards & Fraser, 1983).
+
+Another important advance in our understanding of learning is that the human memory is not a single “vessel” to be filled, but rather a complex set of interrelated memory systems. Figure 4 illustrates the memory systems of the human mind, and interactions with inputs from our affective and psychomotor inputs.
+
+
+
+Figure 4. Key memory systems of the brain all interact when we are learning.
+
+(click on the image to display a larger image)
+
+While all memory systems are interdependent (and have information going in both directions), the most critical memory systems for incorporating knowledge into long-term memory are the short-term and “working memory.” All incoming information is organized and processed in the working memory by interaction with knowledge in long-term memory. The limiting feature here is that working memory can process only a relatively small number of psychological units (five to nine) at any one moment (Miller, 1956).
+
+This means that relationships among two or three concepts are about the limit of working memory’s processing capacity. For example, if a person is presented with a list of 10-12 letters or numbers to memorize in a few seconds, most will recall only 5 to 9 of these. However, if the letters can be grouped to form a know word, or word-like unit, or the numbers can be related to a phone number or something known, then 10 or more letters or numbers can be recalled. In a related test, if we give learners 10-12 familiar but unrelated words to memorize in a few seconds, most will recall only 5-9 words. If the words are unfamiliar, such as technical terms introduced for the first time, the learner may do well to recall correctly two or three of these. Conversely, if the words are familiar and can be related to knowledge the learner has in her/his cognitive structure, e.g. months of the year, 12 or more may be easily recalled.
+
+It should be noted that retention of information learned by rote still takes place in long term memory, as does information learned meaningfully; the difference is that in rote learning, there is little or no integration of new knowledge with existing knowledge resulting in two negative consequences. First knowledge learned by rote tends to be quickly forgotten, unless much rehearsed. Second, the knowledge structure or cognitive structure of the learner is not enhanced or modified to clear up faulty ideas. Thus misconceptions will persist, and knowledge learned has little or no potential for use in further learning and/or problem solving (Novak, 2002).
+
+Therefore, to structure large bodies of knowledge requires an orderly sequence of iterations between working memory and long-term memory as new knowledge is being received and processed (Anderson, 1992). We believe one of the reasons concept mapping is so powerful for the facilitation of meaningful learning is that it serves as a kind of template or scaffold to help to organize knowledge and to structure it, even though the structure must be built up piece by piece with small units of interacting concept and propositional frameworks. Many learners and teachers are surprised to see how this simple tool facilitates meaningful learning and the creation of powerful knowledge frameworks that not only permit utilization of the knowledge in new contexts, but also the retention of the knowledge for long periods of time (Novak, 1990; Novak & Wandersee, 1991). There is still relatively little known about memory processes and how knowledge finally gets incorporated into our brain, but it seems evident from diverse sources of research that our brain works to organize knowledge in hierarchical frameworks and that learning approaches that facilitate this process significantly enhance the learning capability of all learners (Bransford et al., 1999; Tsien, 2007).
+
+Obviously, our brains store more than concepts and propositions. While the latter are the principal elements that make up our knowledge structures and form our cognitive structure in the brain, we pause briefly to discuss other forms of learning. Iconic learning involves the storage of images of scenes we encounter, people we meet, photos, and a host of other images. These are also referred to as iconic memories (Sperling, 1960; 1963). While the alphanumeric images Sperling used in his studies were quickly forgotten, other kinds of images are retained much longer. Our brains have a remarkable capacity for acquiring and retaining visual images of people or photos. For example, in one study (Shepard, 1967) presented 612 pictures of common scenes to subjects, and later asked which of two similar pictures shown was one of the 612 seen earlier? After the presentation the subjects were 97% correct in identifying picture they had seen. Three days later, they were still 92% correct, and three months later they were correct 58% of the time. This and many other studies have shown that humans have a remarkable ability to recall images, although they soon forget many of the details in the images. Considering how often we look at pennies, it is interesting that the subjects asked to draw a penny in a study by Nickerson and Adams (1979) omitted more than half of the features or located them in the wrong place. We believe that integrating various kind of images into a conceptual framework using concept mapping software like CmapTools (described below) could enhance iconic memory, and we hope research on this will be done.
+
+Human’s ability to recall sounds is also remarkable. The learning and recall of sounds is also referred to as archic memory. Consider the musician who can play hundreds of songs without reading any music. Again we are dealing with memories that are not coded as concepts or propositions. Studies by Penfield and Perot (1963), among others, indicate that regions of our brain that are activated when we hear sounds are the same regions that are active when we recall sounds. While we can locate regions of the brain that are active in learning or recall of information using positron emission tomography (PET) scans, the specific mechanisms by which neurons store this information is not known. A full discussion of memory mechanisms is beyond the scope of this document.
+
+There are obvious differences between individual’s abilities, and some of these have been explored by Gardner (1983). He has proposed a Theory of Multiple Intelligences. His work has received much attention in education and has served to draw attention to the broad range of differences in human abilities for various kinds of learning and performance. It is good that schools are recognizing that there are important human capabilities other than the recall of specific cognitive information so often the only form of learning represented in multiple-choice tests used commonly in schools and corporations. One reason we encourage the integration of the broad range of activities represented in our New Model for Education is to provide opportunities for these other abilities to be represented and expressed. Nevertheless, we seen the organizing opportunities afforded by associating the various activities with an explicit knowledge structure as very beneficial. Time will tell if future research studies will support this claim.
+
+While it is true that some students have difficulty building concept maps and using these, at least early in their experience, this appears to result primarily from years of rote-mode learning practice in school settings rather than as a result of brain structure differences per se. So-called “learning style” differences are, to a large extent, derivative from differences in the patterns of learning that students have employed varying from high commitment to continuous rote-mode learning to almost exclusive commitment to meaningful mode learning. It is not easy to help students in the former condition move to patterns of learning of the latter type. While concept maps can help, students also need to be taught something about brain mechanisms and knowledge organization, and this instruction should accompany the use of concept maps. The information in the above paragraphs should become part on the instructional program for skillful use of concept maps. The information provided in this document could be part of this instruction. Other ideas for improving instruction to achieve understanding of the subject is available elsewhere (Mintzes et al., 1998).
+
+To illustrate how difficult it can be for individuals to modify their ideas, especially if they learn primarily by rote, we cite the example of interviews done by the Private Universe Project (PUP) at Harvard University (Schneps, 1989). The staff of PUP interviewed 23 Harvard graduates, alumni and faculty, asking each “Why do we have seasons?” Only eleven concepts, properly organized are needed to understand why we have seasons, and one arrangement of these concepts is shown in Figure 5. The PUP interviewers found that 21 of the 23 interviewed could not explain why we have seasons, a topic that is taught repeatedly in school. Included in this group was a graduate who had recently taken a course in the Physics of Planetary Motion, who also believed erroneously that seasons were caused by the earth moving closer to the sun in summer and further away in the winter. In fact, the earth is slightly closer to the sun when it is winter in Massachusetts, rather than in summer. The primary reason we have seasons in latitudes away from the equator is due to the tilt of the earth on its axis toward the sun in summer resulting in longer days and more direct radiation, thus greater heating. In winter, the axis of the earth points away from the sun, thus resulting in shorter days and less intense radiation. What is interfering with these 21 Harvard people is confusion with the common experience that when we are closer to a fire or lamp, the heat is more intense than when we are further away. Thus, these people have failed to recognize that this same phenomenon is not operating to give seasons on Earth. They are transferring knowledge from one context to another, but incorrectly. This is commonly observed in many, many examples of “misconceptions” in every field of study. The only solution to the problem of overcoming misconceptions is to help learners learn meaningfully, and using concept maps can be very helpful. (For more information on misconceptions in science and mathematics see Novak (2002), and: www.mlrg.org).
+
+
+
+Figure 5. One representation of the knowledge structure required required for understanding why we have seasons.
+
+(click on the image to display a larger image)
+
+Epistemological Foundations of Concept Maps
+As indicated earlier, we defined concept as a perceived regularity (or pattern) in events or objects, or records of events or objects, designated by label. It is coming to be generally recognized now that the meaningful learning processes described above are the same processes used by scientists and mathematicians, or experts in any discipline, to construct new knowledge. In fact, Novak has argued that new knowledge creation is nothing more than a relatively high level of meaningful learning accomplished by individuals who have a well organized knowledge structure in the particular area of knowledge, and also a strong emotional commitment to persist in finding new meanings (Novak, 1977, 1993, 1998). Epistemology is that branch of philosophy that deals with the nature of knowledge and new knowledge creation. There is an important relationship between the psychology of learning, as we understand it today, and the growing consensus among philosophers and epistemologists that new knowledge creation is a constructive process involving both our knowledge and our emotions or the drive to create new meanings and new ways to represent these meanings. Learners struggling to create good concept maps are themselves engaged in a creative process, and this can be challenging, especially to learners who have spent most of their life learning by rote. Rote learning contributes very little at best to our knowledge structures, and therefore cannot underlie creative thinking or novel problem solving.
+
+As defined above, concepts and propositions are the building blocks for knowledge in any domain. We can use the analogy that concepts are like the atoms of matter and propositions are like the molecules of matter. There are only around 100 different kinds of atoms, and these make up an infinite number of different kinds of molecules. There are now about 460,000 words in the English language (most of which are concept labels), and these can be combined to form an infinite number of propositions. Although most combinations of words might be nonsense, there is still the possibility of creating an infinite number of valid and meaningful propositions. Poets and novelists will never run out of new ideas to express in new ways. We shall never run out of opportunities to create new knowledge! As people create and observe new or existing objects or events, the creative people will continue to create new concents and new knowledge. Creating new methods of observing or recording events usually opens up new opportunities for new knowledge creation. For example, the creation of the concept mapping method for recording subject’s understandings has led new opportunities to study the process of learning and new knowledge creation.
+
+While there is value in studying more extensively the process of human learning and human knowledge creation, this is beyond the scope of this document. The reader is invited to peruse some of the references cited. Some important considerations for construction of better concept maps and facilitation of learning will be discussed further below.
+
+Constructing Good Concept Maps
+In learning to construct a concept map, it is important to begin with a domain of knowledge that is very familiar to the person constructing the map. Since concept map structures are dependent on the context in which they will be used, it is best to identify a segment of a text, a laboratory or field activity, or a particular problem or question that one is trying to understand. This creates a context that will help to determine the hierarchical structure of the concept map. It is also helpful to select a limited domain of knowledge for the first concept maps.
+
+A good way to define the context for a concept map is to construct a Focus Question, that is, a question that clearly specifies the problem or issue the concept map should help to resolve. Every concept map responds to a focus question, and a good focus question can lead to a much richer concept map. When learning to construct concept maps, learners tend to deviate from the focus question and build a concept map that may be related to the domain, but which does not answer the question. It is often stated that the first step to learning about something is to ask the right questions.
+
+Given a selected domain and a defined question or problem in this domain, the next step is to identify the key concepts that apply to this domain. Usually 15 to 25 concepts will suffice. These concepts could be listed, and then from this list a rank ordered list should be established from the most general, most inclusive concept, for this particular problem or situation at the top of the list, to the most specific, least general concept at the bottom of the list. Although this rank order may be only approximate, it helps to begin the process of map construction. We refer to the list of concepts as a parking lot, since we will move these concepts into the concept map as we determine where they fit in. Some concepts may remain in the parking lot as the map is completed if the mapmaker sees no good connection for these with other concepts in the map.
+
+The next step is to construct a preliminary concept map. This can be done by writing all of the concepts on Post-its(TM), or preferably by using the IHMC CmapTools (Cañas et al., 2004b, http://cmap.ihmc.us) computer software program described below. Post-its allow a group to work on a whiteboard or butcher paper and to move concepts around easily. This is necessary as one begins to struggle with the process of building a good hierarchical organization. Computer software programs are even better in that they allow moving of concepts together with linking statements and the moving of groups of concepts and links to restructure the map. When CmapTools is used in conjunction with a computer projector, two or more individuals can easily collaborate in building a concept map and see changes as they progress in their work. CmapTools also allows for collaboration between individuals in the same room or anywhere in the world, and the maps can be built synchronously or asynchronously, depending on the mapmakers’ schedules.
+
+It is important to recognize that a concept map is never finished. After a preliminary map is constructed, it is always necessary to revise this map. Other concepts can be added. Good maps usually result from three to many revisions. This is one reason why using computer software is helpful.
+
+Once the preliminary map is built , cross-links should be sought. These are links between concepts in different segments or domains of knowledge on the map that help to illustrate how these domains are related to one another. Cross-links are important in order to show that the learner understands the relationships between the sub-domains in the map.
+
+
+
+Figure 6. A “string” map created by a fourth grade student following a class field trip to a paper mill. The class identified concepts in the parking lot on the left, but this student was not successful in using many of these and her map makes little sense. This student was a good oral reader, but she had very poor reading comprehension and was a committed rote learner (see Novak & Gowin, 1984, page 108).
+
+(click on the image to display a larger image)
+
+After a preliminary map is constructed, cross-links should be sought. These are links between concepts in different segments or domains of knowledge on the map that help to illustrate how these domains are related to one another. Cross-links are key to show that the learner understands the relationships between the sub-domains in the map.
+
+It is important to help students recognize that all concepts are in some way related to one another. Therefore, it is necessary to be selective in identifying cross-links, and to be as precise as possible in identifying linking words that connect concepts. In addition, one should avoid “sentences in the boxes”, that is, full sentences used as concepts, since this usually indicates that a whole subsection of the map could be constructed from the statement in the box. “String maps” illustrate either poor understanding of the material or an inadequate restructuring of the map. Figure 6 shows an example of a string map.
+
+Students often comment that it is hard to add linking words onto the “lines” of their concept map. This is because they poorly understand the relationship between the concepts, or the meanings of the concepts, and it is the linking words that specify this relationship. Once students begin to focus-in on good linking words, and on the identification of good cross-links, they can see that every concept could be related to every other concept. This also produces some frustration, and they must choose to identify the most prominent and most useful cross-links. This process involves what Bloom (1956) identified as high levels of cognitive performance, namely evaluation and synthesis of knowledge. Concept mapping is an easy way to encourage very high levels of cognitive performance, when the process is done well. This is one reason concept mapping can also be a very powerful evaluation tool (Edmondson, 2000).
+
+Finally, the map should be revised, concepts re-positioned in ways that lend to clarity and better over-all structure, and a “final” map prepared. When computer software is used, one can go back, change the size and font style, and add colors to “dress up” the concept map.
+
+Thus, we see that concept maps are not only a powerful tool for capturing, representing, and archiving knowledge of individuals, but also a powerful tool to create new knowledge.
+
+The CmapTools Software Toolkit
+The CmapTools (Cañas et al., 2004b) software (available for download at: http://cmap.ihmc.us) developed at the Institute for Human and Machine Cognition brings together the strengths of concept mapping with the power of technology, particularly the Internet and the World Wide Web (WWW). The software not only makes it easy for users of all ages to construct and modify concept maps in a similar way that a word processor makes it easy to write text, it allows users to collaborate at a distance in the construction in their maps, publish their concept maps so anybody on the Internet can access them, link resources to their maps to further explain their contents, and search the WWW for information related to the map.
+
+The software allows the user to link resources (photos, images, graphs, videos, charts, tables, texts, WWW pages or other concept maps) located anywhere on the Internet or in personal files to concepts or linking words in a concept map through a simple drag-and-drop operation. Links to these resources are displayed as icons underneath the concepts, as shown in Figure 7. Clicking on one of these icons will display a list of links from which the user can select to open the linked resource. Using CmapTools, it is possible to use concept maps to access any material that can be presented digitally, including materials prepared by the mapmaker. In this way, concept maps can serve as the indexing and navigational tools for complex domains of knowledge, as will be illustrated later with NASA materials on Mars (Briggs et al., 2004). By facilitating the linking between concept maps, learners can construct Knowledge Models (Cañas et al., 2003b; Cañas et al., 2005), which are collections of concept maps with linked resources about a particular topic, demonstrating that their understanding about a domain is not limited to a single concept map.
+
+
+
+Figure 7. A concept map about birds constructed by a high-school student. Icons under the concepts provide links to resources (e.g., images, pictures, web pages, videos, other concept maps), some of which are shown in the Figure.
+
+(click on the image to display a larger image)
+
+Facilitating Collaborative and Distance Learning
+
+There is a growing body of research that shows that when students work in small groups and cooperate in striving to learn subject matter, positive cognitive and affective outcomes result (Johnson et al., 1981; Berk & Winsler, 1995). Vygotsky (1978) introduced the idea that language and social dialogue can support learning, especially when members of the social group are at about the same Zone of Proximal Development (ZPD). He describes the ZPD as that level of understanding for a given subject where the learner can progress on her/his own, with minimal aid from a tutor. When students work cooperatively in groups and use concept maps to guide their learning, significantly greater learning occurs (Preszler, 2004). In our work with both teachers and students, small groups working cooperatively to construct concept maps have proven to be useful in many contexts. In the early 1990s, Latin America, students using the IBM Net (before the Internet) were very successful in creating concept maps both with students in their classroom and with students in other countries (Cañas et al., 2001). In our own classes and workshops, and in classes taught by our students and colleagues, small groups of students working collectively to construct concept maps can produce some remarkably good maps.
+
+CmapTools provides extensive support for collaborative work during concept map construction. The concept maps built using CmapTools can be stored on servers (CmapServers, see: Cañas et al., 2003a) where anybody on the Internet can access them. Many of the CmapServers are “public”, allowing anybody (no authorization needed) to publish their collections of concept maps and resources (Cañas et al., 2004a). Through CmapServers, users of all ages and working in many disciplines have published thousands of maps on all topics and domains. While concept maps on these public servers are only a sample of concept maps submitted by persons using CmapTools, and some do not meet our criteria of good concept maps, they nevertheless serve to illustrate diverse applications. When a concept map is saved to a CmapServer, a “web page” version of the map is also stored, so a WWW browser is sufficient to browse through all the published concept maps.
+
+Through the storing of concept maps in CmapServers, CmapTools encourages collaboration among users constructing the maps. When maps are stored in a server on the Internet, users with appropriate permissions (Cañas et al., 2003c) can edit shared concept maps at the same time (synchronously) or at their convenience (asynchronously). “Discussion threads” and “Annotations” in the form of electronic “Post-It” notes can be used to make anecdotal comments on concept maps or during map construction. The high degree of explicitness of concept maps makes them an ideal vehicle for exchange of ideas or for the collaborative construction of new knowledge. We have also found that the obstacles deriving from personal insecurities and fear of embarrassment are largely circumvented, since critical comments are directed at the concept map, not at the person(s) building the map. Having learners comment on each other’s concept maps, whether they are in the same classroom or in different schools, is an effective form of peer-review and collaboration.
+
+The extensive support that CmapTools provides for the collaborative construction of concept maps by groups, whether they are at the same location or in distant locations, has encouraged the increasing use of collaboration during map building. In a variety of educational settings, concept mapping in small groups has served us well in tasks as diverse as understanding ideas in assimilation learning theory to clarifying job conflicts for conflict resolution in profit and non-profit corporations (e.g., Beirute & Mayorga, 2004). Concept maps are now beginning to be used in corporations to help teams clarify and articulate the knowledge needed to solve problems ranging from the design of new products to marketing to administrative problem resolution.
+
+A New Model for Education
+A Concept Map-Centered Learning Environment
+
+CmapTools provides a variety of features that make it possible for teachers to use concept maps for a variety of the tasks that students perform (Cañas & Novak, 2005). In addition to a network environment that fosters collaboration and the possibility of constructing knowledge models, the software allows users, among other features, to (a) search for information based on a concept map (Carvalho et al., 2001), by which a student can use the Cmap to research information to learn more about the topic, leading to an improved map with linked resources, and iteratively proceed on another search; (b) record the process of constructing a Cmap for later playback, providing support to the teacher in what is considered to be a key aspect of concept mapping: the process of constructing a map; (c) piece-wise display a concept map and associated resources full-screen for oral presentations; (d) graphically compare two Cmaps, allowing the teacher to compare the student’s map to his/hers for an initial evaluation. The concept map can thus become an artifact around which the various activities of the learning process can be centered, as shown in Figure 8.
+
+Based on the features provided by CmapTools, the student can use the concept map prepared as a pre-test as an initial step towards learning the pieces of knowledge that he/she needs to better understand, as the basis on which to perform the research that leads to this understanding, as a way to organize the various sources from which the student will construct this understanding, as the artifact with which to collaborate with peers, and as the means to present his/her findings at the end of the unit. Furthermore, the concept maps constructed by the student can become the foundation for a portfolio evaluation (see Vitale & Romance, 2000) of his/her performance.
+
+Focus Question, Parking Lots and Expert Skeleton Maps
+
+A concept map-centered learning environment implies that concept maps are used throughout the development of a learning unit or module. Concept maps within this environment are likely to be used as the mechanism to determine the level of understanding students have about the topic being studied before the topic is introduced. The maps are then developed, extended and refined as the students develop other activities on the topic and increase their understanding, possibly concluding with complex knowledge models that link resources, results, experiments, etc., and that can be used if desired as a final presentation by the students.
+
+Just as there are many possible uses of concept maps within the classroom activities, there are a variety of “starting points” for the construction of the initial concept maps by students.
+
+
+
+Figure 8. The whole spectrum of learning activities can be integrated using CmapTools, incorporating various learning activities recorded via the software creating a digital portfolio as a product of the learning.
+
+(click on the image to display a larger image)
+
+Each student can construct the initial concept map individually, giving the teacher feedback on the level of understanding of every student. Within the option of individual construction of the map, the students can be allowed to collaborate through a Knowledge Soup (Cañas et al., 1995; Cañas et al., 2001), where students are able to share propositions but not see each other’s maps (see Figure 9). The concept map can be constructed by students working in couples or small groups, where the teacher must pay attention to the level of participation of every student. CmapTools has a recorder feature tht allows recording and playback of steps in map construction, including identification of each contributor.
+
+The concept map can also be a class effort, using a projector, where all students give their opinion and participate in the construction of the map. Teachers must be alert to evaluate the individual participation of every student.
+
+Likewise, the starting point from which the map is constructed can vary depending on the expected previous understanding by the students, the difficulty and novelty of the topic, and the teacher’s confidence in mastering the topic.
+
+Focus Question
+
+
+
+Figure 9. Concept map that is part of a collaborative Knowledge Soup. The list of propositions on the top right window are automatically derived from the Cmap, and those with a “pin” have been “published”. The lower right window shows propositions from other participants in Soup, some of which have discussion threads attached questioning or commenting on the proposition.
+
+(click on the image to display a larger image)
+
+The starting point for constructing a concept map can consist of only the focus question. For example, “How do we measure time?” can be given to the students as the question to answer through the construction of the concept map. The type of focus question makes a difference in the type of concept maps that the student builds. A question like “What are plants?” will lead to a declarative, more classificatory concept map than the question “Why do we need plants?” Experiments show that not only the focus question, but also the root concept of a concept map have a strong influence on the quality of the resulting concept map (Derbentseva et al., 2004, 2006). It is important that a question be given and not just a topic (e.g. “make a concept map about plants”), since answering the question helps the students focus on their maps. Whenever a concept map is made with CmapTools and then saved, the maker is asked to provide a focus question, as well as key concepts for this concept map.
+
+Parking Lot
+
+We refer to a list of concepts waiting to be added to a concept map as the parking lot of concepts. The staring point for the construction of the concept map can be a list of concepts that the teacher wants to make sure all students include in their map. An example of this was given in Figure 6 above. Figure 10 presents the focus question and parking lot for the focus question “What is the structure of the Universe?” The student, group of students, or class is expected to build a concept map that answers the question and includes at least the concepts in the list. Experienced concept mappers agree with researchers that the most challenging and difficult aspect of constructing a concept map is constructing the propositions; that is, determining what linking phrases will clearly depict the relationship between concepts. So giving the student some of the concepts does not take away from the difficulty in the map construction, although it may somewhat limit the creativity of the student in selecting the concepts to include. It does provide the teacher with insight into which concepts the student(s) had trouble integrating into the concept map, indicating little or no understanding of these concepts.
+
+
+
+Figure 10. The beginning of a concept map with a focus question and a parking lot with concepts to be included in the map.
+
+(click on the image to display a larger image)
+
+Expert Skeleton Maps
+
+For difficult topics – whether difficult for the students as determined by the teacher’s previous experience, or difficult for the teacher because of his/her background – using an “expert skeleton” concept map is an alternative. An “expert skeleton” concept map has been previously prepared by an expert on the topic, and permits both students and teachers to build their knowledge on a solid foundation. “Expert skeleton” concept maps serve as a guide or scaffold or aid to learning in a way analogous to the use of scaffolding in constructing or refurbishing a building.
+
+Figure 11 is an “expert skeleton” concept map that corresponds to the same topic as the “parking lot” in Figure 10. Observe that in this example, some of the concepts were left in the “parking lot” for the student to add to the concept map.
+
+
+
+Figure 11. An expert skeleton concept map dealing with a key concept that needs to be understood as a foundation for learning science, b
+
+(click on the image to display a larger image)
+
+ased on the parking lot from Figure 10. Some concepts were left in the parking lot for the student to add to the Cmap.
+The use of “expert skeleton” concept maps is a research topic we are pursuing, and for which we don’t have as much experience as with the focus question and parking lot starting points. O’Donnell, Dansereau, & Hall (2002) have shown that “knowledge maps” can act as scaffolds to facilitate learning.
+
+It is important to note that the “expert skeleton” concept maps should be built by an expert on the topic. The intention is that the expert will be better at selecting the small number of concepts that are key to understanding the topic, and express accurately the relationships between these concepts. In general, it is much more difficult to build a good, accurate concept map about a topic with a small number of concepts (e.g., four or five) than with fifteen to twenty concepts.
+
+There is no predetermined size that an “expert skeleton” concept map should have. But the expected final number of concepts in the map is a function of the number of concepts in the “skeleton”. For example, a “skeleton map” that consists of five concepts should be expanded by the student to a map with 15 to 20 concepts. If the “skeleton” map contains 20 concepts, which makes it more of a complete map, the final map could be expected to contain about 50 to 60 concepts. In this case, we are probably referring to using a relatively complete (not skeleton) map as a scaffold, expecting students to go deeper into the topic by creating several submaps that are linked to the starting point map.
+
+We foresee a program of using “expert skeleton” maps to scaffold learning beginning with the development of a series of concept maps in a discipline, starting with the most general, most inclusive ideas and then gradually moving to more specific concept maps that will guide the learners. For example, Figure 11 shows a “expert skeleton” concept map for the sciences that encompasses key major concepts needed to understand science. Learners can begin with such a map, add concepts from the parking lot, link digital resources and also construct more specific submaps. More specific expert concept maps can also be provided, such as that shown in Figure 12. Here we also see a submap that might be created by a group of learners, and a sample of two resources that could be accessed via icons on the submap.
+
+
+
+Figure 12. An Energy transformation Cmap that could be accessed by linking it to the “Energy” concept in the concept map in Figure 11, and a Photosynthesis Cmap that may be linked to it.
+
+(click on the image to display a larger image)
+
+One of the advantages in using CmapTools for scaffolding learning is the search function mentioned above, which permits access to WWW resources that are screened to fit the context of meanings defined by the concept map (Carvalho et al., 2001; Leake et al., 2004). Thus if one clicks on a concept such as “electrical energy” in Figure 12 and selects one of the “search” menu options, CmapTools will retrieve WWW resources that not only deal with electricity, but also relate to other concepts in the map. The program tries to figure out what the Cmap is about and prepare a query for Web search engines that will generate results that are relevant to the ideas being developed in the concept map. Of course, the learner still needs to select new concepts from the material and construct new propositions on the concept map that add meanings and clarity to the map. Thus, the learner or team of learners is very actively engaged in the meaning building process, an essential requirement for meaningful learning to occur.
+
+Learners can also engage in laboratory or field studies that will add important concrete experiences needed for developing fuller meanings to concepts, and sometimes the excitement that comes with discovering new ideas or relationships.
+
+The extent of materials and ideas that can be built into knowledge structures using “expert skeleton” concept maps, CmapTools, and WWW resources far surpass what any textbook or any teacher could provide. In fact, teachers supervising this kind of study are likely to learn as many new things as their students. Moreover, beginning with the “expert skeleton” maps as starting points reduces the chance that misconceptions or faulty ideas held by learners or teachers will be reinforced and maximize the chance that they will build knowledge structures that in time remove or diminish misconceptions (Novak, 2002).
+
+The World of Science Project
+
+In 1966, Bobbs-Merrill published an elementary science textbook series, The World of Science, written largely by Novak with the objective of introducing basic science concepts to elementary school students and teachers. Unlike most elementary science textbooks, this series presents in-depth instruction in basic concepts at all grade levels, including instruction in concepts dealing with the nature of science, nature of matter, energy and energy transformations. The books have been scanned and a DVD of all six books is available. Our plan is to use The World of Science books as a starting point for a demonstration project for A New Model for Education. To begin, “expert skeleton” concept maps have been prepared for some sections of the grade two book and the whole of the grade four book of the World of Science entitled The Expanding World of Science. All of these concept maps are publicly available on the CmapTools Network[2]. The “expert skeleton” concept maps would serve as a starting point for students and teachers for each section illustrated in the book, and then students would use these Cmaps together with CmapTools to search the WWW for pertinent resources and ideas. Figure 13 illustrates one of the “expert skeleton” concept maps that could be used as the starting point for building a knowledge model, preferably students working in teams and sharing ideas.
+
+
+Figure 13. Schema showing the New Model for Education with an “expert skeleton” concept map that can serve as the “backbone” for an emerging portfolio in science.
+
+(click on the image to display a larger image)
+
+The science books provide relevant readings and suggested activities. It would be important for the teacher to help students perform these activities, and similar related activities, some of which might by suggested in WWW resources. Learners would also add their own concepts to the “expert skeleton” concept map, as well as resources identified in readings and from the Internet. Figure 14 illustrates a stage in this process[3].
+
+
+
+Figure 14. Schema showing the New Model for Education with concepts and resources added to the “expert skeleton” concept map, plus a page from a World of Science book providing relevant reading and activities.
+
+(click on the image to display a larger image)
+
+Obviously, it would be a very deficient science program that did nothing more than have students copy and do some building on the “expert skeleton” concept maps provided for grade two, or for any other grade. Students need concrete, hands on experiences with real things and to observe real phenomena to put meaning into the concept labels provided in the concept maps and other resources.
+
+A pilot program effort is already in progress in Italy, where Giuseppe Valittuti (2004) and his colleagues are now working to translate The World of Science books into Italian. Valittuti and his colleagues have obtained funding from the Italian Ministry of Education for teacher training and a number of elementary school teams began working with the World of Science concept maps and other resources during the 2005-2006 year. The plan is to have four sets of schools focus on different aspects of The World of Science series and produce photos and videos of students doing projects that illustrate and utilize the various science concepts. There will be much feedback from classrooms helping the teams to refine their work, sharing “electronic portfolios” using CmapTools. This feedback should help us to rapidly refine concept maps, techniques and approaches for improving practice of the New Model for Education. The CmapTools Network may serve as a clearinghouse for some of these efforts through its Public servers in Italy and other countries. We anticipate that an abundance of both anecdotal and empirical data will flow from these efforts in a few years. Based on the solid theoretical and related research findings now available, there is every reason to be optimistic that these innovative efforts will be successful. Progress of this project can be followed at: www.leparoledellascienza.it.
+
+Problems of Implementation
+
+The greatest challenge we may expect is to change the school situational factors in the direction of teacher as coach and learner from the prevailing model of teachers as disseminator of information. We know that we need to engage teachers and administrators in training programs that can model the new educational approaches, and we need to seek their counsel on ways to improve on the New Model for Education. There is also the challenge of changing assessment practices that now rely primarily on multiple-choice tests that measure mainly rote recall of information, to performance-based tests that require students to demonstrate that they understand basic concepts and can use these concepts in novel problems solving, and that they can use Internet resources to grow and modify their concepts and learn new concepts. There remains in the New Model plenty of room for acquisition of specific facts and procedures, but now these should be learned within the context of powerful conceptual frameworks. Research (Bransford et al., 1999) has shown that factual information acquired in a context of meaningful learning is not only retained longer, but this information can be used much more successfully to solve new problems.
+
+We might expect some oppositioin to implementation of the New Model of Education from individuals who believe that "inquiry" learningis the only way to improve education. In fact, research overwhelmingly supports the value of "guided learning", such as that involved in A New Model of Education (Mayer, 2004; Kirschner et al., 2006; Sweller et al., 2007).
+
+There is an enormous job of teacher education that needs to be done before the New Model can be implemented in schools. Teachers need to become familiar with the use of CmapTools software and the various tools it contains. They also need to learn about the theory underlying concept mapping, including the ideas in this paper. Teacher education programs should model the kind of learning we are recommending, and we might use as “expert skeleton” concept maps some of the concept maps available from Novak’s (1998) book accessible at the “IHMC Public Cmaps (2)” CmapServer, reachable through the CmapTools Places, under the folder “World of Science”. Teachers should work collaboratively to build on some of the simpler concept maps dealing with education ideas and perhaps add resources to some of the more complex concept maps. Even with the current state of technology and pedagogical understandings, it is possible for schools, states or countries to mount a New Model for Education.
+
+Concept Maps for Evaluation
+We are now beginning to see in many science textbooks the inclusion of concept mapping as one way to summarize understandings acquired by students after they study a unit or chapter. Change in school practices is always slow, but it is likely that the use of concept maps in school instruction will increase substantially in the next decade or two. Other innovative practices for assessing student understanding of subject matter are also available (Mintzes et al., 2000). When concept maps are used in instruction, they can also be used for evaluation. There is nothing written in stone that says multiple choice tests must be used from grade school through university, and perhaps in time even national achievement exams will utilize concept mapping as a powerful evaluation tool. This is a chicken-and-egg problem because concept maps cannot be required on national achievement tests if most students have not been given opportunities to learn to use this knowledge representation tool. On the other hand, if state, regional, and national exams would begin to include concept maps as a segment of the exam, there would be a great incentive for teachers to teach students how to use this tool. Hopefully, in the next two decades, this will come to pass. Currently there are a number of projects in the USA and elsewhere that are doing research to see if better evaluation tools can be developed, including the use of concept maps. We should begin to see significant advances in this area in the next several years. Some features of the latest versions of CmapTools also facilitate the use of concept maps for assessment. For example, the “Compare concept maps” tool allows the comparison of an “expert” concept map for a topic with maps constructed by students, and all similar or different concepts and propositions are shown in color.
+
+Concept Maps and Curriculum Planning
+In curriculum planning, concept maps can be enormously useful. They present in a highly concise manner the key concepts and principles to be taught. The hierarchical organization of concept maps suggests more optimal sequencing of instructional material. Since the fundamental characteristic of meaningful learning is integration of new knowledge with the learners’ previous concept and propositional frameworks, proceeding from the more general, more inclusive concepts to the more specific information usually serves to encourage and enhance meaningful learning. Thus, in curriculum planning, we need to construct a global “macro map” showing the major ideas we plan to present in the whole course, or in a whole curriculum, and also more specific “micro maps” to show the knowledge structure for a very specific segment of the instructional program. Faculty working independently or collaboratively can redesign course syllabi or an entire curriculum. For example, faculty working together to plan instruction in veterinary medicine at Cornell University constructed the concept map shown in Figure 15.
+
+Using concept maps in planning a curriculum or instruction on a specific topic helps to make the instruction “conceptually transparent” to students. Many students have difficulty identifying the important concepts in a text, lecture or other form of presentation. Part of the problem stems from a pattern of learning that simply requires memorization of information, and no evaluation of the information is required. Such students fail to construct powerful concept and propositional frameworks, leading them to see learning as a blur of myriad facts, dates, names, equations, or procedural rules to be memorized. For these students, the subject matter of most disciplines, and especially science, mathematics, and history, is a cacophony of information to memorize, and they usually find this boring. Many feel they cannot master knowledge in the field. If concept maps are used in planning instruction and students are required to construct concept maps as they are learning, previously unsuccessful students can become successful in making sense out of science and any other discipline, acquiring a feeling of control over the subject matter (Bascones & Novak, 1985; Novak, 1991, 1998).
+
+
+
+Figure 15. A concept map prepared cooperatively by the faculty of the College of Veterinary Medicine at Cornell University to show the over-all structure for a revised curriculum.
+
+(click on the image to display a larger image)
+
+Capturing and Archiving Expert Knowledge
+One of the uses of concept maps that is growing at a fast rate is the use of concept maps to capture the “tacit” knowledge of experts. Experts know many things that they often cannot articulate well to others. This tacit knowledge is acquired over years of experience and derives in part from activities of the expert that involve thinking, feeling and acting. Often experts speak of a need to “get a feeling for what you’re working on”. In fact, the biography of one Nobel Lauriat in biology (Barbara McClintock) was entitled, A Feeling for the Organism (Keller, 1983). Nonaka and Takeuchi (1995) stress the importance of capturing and using the knowledge of corporate expert’s tacit knowledge if a company wants to become “the knowledge creating company”.
+
+Most of the methods used prior to concept maps consisted of various forms of interviews and analyses with experts, including case studies of how experts accomplished some remarkable achievement (Hoffman et al., 1995; Klein & Hoffman, 1992). In fact, these methods continue to be highly popular with many cognitive scientists, most of whom are unfamiliar with Ausubel’s work and the kind of epistemological ideas on which concept mapping is based. We also used “clinical interviews” in our early work, as noted above, but we found it necessary to invent a better way to represent what our learners knew and how their knowledge was changing over time. At IHMC, we began using interviews to identify expert knowledge needed to interpret computer readings from computer outputs of a machine designed to assess problems with heart functions, following the injection of a bolus of radioactive solution, and to diagnose coronary dysfunction (Ford et al., 1991; Ford et al., 1996). However, when we began to concept map the expert knowledge of a cardiologist who literally “wrote the book” on this technology, it was evident that there were concepts missing in the map and that the “tacit knowledge” of our expert was not fully expressed in his book or in our interviews. Thus, the concept map not only allowed us to represent the expert’s knowledge, but also to find gaps in the knowledge structure we were procuring through interviews.
+
+While we expect that interviews, case study analyses, “critical incident” analyses and similar techniques will have value in extracting and representing expert knowledge, it is likely that the end product of these studies might still be best represented in the form of concept maps, perhaps with some of the interview data and other information presented through icons on maps.
+
+At IHMC we continue to be very active in the area of capturing and representing expert knowledge (Coffey et al., 2002). As the CmapTools software has evolved, it has become an increasingly useful tool for this work, as illustrated by the remarkable resources on Mars prepared at NASA Ames’ Center for Mars Exploration (Briggs et al., 2004). Figure 16 shows a “Home” concept map for the knowledge portfolio that Briggs created and Figure 17 shows one of the many submaps he created. The entire set of concept maps can be viewed at: http://cmex.ihmc.us. In addition to submaps, a wide variety of digital resources can be accessed via the concept maps. Many other projects are represented in the IHMC Public CmapServer accessible through CmapTools, including projects dealing with weather forecasting (Hoffman et al., 2000, see: http://www.ihmc.us/research/projects/StormLK/), electronic technicians (Coffey et al., 2003), and Thai fabric crafts.
+
+
+
+Figure 16. A "Home" concept map for the knowledge portfolio created by NASA for Mars Exploration.
+
+(click on the image to display a larger image)
+
+
+
+Figure 17. An example of a concept map that can be accessed via clicking on one of the resources attached to a concept on Figure 16.
+
+(click on the image to display a larger image)
+
+Conclusions
+In this paper we have tried to present the theoretical foundations and the origins of what we call concept maps. While at first glance concept maps may appear to be just another graphic representation of information, understanding the foundations for this tool and its proper use will lead the user to see that this is truly a profound and powerful tool. It may at first look like a simple arrangement of words into a hierarchy, but when care is used in organizing the concepts represented by the words, and the propositions or ideas are formed with well-chosen linking words, one begins to see that a good concept map is at once simple, but also elegantly complex with profound meanings. Concept mapping has been shown to help learners learn, researchers create new knowledge, administrators to better structure and manage organizations, writers to write, and evaluators assess learning. As with any tool, it can also be misused, and we have illustrated some examples of this.
+
+We also wish to use this document as a foundation for further experimentation, critique, and dialogue regarding the use of this tool. The CmapTools web site provides opportunities for lively exchanges among users and researchers. This document itself should be a “living” document, with revisions occurring periodically as we gain new knowledge and experiences with the use of this tool. We invite all users of concept mapping and CmapTools to participate in this dialogue.
+
+References
+Anderson, O. R. (1992). Some interrelationships between constructivist models of learning and current neurobiological theory, with implications for science education. Journal of Research in Science Teaching, 19(10), 1037-1058.
+
+Ausubel, D. P. (1963). The psychology of meaningful verbal learning. New York: Grune and Stratton.
+
+Ausubel, D. P. (1968). Educational psychology: A cognitive view. New York: Holt, Rinehart and Winston.
+
+Ausubel, D. P., Novak, J. D., & Hanesian, H. (1978). Educational psychology: A cognitive view (2nd ed.). New York: Holt, Rinehart and Winston.
+
+Bascones, J., & Novak, J. D. (1985). Alternative instructional systems and the development of problem solving skills in physics. European Journal of Science Education, 7(3), 253-261.
+
+Beirute, L., & Mayorga, L. F. (2004). Los mapas conceptuales herramienta poderosa en la resolución alternativa de conflictos. In A. J. Cañas, J. D. Novak & F. M. González (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the 1st international conference on concept mapping (Vol. I). Pamplona, Spain: Universidad Pública de Navarra.
+
+Berk, L. E. & Winsler, A. (1995). Scaffolding children's learning: Vygotsky and early childhood education. Washington, D.C.: National Assocation for Education of Young Children.
+
+Bloom, B. S. (1956). Taxonomy of educational objectives; the classification of educational goals (1st ed.). New York: Longmans Green.
+
+Bransford, J., Brown, A. L., & Cocking, R. R. (Eds.). (1999). How people learn: Brain, mind, experience, and school. Washington, D.C.: National Academy Press.
+
+Briggs, G., Shamma, D. A., Cañas, A. J., Carff, R., Scargle, J., & Novak, J. D. (2004). Concept maps applied to Mars exploration public outreach. In A. J. Cañas, J. D. Novak & F. González (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the first international conference on concept mapping (Vol. I, pp. 109-116). Pamplona, Spain: Universidad Pública de Navarra.
+
+Cañas, A. J., Carff, R., Hill, G., Carvalho, M., Arguedas, M., Eskridge, T., et al. (2005). Concept maps: Integrating knowledge and information visualization. In S.-O. Tergan & T. Keller (Eds.), Knowledge and information visualization: Searching for synergies (pp. 205-219). Heidelberg/NY: Springer Lecture Notes in Computer Science.
+
+Cañas, A. J., Ford, K. M., Brennan, J., Reichherzer, T., & Hayes, P. (1995). Knowledge construction and sharing in quorum. Paper presented at the Seventh World Conference on Artificial Intelligence in Education, Washington DC.
+
+Cañas, A. J., Ford, K. M., Novak, J. D., Hayes, P., Reichherzer, T., & Suri, N. (2001). Online concept maps: Enhancing collaborative learning by using technology with concept maps. The Science Teacher, 68(4), 49-51.
+
+Cañas, A. J., Hill, G., Carff, R., Suri, N., Lott, J., Arroyo, M., et al. (2004a). CmapTools: Una rete per modellizare e condividere la conoscenza. In A. Spaziante (Ed.), La conoscenza come bene pubblico comune: Software, dati, saperi (pp. 51-62). Torino: CIS-Piemonte.
+
+Cañas, A. J., Hill, G., Carff, R., Suri, N., Lott, J., Eskridge, T., et al. (2004b). CmapTools: A knowledge modeling and sharing environment. In A. J. Cañas, J. D. Novak & F. M. González (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the first international conference on concept mapping (Vol. I, pp. 125-133). Pamplona, Spain: Universidad Pública de Navarra.
+
+Cañas, A. J., Hill, G., Granados, A., Pérez, C., & Pérez, J. D. (2003a). The network architecture of CmapTools (Technical Report No. IHMC CmapTools 2003-01). Pensacola, FL: Institute for Human and Machine Cognition.
+
+Cañas, A. J., Hill, G., & Lott, J. (2003b). Support for constructing knowledge models in CmapTools (Technical Report No. IHMC CmapTools 2003-02). Pensacola, FL: Institute for Human and Machine Cognition.
+
+Cañas, A. J., Hill, G., Lott, J., & Suri, N. (2003c). Permissions and access control in CmapTools (Technical Report No. IHMC CmapTools 2003-03). Pensacola, FL: Institute for Human and Machine Cognition.
+
+Cañas, A. J., & Novak, J. D. (2005). A concept map-centered learning environment. Paper presented at the Symposium at the 11th Biennial Conference of the European Association for Research in Learning and Instruction (EARLI), Cyprus.
+
+Carvalho, M. R., Hewett, R., & Cañas, A. J. (2001). Enhancing web searches from concept map-based knowledge models. In N. Callaos, F. G. Tinetti, J. M. Champarnaud & J. K. Lee (Eds.), Proceedings of SCI 2001: Fifth multiconference on systems, cybernetics and informatics (pp. 69-73). Orlando, FL: International Institute of Informatics and Systemics.
+
+Coffey, J. W., Cañas, A. J., Reichherzer, T., Hill, G., Suri, N., Carff, R., et al. (2003). Knowledge modeling and the creation of el-tech: A performance support system for electronic technicians. Expert Systems with Applications, 25(4), 483-492.
+
+Coffey, J. W., Hoffman, R. R., Cañas, A. J., & Ford, K. M. (2002). A concept-map based knowledge modeling approach to expert knowledge sharing. In M. Boumedine (Ed.), Proceedings of IKS 2002 - the IASTED international conference on information and knowledge sharing (pp. 212-217). Calgary, Canada: Acta Press.
+
+Derbentseva, N., Safayeni, F., & Cañas, A. J. (2004). Experiments on the effect of map structure and concept quantification during concept map construction. In A. J. Cañas, J. D. Novak & F. M. González (Eds.), Concept maps: Theory, methodology, technology, proceedings of the first international conference on concept mapping. Pamplona, Spain: Universidad Pública de Navarra.
+
+Derbentseva, N., Safayeni, F., & Cañas, A. J. (2006). Concept maps: Experiments on dynamic thinking. Journal of Research in Science Teaching, 44(3).
+
+Edmondson, K. (2000). Assessing science understanding through concept maps. In J. Mintzes, J. Wandersee & J. Novak (Eds.), Assessing science understanding (pp. 19-40). San Diego: Academic Press.
+
+Edwards, J., & Fraser, K. (1983). Concept maps as reflections of conceptual understanding. Research in Science Education, 13, 19-26.
+
+Ford, K. M., Cañas, A. J., Jones, J., Stahl, H., Novak, J. D., & Adams-Webber, J. (1991). Iconkat: An integrated constructivist knowledge acquisition tool. Knowledge Acquisition, 3, 215-236.
+
+Ford, K. M., Coffey, J. W., Cañas, A. J., Andrews, E. J., & Turner, C. W. (1996). Diagnosis and explanation by a nuclear cardiology expert system. International Journal of Expert Systems, 9, 499-506.
+
+Gardner, H. (1983). Frames of mind: the theory of multiple intelligences. New York: Basic Books.
+
+Hoffman, B. (1962). The tyranny of testing. New York: Corwell-Collier.
+
+Hoffman, R. R., Coffey, J. W., & Ford, K. M. (2000). A case study in the research paradigm of human-centered computing: Local expertise in weather forecasting. Report on the contract "Human-centered system prototype". Washington, DC: National Technology Alliance.
+
+Hoffman, R. R., Shadbolt, N. R., Buton, A. M., & Klein, G. (1995). Eliciting knowledge from experts: A methodological analysis. Organizational Behavior and Human Design Processes, 62(2), 129-158.
+
+Holden, C. (1992). Study flunks science and math tests. Science Education, 26, 541.
+
+Johnson, D., Maruyama, G., Johnson, R., Nelson, D., & Skon, L. (1981). The effects of cooperative, competitive and individualistic goal structure on achievement: A meta-analysis. Psychological Bulletin, 89, 47-62.
+
+Keller, E. F. (1983). A feeling for the organism: The life and work of Barbara McClintock. San Francisco: W.H. Freeman.
+
+Kirschner, P. A., Sweller, J. & Clark, R. E. (2006). Why minimal guidance during iInstruction does not work: an analysis of the failure of constructivist, discovery, problem-based, experiential, and iInquiry-based teaching. Educational Psychologist, 41(2), 75-86.
+
+Klein, G., & Hoffman, R. R. (1992). Seeing the invisible: Perceptual-cognitive aspects of expertise. In M. Robinowitz (Ed.), Cognitive science foundations of instruction (pp. 203-226). Mawah, N.J.: Lawrence Erlbaum.
+
+Leake, D. B., Maguitman, A., Reichherzer, T., Cañas, A. J., Carvalho, M., Arguedas, M., et al. (2004). Googling from a concept map: Towards automatic concept-map-based query formation. In A. J. Cañas, J. D. Novak & F. M. González (Eds.), Concept maps: Theory, methodology, technology. Proceedings of the first international conference on concept mapping (Vol. I, pp. 409-416). Pamplona, Spain: Universidad Pública de Navarra.
+
+Macnamara, J. (1982). Names for things: A study of human learning. Cambridge, MA: M.I.T. Press.
+
+Mayer, R. E. (2004). Should There Be a Three-Strikes Rule Against Pure Discovery Learning? The Case for Guided Methods of Instruction. American Psychologist, 59(1), 14-19.
+
+Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. Psychological Review, 63, 81-97.
+
+Mintzes, J. J., Wandersee, J. H., & Novak, J. D. (1998). Teaching science for understanding: A human constructivist view. San Diego: Academic Press.
+
+Mintzes, J. J., Wandersee, J. H., & Novak, J. D. (2000). Assessing science understanding: A human constructivist view. San Diego: Academic Press.
+
+Nickerson, R. S. & Adams, M. J. (1997). Long-term memory for a common object. Cognitive Psychology, 11, 287-307.
+
+Nonaka, I., & Takeuchi, H. (1995). The knowledge-creating company: How Japanese companies create the dynamics of innovation. New York: Oxford University Press.
+
+Novak, J. D. (1977). A theory of education. Ithaca, NY: Cornell University Press.
+
+Novak, J. D. (1990). Concept maps and vee diagrams: Two metacognitive tools for science and mathematics education. Instructional Science, 19, 29-52.
+
+Novak, J. D. (1991). Clarify with concept maps: A tool for students and teachers alike. The Science Teacher, 58, 45-49.
+
+Novak, J. D. (1993). Human constructivism: A unification of psychological and epistemological phenomena in meaning making. International Journal of Personal Construct Psychology, 6, 167-193.
+
+Novak, J. D. (1998). Learning, creating, and using knowledge: Concept maps as facilitative tools in schools and corporations. Mahwah, NJ: Lawrence Erlbaum Associates.
+
+Novak, J. D. (2002). Meaningful learning: The essential factor for conceptual change in limited or appropriate propositional hierarchies (liphs) leading to empowerment of learners. Science Education, 86(4), 548-571.
+
+Novak, J. D., & Gowin, D. B. (1984). Learning how to learn. New York, NY: Cambridge University Press.
+
+Novak, J. D., & Musonda, D. (1991). A twelve-year longitudinal study of science concept learning. American Educational Research Journal, 28(1), 117-153.
+
+Novak, J. D., & Wandersee, J. (1991). Coeditors, special issue on concept mapping. Journal of Research in Science Teaching, 28(10).
+
+O'Donnell, A., Dansereau, D., & Hall, R. H. (2002). Knowledge maps as scaffolds for cognitive processing. Educational Psychology Review, 14, 71-86.
+
+Penfield, W. & Perot, P. (1963).The Brain’s Record of Auditory and Visual Experience: A final Summary and Discussion. Brain, 86, 595-697.
+
+Preszler, R. W. (2004). Cooperative concept mapping improves performance in biology. Journal of College Science Teaching, 33, 30-35.
+
+Schneps, M. (1989). Private universe project: Harvard University.
+
+Shepard, R. N. (1967). Recognition memory for words, sentences, and pictures. Journal of Verbal Learning and Verbal Behavior, 6, 156-163.
+
+Sperling, G. (1960). The information available in brief visual presentations, Psychological Monographs: General and Applied, 74(11), 1-30.
+
+Sperling, G. (1963). A model for visual memory tasks, Human Factors, 5, 19-31.
+
+Sweller, J., Krischner, P. A & Clark, R. E. (2007). Why minimally guided teaching techniques do not work: a reply to commentaries. Educational Psychologist, 42(2), 115-121.
+
+Tsien, J. Z. (2007). The memory, Scientific American, July, 52-59.
+
+Valittuti, G. (2004). Personal communication.
+
+Vitale, M. R., & Romance, N. R. (2000). Portfolios in science assessment: A knowledge-based model for classroom practice. In J. J. Mintzes, J. H. Wandersee & J. D. Novak (Eds.), Assessing science understanding: A human constructivist view. San Diego, CA: Academic Press.
+
+Vygotsky, L., & Cole, M. (1978). Mind in society: The development of higher psychological processes. Cambridge: Harvard University Press.
+
+Footnotes
+[1] Revised January 22, 2008. Cite as: “Novak, J. D. & A. J. Cañas, The Theory Underlying Concept Maps and How to Construct and Use Them, Technical Report IHMC CmapTools 2006-01 Rev 01-2008, Florida Institute for Human and Machine Cognition, 2008, available at: http://cmap.ihmc.us/docs/pdf/TheoryUnderlyingConceptMaps.pdf
+
+[2] Available at http://cmapskm.ihmc.us/rid=1QLHVSPH4-10P5FKM-53MD
+
+[3] The World of Science books were published in 1966 and some of the figures are dated.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

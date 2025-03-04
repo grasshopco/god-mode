@@ -1,0 +1,461 @@
+Eisenhower Matrix
+DECISION MAKING
+Prioritize your actions and tasks by importance and urgency
+Named after U.S. President Dwight D. Eisenhower, this prioritization framework will help you organize your tasks and activities by importance and urgency. It's especially useful when you're very busy but don't feel like what you do has much impact.
+
+How to use it
+The Eisenhower Matrix has four quadrants along two axes: importance and urgency.
+For every activity or task, ask yourself: It is important or not? Is it urgent or not?
+
+Based on the answer, place the activity/task in the right quadrant. The quadrant determines what you should do with the task:
+
+1. Important and urgent → Do it
+These are the tasks that you want to do as soon as possible. 
+Crises, pressing problems and other things where not acting now has negative consequences.
+2. Important but not urgent → Schedule it
+Find a time for these tasks and do them then.
+This quadrant is typically where deep work happens – tasks that contribute to your projects or long-term goals.
+3. Urgent but not important → Delegate it
+If you can, find someone who can do these tasks for you.
+If you can't delegate it, schedule it but always try to do the important-but-not-urgent tasks first.
+These are often administrative tasks or things that have deadlines but aren't critical.
+4. Not urgent and not important → Don't do it
+These tasks aren't worth your time and you shouldn't do them at all.
+Avoidance activities, busy work and entertainment goes into this quadrant.
+This is also the order of the priority of your tasks. Yes, important-but-not-urgent tasks come before urgent-but-not-important.
+
+Eisenhower matrix is very flexible so it's up to you if you use it for professional tasks, personal ones or both.
+
+You can also work with it on different timescales: planning your day vs. generally prioritizing activities in your life.
+
+How do you tell urgent tasks from important ones?
+Urgent tasks typically have a clear deadline (e.g. sending a draft to a client) or require you to react in a timely fashion (e.g. emails). Important tasks tend to be aligned with your long-term goals (e.g. exercising) and push your projects forward (e.g. writing code for your side project).
+
+Determining urgency and importance will always depend on your context and your ability to recognize what's truly urgent and truly important.
+
+Example
+Here are some examples of activities and tasks that might go into the Eisenhower Matrix:
+
+
+Urgent	Not urgent
+Important	
+Do:
+
+Finish a report that's due
+Send draft to client
+Fix a bug
+
+Schedule:
+
+Design a new feature
+Write a blog post
+Exercise
+
+Not important	
+Delegate/schedule for later:
+
+Buy a conference ticket
+Schedule an interview
+Reply to emails
+
+Don't do:
+
+Attend a meeting with no agenda
+Read #random
+Check social media
+
+Takeaway
+The promise of the Eisenhower Matrix is to make you more productive by setting the right priorities and acting on them. If you're always busy but don't get anywhere on your long-term projects and goals, this tool is definitely for you. But it's also a generally useful tool for deciding what to work on and what to eliminate from your life.
+
+Template for Eisenhower Matrix
+I created a handy worksheet to help you put this tool into practice. It comes with a simple how-to guide including an example. Get it in a bundle with 9 other useful tools:
+
+
+
+
+
+
+
+
+
+
+
+
+
+How to be More Productive and Eliminate Time Wasting Activities by Using the “Eisenhower Box”
+written by James Clear
+Decision Making Minimalism Productivity
+Dwight Eisenhower lived one of the most productive lives you can imagine.
+
+Eisenhower was the 34th President of the United States, serving two terms from 1953 to 1961. During his time in office, he launched programs that directly led to the development of the Interstate Highway System in the United States, the launch of the internet (DARPA), the exploration of space (NASA), and the peaceful use of alternative energy sources (Atomic Energy Act).
+
+Before becoming president, Eisenhower was a five-star general in the United States Army, served as the Supreme Commander of the Allied Forces in Europe during World War II, and was responsible for planning and executing invasions of North Africa, France, and Germany.
+
+At other points along the way, he served as President of Columbia University, became the first Supreme Commander of NATO, and somehow found time to pursue hobbies like golfing and oil painting.
+
+Eisenhower had an incredible ability to sustain his productivity not just for weeks or months, but for decades. And for that reason, it is no surprise that his methods for time management, task management, and productivity have been studied by many people.
+
+His most famous productivity strategy is known as the Eisenhower Box (or Eisenhower Matrix) and it’s a simple decision-making tool that you can use right now. Let’s talk about how to be more productive and how Eisenhower’s strategy works.
+
+The Eisenhower Box: How to be More Productive
+Eisenhower’s strategy for taking action and organizing your tasks is simple. Using the decision matrix below, you will separate your actions based on four possibilities.
+
+Urgent and important (tasks you will do immediately).
+Important, but not urgent (tasks you will schedule to do later).
+Urgent, but not important (tasks you will delegate to someone else).
+Neither urgent nor important (tasks that you will eliminate).
+The great thing about this matrix is that it can be used for broad productivity plans (“How should I spend my time each week?”) and for smaller, daily plans (“What should I do today?”).
+
+Here is an example of what my Eisenhower Box looks like for today.
+
+how to be more productive with the eisenhower box 
+
+The Difference Between Urgent and Important
+What is important is seldom urgent and what is urgent is seldom important.
+-Dwight Eisenhower
+Urgent tasks are things that you feel like you need to react to: emails, phone calls, texts, news stories. Meanwhile, in the words of Brett McKay, “Important tasks are things that contribute to our long-term mission, values, and goals.”
+
+Separating these differences is simple enough to do once, but doing so continually can be tough. The reason I like the Eisenhower Matrix is that it provides a clear framework for making the decisions over and over again. And like anything in life, consistency is the hard part.
+
+Here are some other observations I’ve made from using this method.
+
+Elimination Before Optimization
+A few years ago, I was reading about computer programming when I came across an interesting quote:
+
+“There is no code faster than no code.”
+–Kevlin Henney
+In other words, the fastest way to get something done — whether it is having a computer read a line of code or crossing a task off your to-do list — is to eliminate that task entirely. There is no faster way to do something than not doing it at all. That’s not a reason to be lazy, but rather a suggestion to force yourself to make hard decisions and delete any task that does not lead you toward your mission, your values, and your goals.
+
+Too often, we use productivity, time management, and optimization as an excuse to avoid the really difficult question: “Do I actually need to be doing this?” It is much easier to remain busy and tell yourself that you just need to be a little more efficient or to “work a little later tonight” than to endure the pain of eliminating a task that you are comfortable with doing, but that isn’t the highest and best use of your time.
+
+As Tim Ferriss says, “Being busy is a form of laziness — lazy thinking and indiscriminate action.”
+
+I find that the Eisenhower Matrix is particularly useful because it pushes me to question whether an action is really necessary, which means I’m more likely to move tasks to the “Delete” quadrant rather than mindlessly repeating them. And to be honest, if you simply eliminated all of the things you waste time on each day then you probably wouldn’t need any tips on how to be more productive at the things that matter.
+
+Does This Help Me Accomplish My Goal?
+One final note: it can be hard to eliminate time wasting activities if you aren’t sure what you are working toward. In my experience, there are two questions that can help clarify the entire process behind the Eisenhower Box.
+
+Those two questions are…
+
+What am I working toward?
+What are the core values that drive my life?
+These are questions that I have asked myself in my Annual Review and my Integrity Report. Answering these questions has helped me clarify the categories for certain tasks in my life. Deciding which tasks to do and which tasks to delete becomes much easier when you are clear about what is important to you.
+
+The Eisenhower Matrix isn’t a perfect strategy, but I have found it to be a useful decision-making tool for increasing my productivity and eliminating the behaviors that take up mental energy, waste time, and rarely move me toward my goals. I hope you’ll find it useful too.
+
+
+
+
+
+
+
+The Eisenhower Matrix
+Avoid the "Urgency Trap" with Dwight D. Eisenhower's famous prioritization framework
+Popular
+Prioritization
+Illustration by Margarida Mouta
+Illustration by Margarida Mouta
+Todoist makes the world’s #1 task manager to organize your work and life. Tell me more
+
+“Who can define for us with accuracy the difference between the long and short term! Especially whenever our affairs seem to be in crisis, we are almost compelled to give our first attention to the urgent present rather than to the important future.”
+
+— Dwight D. Eisenhower, 1961 address to the Century Association
+
+Dwight D. Eisenhower — a five-star general during World War II and 34th president of the United States — was a productive guy.
+
+During his two terms as president of the United States, he led the construction of the Interstate Highway System, created NASA, signed into law the first major piece of civil rights legislation since the end of the Civil War, ended the Korean War, welcomed Alaska and Hawaii into the union, and managed to keep the Cold War with Russia cold.
+
+And he did it all with panache — Eisenhower was Gallup’s most admired man of the year no less than twelve times.
+
+How was Eisenhower able to rack up so many accomplishments that would have such a lasting impact on his country and the world? He understood the fundamental difference between the Urgent and the Important.
+
+In a 1954 speech, Eisenhower quoted an unnamed university president who said, “I have two kinds of problems, the urgent and the important. The urgent are not important, and the important are never urgent.”
+
+Over 3 decades later in his best-selling book The 7 Habits of Highly Effective People, Stephen Covey repackaged Eisenhower’s insights into a simple tool to prioritize tasks, now known as the Eisenhower Matrix (also known as The Time Management Matrix, The Eisenhower Box, The Eisenhower Method, and The Urgent-Important Matrix). This framework for prioritization helps you combat the “mere-urgency” effect (more on that later), eliminate time-wasters in your life, and create more mental space to make progress on your goals.
+
+productivity-methods eisenhower-matrix
+Start with our Eisenhower Matrix template
+Todoist makes it easy to sort your tasks into each quadrant of the matrix so you know exactly what to prioritize. Copy our templated Eisenhower setup in a click.
+
+See the template
+
+We’ve made a companion video for the Eisenhower matrix because everyone learns differently, and we know some of you prefer to watch instead of read. Check out that video below, or continue reading for a deeper dive.
+
+
+Try the Eisenhower Matrix if you...
+
+Find yourself running around putting out fires all day (figuratively speaking)
+
+Are busy but don’t feel like your work has a high impact
+
+Have long-term goals but no time or energy to make progress on them
+
+Have a hard time delegating and/or saying no
+
+Want to be the president of the United States (hey, it worked for Eisenhower)
+
+This article will walk you through why distinguishing between the Urgent and the Important is so critical, how the Eisenhower Matrix helps you do it, and how to apply the matrix to both your big-picture projects and everyday tasks using Todoist.
+
+The Mere-Urgency Effect, a.k.a. Why We're Bad at Prioritization
+How do we decide which task to give our attention to at any given moment? Not very well, it turns out.
+
+A recent study in the Journal of Consumer Research set out to examine how people decide what to work on when faced with tasks of mixed urgency and importance. Across five separate experiments, researchers observed a curious pattern: our attention is drawn to time-sensitive tasks over tasks that are less urgent, even when the less urgent task offers greater rewards. This psychological quirk — dubbed the "Mere-Urgency Effect" — explains why we’re so bad at task and time management. We’re more likely to prioritize tasks with a deadline over tasks without one, regardless of their long-term payoffs.
+
+And the effect is even more prominent in people who describe themselves as “busy”. The same researchers found that self-described busy people were more likely to select urgent tasks with lower payouts because they were already fixated on task duration. If you’re already feeling a time crunch, you’ll likely continue to prioritize tasks that keep you focused on the clock.
+
+But there’s good news, too — the mere-urgency effect can be reversed.  When participants were prompted to consider the consequences of their choices at the time of selection, they were significantly more likely to choose the important task over the urgent one. The findings suggest that if you keep the long-term importance of non-urgent tasks in view, you can overcome the pull toward urgent distractions and focus on what really matters.
+
+That’s where the Eisenhower Matrix comes in.
+
+The Eisenhower Matrix — Urgent vs. Important
+The Eisenhower Matrix is a simple tool for considering the long-term outcomes of your daily tasks and focusing on what will make you most effective, not just most productive. It helps you visualize all your tasks in a matrix of urgent/important. All of your day-to-day tasks and bigger projects will fall into one of these four quadrants:
+
+Urgent & Important tasks/projects to be completed immediately
+
+Not Urgent & Important tasks/projects to be scheduled on your calendar
+
+Urgent & Unimportant tasks/projects to be delegated to someone else
+
+Not Urgent & Unimportant tasks/projects to be deleted
+
+In the real world, the distinction between urgent/non-urgent, important/not important is much murkier than under experimental conditions. Here’s how Steven Covey breaks it down:
+
+Urgent matters are those that require immediate action. These are the visible issues that pop up and demand your attention NOW. Often, urgent matters come with clear consequences for not completing these tasks. Urgent tasks are unavoidable, but spending too much time putting out fires can produce a great deal of stress and could result in burnout.
+
+Important matters, on the other hand, are those that contribute to long-term goals and life values. These items require planning and thoughtful action. When you focus on important matters you manage your time, energy, and attention rather than mindlessly expending these resources. What is important is subjective and depends on your own values and personal goals. No one else can define what is important for you.
+
+Below is an in-depth look at each of the four quadrants of the Eisenhower Matrix to help you identify which tasks go in each and how to handle them accordingly.
+
+Quadrant 1: Urgent & Important
+productivity-methods eisenhower-highlight-1
+Urgent and Important tasks demand you take action quickly. These items typically have visible deadlines and consequences for stalling on taking action. Most often, these are either things that were sprung on you from an external source or things that you put off until faced with a looming deadline. Either way, they require a crisis mode response.
+
+For example:
+
+Covering a project for a colleague out sick
+
+Car stalls on the highway
+
+Sink springs leak and floods your kitchen in two feet of water
+
+Clients come to you with a pressing problem
+
+A last-minute deadline is assigned to you
+
+Quadrant 1 tasks are inevitable. Even if you never procrastinate (which is an impossible ask), there will always be something beyond your control. However, the problem comes when you focus on these unexpected or deadline-driven tasks to the exclusion of long-term goals that are important to you.
+
+Covey cautions that spending too much time on Quadrant 1 tasks can lead to increased stress, burn out, and the sense that your days are out of your control. Spending all day putting out fires will quickly rob you of energy and passion for your work, and may make it easier to settle into mindless escapism found in Quadrant 4.
+
+Quadrant 2: Not Urgent & Important
+productivity-methods eisenhower-highlight-2
+Not urgent, but important tasks are the activities that help you achieve long-term goals. These may not have a deadline (or even an end date) so it is easy to put them off in favor of more urgent tasks. However, these tasks have a much greater effect on your long-term effectiveness in completing your goals.
+
+Examples:
+
+Planning for long and short-term projects
+
+Regular chores or maintenance projects
+
+Professional networking and personal relationship building
+
+Learning a new skill, keeping up with current research in your field, attending educational events
+
+Exercise and routine healthcare
+
+Covey says that Quadrant 2 is the sweet spot of personal time management. This is the spot where you are focused not on problems (as with Q1) but on opportunities and growth. Living from this quadrant of the matrix means that you are proactive and prioritize activities that grow your skills and energy, and contribute to accomplishing meaningful goals. Quadrant 2 is where “deep work” happens because you are largely freed of pressing distractions.
+
+By attending to Q2 consistently, you decrease the number of pressing problems that pop up in Q1. Living in Q2 means that you can create a plan to complete projects and avoid possible problems. For example, if you keep putting off completing routine car maintenance, you may pay for it later when your car stalls out.
+
+Do you manage other people?
+
+Dig deeper
+Do you manage other people? Learn how you can help your team spend more time in quadrant 2 too.
+
+
+Quadrant 3:  Urgent & Not Important
+productivity-methods eisenhower-highlight-3
+Urgent but Not Important tasks are best described as busy work. These tasks are often based on expectations set by others and do not move you closer to your long-term goals.
+
+Examples:
+
+Unnecessary interruptions from coworkers
+
+Checking your phone or email whenever it goes off
+
+Responding to certain texts, emails, or social media messages
+
+Acting on coupons or limited time offers
+
+Some meetings
+
+Quadrant 3 is where the mere urgency effect lives. The drive to complete tasks because of real or assumed deadlines means you take on tasks that aren’t actually meaningful to you. Given that Q3 tasks are urgent but typically related to someone else’s priorities, spending too much time in this square can feel like you are doing things you should do rather than what you want to do. Focus on Q3 tasks may make you feel like you are not living up your larger life goals or don’t have control over your day-to-day life.
+
+Covey suggests delegating as many Q3 tasks as possible. Can you have someone else take those meeting notes? Can you get your groceries delivered instead of going to the store? Can you empower your children to do the dishes?  Can you hire a digital assistant to schedule family doctor visits? Is there anything in your life you can automate?
+
+If you can’t delegate these tasks, try to keep them from taking over your day:
+
+Turn off notifications on your phone and computer when working
+
+Be clear with others about how much time you can spend on a given task
+
+Save Q3 tasks for times when you are very low on energy rather than putting them first thing in the morning
+
+Negotiate your workload with your boss
+
+Practice saying no
+
+Dig deeper
+For more tips on getting out of Q3, learn how to Vanquish Busywork and Spend More Time on What Matters.
+
+
+Quadrant 4:  Not Urgent & Not important
+productivity-methods eisenhower-highlight-4
+Not urgent and not important tasks are time-wasting activities that should be ruthlessly cut out. These activities don’t contribute to progress on your goals but can end up taking over large chunks of time.
+
+Examples:
+
+Watching TV for hours
+
+Mindlessly refreshing social media and scrolling
+
+Avoidance activities such as sorting and organizing email rather than answering it
+
+Excessive shopping or online browsing
+
+Quadrant 4 is the quadrant of excess and immediate gratification that ultimately leaves you feeling unfulfilled.
+
+Don’t get me wrong we all need some leisure time. Eisenhower himself was a well-known bridge player — even playing nightly up to D-Day — and was famously criticized for his many golf trips while in office. The key is that these activities were a balance for the many stressful aspects of being a political leader. However, if you’re not intentional about it, the way you spend your downtime can actually drain your energy, passion, and creativity.
+
+A recent study published in the Journal of Applied Psychology found that how employees spend their off-job leisure time is a strong predictor for how much energy and positivity they expressed the following workday. Employees who engaged in self-mastery activities such as exercise or volunteering were more motivated the following day. Employees who relaxed with yoga, meditation, or by listening to music approached the workday more calmly.
+
+Employees who engaged in distraction activities to avoid or ignore problems, like watching excessive TV, did show a renewed positivity the following workday. However, with continued use of distraction their moods and motivation worsened as the week continued. In other words, distraction in moderation was ok, but habitual distraction resulted in less work satisfaction overall.
+
+Dig deeper
+At a loss for what to do in your spare time when TV and social media are off the table? Try these ideas
+
+
+How to rebalance your quadrants
+According to Stephen Covey, quadrant 2 is the “Quadrant of Quality” where time spent engaging these tasks increases your overall effectiveness. This is where personal and professional growth meets planning, prevention, and action.
+
+To evaluate where you currently are on the matrix, start tracking your time and tasks. If you use Todoist for task management, you can easily get a list of all the tasks you completed and when you completed them. When you have a few days worth of data, sit down and organize your tasks into quadrants by asking the following questions:
+
+Was this urgent for me?
+
+Was this important to me?
+
+Remember that you are only deciding these criteria based on your desired outcomes, not someone else’s.
+
+Once your tasks are sorted into the appropriate quadrants, examine where your time is currently being spent. Are you happy with your quadrant balance?
+
+If you spend a lot of time in Q1, invest time in planning to anticipate and prevent problems:
+
+Next step: Organize a weekly or even monthly plan around your current goals and deadlines. At the end of each week, do a weekly review. Reflect on how well your plan worked and adjust for the next week. If most of your Q1 tasks come from external sources, strategize on how you can better plan and anticipate them. You may need to develop a more proactive workflow with a colleague or client, or talk to your boss about rebalancing an excessive workload. If there’s a particular client who’s creating a lot of Q1 tasks, the work may not be worth the stress.
+
+If you spend your time in Q3, delegate, eliminate, or limit the amount of time you spend on these tasks:
+
+Next Step: Strategize and write out specific steps on how you’ll limit these tasks. Can you delegate them? Can you just say no? Can you batch these types of tasks together in a single afternoon during your week? Can you have an open discussion with your boss about just how much time you’re spending on “busywork”? Schedule time in your week to take these steps.
+
+If you spend your time in Q4, you may be stuck in a rut, stressed, or avoiding a problem:
+
+Next Step: Use your time tracking to identify the biggest time wasters and strategize on how to avoid or limit them. Develop a plan to overcome procrastination before you’re tempted to procrastinate. Remember, it’s ok to just relax sometimes, but activities in this quadrant have diminishing returns when used excessively.
+
+As you shift your priorities toward quadrant 2, keep using the Eisenhower Matrix to know what you should be working on day to day.
+
+How to implement the Eisenhower Matrix in Todoist
+You can use Todoist to organize your tasks into the four urgent/important quadrants with two different methods: labels or priority levels. Both methods are outlined below.
+
+Using labels
+productivity-methods eisenhower-priorities copy
+In Todoist, labels and filters work together to help you organize and sort your task list. For this setup, first create these two labels:
+
+@urgent
+
+@important
+
+1 - labels
+Todoist Tip
+
+You can change the color of a label and add emojis to make it stand out on your list.
+
+Once you have your two labels, go through your tasks and assign the appropriate labels to each:
+
+Add @urgent & @important to tasks that need to be done immediately and personally
+
+Add @important to tasks that get a due date and are done personally
+
+Add @urgent to tasks that can be delegated or relegated to
+
+Don’t add either label to tasks that can be dropped
+
+You can quickly assign a label to any task by typing “@” into the task field. This will bring up a list of your current labels to select from. Keep typing the label name to narrow down the list.
+
+2 - add label
+Todoist Tip
+
+If you have a lot of tasks, you can quickly assign labels to multiple tasks at the same time.
+
+Once all of your urgent and/or important tasks are labeled, create four new filters to correspond with each quadrant:
+
+Urgent & Important with filter query: @urgent & @important
+
+Important & Not urgent with filter query: @important & !@urgent
+
+Urgent & Unimportant with filter query: @urgent & !@important
+
+Unimportant & Not urgent with filter query: !@important & !@urgent
+
+And/or combine them all into one Eisenhower filter with the query: @urgent & @important, @important & !@urgent, @urgent & !@important, !@important & !@urgent
+
+Now you’ll be able to check each filter view to know which urgent and important tasks need your attention first; which important but not urgent tasks need to be scheduled; which urgent and unimportant tasks you should either delegate or do in your low energy hours; and which tasks you should just delete.
+
+4 - matrix
+Todoist Tip
+
+To keep your important tasks top-of-mind, add your Urgent & Important and Important & Not Urgent filters to your favorites. They'll show up at the top of your navigation menu for easy access.
+
+Using priority levels
+productivity-methods eisenhower-priorities
+Instead of using labels to sort your tasks, you can use Todoist’s four priority levels. Each priority level will map onto a corresponding quadrant of the Eisenhower matrix:
+
+Urgent & Important = Priority 1 (Red)
+
+Not Urgent & Important = Priority 2 (Orange)
+
+Urgent & Not Important = Priority 3 (Blue)
+
+Not Urgent & Not Important = Priority 4 (No color)
+
+Assign a priority level to any task by clicking or tapping the flag icon and then selecting the desired priority level.  Change the priority level any time by selecting the flag icon when editing a task, or just type p1, p2, or p3 right into the task field and Todoist will recognize and assign the right priority level when you create the task. Anything without a colored flag is P4 by default.
+
+5 - add priority
+Next, set up a filter to view your tasks by priority from across all your projects. Go to filters, then click “Add Filter” and title it Eisenhower Matrix. Under query, enter “ p1, p2, p3, p4”.
+
+6 - priorities matrix
+Your highest priority tasks will appear near the top of each daily to-do list in your Today and Upcoming views (tasks with both a due date and time will appear first regardless of priority level).
+
+Todoist Tip
+
+When using this method, remember that anything without a colored flag (p1, p2, p3) is automatically sorted as P4. If you use Todoist to store reference materials, you may want to alter your filter to exclude P4 items from certain reference projects. In that case, your filter query would read: “p1, p2, p3, p4 & !#Reference”.  (You can read the last part of this filter as “show me all p4 tasks that are not in my Reference project”.)
+
+Dealing with each quadrant
+Once you’ve set up Todoist to work with the Eisenhower Method, you can begin to evaluate your tasks. Click your new Eisenhower Matrix filters to review your tasks by quadrant.
+
+For Q1: Important & Urgent, p1:
+
+Review your upcoming tasks and make a plan to complete these items first.
+
+For Q2: Important & Not Urgent, p2:
+
+Set a reasonable due date for the next steps on each task. Get ahead of your planning by using comments to attach reference materials or add notes to your task.
+
+For Q3: Unimportant & Urgent, p3:
+
+Delegate as many tasks as you possible. To delegate these in Todoist, you can share projects with anyone, assign tasks, set deadlines, upload files, and discuss task details with collaborators in the comments.
+
+Q4: Unimportant & Not Urgent, p4:
+
+Delete
+
+When you’re faced with a set of tasks, how do you decide which to tackle first? Do you select the task that’s going to bring you closer to your long-term goals? Or do you give your attention to the most urgent item on your list?
+
+Use the Eisenhower Matrix to avoid the mere-urgency trap and do more of what’s important to you.

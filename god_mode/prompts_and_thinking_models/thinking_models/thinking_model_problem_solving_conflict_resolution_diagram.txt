@@ -1,0 +1,205 @@
+Conflict Resolution Diagram
+PROBLEM SOLVING
+Find win-win solutions to conflicts
+Handling conflicts carefully is important. Conflict Resolution Diagram (also called "Evaporating Cloud") is a tool that will help you resolve them peacefully while making sure that needs of both sides are met.
+
+It's one of the thinking tools developed as part of the Theory of Constraints by Eliyahu Goldratt. Let's see how it works.
+
+How to use it
+The best time to use this tool is when you run into a conflict that seems impossible to resolve by accepting the proposal of either side. This can be a conflict with others but also internal. It can be professional or personal. You can draw the diagram on a whiteboard, piece of paper or run through it in your head.
+
+The diagram is very simple and consists of three parts:
+
+Demands/proposals of the opposing sides: these are usually mutually exclusive which is what creates the conflict.
+Underlying needs or requirements of both sides
+Shared goal or objective that's behind the needs
+Conflict Resolution Diagram
+In this case, you work the diagram backwards – from right to left.
+
+Identify what each side is arguing for – what are the demands or proposals.
+Ask: What does the other side want to do? What do I want to do?
+Define the need that's behind each side's position.
+Ask: What needs are satisfied by the proposal of each side?
+Find what's the shared goal:
+Ask: What will be achieved by meeting the needs of both sides?
+This is the most critical part. There's usually something that both sides want to achieve on a higher level but have different views about how to do it. Acknowledge that you're on the same team to achieve that objective.
+Identifying the shared goal is necessary for finding a win-win solution.
+
+Discuss any assumptions that are behind the original proposals – this usually shines the light on the mutual exclusivity that created the conflict.
+
+From here, you can build up a new solution. This time with focus on the shared goal and satisfying the needs of both sides.
+
+And that's why the conflict can be resolved:
+
+peacefully: by looking for what unites both sides.
+and productively: by working toward a win-win solution that helps achieve the shared goal.
+Example
+Let's look at how this could be used in practice. Say you're debating redesigning your product website with your colleague. You're against the project but your colleague is pushing for it. You've been discussing this for an hour without any result. To move on, you suggest to create this conflict resolution diagram.
+
+First, you write down both sides of the argument: redesigning vs not. 
+
+After that, you identify the need behind each approach by discussing why exactly each approach is better. You find out that your colleague needs the website to have a better conversion rate. You're arguing against the project because you want to minimize waste of resources and you see a big risk in such a big project.
+
+Finally, you work together to identify what's the goal you both want to achieve by meeting those needs. You discover that you both want to meet the financial goals of the company. The shared objective is running a profitable business.
+
+
+This is great progress as now you have something in common to work with. By working from what you have in common, you are able to resolve the conflict and come up with a solution that supports your goal and meets both of your needs: such as running small targeted experiments on your website that can move the needle on conversion rate without using a lot of resources.
+
+It's a simplified example but shows the great benefit of using the conflict resolution diagram: finding win-win solutions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Punk Strategy Guide to the Logical Thinking Process
+PUBLISHED
+June 19, 2019
+UPDATED
+January 31, 2020
+Est. reading time: 11 min
+
+In the 1980’s an Israeli physicist named Eliyahu Goldratt shifted his attention to business. The most well known result of his efforts and studies was the Theory of Constraints (TOC). TOC originated in manufacturing, where it consistently resulted in production and profits that were previously considered unimaginable, impossible. However, it quickly spread to other businesses. For a good overview of the Theory of Constraints, see Tiago Forte’s series, Theory of Constraints 101, which introduces TOC in a series of 5-minute posts.
+
+Towards the end of his career, Goldratt generalized the Theory of Constraints into an even more fundamental framework: The Logical Thinking Process (LTP). The Logical Thinking Process can be used to reliably understand and solve complicated and complex systems problems.
+
+Goldratt introduces the Logical Thinking Processes in several of his books. I found these descriptions interesting and exciting, but not particularly helpful.The best introduction to the Thinking Processes that I’ve found is William Dettmer’s book, The Logical Thinking Process (notes). It’s a terrific book, and I’m extremely grateful Dettmer wrote it.
+
+
+
+Dettmer introduces the tools in the Logical Thinking Process one-by-one, and in great detail. He implies that for best results, you will use the Logical Thinking Process in sequence. For myself, I’ve found it useful to learn and use each tool individually. I hereby empower you to do the same. You can be the judge of which tool seems interesting or useful to you.
+
+This article hopes to be an irreverent, stick-it-to-the-man introduction to the Logical Thinking Process. I’ll discuss the three tools that I’ve found most useful: conflict resolution diagrams, implementation trees, and problem trees. For each tool, I’ll give a simple, fast-and-loose introduction that aims to get you started sooner than later. By the end of this article, you’ll understand each tool and will be able to start using them in your own work life and beyond. If you’re interested in learning more after that, you’ll find that my notes and Dettmer’s book provide a more thorough introduction.
+
+So get out your drum kit and your whiteboard markers: it’s time for a Punk Strategy guide to something so totally logical and not punk it’ll rock your cubicle.
+
+
+
+Making Diagrams
+First, let me share a note on how to actually use the tools in the Logical Thinking Process. With each tool, you create visual diagrams to represent and clarify your own thinking, and to share it with others. You can use a variety of methods to make these diagrams. Analog methods like pen and paper or a marker and whiteboard work great. You can also use a tablet and stylus.
+
+Finally, it’s worth considering using software. There are a few software options, but my favorite is Flying Logic, which was specially designed for using the Logical Thinking Process. It has built-in templates for each tool (which are slightly but not meaningfully different from Dettmer’s versions). Flying Logic’s killer feature is that your whole diagram adjusts on the fly as you add nodes and relationships:
+
+
+
+Flying Logic strikes a sweet spot with its simplicity and ease of use. Unfortunately, Flying Logic is quite expensive – $269.00 – but a 30-day trial is available, and you may be able to get your workplace to cover the expense. If you like using software but need a more affordable option, Miro (formerly RealTime Board) is a good option – but it is still paid software, and doesn’t have the advantage of being designed specifically for using the Thinking Process. If all else fails, pen and paper work just fine – and they are Punk Approved™!
+
+Let’s dive in to learning about each of the three tools. I’ll start with the tool that has been far and away the most useful for me: conflict resolution diagrams. If you learn just one of the tools, learn this one.
+
+Conflict Resolution Diagrams (Evaporating Cloud Diagrams)
+Consider the following situation. You’re at the office, debating the merits of a proposed plan of a coworker. Whatever the topic – buy or don’t, sell or don’t, hire or fire – things are tense. You’ve already been arguing for twenty minutes now, and it feels like you’ve been over what to do again and again. Even worse, you feel frustrated and misunderstood, and you can’t imagine your colleague feels very understood, either. You’re at a complete impasse. It doesn’t seem like there’s any way forward. There’s no obvious solution, or even a compromise you can both agree to.
+
+Then fast forward some amount of time. Maybe it’s ten minutes or two days later. Somehow, magically, confusingly, the situation has changed. A solution has emerged that makes everyone happy. You both feel lighter and happier, less alone, and more connected to each other. And the plan you’ve stumbled upon might just work.
+
+Has this ever happened to you, where a seemingly unresolvable conflict suddenly became solved? These moments can save relationships, businesses – and perhaps even more importantly, our faith in humanity. They may seem like magic. And in a way, they are. The solution you find is something no one could have imagined or considered before the conversation.
+
+It turns out that there’s a skill to arriving at these solutions. We can learn to recognize conflict, and improve our ability to listen to others within that conflict. Hearing both sides, we can become better and better at uncovering and questioning the assumptions latent in conflict. With that understanding, we can create novel solutions that meet everyone’s needs. In other words, it’s possible for everyone to be happy.
+
+There are a growing number of frameworks and tools for developing conflict resolution skills. Some that I’ve come across include double cruxes and polarity mapping. These tools have different origins, strengths and weaknesses, but in each case, they share a suspicion of black-and-white thinking, an optimism that conflict can be removed, and that there is always a win-win solution.
+
+Conflict resolution diagrams (originally termed evaporating clouds) are useful any time that you notice a seemingly unresolvable conflict in any aspect or area of your life. They are simple and quick to learn, but highly impactful.
+
+
+
+Read from right to left. Red boxes are wants or proposals which are in conflict. Blue boxes are needs. The green circle is the shared goal of both needs. This article uses colored boxes for explanatory purposes – you don’t need them in your diagrams.
+
+Here’s how they work:
+
+Notice you are in a conflict which seems tense or unresolvable.
+Articulate what each side is saying. Usually, these are binary pairs: do X, or don’t do X (Y). Because these are logical opposites, you’re in a conflict – you can’t do X and not do X. Let’s take the example of hiring someone and not hiring someone.
+Uncover what needs are behind each proposal: 1 and 2. Hiring someone means work will get done; not hiring someone saves money. Good news: 1 and 2, doing work and saving money aren’t in logical conflict!
+Identify a goal that both needs meet, 0, such as profitability. Take a moment to notice everyone’s on the same team, with the same goal.
+Discuss any assumptions present behind the alternate proposals (E.g., “we need workers to create our product”). List these off to the side beside each proposal.
+Ask one or more of the following questions as generative prompts:
+Is there a way to meet need 1, without doing X?
+Is there a way to meet need 2, while doing X?
+
+
+I have made many, many conflict resolution diagrams. I’ve made them on whiteboards, I’ve made them in software, and I’ve made them in my head. They are my go to tool for any kind of conflict, whether it’s personal or professional, interpersonal or internal. Because they are related to conflict, the artifacts from these instances are often very private. They are also typically context-specific, and require a bit of background to make sense of them. That said, here’s a conflict resolution diagram that’s easy for me to share, because it’s personal but not very sensitive.
+
+I have done over thirty week-long meditation retreats. One purpose of a meditation retreat is to keep a meditation technique going all day, every day. However, I typically have a conflict come up again and again, related to sleep and energy levels. There is usually time in the retreat schedule to rest and get some sleep. Usually, I’m tired, and want to get some sleep. However, I also want to make the best use of the retreat and keep my practice going. This tension caused me a fair amount of grief over the years, until I decided to describe it with a conflict resolution diagram:
+
+
+
+A conflict resolution diagram, describing the conflict between taking a nap, or not, on meditation retreat.
+
+This diagram helped me to generate a number of solutions to this conflict:
+
+Take a short nap
+Take a caffeine nap (drink caffeine and then take a short nap, which I find relaxing and energizing)
+Take a shower
+Go for a walk
+Do yoga/stretching
+Switch techniques (which keeps things fun and interesting, and can also be relaxing, but maintains and can even increase momentum with the meditation practice)
+Do meditation while lying down
+This example is fairly specific to my life, but I picked it because it hit a sweet spot of being genuinely helpful to me, without being too private. Rest assured: conflict resolution diagrams have defused many of the most intense conflicts in my life in recent years, especially sizzling interpersonal conflict.
+
+Problem Trees (Current Reality Trees)
+Sometimes, you have one problem. In that case, traditional problem solving techniques that you are already familiar with work just fine. But at other times, you have many problems. This is exactly the kind of situation where Problem Trees, or CRT’s, come in handy.
+
+The basic premise of this tool is that when there are multiple problems – what Dettmer calls undesirable effects or UDE’s – there is a casual relationship between them. There might be one or more vicious feedback loops where one problem causes another problem which reinforces the first problem. Ultimately, those undesirable effects can be tracked down to a small number of root causes or even one root cause. Those root causes are often subtle, non-obvious, and even counter-intuitive. That said, once you identify them, you’re in a better position to solve them. If you can find a solution for that core problem, you should be able to mitigate or remove the more surface problems. This is the reason behind the myth of a “silver bullet” – there is no one-size-fits-all solution, but if you can identify and solve the root cause of your problems, you’ll find that the problems disappear.
+
+CRT’s have two kinds of nodes: causes and effects. Once you’ve worked out the causal relationships between the causes and effects related to the problems you’re seeing, you can identify one or more Root Causes: causes with few or no causes, which are potential candidates for adjustments and solutions.
+
+
+
+Read from bottom to top. Red boxes are undesirable effects. Black boxes are causes. Dark blue boxes are root causes.
+
+Here’s how you make a CRT:
+
+Pick a system which has problems – lots of them.
+List all the problems you can think of (UDE’s)
+List possible causes of those UDE’s
+Examine causal relationships, connecting causes and effects in a causal chain
+Identify one or more Root Causes which merit further consideration.
+Sleep on it.
+For me, CRT’s have a therapeutic effect. If a situation is at the point where I think to use one, it usually means there are a lot of problems, and I’m feeling stressed, overwhelmed, or worse. Above all, I don’t even know where to start. Just having a good map of the muddy territory often makes me feel better, and helps me identify one or two solutions to my problems which might just have a decent chance of making things better.
+
+Implementation Trees (Pre-Requisite Trees)
+I have a special term for a specific kind of work project: headaches. These projects have multiple steps, usually require the input and participation of several people, and tend to take place over weeks or months. They might also have several unknown variables. Often, these projects aren’t particularly hard, they’re just— stressful. The term “headache” feels like an apt description for this kind of complicated project.
+
+If you have a project headache, implementation trees are like over-the-counter pain relief. They help you get from here to there, from headache to completed project.
+
+Implementation trees have three kinds of nodes. First, they have a goal, like moving to a new city or holding a successful event. Along the way, there are milestones towards accomplishing that goal, like forwarding your mail or booking a venue. Lastly, there are sometimes obstacles holding up particular milestones, like not knowing what kind of apartment you want, or feeling overwhelmed about the many kinds of avocado dip there are available at your nearest grocery store.
+
+
+
+Read from left to right. Red boxes are challenges to overcome. Blue boxes are milestones. The green circle is the goal of the implementation tree.
+
+Here’s how to make a implementation tree:
+
+List your goal. Although Dettmer doesn’t account for this in the book, I’ve sometimes found it useful to split my trees into multiple goals. For example, when I’ve used implementation trees to move, I split the goal into three distinct stages: Move Out of Old Location, Move Into New Location, and Feel Settled in New Location.
+List milestones needed to accomplish the goal.
+Connect cause and effect relationships between milestones and the goal.
+Add any challenges you’ll need to overcome to achieve specific milestones. Connect these to the relevant milestones.
+Once you have a implementation tree, you’ll want to review and update it regularly as you accomplish milestones and learn about new tasks and obstacles. For important projects, I typically create a recurring task in my task manager to review the implementation tree. Depending on the pace of the project, I’ll set it to recur sometime between daily and weekly.
+
+I also like to keep the trees neat and tidy, which, for me, means deleting milestones as they happen. This, however, makes it difficult to view the history of the project during or after its completion.
+
+Recently, I used a implementation tree to plan an important event. As always, the trees made completing the project easier and more successful. I wanted to document the content of the tree for future reference, but ran up against my habit of trimming the trees as I go.
+
+This diagram shows the key themes of this implementation tree, without getting into the nitty gritty details (or the dependent interconnections between branches). I’m betting that adapting those details to future circumstances will be easy, while remembering the themes and their rough timelines won’t be.
+
+
+
+A simplified implementation tree for planning an event. This lacks the details behind specific milestones, or the dependent interconnections between branches.
+
+Hopefully, this image also gives you a sense of what a real implementation tree looks like. If you’re a Praxis Member, you can also look at the seventh post in the PARA series, Creating A Project Network, which describes how we used an implementation tree to migrate Praxis from Medium to WordPress.
+
+When Tiago gave me the project to work on, he gave me three months to try to do it – the project had been stalled for months, and we weren’t even sure if it could even be done. After creating an implementation tree, I was able to complete the project in three weeks. The implementation tree helped me to parallelize and delegate certain aspects of the project, while prioritizing the next actions needed to move the whole project forward. It also helped me divide challenges into separate, smaller problems that could be tackled independently. All of that effort meant that the project was completed successfully, ahead of schedule, and with far less stress.
+
+One last note: Dettmer discusses how you can convert implementation trees into Critical Chain Project Plans. This is a Shiny and Cool object for us project strategy nerds, but I’ve never found the need to actually do this. That said, if you find that you’re in a project with many collaborators and/or a firm deadline, you may find it useful to know about this option. In any case, making a implementation tree is a useful first step when faced with a “headache” at work.
+
+Conclusion
+We’ve covered three of the tools in the Logical Thinking Process: problem trees, conflict resolution diagrams, and implementation trees. When I learn a new thinking tool, I like to remember what conditions should trigger its use. So here’s a handy table for when to make use of your new Punk Strategy instruments:
