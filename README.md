@@ -203,6 +203,42 @@ cd god_mode/scripts
 ./route --watch      # Watch clipboard for changes
 ```
 
+## 🔄 Version Control Integration
+
+God Mode now includes built-in Git integration to help you manage your project's version control:
+
+### Automatic Commits
+
+The system can automatically commit your changes to Git after each significant update. This ensures your work is always saved and tracked.
+
+- **Auto-Commit Script**: Located at `god_mode/scripts/script_auto_commit.sh`
+- **Usage**: `./god_mode/scripts/script_auto_commit.sh "Your commit message"`
+- **Features**:
+  - Automatically detects changes in your project
+  - Creates meaningful commit messages based on recent log entries
+  - Handles pushing to remote repositories when configured
+
+### GitHub Repository Setup
+
+Setting up a GitHub repository for your God Mode project is now easier than ever:
+
+- **Setup Script**: Located at `god_mode/scripts/script_setup_github.sh`
+- **Usage**: `./god_mode/scripts/script_setup_github.sh`
+- **Features**:
+  - Interactive setup process
+  - Creates a new GitHub repository
+  - Configures your local repository to connect to GitHub
+  - Handles initial push of your code
+
+### CLI Integration
+
+The God Mode remote control menu now includes Git options:
+
+- **Setup GitHub Repository**: Create and connect to a GitHub repository
+- **Auto-Commit Changes**: Manually trigger an auto-commit
+
+To use these features, run the God Mode remote control script and select the appropriate option from the menu.
+
 ## Multi-Project Workflow
 
 For developers who work with multiple projects and prefer to maintain their workspace context, God Mode offers a remote control option that allows you to manage God Mode in a project subdirectory without having to switch Cursor IDE contexts.
