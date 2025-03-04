@@ -109,7 +109,7 @@ trigger_auto_commit() {
     echo -e "${BLUE}Triggering auto-commit...${NC}"
     
     # Check if auto-commit script exists
-    local auto_commit_script="$GOD_MODE_DIR/scripts/script_auto_commit.sh"
+    local auto_commit_script="$FULL_TARGET_PATH/god_mode/scripts/script_auto_commit.sh"
     if [ ! -f "$auto_commit_script" ]; then
         echo -e "${RED}Error: Auto-commit script not found at $auto_commit_script${NC}"
         return 1
@@ -131,7 +131,7 @@ setup_github_repo() {
     echo -e "${BLUE}Setting up GitHub repository...${NC}"
     
     # Check if setup script exists
-    local setup_script="$GOD_MODE_DIR/scripts/script_setup_github.sh"
+    local setup_script="$FULL_TARGET_PATH/god_mode/scripts/script_setup_github.sh"
     if [ ! -f "$setup_script" ]; then
         echo -e "${RED}Error: GitHub setup script not found at $setup_script${NC}"
         return 1
@@ -555,7 +555,7 @@ view_routing_activity() {
 # Function to manage GitHub repository
 manage_github_repo() {
     # Call the GitHub setup script with menu option
-    "$GOD_MODE_DIR/scripts/script_setup_github.sh" --menu
+    "$FULL_TARGET_PATH/god_mode/scripts/script_setup_github.sh" --menu
 }
 
 # Display header with a welcome message
@@ -586,12 +586,12 @@ while true; do
         9) navigate_to_target ;;
         g|G) manage_github_repo ;;
         a|A) trigger_auto_commit ;;
-        c|C) generate_session_continuity ;;
-        v|V) verify_system ;;
         r|R) view_routing_activity ;;
         d|D) view_readme ;;
         h|H) show_help ;;
         q|Q) echo -e "${GREEN}Goodbye!${NC}"; exit 0 ;;
+        c|C) echo -e "${YELLOW}Session continuity feature is not implemented yet.${NC}" ;;
+        v|V) echo -e "${YELLOW}System verification feature is not implemented yet.${NC}" ;;
         *) echo -e "${RED}Invalid choice. Please try again.${NC}" ;;
     esac
     

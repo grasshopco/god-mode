@@ -110,6 +110,42 @@ configure_git_user() {
   fi
 }
 
+# Function to check if GitHub CLI is authenticated
+check_github_auth() {
+  echo -e "${BLUE}Checking GitHub authentication...${NC}"
+  
+  # Check if GitHub CLI is authenticated
+  if ! gh auth status &> /dev/null; then
+    echo -e "${YELLOW}You are not authenticated with GitHub CLI.${NC}"
+    echo -e "${YELLOW}Would you like to authenticate now? (y/n)${NC}"
+    read -r do_auth
+    
+    if [[ "$do_auth" =~ ^[Yy]$ ]]; then
+      echo -e "${BLUE}Starting GitHub authentication...${NC}"
+      echo -e "${YELLOW}(If browser doesn't open automatically, copy the URL that will be displayed)${NC}"
+      echo
+      
+      # Actually run the auth command here instead of just suggesting it
+      gh auth login
+      
+      # Check if auth was successful
+      if gh auth status &> /dev/null; then
+        echo -e "${GREEN}✓ Successfully authenticated with GitHub!${NC}"
+        return 0
+      else
+        echo -e "${RED}✗ Authentication failed or was cancelled.${NC}"
+        return 1
+      fi
+    else
+      echo -e "${YELLOW}Authentication is required to create or access GitHub repositories.${NC}"
+      return 1
+    fi
+  else
+    echo -e "${GREEN}✓ Already authenticated with GitHub${NC}"
+    return 0
+  fi
+}
+
 # Function to create GitHub repository
 create_github_repo() {
   local repo_name="$1"
@@ -129,19 +165,11 @@ create_github_repo() {
     visibility="public"
   fi
 
-  # Check if GitHub CLI is authenticated
-  gh auth status &> /dev/null
-  if [ $? -ne 0 ]; then
-    echo -e "${YELLOW}You are not authenticated with GitHub CLI.${NC}"
-    echo -e "${YELLOW}Would you like to authenticate now? (y/n)${NC}"
-    read -r auth_now
-    
-    if [[ "$auth_now" =~ ^[Yy]$ ]]; then
-      gh auth login
-    else
-      echo -e "${YELLOW}Please run 'gh auth login' first and then try again.${NC}"
-      return 1
-    fi
+  # First, check if GitHub CLI is authenticated
+  if ! check_github_auth; then
+    echo -e "${YELLOW}GitHub repository creation requires authentication.${NC}"
+    echo -e "${YELLOW}Please run the GitHub setup again after authenticating.${NC}"
+    return 1
   fi
 
   # Create the repository
@@ -155,6 +183,17 @@ create_github_repo() {
 connect_to_existing_repo() {
   echo -e "${BLUE}Connect to Existing GitHub Repository${NC}"
   echo -e "${BLUE}=====================================${NC}"
+  
+  # Check GitHub authentication first if pushing will be needed
+  echo -e "${YELLOW}Will you want to push to this repository? (y/n)${NC}"
+  read -r will_push
+  
+  if [[ "$will_push" =~ ^[Yy]$ ]]; then
+    if ! check_github_auth; then
+      echo -e "${YELLOW}You'll need to authenticate before pushing to GitHub.${NC}"
+      echo -e "${YELLOW}You can still connect the repository without authentication.${NC}"
+    fi
+  fi
   
   # List existing remotes
   if git remote -v | grep -q "origin"; then
@@ -194,6 +233,13 @@ connect_to_existing_repo() {
     read -r push_code
     
     if [[ "$push_code" =~ ^[Yy]$ ]]; then
+      # Verify GitHub authentication before pushing
+      if [[ "$will_push" =~ ^[Yy]$ ]] && ! check_github_auth; then
+        echo -e "${RED}Cannot push without GitHub authentication.${NC}"
+        echo -e "${YELLOW}Remote is set up, but you'll need to authenticate before pushing.${NC}"
+        return 0
+      fi
+      
       # Check if the repository is empty
       echo -e "${YELLOW}Is this an empty repository? (y/n)${NC}"
       echo -e "${CYAN}(If not, this may cause conflicts)${NC}"
@@ -237,6 +283,12 @@ connect_to_existing_repo() {
 switch_github_repo() {
   echo -e "${BLUE}Switch GitHub Repository${NC}"
   echo -e "${BLUE}=======================${NC}"
+  
+  # Check GitHub authentication first if this might involve pushing
+  if ! check_github_auth; then
+    echo -e "${YELLOW}Note: You're not authenticated with GitHub.${NC}"
+    echo -e "${YELLOW}You can still switch repositories but may not be able to push changes.${NC}"
+  fi
   
   # List existing remotes
   echo -e "${YELLOW}Current remote repositories:${NC}"
@@ -311,7 +363,46 @@ show_github_menu() {
   echo -e "${BLUE}GitHub Repository Management${NC}"
   echo -e "${BLUE}============================${NC}"
   echo
+  
+  # First, check GitHub CLI installation
+  if ! command -v gh &> /dev/null; then
+    echo -e "${RED}GitHub CLI (gh) is not installed!${NC}"
+    echo -e "${YELLOW}To use all GitHub features, we recommend installing it:${NC}"
+    echo -e "- Mac: brew install gh"
+    echo -e "- Linux: sudo apt install gh"
+    echo -e "- More info: https://github.com/cli/cli#installation"
+    echo
+    echo -e "${YELLOW}Would you like to continue without GitHub CLI? (y/n)${NC}"
+    read -r continue_without_gh
+    if [[ ! "$continue_without_gh" =~ ^[Yy]$ ]]; then
+      return 0
+    fi
+    echo
+  fi
+  
+  # Check authentication status without showing output
+  local is_authenticated=false
+  if gh auth status &> /dev/null; then
+    is_authenticated=true
+    echo -e "${GREEN}✓ GitHub authentication status: Logged in${NC}"
+    # Display logged in user if possible
+    local gh_user
+    gh_user=$(gh api user -q .login 2>/dev/null)
+    if [ -n "$gh_user" ]; then
+      echo -e "${GREEN}✓ Logged in as: ${CYAN}$gh_user${NC}"
+    fi
+  else
+    echo -e "${YELLOW}⚠ GitHub authentication status: Not logged in${NC}"
+  fi
+  echo
+  
   echo -e "${YELLOW}What would you like to do?${NC}"
+  
+  # Show authentication option if not authenticated
+  if [ "$is_authenticated" = false ]; then
+    echo -e "0) ${CYAN}Authenticate with GitHub${NC} ← ${YELLOW}Recommended first step${NC}"
+  fi
+  
   echo -e "1) ${CYAN}Create a new GitHub repository${NC}"
   echo -e "2) ${CYAN}Connect to an existing GitHub repository${NC}"
   echo -e "3) ${CYAN}Switch GitHub repositories${NC}"
@@ -322,6 +413,22 @@ show_github_menu() {
   read -r github_choice
   
   case "$github_choice" in
+    0)
+      # Authenticate with GitHub
+      if [ "$is_authenticated" = false ]; then
+        echo -e "${BLUE}Starting GitHub authentication...${NC}"
+        gh auth login
+        
+        # Check if auth was successful
+        if gh auth status &> /dev/null; then
+          echo -e "${GREEN}✓ Successfully authenticated with GitHub!${NC}"
+        else
+          echo -e "${RED}✗ Authentication failed or was cancelled.${NC}"
+        fi
+      else
+        echo -e "${GREEN}Already authenticated with GitHub.${NC}"
+      fi
+      ;;
     1)
       # Create a new GitHub repository
       echo -e "${BLUE}Let's set up your GitHub repository.${NC}"
