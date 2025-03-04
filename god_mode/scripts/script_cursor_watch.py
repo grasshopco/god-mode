@@ -1,340 +1,488 @@
 #!/usr/bin/env python3
 """
-Cursor Watch Script
+Cursor Watch Script - SQLite Edition
 
-This script monitors the Cursor IDE conversation file and automatically enhances
-user prompts using the script_enhance_prompt.py script. It creates a more "God-like"
-experience by intercepting and enhancing user prompts before they are processed by the AI.
+This script watches Cursor's SQLite databases in workspaceStorage to detect changes in 
+conversation messages and ensures that assistant responses include the proper tags.
 
 Usage:
     python script_cursor_watch.py
 
-The script will run in the background, monitoring for changes to the Cursor conversation file.
+The script will run in the background and periodically check Cursor's databases
+for new assistant messages without tags, and log when it finds them.
 """
 
 import os
 import sys
-import time
 import json
+import time
+import sqlite3
+import platform
+import re
 import subprocess
 from pathlib import Path
-import re
-import glob
+from typing import List, Dict, Any, Optional, Tuple
+import traceback
 
 # Get the directory of this script
 SCRIPT_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
 
 # Define the project root relative to this script
-PROJECT_ROOT = Path(SCRIPT_DIR).parent.parent
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
 
 # Define the God Mode directory
-GOD_MODE_DIR = Path(SCRIPT_DIR).parent
+GOD_MODE_DIR = SCRIPT_DIR.parent
 
-# Define the enhance prompt script path
+# Define the path to the enhance prompt script
 ENHANCE_PROMPT_SCRIPT = SCRIPT_DIR / "script_enhance_prompt.py"
 
-# Define the Cursor conversation file path - default paths to try
-CURSOR_DIRS = [
-    Path(os.path.expanduser("~/.cursor")),
-    Path(os.path.expanduser("~/Library/Application Support/Cursor")),
-    Path(os.path.expanduser("~/AppData/Roaming/Cursor")),
-    Path(os.path.expanduser("~/.config/Cursor"))
-]
+# Define the path to the logs directory
+LOGS_DIR = GOD_MODE_DIR / "logs"
 
-# Define known conversation file paths to try first
-KNOWN_CONVERSATION_PATHS = [
-    "conversations/latest.json",
-    "conversations/conversation_latest.json",
-    "conversation.json",
-    "User/conversation.json"
-]
+# Ensure the logs directory exists
+os.makedirs(LOGS_DIR, exist_ok=True)
 
-# Define the log file
-LOG_FILE = GOD_MODE_DIR / "logs" / "cursor_watch.log"
+# Define the path to the log file
+LOG_FILE = LOGS_DIR / "cursor_watch.log"
+
+# Define paths to the cursor rules files
+CURSOR_RULES_FILE = PROJECT_ROOT / ".cursor" / ".cursorrules"
+CURSOR_RULES_JSON = PROJECT_ROOT / ".cursor" / "cursorrules.json"
+
+# Check interval in seconds
+CHECK_INTERVAL = 5
 
 def ensure_directory_exists(directory):
     """Ensure a directory exists, creating it if necessary."""
     os.makedirs(directory, exist_ok=True)
 
-def log_message(message):
-    """Log a message to the log file."""
-    ensure_directory_exists(LOG_FILE.parent)
-    with open(LOG_FILE, 'a') as f:
-        timestamp = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-        f.write(f"[{timestamp}] {message}\n")
-    print(message)
+def get_workspace_storage_paths() -> List[Path]:
+    """Get potential workspace storage paths based on the OS."""
+    home = Path.home()
+    
+    if platform.system() == "Windows":
+        # Windows
+        paths = [
+            Path(os.environ.get('APPDATA', '')) / "Cursor" / "User" / "workspaceStorage",
+            # WSL compatibility
+            Path('/mnt/c/Users') / os.environ.get('USER', '') / 'AppData/Roaming/Cursor/User/workspaceStorage'
+        ]
+    elif platform.system() == "Darwin":
+        # macOS
+        paths = [
+            home / "Library/Application Support/Cursor/User/workspaceStorage"
+        ]
+    else:
+        # Linux
+        paths = [
+            home / ".config/Cursor/User/workspaceStorage"
+        ]
+    
+    # Return only paths that exist
+    return [p for p in paths if p.exists()]
 
-def is_valid_conversation_file(file_path):
+def log_message(message):
     """
-    Check if a file is a valid Cursor conversation file.
+    Log a message to the log file with a timestamp.
     
     Args:
-        file_path (Path): Path to the file to check
+        message (str): The message to log
+    """
+    timestamp = time.strftime("[%Y-%m-%d %H:%M:%S]")
+    log_entry = f"{timestamp} {message}"
+    
+    print(log_entry)
+    
+    with open(LOG_FILE, "a") as f:
+        f.write(log_entry + "\n")
+
+def extract_tags_from_text(text):
+    """
+    Extract tags from text using regex.
+    
+    Args:
+        text (str): The text to extract tags from
         
     Returns:
-        bool: True if the file is a valid conversation file, False otherwise
+        list: List of tags found in the text
     """
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            try:
-                data = json.load(f)
-                # Check if this looks like a conversation file - must have messages array
-                if isinstance(data, dict):
-                    # If it has a messages array, it's definitely a conversation file
-                    if 'messages' in data and isinstance(data['messages'], list):
-                        log_message(f"Found valid conversation file with messages array: {file_path}")
-                        return True
-                    # If it has conversation-like keys, it might be a conversation file
-                    if any(key in data for key in ['conversation', 'chat', 'history', 'prompt', 'response']):
-                        log_message(f"Found possible conversation file with conversation keys: {file_path}")
-                        return True
-                    # If it's a small JSON file, take a closer look
-                    file_size = os.path.getsize(file_path)
-                    if file_size < 10000 and len(data) < 50:  # Small file with few keys
-                        log_message(f"Small JSON file might be relevant: {file_path}")
-                        return True
-                return False
-            except json.JSONDecodeError:
-                # Try a more lenient approach - check if it contains conversation keywords
-                f.seek(0)
-                content = f.read(1000)  # Read just the first 1000 chars
-                if any(keyword in content.lower() for keyword in ['message', 'chat', 'conversation', 'user', 'assistant', 'ai', 'prompt']):
-                    log_message(f"File contains conversation keywords but isn't valid JSON: {file_path}")
-                    return False
-                return False
-    except Exception as e:
-        log_message(f"Error checking conversation file {file_path}: {e}")
-        return False
+    # Match patterns like [TAG_NAME] or [TAG_NAME: Value]
+    tag_pattern = r'\[(LOG_SUMMARY|LOG_DETAIL|MEMORY_UPDATE|FEATURE_LOG|DOC_UPDATE|MEMORY_[A-Z_]+|MULTI_TAG)(?:\s*:\s*([^\]]+))?\]'
+    matches = re.findall(tag_pattern, text)
+    return [f"[{tag}{': ' + value if value else ''}]" for tag, value in matches]
 
-def find_cursor_conversation_file():
+def find_all_workspace_dbs():
     """
-    Find the Cursor conversation file.
-    This function tries different possible locations based on the OS.
+    Find all the state.vscdb files in Cursor's workspaceStorage.
     
     Returns:
-        Path: Path to the Cursor conversation file, or None if not found
+        list: List of Paths to all workspace database files
     """
-    # 1. Try known specific locations first (faster)
-    log_message("Trying known conversation file locations first...")
-    for cursor_dir in CURSOR_DIRS:
-        if not cursor_dir.exists():
+    database_files = []
+    
+    for workspace_path in get_workspace_storage_paths():
+        log_message(f"Looking for workspace databases in: {workspace_path}")
+        
+        if not workspace_path.exists():
+            log_message(f"Workspace path does not exist: {workspace_path}")
             continue
             
-        for known_path in KNOWN_CONVERSATION_PATHS:
-            conv_path = cursor_dir / known_path
-            if conv_path.exists():
-                log_message(f"Found conversation file at known location: {conv_path}")
-                if is_valid_conversation_file(conv_path):
-                    return conv_path
-    
-    # 2. Search for recently modified JSON files in cursor directories
-    log_message("Searching for recently modified JSON files...")
-    recent_json_files = []
-    
-    for cursor_dir in CURSOR_DIRS:
-        if not cursor_dir.exists():
-            continue
-            
-        # Find all .json files and sort by modification time (newest first)
-        for root, _, files in os.walk(cursor_dir):
-            for file in files:
-                if file.endswith('.json'):
-                    file_path = Path(root) / file
-                    try:
-                        mtime = os.path.getmtime(file_path)
-                        recent_json_files.append((file_path, mtime))
-                    except:
-                        pass
-    
-    # Sort by modification time, newest first
-    recent_json_files.sort(key=lambda x: x[1], reverse=True)
-    
-    # Take the 10 most recently modified files for detailed examination
-    candidates = recent_json_files[:10]
-    log_message(f"Found {len(candidates)} potential conversation files to check")
-    
-    for file_path, mtime in candidates:
-        # Skip files in certain directories
-        if any(x in str(file_path) for x in ['node_modules', 'extensions']):
-            continue
-            
-        # Check size - conversation files are typically not huge
+        # Look for folders that are md5 hashes (hex digits of fixed length)
         try:
-            size = os.path.getsize(file_path)
-            if size > 5000000:  # Skip files > 5MB
-                continue
-                
-            if is_valid_conversation_file(file_path):
-                log_message(f"Found valid conversation file: {file_path}")
-                return file_path
-        except:
-            pass
+            for folder in workspace_path.iterdir():
+                if folder.is_dir() and re.match(r'^[0-9a-f]+$', folder.name.lower()):
+                    db_file = folder / "state.vscdb"
+                    if db_file.exists():
+                        database_files.append(db_file)
+                        log_message(f"Found database file: {db_file}")
+        except Exception as e:
+            log_message(f"Error scanning workspace directory {workspace_path}: {e}")
     
-    # 3. As a fallback, look for any file with "conversation" in the name
-    log_message("Fallback: looking for files with 'conversation' in the name...")
-    for cursor_dir in CURSOR_DIRS:
-        if not cursor_dir.exists():
-            continue
-            
-        for root, _, files in os.walk(cursor_dir):
-            for file in files:
-                if 'conversation' in file.lower() and file.endswith('.json'):
-                    file_path = Path(root) / file
-                    if is_valid_conversation_file(file_path):
-                        log_message(f"Found conversation file by name: {file_path}")
-                        return file_path
+    log_message(f"Found {len(database_files)} workspace database files")
+    return database_files
+
+def query_database(db_path):
+    """
+    Query a SQLite database to extract chat data.
     
-    log_message("Could not find any Cursor conversation files")
+    Args:
+        db_path (Path): Path to the SQLite database
+        
+    Returns:
+        dict: Dictionary of chat data with keys for different types of chat data
+    """
+    try:
+        # Connect to the database
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        # Query the database
+        cursor.execute("""
+        SELECT rowid, [key], value FROM ItemTable 
+        WHERE [key] IN ('aiService.prompts', 'workbench.panel.aichat.view.aichat.chatdata')
+        """)
+        
+        results = cursor.fetchall()
+        conn.close()
+        
+        if not results:
+            return {}
+        
+        # Process results
+        chat_data = {}
+        for _, key, value in results:
+            if value:
+                try:
+                    chat_data[key] = json.loads(value)
+                except json.JSONDecodeError:
+                    log_message(f"Failed to parse JSON from key {key} in {db_path}")
+        
+        return chat_data
+    except sqlite3.Error as e:
+        log_message(f"SQLite error in {db_path}: {e}")
+        return {}
+    except Exception as e:
+        log_message(f"Error querying database {db_path}: {e}")
+        return {}
+
+def extract_conversations_from_chat_data(chat_data):
+    """
+    Extract conversations from the chat data.
+    
+    Args:
+        chat_data (dict): Chat data from querying the database
+        
+    Returns:
+        list: List of conversation objects with user and assistant messages
+    """
+    conversations = []
+    
+    # Extract from aiService.prompts
+    if 'aiService.prompts' in chat_data:
+        try:
+            prompts_data = chat_data['aiService.prompts']
+            if isinstance(prompts_data, list):
+                log_message(f"Found {len(prompts_data)} prompts in aiService.prompts")
+                for prompt in prompts_data:
+                    if 'messages' in prompt and isinstance(prompt['messages'], list):
+                        conversations.append(prompt)
+        except Exception as e:
+            log_message(f"Error extracting from aiService.prompts: {e}")
+    
+    # Extract from aichat.chatdata
+    if 'workbench.panel.aichat.view.aichat.chatdata' in chat_data:
+        try:
+            chat_data_obj = chat_data['workbench.panel.aichat.view.aichat.chatdata']
+            if isinstance(chat_data_obj, dict) and 'chats' in chat_data_obj:
+                chats = chat_data_obj['chats']
+                if isinstance(chats, list):
+                    log_message(f"Found {len(chats)} chats in aichat.chatdata")
+                    for chat in chats:
+                        if 'messages' in chat and isinstance(chat['messages'], list):
+                            conversations.append(chat)
+        except Exception as e:
+            log_message(f"Error extracting from aichat.chatdata: {e}")
+    
+    return conversations
+
+def get_message_content(message):
+    """
+    Get content from a message object with error handling.
+    
+    Args:
+        message (dict): The message object
+        
+    Returns:
+        str: The content of the message
+    """
+    if not isinstance(message, dict):
+        return ""
+    
+    return message.get('content', '')
+
+def get_last_assistant_message(conversation):
+    """
+    Get the last assistant message from a conversation.
+    
+    Args:
+        conversation (dict): The conversation object
+        
+    Returns:
+        dict: The last assistant message
+    """
+    if not conversation or 'messages' not in conversation:
+        return None
+    
+    messages = conversation['messages']
+    if not isinstance(messages, list) or not messages:
+        return None
+    
+    # Look for the last assistant message
+    for message in reversed(messages):
+        if isinstance(message, dict) and message.get('role') == 'assistant':
+            return message
+    
     return None
 
-def enhance_user_prompt(prompt):
+def check_for_messages_without_tags(db_path, conversation, last_check_time):
     """
-    Enhance a user prompt using the script_enhance_prompt.py script.
+    Check for assistant messages that don't have tags.
     
     Args:
-        prompt (str): The user's original prompt
+        db_path (Path): Path to the database
+        conversation (dict): The conversation object
+        last_check_time (float): Timestamp of the last check
         
     Returns:
-        str: The enhanced prompt, or the original prompt if enhancement fails
+        list: List of messages that need tags
     """
-    try:
-        # Create a temporary file for the prompt
-        temp_file = GOD_MODE_DIR / ".cache" / "temp_prompt.txt"
-        ensure_directory_exists(temp_file.parent)
-        
-        with open(temp_file, 'w') as f:
-            f.write(prompt)
-        
-        # Call the enhance_prompt script
-        result = subprocess.run(
-            [sys.executable, str(ENHANCE_PROMPT_SCRIPT), "--input", str(temp_file)],
-            capture_output=True,
-            text=True,
-            check=True
-        )
-        
-        # Extract the enhanced prompt
-        enhanced_prompt = result.stdout.strip()
-        
-        # Only return if we got a valid result
-        if enhanced_prompt:
-            log_message(f"Successfully enhanced prompt of length {len(prompt)} to {len(enhanced_prompt)}")
-            return enhanced_prompt
-    except Exception as e:
-        log_message(f"Error enhancing prompt: {e}")
+    if not conversation or 'messages' not in conversation:
+        return []
     
-    # Return the original prompt if enhancement fails
-    return prompt
-
-def watch_cursor_conversation():
-    """
-    Watch the Cursor conversation file for changes and enhance user prompts.
-    """
-    log_message("Starting Cursor conversation watch...")
+    messages = conversation['messages']
+    if not isinstance(messages, list) or not messages:
+        return []
     
-    # Continuously try to find the conversation file - sometimes it changes
-    while True:
-        # Find the Cursor conversation file
-        conversation_file = find_cursor_conversation_file()
-        if not conversation_file:
-            log_message("Error: Could not find Cursor conversation file. Will retry in 10 seconds.")
-            time.sleep(10)
+    messages_without_tags = []
+    
+    # Look for assistant messages that need tags
+    for i, message in enumerate(messages):
+        if not isinstance(message, dict) or message.get('role') != 'assistant':
             continue
         
-        log_message(f"Watching Cursor conversation file: {conversation_file}")
+        # Skip messages we've already checked
+        message_time = message.get('timestamp', 0) / 1000 if isinstance(message.get('timestamp'), (int, float)) else 0
+        if message_time < last_check_time and message_time > 0:
+            continue
         
-        # Track the last modification time and content
-        last_mtime = 0
-        last_content = None
-        file_missing_count = 0
+        content = get_message_content(message)
+        if not content:
+            continue
         
-        # Watch the current conversation file until it disappears or we're interrupted
-        while True:
-            try:
-                # Check if the file still exists
-                if not conversation_file.exists():
-                    file_missing_count += 1
-                    if file_missing_count > 3:
-                        log_message(f"Conversation file no longer exists: {conversation_file}")
-                        break  # Break inner loop to find a new file
-                    time.sleep(1)
+        # Check if the message has tags
+        existing_tags = extract_tags_from_text(content)
+        if existing_tags:
+            log_message(f"Found message with tags: {', '.join(existing_tags)}")
+            continue
+        
+        # If no tags, add to the list
+        messages_without_tags.append(message)
+    
+    return messages_without_tags
+
+def get_ai_rules_from_file():
+    """
+    Get AI rules from the cursorrules file.
+    
+    Returns:
+        str: The AI rules
+    """
+    try:
+        # First try JSON format
+        if CURSOR_RULES_JSON.exists():
+            with open(CURSOR_RULES_JSON, 'r') as f:
+                data = json.load(f)
+                if isinstance(data, dict) and 'rules' in data:
+                    return data['rules']
+        
+        # Fall back to text format
+        if CURSOR_RULES_FILE.exists():
+            with open(CURSOR_RULES_FILE, 'r') as f:
+                return f.read()
+        
+        return ""
+    except Exception as e:
+        log_message(f"Error reading cursor rules: {e}")
+        return ""
+
+def enhance_user_prompt(user_prompt):
+    """
+    Enhance the user prompt with relevant context from the project.
+    This function uses the enhance_prompt.py script to add context.
+    
+    Args:
+        user_prompt (str): The user's prompt
+        
+    Returns:
+        str: The enhanced prompt
+    """
+    # For now, this is a placeholder
+    # We'll implement the actual enhancement logic later
+    context = "I'll reference project context and memory files in my response."
+    return f"{context}\n\n{user_prompt}"
+
+def should_add_tags_to_message(message):
+    """
+    Determines if a message should have tags based on its content.
+    
+    Args:
+        message (str): The message to check
+        
+    Returns:
+        bool: True if the message should have tags, False otherwise
+    """
+    # If message is empty, no tags needed
+    if not message or len(message.strip()) == 0:
+        log_debug("Message is empty, no tags needed")
+        return False
+    
+    # Check if message already has tags
+    tag_pattern = r'\[(LOG_SUMMARY|LOG_DETAIL|MEMORY_UPDATE|FEATURE_LOG|DOC_UPDATE|MEMORY_[A-Z_]+|MULTI_TAG)(?:\s*:\s*([^\]]+))?\]'
+    if re.search(tag_pattern, message):
+        log_debug("Message already has tags")
+        return False  # Already has tags
+    
+    # Check if message is substantial enough to need tags (more than 200 chars)
+    substantial_content = len(message) > 200
+    
+    # Check for indicators that this is a substantive response
+    has_code_blocks = '```' in message
+    has_bullet_points = re.search(r'^\s*[-*]\s+', message, re.MULTILINE) is not None
+    has_numbered_lists = re.search(r'^\s*\d+\.\s+', message, re.MULTILINE) is not None
+    has_headers = re.search(r'^\s*#{1,6}\s+', message, re.MULTILINE) is not None
+    has_substantive_formatting = has_code_blocks or has_bullet_points or has_numbered_lists or has_headers
+    
+    # Return True if the message is substantial or has substantive formatting
+    result = substantial_content or has_substantive_formatting
+    
+    if result:
+        log_debug(f"Message should have tags (length: {len(message)}, has_code_blocks: {has_code_blocks}, has_bullet_points: {has_bullet_points})")
+    else:
+        log_debug(f"Message doesn't need tags (length: {len(message)})")
+    
+    return result
+
+def check_message_has_tags(message_content, message_id):
+    """
+    Check if a message has the required tags, log if tags are missing.
+    
+    Args:
+        message_content (str): The content of the message to check
+        message_id (str): The ID of the message for reference
+        
+    Returns:
+        bool: True if the message has tags or doesn't need them, False if tags are missing
+    """
+    # Define tag detection pattern
+    tag_pattern = r'\[(LOG_SUMMARY|LOG_DETAIL|MEMORY_UPDATE|FEATURE_LOG|DOC_UPDATE|MEMORY_[A-Z_]+|MULTI_TAG)(?:\s*:\s*([^\]]+))?\]'
+    
+    # Check if message has tags
+    has_tags = re.search(tag_pattern, message_content) is not None
+    
+    # If no tags found, check if this message should have tags
+    if not has_tags and should_add_tags_to_message(message_content):
+        log_warning(f"Message {message_id[:8]} is missing required tags")
+        log_debug(f"Message content (first 100 chars): {message_content[:100]}...")
+        # Get file path to message_router script
+        message_router_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "script_message_router.py")
+        log_debug(f"To fix, run: python3 {message_router_path} --validate-message")
+        return False
+    
+    return True
+
+def watch_cursor_databases():
+    """
+    Main function to watch Cursor SQLite databases for changes and ensure proper tagging.
+    """
+    log_info("Starting cursor_watch (SQLite edition)")
+    log_debug(f"Looking for SQLite databases in: {get_cursor_db_paths()}")
+    
+    # Find all SQLite databases
+    db_files = find_cursor_db_files()
+    if not db_files:
+        log_warning("No Cursor SQLite databases found.")
+        log_info("Please make sure Cursor is installed correctly.")
+        return
+    
+    log_info(f"Found {len(db_files)} Cursor SQLite database files.")
+    
+    # Keep track of the latest messages we've seen
+    seen_message_ids = set()
+    
+    while True:
+        try:
+            new_messages_found = False
+            
+            # Check each database for new messages
+            for db_file in db_files:
+                log_debug(f"Checking database: {db_file}")
+                messages = query_cursor_database(db_file)
+                
+                if not messages:
+                    log_debug(f"No messages found in {db_file}")
                     continue
                 
-                file_missing_count = 0  # Reset counter if file exists
-                
-                # Check if the file has been modified
-                current_mtime = os.path.getmtime(conversation_file)
-                if current_mtime != last_mtime:
-                    # Read the conversation file
-                    try:
-                        with open(conversation_file, 'r', encoding='utf-8') as f:
-                            content = f.read()
+                # Process new assistant messages only
+                for msg in messages:
+                    msg_id = msg['id']
+                    msg_role = msg['role']
+                    msg_content = msg['content']
+                    
+                    # Skip messages we've already seen
+                    if msg_id in seen_message_ids:
+                        continue
+                    
+                    # Add to seen messages
+                    seen_message_ids.add(msg_id)
+                    new_messages_found = True
+                    
+                    # Only check assistant messages for tags
+                    if msg_role == 'assistant':
+                        log_debug(f"Found new assistant message: {msg_id[:8]}")
                         
-                        # Only process if the content has changed
-                        if content != last_content:
-                            last_content = content
-                            last_mtime = current_mtime
-                            
-                            try:
-                                # Parse the conversation JSON
-                                conversation = json.loads(content)
-                                
-                                # Handle different conversation formats
-                                messages = None
-                                if isinstance(conversation, dict):
-                                    if 'messages' in conversation:
-                                        messages = conversation.get('messages', [])
-                                    elif 'conversation' in conversation:
-                                        messages = conversation.get('conversation', {}).get('messages', [])
-                                
-                                if not messages or not isinstance(messages, list):
-                                    log_message(f"No valid messages array found in {conversation_file}")
-                                    time.sleep(2)
-                                    continue
-                                    
-                                # Check if the most recent message is from the user
-                                if messages and any(msg.get('role') == 'user' for msg in messages):
-                                    # Find the most recent user message
-                                    for i in range(len(messages) - 1, -1, -1):
-                                        if messages[i].get('role') == 'user' and not messages[i].get('enhanced'):
-                                            # Get the user prompt
-                                            user_prompt = messages[i].get('content', '')
-                                            
-                                            # Enhance the user prompt
-                                            enhanced_prompt = enhance_user_prompt(user_prompt)
-                                            
-                                            # Update the conversation file if the prompt was enhanced
-                                            if enhanced_prompt != user_prompt:
-                                                # Mark as enhanced to avoid re-enhancing
-                                                messages[i]['enhanced'] = True
-                                                messages[i]['original_content'] = user_prompt
-                                                messages[i]['content'] = enhanced_prompt
-                                                
-                                                # Write the updated conversation back to the file
-                                                with open(conversation_file, 'w', encoding='utf-8') as f:
-                                                    json.dump(conversation, f, indent=2)
-                                                
-                                                log_message("Updated Cursor conversation with enhanced prompt.")
-                                            break
-                            except json.JSONDecodeError as e:
-                                log_message(f"Error parsing conversation JSON: {e}")
-                                time.sleep(2)
-                    except Exception as e:
-                        log_message(f"Error reading conversation file: {e}")
-                
-                # Sleep for a short time to avoid busy waiting
-                time.sleep(0.5)
+                        # Check if message has required tags
+                        check_message_has_tags(msg_content, msg_id)
             
-            except KeyboardInterrupt:
-                log_message("Cursor watch script stopped by user.")
-                return 0
-            except Exception as e:
-                log_message(f"Error watching Cursor conversation: {e}")
-                # Sleep a bit longer after an error to avoid spamming logs
-                time.sleep(5)
-                # Break inner loop to find a new file if we've had persistent errors
-                if "No such file or directory" in str(e):
-                    break
+            # If no new messages found, sleep for a while
+            if not new_messages_found:
+                time.sleep(5)  # Check every 5 seconds
+            else:
+                time.sleep(1)  # Brief pause when actively processing
+                
+        except Exception as e:
+            log_error(f"Error watching Cursor databases: {e}")
+            traceback.print_exc()
+            time.sleep(10)  # Back off on errors
 
 def main():
     """Main function to run the script."""
@@ -342,11 +490,30 @@ def main():
     
     # Check if the enhance prompt script exists
     if not ENHANCE_PROMPT_SCRIPT.exists():
-        log_message(f"Error: Could not find enhance prompt script at {ENHANCE_PROMPT_SCRIPT}")
+        log_message(f"Warning: Could not find enhance prompt script at {ENHANCE_PROMPT_SCRIPT}")
+        log_message("Continuing without prompt enhancement...")
+    
+    # Check if any Cursor workspaceStorage paths exist
+    workspace_paths = get_workspace_storage_paths()
+    if not workspace_paths:
+        log_message("Error: Could not find any Cursor workspaceStorage directories.")
+        log_message("Looked in:")
+        if platform.system() == "Windows":
+            log_message("  %APPDATA%\\Cursor\\User\\workspaceStorage")
+            log_message("  /mnt/c/Users/$USER/AppData/Roaming/Cursor/User/workspaceStorage (WSL)")
+        elif platform.system() == "Darwin":
+            log_message("  ~/Library/Application Support/Cursor/User/workspaceStorage")
+        else:
+            log_message("  ~/.config/Cursor/User/workspaceStorage")
         return 1
     
+    # Check if the cursor rules file exists
+    if not CURSOR_RULES_FILE.exists() and not CURSOR_RULES_JSON.exists():
+        log_message("Warning: Could not find cursor rules files.")
+        log_message("This may affect the script's ability to check for proper tagging.")
+    
     # Run the watch function
-    return watch_cursor_conversation()
+    return watch_cursor_databases()
 
 if __name__ == "__main__":
     sys.exit(main()) 

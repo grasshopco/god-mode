@@ -59,10 +59,36 @@ except ImportError as e:
     debug_log(f"⚠️ Tag feedback module not available: {str(e)}")
     # Simple stub implementations if the module is not available
     def validate_message(message):
-        # Basic validation - just checks if any tags exist
-        required_tags = ["LOG_SUMMARY", "LOG_DETAIL", "MEMORY_UPDATE"]
-        is_valid = any(f"[{tag}]" in message for tag in required_tags)
-        return is_valid, "Simple validation (without full tag feedback module)"
+        """
+        Basic validation - just checks if any tags exist
+        
+        Args:
+            message (str): The message to validate
+            
+        Returns:
+            tuple: (is_valid, reason)
+        """
+        # Skip validation if debug_mode is on
+        global debug_mode
+        if debug_mode:
+            return True, "Debug mode - skipping validation"
+        
+        if not message:
+            return False, "Empty message"
+        
+        # Check if message has at least one tag
+        tag_pattern = r'\[(LOG_SUMMARY|LOG_DETAIL|MEMORY_UPDATE|FEATURE_LOG|DOC_UPDATE|MEMORY_[A-Z_]+|MULTI_TAG)(?:\s*:\s*([^\]]+))?\]'
+        matches = re.findall(tag_pattern, message)
+        
+        if matches:
+            return True, "Message contains valid tags"
+        
+        # Alternative: could check if message should have tags
+        needs_tags = should_add_tags_to_message(message)
+        if needs_tags:
+            return False, "Message should have tags but doesn't"
+        
+        return False, "No tags found in message"
     
     def log_tag_validation(is_valid, reason):
         # Stub that does nothing
@@ -850,6 +876,38 @@ def watch_clipboard(interval=2.0):
         debug_log(f"Critical exception in watch_clipboard: {str(e)}")
         debug_log(traceback.format_exc())
         raise
+
+def should_add_tags_to_message(message):
+    """
+    Determines if a message should have tags based on its content.
+    
+    Args:
+        message (str): The message to check
+        
+    Returns:
+        bool: True if the message should have tags, False otherwise
+    """
+    # If message is empty, no tags needed
+    if not message or len(message.strip()) == 0:
+        return False
+    
+    # Check if message already has tags
+    tag_pattern = r'\[(LOG_SUMMARY|LOG_DETAIL|MEMORY_UPDATE|FEATURE_LOG|DOC_UPDATE|MEMORY_[A-Z_]+|MULTI_TAG)(?:\s*:\s*([^\]]+))?\]'
+    if re.search(tag_pattern, message):
+        return False  # Already has tags
+    
+    # Check if message is substantial enough to need tags (more than 200 chars)
+    substantial_content = len(message) > 200
+    
+    # Check for indicators that this is a substantive response
+    has_code_blocks = '```' in message
+    has_bullet_points = re.search(r'^\s*[-*]\s+', message, re.MULTILINE) is not None
+    has_numbered_lists = re.search(r'^\s*\d+\.\s+', message, re.MULTILINE) is not None
+    has_headers = re.search(r'^\s*#{1,6}\s+', message, re.MULTILINE) is not None
+    has_substantive_formatting = has_code_blocks or has_bullet_points or has_numbered_lists or has_headers
+    
+    # Return True if the message is substantial or has substantive formatting
+    return substantial_content or has_substantive_formatting
 
 def main():
     """Main entry point for the message router script."""
