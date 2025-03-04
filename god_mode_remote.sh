@@ -203,6 +203,10 @@ show_menu() {
     echo -e "n) ${CYAN}Continue conversation${NC} - Use predictive questions to continue"
     echo -e "t) ${CYAN}TAG compliance${NC} - View TAG usage metrics and reports"
     echo
+    echo -e "${YELLOW}SETTINGS & TOOLS:${NC}"
+    echo -e "s) ${CYAN}Notification settings${NC} - Manage notifications and sounds"
+    echo -e "i) ${CYAN}Install 'god' shortcut${NC} - Create system-wide 'god' command"
+    echo
     echo -e "${YELLOW}VERSION CONTROL:${NC}"
     echo -e "g) ${CYAN}GitHub repository management${NC} - Setup, connect, or switch GitHub repos"
     echo -e "a) ${CYAN}Auto-commit changes${NC} - Manually trigger an auto-commit"
@@ -266,12 +270,42 @@ show_help() {
     echo -e "   Opens a new terminal window in your project folder."
     echo -e "   Useful if you need to run commands directly in that folder."
     echo
+    echo -e "${CYAN}n) Continue conversation${NC}"
+    echo -e "   Helps you continue the conversation with the AI more easily."
+    echo -e "   Extracts suggested questions from the previous AI response"
+    echo -e "   and lets you quickly select one to continue the conversation."
+    echo -e "   This leverages the predictive capabilities of the AI to"
+    echo -e "   more smoothly progress through complex tasks."
+    echo
+    echo -e "${CYAN}s) Notification settings${NC}"
+    echo -e "   Manage desktop notifications and sound effects."
+    echo -e "   You can enable/disable notifications completely or just the sound."
+    echo -e "   This is useful if you're working in a quiet environment,"
+    echo -e "   or if you want to be alerted when actions are completed."
+    echo -e "   Sound effects can be especially helpful when you're not directly"
+    echo -e "   looking at your computer (like when cooking in the kitchen)."
+    echo
+    echo -e "${CYAN}i) Install 'god' shortcut${NC}"
+    echo -e "   Installs the 'god' command for quick access from anywhere."
+    echo -e "   You can choose to create a symlink in /usr/local/bin (requires sudo)"
+    echo -e "   or add an alias to your shell configuration file."
+    echo -e "   This allows you to use commands like 'god help' or 'god route'"
+    echo -e "   from any directory without specifying the full path."
+    echo -e "   You can also customize the command name to whatever you prefer."
+    echo
     echo -e "${CYAN}r) View routing activity${NC}"
     echo -e "   Shows what content was recently routed to which files."
     echo -e "   Provides clickable links to open files at the exact line where"
     echo -e "   content was added, so you can quickly verify what was saved where."
     echo -e "   Extremely useful when working with [MULTI_TAG] to see where"
     echo -e "   everything went without having to search manually."
+    echo
+    echo -e "${CYAN}t) TAG compliance${NC}"
+    echo -e "   Analyzes how well the TAG system is being used in the project."
+    echo -e "   Provides metrics on TAG usage, compliance rates, and trends."
+    echo -e "   This helps ensure that knowledge is being properly captured and"
+    echo -e "   that the AI's responses are consistently using the correct TAGs."
+    echo -e "   The system will automatically adjust reinforcement based on compliance."
     echo
     echo -e "${CYAN}d) View documentation${NC}"
     echo -e "   Opens helpful guides and documentation about God Mode."
@@ -282,7 +316,8 @@ show_help() {
     echo -e "  Run option 8 (Install dependencies) or run this command:"
     echo -e "  ${GREEN}$FULL_TARGET_PATH/god_mode/scripts/script_install_dependencies.sh${NC}"
     echo -e "• If the AI isn't adding [TAG] markers, try updating Cursor rules (option 7)"
-    echo -e "• If desktop notifications aren't working, run option 8 to install the plyer package"
+    echo -e "• If desktop notifications aren't working, check option s (Notification settings)"
+    echo -e "  and run a test to see if your system permissions are set correctly"
     echo -e "• If having persistent issues, run the file integrity check:"
     echo -e "  ${GREEN}$FULL_TARGET_PATH/god_mode/scripts/script_check_files.sh${NC}"
     echo
@@ -290,13 +325,6 @@ show_help() {
     echo -e "• Tag System Guide: ${GREEN}$FULL_TARGET_PATH/god_mode/system_documentation/README_TAGS.md${NC}"
     echo -e "  This guide explains all available tags and how to use them effectively."
     echo -e "  To open it: ${YELLOW}open \"$FULL_TARGET_PATH/god_mode/system_documentation/README_TAGS.md\"${NC}"
-    echo
-    echo -e "${CYAN}t) TAG compliance${NC}"
-    echo -e "   Analyzes how well the TAG system is being used in the project."
-    echo -e "   Provides metrics on TAG usage, compliance rates, and trends."
-    echo -e "   This helps ensure that knowledge is being properly captured and"
-    echo -e "   that the AI's responses are consistently using the correct TAGs."
-    echo -e "   The system will automatically adjust reinforcement based on compliance."
     echo
     echo -e "Press Enter to return to the main menu..."
     read -r
@@ -805,6 +833,112 @@ EOF
     read
 }
 
+# Function to manage notification settings
+manage_notification_settings() {
+    echo -e "${BLUE}=======================================${NC}"
+    echo -e "${BLUE}     Notification Settings           ${NC}"
+    echo -e "${BLUE}=======================================${NC}"
+    echo
+    
+    local notification_script="$FULL_TARGET_PATH/god_mode/scripts/script_notification_settings.py"
+    
+    # Check if the script exists
+    if [ ! -f "$notification_script" ]; then
+        echo -e "${RED}Error: Notification settings script not found at:${NC}"
+        echo -e "${RED}$notification_script${NC}"
+        echo
+        echo -e "${YELLOW}Please make sure the script exists and try again.${NC}"
+        echo
+        echo -e "Press Enter to continue..."
+        read
+        return
+    fi
+    
+    # Make the script executable
+    chmod +x "$notification_script"
+    
+    # Display current settings
+    echo -e "${YELLOW}Current notification settings:${NC}"
+    python3 "$notification_script" --list
+    
+    # Show sub-menu for notification settings
+    echo
+    echo -e "Notification Settings Options:"
+    echo -e "1) ${CYAN}Toggle desktop notifications${NC} (enable/disable)"
+    echo -e "2) ${CYAN}Toggle sound effects${NC} (enable/disable)"
+    echo -e "3) ${CYAN}Enable all notifications${NC}"
+    echo -e "4) ${CYAN}Disable all notifications${NC}"
+    echo -e "5) ${CYAN}Test notifications${NC}"
+    echo -e "6) ${CYAN}Return to main menu${NC}"
+    echo
+    echo -n "Enter your choice: "
+    read notification_choice
+    
+    case $notification_choice in
+        1)
+            echo -e "\n${YELLOW}Toggling desktop notifications...${NC}"
+            python3 "$notification_script" --toggle-notifications
+            ;;
+        2)
+            echo -e "\n${YELLOW}Toggling sound effects...${NC}"
+            python3 "$notification_script" --toggle-sound
+            ;;
+        3)
+            echo -e "\n${YELLOW}Enabling all notifications...${NC}"
+            python3 "$notification_script" --enable-all
+            ;;
+        4)
+            echo -e "\n${YELLOW}Disabling all notifications...${NC}"
+            python3 "$notification_script" --disable-all
+            ;;
+        5)
+            echo -e "\n${YELLOW}Testing notifications...${NC}"
+            python3 "$notification_script" --test
+            ;;
+        6|*)
+            # Return to main menu
+            return
+            ;;
+    esac
+    
+    echo
+    echo -e "Press Enter to continue..."
+    read
+}
+
+# Function to install the 'god' shortcut command
+install_god_shortcut() {
+    echo -e "${BLUE}=======================================${NC}"
+    echo -e "${BLUE}     Install 'god' Shortcut Command  ${NC}"
+    echo -e "${BLUE}=======================================${NC}"
+    echo
+    
+    local install_script="$FULL_TARGET_PATH/install_shortcut.sh"
+    
+    # Check if the install script exists
+    if [ ! -f "$install_script" ]; then
+        echo -e "${RED}Error: Shortcut installation script not found at:${NC}"
+        echo -e "${RED}$install_script${NC}"
+        echo
+        echo -e "${YELLOW}Please make sure the installation script exists.${NC}"
+        echo -e "The install_shortcut.sh file should be in the root of your God Mode project."
+        echo
+        echo -e "Press Enter to continue..."
+        read
+        return
+    fi
+    
+    # Make the script executable
+    chmod +x "$install_script"
+    
+    # Run the installation script
+    "$install_script"
+    
+    echo
+    echo -e "Press Enter to continue..."
+    read
+}
+
 # Display header with a welcome message
 echo -e "${BLUE}=======================================${NC}"
 echo -e "${BLUE}     God Mode Remote Control         ${NC}"
@@ -841,6 +975,8 @@ while true; do
         v|V) echo -e "${YELLOW}System verification feature is not implemented yet.${NC}" ;;
         t|T) run_tag_feedback ;;
         n|N) run_continue_conversation ;;
+        s|S) manage_notification_settings ;;
+        i|I) install_god_shortcut ;;
         *) echo -e "${RED}Invalid choice. Please try again.${NC}" ;;
     esac
     

@@ -23,6 +23,7 @@ from pathlib import Path
 import datetime
 import subprocess
 import traceback
+import json
 
 # Global debug flag
 DEBUG_MODE = False
@@ -181,28 +182,191 @@ MARKERS = {
 MULTI_TAG_PATTERN = r"\[MULTI_TAG\s*:\s*([^]]+)\](.*?)(?=\[|\Z)"
 
 def send_notification(title, message):
-    """Send a desktop notification if available."""
-    debug_log(f"Attempting to send notification: {title} - {message}")
-    if NOTIFICATION_AVAILABLE:
+    """
+    Send a desktop notification with the given title and message.
+    Also plays a sound effect to alert the user.
+    
+    Args:
+        title (str): The notification title
+        message (str): The notification message
+    """
+    # Check if notifications are enabled
+    settings = get_notification_settings()
+    if not settings.get("notifications_enabled", True):
+        debug_log("Notifications are disabled, skipping")
+        print(f"\n[NOTIFICATION SKIPPED] {title}: {message}")
+        return
+    
+    debug_log(f"Sending notification: {title}")
+    
+    # First attempt: Try plyer
+    try:
+        from plyer import notification
+        notification.notify(
+            title=title,
+            message=message,
+            app_name="God Mode",
+            timeout=10
+        )
+        debug_log("Notification sent using plyer")
+        
+        # Play a sound effect
+        play_sound()
+        
+        return
+    except Exception as e:
+        debug_log(f"Plyer notification failed: {e}")
+    
+    # Second attempt: On macOS, try to use native notifications with applescript
+    if sys.platform == 'darwin':
         try:
-            notification.notify(
-                title=title,
-                message=message,
-                app_name="God Mode",
-                timeout=5  # seconds
-            )
-            debug_log(f"✓ Notification sent: {title} - {message}")
-            print(f"✓ Notification sent: {title} - {message}")
-            return True
+            # Escape double quotes in the title and message
+            title_escaped = title.replace('"', '\\"')
+            message_escaped = message.replace('"', '\\"')
+            
+            # Use AppleScript to send a notification
+            script = f'display notification "{message_escaped}" with title "{title_escaped}"'
+            subprocess.run(['osascript', '-e', script], check=True)
+            debug_log("Notification sent using osascript")
+            
+            # Play a sound effect
+            play_sound()
+            
+            return
         except Exception as e:
-            debug_log(f"✗ Error sending notification: {str(e)}")
-            print(f"Warning: Could not send notification: {str(e)}")
-            print(f"Notification content: {title} - {message}")
-            return False
-    else:
-        debug_log(f"Notifications not available. Would have shown: {title} - {message}")
-        print(f"Info: Notification would have shown: {title} - {message}")
-        return False
+            debug_log(f"osascript notification failed: {e}")
+    
+    # Third attempt: On Linux, try to use notify-send
+    if sys.platform == 'linux':
+        try:
+            subprocess.run(['notify-send', title, message], check=True)
+            debug_log("Notification sent using notify-send")
+            
+            # Play a sound effect
+            play_sound()
+            
+            return
+        except Exception as e:
+            debug_log(f"notify-send notification failed: {e}")
+    
+    # Final fallback: Just print to console
+    print(f"\n[NOTIFICATION] {title}: {message}")
+    debug_log("Falling back to console notification")
+
+def play_sound():
+    """Play a sound notification."""
+    try:
+        # Check if sound is enabled (default to True)
+        config_file = CACHE_DIR / "notification_config.json"
+        sound_enabled = True
+        
+        if config_file.exists():
+            try:
+                with open(config_file, 'r') as f:
+                    config = json.load(f)
+                    sound_enabled = config.get("sound_enabled", True)
+            except (json.JSONDecodeError, IOError):
+                pass
+        
+        if not sound_enabled:
+            debug_log("Sound notifications are disabled")
+            return
+        
+        # Play different sounds based on the platform
+        if sys.platform == 'darwin':  # macOS
+            subprocess.run(['afplay', '/System/Library/Sounds/Purr.aiff'], 
+                          stderr=subprocess.DEVNULL,
+                          stdout=subprocess.DEVNULL)
+            debug_log("Sound played using afplay")
+        elif sys.platform == 'linux':
+            # Try using paplay for PulseAudio
+            try:
+                subprocess.run(['paplay', '/usr/share/sounds/freedesktop/stereo/complete.oga'],
+                              stderr=subprocess.DEVNULL,
+                              stdout=subprocess.DEVNULL)
+                debug_log("Sound played using paplay")
+            except:
+                # Fallback to aplay for ALSA
+                try:
+                    subprocess.run(['aplay', '-q', '/usr/share/sounds/sound-icons/bang.wav'],
+                                  stderr=subprocess.DEVNULL,
+                                  stdout=subprocess.DEVNULL)
+                    debug_log("Sound played using aplay")
+                except:
+                    debug_log("Failed to play sound on Linux")
+        elif sys.platform == 'win32':  # Windows
+            import winsound
+            winsound.PlaySound("SystemAsterisk", winsound.SND_ALIAS)
+            debug_log("Sound played using winsound")
+    except Exception as e:
+        debug_log(f"Failed to play sound: {e}")
+
+def toggle_notification_settings(sound_enabled=None, notifications_enabled=None):
+    """
+    Toggle notification settings.
+    
+    Args:
+        sound_enabled (bool, optional): Whether to enable sound effects
+        notifications_enabled (bool, optional): Whether to enable desktop notifications
+        
+    Returns:
+        dict: The current notification settings
+    """
+    config_file = CACHE_DIR / "notification_config.json"
+    ensure_directory_exists(CACHE_DIR)
+    
+    # Load current settings
+    settings = {
+        "sound_enabled": True,
+        "notifications_enabled": True
+    }
+    
+    if config_file.exists():
+        try:
+            with open(config_file, 'r') as f:
+                settings.update(json.load(f))
+        except (json.JSONDecodeError, IOError):
+            pass
+    
+    # Update settings if provided
+    if sound_enabled is not None:
+        settings["sound_enabled"] = sound_enabled
+    
+    if notifications_enabled is not None:
+        settings["notifications_enabled"] = notifications_enabled
+    
+    # Save settings
+    try:
+        with open(config_file, 'w') as f:
+            json.dump(settings, f, indent=2)
+    except IOError as e:
+        debug_log(f"Failed to save notification settings: {e}")
+    
+    return settings
+
+def get_notification_settings():
+    """
+    Get the current notification settings.
+    
+    Returns:
+        dict: The current notification settings
+    """
+    config_file = CACHE_DIR / "notification_config.json"
+    
+    # Default settings
+    settings = {
+        "sound_enabled": True,
+        "notifications_enabled": True
+    }
+    
+    if config_file.exists():
+        try:
+            with open(config_file, 'r') as f:
+                settings.update(json.load(f))
+        except (json.JSONDecodeError, IOError):
+            pass
+    
+    return settings
 
 def get_timestamp():
     """Get current timestamp in YYYY-MM-DD HH:MM UTC format."""

@@ -6,6 +6,13 @@
 # Get the directory of this script
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+# Define color codes
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+YELLOW='\033[1;33m'
+CYAN='\033[0;36m'
+NC='\033[0m' # No Color
+
 # Check if the command is specified
 if [ "$1" == "continue" ] || [ "$1" == "c" ]; then
     # Run the continue conversation script directly
@@ -33,18 +40,96 @@ elif [ "$1" == "tag" ] || [ "$1" == "t" ]; then
         echo "Usage: god tag [report|validate <file>]"
     fi
     exit $?
+elif [ "$1" == "notifications" ] || [ "$1" == "n" ]; then
+    # Notification settings
+    notification_script="$SCRIPT_DIR/god_mode/scripts/script_notification_settings.py"
+    if [ -f "$notification_script" ]; then
+        # Make it executable
+        chmod +x "$notification_script"
+        
+        # Parse subcommand
+        if [ "$2" == "on" ]; then
+            python3 "$notification_script" --enable-all
+        elif [ "$2" == "off" ]; then
+            python3 "$notification_script" --disable-all
+        elif [ "$2" == "sound" ]; then
+            python3 "$notification_script" --toggle-sound
+        elif [ "$2" == "desktop" ]; then
+            python3 "$notification_script" --toggle-notifications
+        elif [ "$2" == "test" ]; then
+            python3 "$notification_script" --test
+        else
+            # Default to list
+            python3 "$notification_script" --list
+            echo -e "\nUsage: god notifications [on|off|sound|desktop|test]"
+        fi
+    else
+        echo "Error: Notification settings script not found"
+        echo "Expected location: $notification_script"
+        exit 1
+    fi
+    exit $?
+elif [ "$1" == "customize" ]; then
+    # Customize the command name
+    if [ -z "$2" ]; then
+        echo "Usage: god customize <new_command_name>"
+        echo "Example: god customize zeus"
+        exit 1
+    fi
+    
+    # Get the new command name
+    NEW_NAME="$2"
+    
+    # Check if the name is valid
+    if [[ ! $NEW_NAME =~ ^[a-zA-Z0-9_-]+$ ]]; then
+        echo "Error: Command name can only contain letters, numbers, underscores, and hyphens"
+        exit 1
+    fi
+    
+    # Create a copy of this script with the new name
+    TARGET_FILE="$SCRIPT_DIR/$NEW_NAME"
+    
+    if [ -f "$TARGET_FILE" ]; then
+        echo "Error: A file with the name '$NEW_NAME' already exists"
+        exit 1
+    fi
+    
+    # Copy this script to the new file
+    cp "$SCRIPT_DIR/god" "$TARGET_FILE"
+    
+    # Make it executable
+    chmod +x "$TARGET_FILE"
+    
+    echo -e "${GREEN}Created custom command: ${CYAN}$NEW_NAME${NC}"
+    echo -e "You can now use ${CYAN}$NEW_NAME${NC} as an alternative to ${CYAN}god${NC}"
+    echo
+    echo -e "To install it system-wide, run:"
+    echo -e "${YELLOW}$SCRIPT_DIR/install_shortcut.sh${NC}"
+    echo -e "And select your new command when prompted."
+    
+    exit 0
 elif [ "$1" == "help" ] || [ "$1" == "h" ] || [ "$1" == "--help" ]; then
-    echo "God Mode Quick Command"
-    echo "Usage: god [command] [options]"
+    echo -e "${CYAN}God Mode Quick Command${NC}"
+    echo -e "Usage: god [command] [options]"
     echo
-    echo "Available commands:"
-    echo "  continue, c [--custom \"question\"]  - Continue conversation with AI"
-    echo "  route, r                          - Route clipboard content to memory files"
-    echo "  enhance, e [\"prompt\"]             - Enhance a prompt with context"
-    echo "  tag, t [report|validate <file>]   - Work with TAG compliance"
-    echo "  help, h                           - Show this help"
+    echo -e "${YELLOW}Available commands:${NC}"
+    echo -e "  ${CYAN}continue, c${NC} [--custom \"question\"]  - Continue conversation with AI"
+    echo -e "  ${CYAN}route, r${NC}                          - Route clipboard content to memory files"
+    echo -e "  ${CYAN}enhance, e${NC} [\"prompt\"]             - Enhance a prompt with context"
+    echo -e "  ${CYAN}tag, t${NC} [report|validate <file>]   - Work with TAG compliance"
+    echo -e "  ${CYAN}notifications, n${NC} [on|off|sound|desktop|test] - Manage notifications"
+    echo -e "  ${CYAN}customize${NC} <new_name>              - Create a custom command name"
+    echo -e "  ${CYAN}help, h${NC}                           - Show this help"
     echo
-    echo "If no command is specified, the God Mode menu will open."
+    echo -e "${YELLOW}Examples:${NC}"
+    echo -e "  ${CYAN}god c${NC}                         - Continue conversation using suggestions"
+    echo -e "  ${CYAN}god c --custom \"How does this work?\"${NC} - Ask a custom question"
+    echo -e "  ${CYAN}god r${NC}                         - Route clipboard content to memory files"
+    echo -e "  ${CYAN}god n on${NC}                      - Enable all notifications"
+    echo -e "  ${CYAN}god n off${NC}                     - Disable all notifications"
+    echo -e "  ${CYAN}god customize zeus${NC}            - Create a 'zeus' command alias"
+    echo
+    echo -e "If no command is specified, the God Mode menu will open."
     exit 0
 fi
 
