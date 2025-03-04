@@ -220,24 +220,27 @@ The system can automatically commit your changes to Git after each significant u
 
 ### GitHub Repository Setup
 
-Setting up a GitHub repository for your God Mode project is now easier than ever:
+Setting up a GitHub repository for your God Mode project is now easier than ever with enhanced repository management features:
 
-- **Setup Script**: Located at `god_mode/scripts/script_setup_github.sh`
-- **Usage**: `./god_mode/scripts/script_setup_github.sh`
+- **GitHub Management CLI**: Easy-to-use hierarchical menu for all GitHub operations
+- **Usage**: Select option 'g' from the main menu or run `./god_mode/scripts/script_setup_github.sh --menu`
 - **Features**:
+  - Create new GitHub repositories
+  - Connect to existing repositories
+  - Switch between multiple repositories
+  - Configure Git user information
+  - Handle repository conflicts intelligently
   - Interactive setup process
-  - Creates a new GitHub repository
-  - Configures your local repository to connect to GitHub
-  - Handles initial push of your code
+  - Manages pushing and merging with remote repositories
 
 ### CLI Integration
 
-The God Mode remote control menu now includes Git options:
+The God Mode remote control menu now includes a dedicated Version Control section with:
 
-- **Setup GitHub Repository**: Create and connect to a GitHub repository
-- **Auto-Commit Changes**: Manually trigger an auto-commit
+- **GitHub Repository Management**: Setup, connect, or switch GitHub repositories
+- **Auto-commit Changes**: Manually trigger an auto-commit
 
-To use these features, run the God Mode remote control script and select the appropriate option from the menu.
+All version control operations are now organized in a hierarchical menu system that makes them easy to find and use, even for beginners.
 
 ## Multi-Project Workflow
 

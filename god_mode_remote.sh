@@ -140,28 +140,37 @@ setup_github_repo() {
     # Run the setup script
     "$setup_script"
 }
+
 # Function to display the menu
 show_menu() {
     # Display current status in header
     check_god_mode_status_header
     echo
 
-    echo -e "${YELLOW}What would you like to do?${NC}"
+    echo -e "${BLUE}======== GOD MODE COMMAND CENTER ========${NC}"
+    echo
+    echo -e "${YELLOW}SYSTEM MANAGEMENT:${NC}"
     echo -e "1) ${CYAN}Start God Mode${NC} - Turn on AI assistant superpowers"
     echo -e "2) ${CYAN}Stop God Mode${NC} - Turn off AI assistant background processes"
     echo -e "3) ${CYAN}View God Mode status${NC} - Check if everything is working correctly"
+    echo -e "8) ${CYAN}Install dependencies${NC} - Install required Python packages for God Mode"
+    echo
+    echo -e "${YELLOW}CONTENT & MEMORY:${NC}"
     echo -e "4) ${CYAN}Route clipboard content${NC} - Process text with [TAG] markers from clipboard"
     echo -e "5) ${CYAN}View recent logs${NC} - See the latest activity and changes"
     echo -e "6) ${CYAN}Update project structure${NC} - Refresh AI's understanding of your code"
     echo -e "7) ${CYAN}Update Cursor rules${NC} - Refresh the AI assistant's instructions"
-    echo -e "8) ${CYAN}Install dependencies${NC} - Install required Python packages for God Mode"
-    echo -e "9) ${CYAN}Navigate to target directory${NC} - Open a terminal in project folder"
     echo -e "r) ${CYAN}View routing activity${NC} - See what content went where with clickable links"
+    echo -e "c) ${CYAN}Session continuity${NC} - Generate continuity for new chat sessions"
     echo
     echo -e "${YELLOW}VERSION CONTROL:${NC}"
-    echo -e "g) ${CYAN}Setup GitHub repository${NC} - Create and connect to a GitHub repository"
-    echo -e "a) ${CYAN}Auto-commit changes${NC} - Manually trigger an auto-commit
+    echo -e "g) ${CYAN}GitHub repository management${NC} - Setup, connect, or switch GitHub repos"
+    echo -e "a) ${CYAN}Auto-commit changes${NC} - Manually trigger an auto-commit"
+    echo
+    echo -e "${YELLOW}NAVIGATION & HELP:${NC}"
+    echo -e "9) ${CYAN}Navigate to target directory${NC} - Open a terminal in project folder"
     echo -e "d) ${CYAN}View documentation${NC} - Read guides on using God Mode and tags"
+    echo -e "v) ${CYAN}Verify system${NC} - Run tests to ensure everything is working"
     echo -e "h) ${CYAN}Help${NC} - Detailed explanation of all options"
     echo -e "q) ${CYAN}Quit${NC} - Exit this menu"
     echo
@@ -543,6 +552,12 @@ view_routing_activity() {
     fi
 }
 
+# Function to manage GitHub repository
+manage_github_repo() {
+    # Call the GitHub setup script with menu option
+    "$GOD_MODE_DIR/scripts/script_setup_github.sh" --menu
+}
+
 # Display header with a welcome message
 echo -e "${BLUE}=======================================${NC}"
 echo -e "${BLUE}     God Mode Remote Control         ${NC}"
@@ -569,10 +584,12 @@ while true; do
         7) update_cursor_rules ;;
         8) install_dependencies ;;
         9) navigate_to_target ;;
+        g|G) manage_github_repo ;;
+        a|A) trigger_auto_commit ;;
+        c|C) generate_session_continuity ;;
+        v|V) verify_system ;;
         r|R) view_routing_activity ;;
         d|D) view_readme ;;
-        g|G) setup_github_repo ;;
-        a|A) trigger_auto_commit ;;
         h|H) show_help ;;
         q|Q) echo -e "${GREEN}Goodbye!${NC}"; exit 0 ;;
         *) echo -e "${RED}Invalid choice. Please try again.${NC}" ;;
