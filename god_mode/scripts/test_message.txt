@@ -1,0 +1,17 @@
+[LOG_SUMMARY]
+This is a test summary entry to verify the message router is working.
+
+[LOG_DETAIL]
+This is a detailed log entry with more information about the test.
+- Testing standard tags
+- Testing feature logs
+- Testing multi-tags
+
+[MEMORY_UPDATE]
+Important system information that should be persisted across sessions.
+
+[FEATURE: MessageRouter]
+Enhanced the message router with improved tag detection and content routing.
+
+[MULTI_TAG: MEMORY_ARCHITECTURE, MEMORY_CONVENTIONS]
+This content should appear in both the architecture and conventions memory files.

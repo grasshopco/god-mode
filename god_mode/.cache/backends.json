@@ -1,0 +1,8 @@
+{
+  "local": {
+    "provider": "sqlite",
+    "path": "/Users/brianakhtar/Desktop/Business/Grasshop/GOD_MODE_PROJECT_STARTER_TEMPLATE/god_mode/.cache/local.db",
+    "configured": true,
+    "last_sync": null
+  }
+}

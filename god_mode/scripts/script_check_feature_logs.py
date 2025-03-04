@@ -51,7 +51,7 @@ def get_detailed_timestamp():
 
 def extract_feature_name(filename):
     """Extract the feature name from a feature log filename."""
-    match = re.match(r'memory_log_feature_(.+)\.md', filename)
+    match = re.match(r'memory_feature_(.+)\.md', filename)
     if match:
         return match.group(1).replace('_', ' ').title()
     return None
@@ -356,7 +356,7 @@ def process_all_feature_logs(fix=False, check_only=False, update_roadmap=False):
         return 0, 0, 0
     
     # Get all feature log files
-    feature_files = list(MEMORY_DIR.glob("memory_log_feature_*.md"))
+    feature_files = list(MEMORY_DIR.glob("memory_feature_*.md"))
     
     if not feature_files:
         print("No feature log files found")

@@ -20,9 +20,10 @@ The script recognizes the following markers:
 |--------|-------------|-------------|
 | `[LOG_SUMMARY]content` | memory_logs_all.md | Adds a brief summary entry to the all logs file |
 | `[LOG_DETAIL]content` | memory_logs_detailed.md | Adds a detailed explanation to the detailed logs file |
-| `[MEMORY_UPDATE]content` | memory_cursor.md | Updates the CURSOR MEMORY file with new context |
-| `[FEATURE_LOG: featureName]content` | memory_log_feature_*.md | Updates the log for a specific feature |
-| `[DOC_UPDATE: docType]content` | documentation_*.md | Updates a specific documentation file |
+| `[MEMORY_UPDATE]content` | MEMORY_CURSOR.md | Updates the CURSOR MEMORY file with new context |
+| `[FEATURE: featureName]content` | memory_feature_*.md | Updates the log for a specific feature |
+| `[DOC_UPDATE: type]content` | (varies) | Updates documentation of different types |
+| `[MULTI_TAG: TAG1, TAG2, ...]content` | (multiple) | Routes the same content to multiple destinations |
 | `[LEARNING]content` | memory_learnings.md | Adds insights and learnings |
 | `[PROMPT_LEARNING]content` | memory_prompt_learnings.md | Adds insights for improving prompts |
 | `[DISCUSSION]content` | discussion_grasshop.md | Adds entries to the discussion file |
@@ -82,7 +83,7 @@ These changes improve security and allow for better cross-domain authentication.
 [MEMORY_UPDATE]
 The authentication system now uses JWT tokens instead of cookies. This is important context for any future auth-related tasks.
 
-[FEATURE_LOG: Authentication]
+[FEATURE: Authentication]
 Updated the authentication system to use JWT tokens. This includes token refresh and improved error handling.
 
 [DOC_UPDATE: features]
@@ -119,3 +120,12 @@ This script is ideally run after each AI interaction to automatically process an
 1. Run manually after reviewing the AI's response
 2. Set up to watch the clipboard in a separate terminal window
 3. Integrated into other automated workflows 
+
+### Example: Feature Log
+
+```
+[FEATURE: Authentication]
+Added password reset functionality with email verification. The system now sends a time-limited token
+to the user's registered email address, which can be used to reset their password. The token expires
+after 30 minutes for security reasons.
+``` 

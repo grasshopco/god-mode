@@ -6,16 +6,16 @@ This document explains how to use the Message Router system effectively and ensu
 
 The Message Router system automatically processes AI outputs containing special markers and routes content to the appropriate files. This maintains organized documentation and memory without manual copying and pasting.
 
-## Available Markers
+## Available Tags
 
-The system recognizes the following markers:
+The message router processes several types of tags:
 
-### Log Markers
-- `[LOG_SUMMARY]` - Routes to `memory_logs_all.md`
-- `[LOG_DETAIL]` - Routes to `memory_logs_detailed.md`
+- `[LOG_SUMMARY]` - Routes to memory_logs_all.md
+- `[LOG_DETAIL]` - Routes to memory_logs_detailed.md
+- `[MEMORY_UPDATE]` - Routes to MEMORY_CURSOR.md
+- `[FEATURE: FeatureName]` - Routes to feature-specific logs in `memory_feature_*.md`
 
 ### Memory Update Markers
-- `[MEMORY_UPDATE]` - Routes to `MEMORY_CURSOR.md`
 - `[MEMORY_LEARNINGS]` - Routes to `memory_learnings.md`
 - `[MEMORY_UPDATES]` - Routes to `memory_updates.md`
 - `[MEMORY_REQUIREMENTS]` - Routes to `memory_requirements.md`
@@ -30,8 +30,7 @@ The system recognizes the following markers:
 - `[MEMORY_ACCESSIBILITY]` - Routes to `memory_accessibility.md`
 
 ### Special Markers
-- `[FEATURE_LOG: FeatureName]` - Routes to feature-specific logs in `memory_log_feature_*.md`
-- `[DOC_UPDATE: DocumentType]` - Routes to documentation files based on type (project, feature, design, data)
+- `[DOC_UPDATE: Type]` - Routes to documentation files based on type (project, feature, design, data)
 
 ### Multi-Tag Marker (New!)
 - `[MULTI_TAG: TAG1, TAG2, ...]` - Routes the same content to multiple destinations
@@ -53,8 +52,8 @@ or insights must include markup with appropriate markers for the message router:
 1. Include a [LOG_SUMMARY] with a brief description of the changes.
 2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
 3. Include a [MEMORY_UPDATE] for relevant project context updates.
-4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
-5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
+4. Use [FEATURE: FeatureName] for specific feature updates.
+5. Use [DOC_UPDATE: Type] for documentation updates.
 6. Use specific memory markers like [MEMORY_ARCHITECTURE] when updating specialized memory files.
 7. For content that should go to multiple files, use the [MULTI_TAG: TAG1, TAG2, ...] format.
 
@@ -70,7 +69,7 @@ Ask the AI to follow this structured response template for significant changes:
 
 ---
 
-[MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: FeatureName]
+[MULTI_TAG: LOG_SUMMARY, FEATURE: FeatureName]
 Brief one-line summary of the changes made
 
 [LOG_DETAIL]
@@ -112,7 +111,7 @@ If the AI forgets to include markers:
 - **LOG_DETAIL**: For comprehensive explanations of implementations
 - **MEMORY_UPDATE**: For architectural decisions and important context
 - **MEMORY_LEARNINGS**: For insights gained during development
-- **FEATURE_LOG**: For feature-specific implementation details
+- **FEATURE: FeatureName**: For feature-specific implementation details
 - **DOC_UPDATE**: For updates to official documentation
 - **MULTI_TAG**: For content that should be routed to multiple destinations
 
@@ -132,7 +131,7 @@ I've implemented the authentication system using JWT tokens with refresh token r
 
 ---
 
-[MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
+[MULTI_TAG: LOG_SUMMARY, FEATURE: Authentication]
 Implemented JWT authentication with refresh token rotation, role-based access control, and secure storage.
 
 [LOG_DETAIL]
@@ -209,6 +208,83 @@ If content is not being properly routed:
 - Verify the script is running with proper permissions
 - Check if the target files and directories exist and are writable
 - Look for error messages in the script output
+
+## Tag Formats
+
+The message router supports two tag formats:
+
+### 1. Bracket-Style Tags (Legacy)
+
+```
+[TAG]content
+```
+
+These are the original tag format where content follows the tag marker.
+
+### 2. XML-Style Tags (Recommended)
+
+```
+<TAG>content</TAG>
+```
+
+XML-style tags provide clear boundaries for content and are preferred for several reasons:
+
+- Content boundaries are explicitly defined
+- Content is copied verbatim to memory files
+- Same content can be tagged with multiple tags
+- Complex formatting is preserved exactly as written
+
+The message router will process both formats, but XML-style tags are recommended for all new content.
+
+## Examples with XML-Style Tags
+
+### Basic Usage
+
+```
+<LOG_SUMMARY>
+Added user profile editing functionality to the account settings page.
+</LOG_SUMMARY>
+
+<LOG_DETAIL>
+Implemented user profile editing with the following features:
+- Field validation for email, username, and phone
+- Image upload for profile photos with drag-and-drop
+- Automatic saving with visual feedback
+- Responsive design for mobile and desktop interfaces
+
+This required changes to:
+1. `UserProfile.tsx` component
+2. `userAPI.ts` for backend communication
+3. `validation.ts` for field validation logic
+</LOG_DETAIL>
+
+<MEMORY_UPDATE>
+The user profile system now supports inline editing and image uploads. Field validation follows the same pattern as the registration form, reusing the validation utilities.
+</MEMORY_UPDATE>
+
+### Feature-Specific Updates
+
+```
+<FEATURE: Authentication>
+Added password reset functionality with email verification. The system now sends a time-limited token to the user's registered email address, which can be used to reset their password. The token expires after 30 minutes for security reasons.
+</FEATURE: Authentication>
+```
+
+### Multiple Tags for Same Content
+
+With XML-style tags, you can apply multiple tags to the same content when it fits multiple categories:
+
+```
+<MEMORY_SECURITY>
+All API endpoints now require authentication tokens. Anonymous access has been disabled except for the login and registration endpoints.
+</MEMORY_SECURITY>
+
+<MEMORY_UPDATE>
+All API endpoints now require authentication tokens. Anonymous access has been disabled except for the login and registration endpoints.
+</MEMORY_UPDATE>
+```
+
+This is more explicit than the previous multi-tag system and ensures content is preserved exactly as written.
 
 ---
 

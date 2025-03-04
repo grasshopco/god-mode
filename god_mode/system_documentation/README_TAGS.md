@@ -4,7 +4,12 @@ God Mode uses special tags to organize and route information to the right places
 
 ## ✨ What Are Tags?
 
-Tags are special markers in square brackets like `[LOG_SUMMARY]` or `[MEMORY_UPDATE]` that tell God Mode where to store different types of information. When the AI assistant includes these tags in its responses, the Message Router automatically extracts and saves this content to the appropriate files.
+Tags are special markers that tell God Mode where to store different types of information. God Mode supports two tag formats:
+
+1. **Bracket-style tags** like `[LOG_SUMMARY]` or `[MEMORY_UPDATE]` (Legacy format)
+2. **XML-style tags** like `<LOG_SUMMARY>...</LOG_SUMMARY>` (New improved format)
+
+When the AI assistant includes these tags in its responses, the Message Router automatically extracts and saves this content to the appropriate files.
 
 ## 📋 Available Tags
 
@@ -12,11 +17,11 @@ Tags are special markers in square brackets like `[LOG_SUMMARY]` or `[MEMORY_UPD
 
 | Tag | Purpose | Example |
 |-----|---------|---------|
-| `[LOG_SUMMARY]` | Brief, high-level summary of key decisions or insights | [LOG_SUMMARY] Implemented JWT authentication system |
-| `[LOG_DETAIL]` | Detailed technical discussions or explorations | [LOG_DETAIL] The authentication flow works by... |
-| `[MEMORY_UPDATE]` | Important facts to remember for future discussions | [MEMORY_UPDATE] The database schema uses UUID as primary keys |
+| `[LOG_SUMMARY]` | High-level implementation notes | [LOG_SUMMARY] Fixed bug in authentication flow |
+| `[LOG_DETAIL]` | Detailed technical implementation | [LOG_DETAIL] Corrected the JWT token validation by adding proper expiration check |
+| `[MEMORY_UPDATE]` | Important context information | [MEMORY_UPDATE] The system uses a Redis cache for session storage |
 | `[REFERENCE: Name]` | Technical details saved for reference | [REFERENCE: API Endpoints] The user API has the following endpoints... |
-| `[FEATURE_LOG: Name]` | Notes about a specific feature's implementation | [FEATURE_LOG: Authentication] Added password reset functionality |
+| `[FEATURE: Name]` | Notes about a specific feature's implementation | [FEATURE: Authentication] Added password reset functionality |
 | `[DOCUMENTATION: Path]` | Documentation for a specific component | [DOCUMENTATION: components/Button] The Button component supports... |
 
 ### Specialized Memory Tags
@@ -44,27 +49,60 @@ You can route the same content to multiple destinations without repeating yourse
 Implemented JWT authentication with refresh token rotation.
 ```
 
-## 🧠 How Tags Work
+## 🔄 Tag Formats
 
-1. **The AI includes tags**: When the AI assistant responds to you in Cursor, it includes appropriate tags in its response.
+### Bracket Style (Legacy)
 
-2. **Message Router processes tags**: The Message Router (running in the background) watches for these tags and extracts the content.
+The original tag format uses square brackets:
 
-3. **Content is saved**: The content is automatically saved to the appropriate files in the `god_mode/memory` directory.
+```
+[LOG_SUMMARY]
+Brief summary of changes.
 
-4. **Notification appears**: You'll see a desktop notification confirming that the content was saved.
+[MEMORY_UPDATE]
+Important context information.
+```
 
-## 📚 Example Usage
+### XML Style (Recommended)
 
-Here's how tags might appear in an AI response:
+The new XML-style tags provide clearer boundaries for content and better support for multiple tagging:
+
+```
+<LOG_SUMMARY>
+Brief summary of changes.
+</LOG_SUMMARY>
+
+<MEMORY_UPDATE>
+Important context information.
+</MEMORY_UPDATE>
+```
+
+### Advantages of XML-Style Tags
+
+- **Clear boundaries**: Explicitly shows where tagged content begins and ends
+- **Verbatim content**: Content is copied exactly as written, preserving formatting
+- **Multiple tagging**: Same content can be tagged with multiple different tags
+- **Semantic clarity**: Makes it obvious which tags apply to which content
+
+## 🧠 How XML-Style Tags Work
+
+1. **The AI includes XML tags**: The AI assistant wraps relevant content in opening and closing tags.
+2. **Message Router identifies tags**: The router finds all XML-style tags in the response.
+3. **Content is extracted**: The exact content between tags is extracted.
+4. **Files are updated**: Content is saved to the appropriate files based on tag types.
+
+## 📚 Example With XML-Style Tags
+
+Here's how the XML-style tags appear in an AI response:
 
 ```
 I've analyzed your authentication system and here are my findings:
 
-[LOG_SUMMARY]
+<LOG_SUMMARY>
 Reviewed the authentication system and found potential security issues with the token storage approach.
+</LOG_SUMMARY>
 
-[LOG_DETAIL]
+<LOG_DETAIL>
 The current implementation stores JWT tokens in localStorage, which makes them vulnerable to XSS attacks. A more secure approach would be to store the access token in memory and the refresh token in an HttpOnly cookie.
 
 Here's how you could implement this change:
@@ -80,10 +118,28 @@ this.accessToken = accessToken;
 ```
 
 This approach protects against most common XSS attacks while maintaining functionality.
+</LOG_DETAIL>
 
-[MEMORY_SECURITY]
+<MEMORY_SECURITY>
 The authentication system should use HttpOnly cookies for refresh tokens and in-memory storage for access tokens to mitigate XSS vulnerabilities.
+</MEMORY_SECURITY>
 ```
+
+## 🔀 Multiple Tags for the Same Content
+
+With XML-style tags, you can apply multiple different tags to the same content when relevant to multiple categories:
+
+```
+<MEMORY_UPDATE>
+Authentication tokens are now stored in HttpOnly cookies instead of localStorage to prevent XSS attacks.
+</MEMORY_UPDATE>
+
+<MEMORY_SECURITY>
+Authentication tokens are now stored in HttpOnly cookies instead of localStorage to prevent XSS attacks.
+</MEMORY_SECURITY>
+```
+
+This replaces the multi-tag format and is much more explicit and clear.
 
 ## 🛠️ Troubleshooting
 

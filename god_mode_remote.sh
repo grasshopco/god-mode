@@ -297,16 +297,21 @@ show_menu() {
     echo -e "${YELLOW}SETTINGS & TOOLS:${NC}"
     echo -e "s) ${CYAN}Notification settings${NC} - Manage notifications and sounds"
     echo -e "i) ${CYAN}Install God Mode shortcut${NC} - Create 'godmode' command (option 2 recommended for beginners)"
-    echo -e "b) ${CYAN}Database or Backend integration${NC} - Set up various database backends to sync your memory files."
+    echo -e "b) ${CYAN}Database or Backend integration${NC}"
+    echo -e "   Set up or connect to a database backend for YOUR APPLICATION (not God Mode)."
+    echo -e "   This helps you quickly create database infrastructure for your project."
     echo -e "   Options include:"
     echo -e "   - Cloud backends: Supabase, Firebase (coming soon)"
-    echo -e "   - Local backends: SQLite database for offline use"
-    echo -e "   - Multiple backends: Configure several and easily switch between them"
-    echo -e "   This allows for persistence across machines, data backup, and offline usage."
+    echo -e "   - Local testing: SQLite database for development"
+    echo -e "   Automatically configures authentication, database tables, and API endpoints."
     echo
     echo -e "${YELLOW}VERSION CONTROL:${NC}"
     echo -e "g) ${CYAN}GitHub repository management${NC} - Setup, connect, or switch GitHub repos"
     echo -e "a) ${CYAN}Auto-commit changes${NC} - Manually trigger an auto-commit"
+    echo
+    echo -e "${YELLOW}RESPONSE WORKFLOW:${NC}"
+    echo -e "p) ${CYAN}Prepare for response${NC} - Run checks before AI responds"
+    echo -e "f) ${CYAN}Finalize response${NC} - Auto-commit after AI response"
     echo
     echo -e "${YELLOW}NAVIGATION & HELP:${NC}"
     echo -e "9) ${CYAN}Navigate to target directory${NC} - Open a terminal in project folder"
@@ -401,9 +406,12 @@ show_help() {
     echo -e "   This will check the Message Router, Cursor Watch, and dependencies."
     echo
     echo -e "${CYAN}b) Database or Backend integration${NC}"
-    echo -e "   This feature lets you store God Mode memory files in the cloud or locally."
-    echo -e "   This is NOT for your application data - it's for God Mode's own memory system!"
-    echo -e "   Benefits include syncing across computers and backing up your AI's memory."
+    echo -e "   Set up or connect to a database backend for YOUR APPLICATION (not God Mode)."
+    echo -e "   This helps you quickly create database infrastructure for your project."
+    echo -e "   Options include:"
+    echo -e "   - Cloud backends: Supabase, Firebase (coming soon)"
+    echo -e "   - Local testing: SQLite database for development"
+    echo -e "   Automatically configures authentication, database tables, and API endpoints."
     echo
     echo -e "Press Enter to return to the main menu..."
     read -r
@@ -1046,12 +1054,15 @@ run_system_verification() {
 setup_database_integration() {
     clear
     echo "======================================="
-    echo "     Database Integration Setup       "
+    echo "     Application Database Setup        "
     echo "======================================="
     echo
-    echo "This feature lets you store God Mode memory files in the cloud or locally."
-    echo "This is NOT for your application data - it's for God Mode's own memory system!"
-    echo "Benefits include syncing across computers and backing up your AI's memory."
+    echo "This feature helps you set up a database backend for YOUR APPLICATION."
+    echo "This is for your project's data storage, authentication, and API endpoints."
+    echo "Benefits include:"
+    echo "- Quick setup of cloud or local database infrastructure"
+    echo "- Automatic configuration of auth, storage, and tables"
+    echo "- Seamless integration with your application code"
     echo
     
     local integration_script="$FULL_TARGET_PATH/god_mode/scripts/script_create_supabase_integration.py"
@@ -1076,12 +1087,12 @@ setup_database_integration() {
     python3 "$integration_script" --check-version
     
     # Show main database options
-    echo -e "\nDatabase Integration Options:"
-    echo -e "1) ${CYAN}Setup a new database backend${NC} - Connect to Supabase, SQLite, or other services"
-    echo -e "2) ${CYAN}Manage existing backends${NC} - View, switch, or delete configured connections"
-    echo -e "3) ${CYAN}Sync with current backend${NC} - Update memory files in cloud from local files"
-    echo -e "4) ${CYAN}Backup to current backend${NC} - Create a complete backup of your memory files"
-    echo -e "5) ${CYAN}Restore from backup${NC} - Replace local memory files with backed up versions"
+    echo -e "\nApplication Database Options:"
+    echo -e "1) ${CYAN}Set up new project backend${NC} - Create database for a new application"
+    echo -e "2) ${CYAN}Connect to existing backend${NC} - Link to an already created backend"
+    echo -e "3) ${CYAN}Configure database tables${NC} - Set up schema for your application"
+    echo -e "4) ${CYAN}Set up authentication${NC} - Configure user signup and login"
+    echo -e "5) ${CYAN}Generate API endpoints${NC} - Create serverless functions"
     echo -e "6) ${CYAN}Return to main menu${NC}"
     echo
     echo -n "Enter your choice: "
@@ -1089,11 +1100,11 @@ setup_database_integration() {
     
     case $db_choice in
         1)
-            echo -e "\n${YELLOW}Setting up a new database backend...${NC}"
+            echo -e "\n${YELLOW}Setting up a new project backend...${NC}"
             python3 "$integration_script" --setup
             ;;
         2)
-            echo -e "\n${YELLOW}Managing existing backends...${NC}"
+            echo -e "\n${YELLOW}Connecting to existing backend...${NC}"
             python3 "$integration_script" --list-backends
             
             # Ask if they want to switch backends
@@ -1107,15 +1118,15 @@ setup_database_integration() {
             fi
             ;;
         3)
-            echo -e "\n${YELLOW}Syncing with current backend...${NC}"
+            echo -e "\n${YELLOW}Configuring database tables...${NC}"
             python3 "$integration_script" --sync
             ;;
         4)
-            echo -e "\n${YELLOW}Backing up to current backend...${NC}"
+            echo -e "\n${YELLOW}Setting up authentication...${NC}"
             python3 "$integration_script" --backup
             ;;
         5)
-            echo -e "\n${YELLOW}Restoring from backup...${NC}"
+            echo -e "\n${YELLOW}Generating API endpoints...${NC}"
             python3 "$integration_script" --restore
             ;;
         6)
@@ -1134,6 +1145,68 @@ verify_god_mode() {
     
     echo -e "\nPress Enter to continue..."
     read -r
+}
+
+# Function to prepare for an AI response
+prepare_for_response() {
+    echo -e "${BLUE}=======================================${NC}"
+    echo -e "${BLUE}     Preparing for AI Response        ${NC}"
+    echo -e "${BLUE}=======================================${NC}"
+    echo
+    
+    local script="$FULL_TARGET_PATH/god_mode/scripts/script_prepare_response.sh"
+    
+    if [ -f "$script" ]; then
+        # Make it executable if it's not
+        chmod +x "$script"
+        
+        # Run it
+        echo -e "${YELLOW}Running preparation script...${NC}"
+        "$script"
+        
+        if [ $? -eq 0 ]; then
+            echo -e "\n${GREEN}✓ Preparation completed successfully${NC}"
+            echo -e "${YELLOW}The AI is now ready to respond with proper tagging!${NC}"
+        else
+            echo -e "\n${RED}✗ There was a problem during preparation${NC}"
+            echo -e "${YELLOW}Try running the script manually:${NC}"
+            echo -e "  cd \"$FULL_TARGET_PATH/god_mode/scripts\" && ./script_prepare_response.sh"
+        fi
+    else
+        echo -e "${RED}Error: Preparation script not found at:${NC}"
+        echo -e "$script"
+    fi
+}
+
+# Function to finalize an AI response
+finalize_response() {
+    echo -e "${BLUE}=======================================${NC}"
+    echo -e "${BLUE}     Finalizing AI Response           ${NC}"
+    echo -e "${BLUE}=======================================${NC}"
+    echo
+    
+    local script="$FULL_TARGET_PATH/god_mode/scripts/script_complete_response.sh"
+    
+    if [ -f "$script" ]; then
+        # Make it executable if it's not
+        chmod +x "$script"
+        
+        # Run it
+        echo -e "${YELLOW}Running finalization script...${NC}"
+        "$script"
+        
+        if [ $? -eq 0 ]; then
+            echo -e "\n${GREEN}✓ Response finalized successfully${NC}"
+            echo -e "${YELLOW}Changes have been committed and verified!${NC}"
+        else
+            echo -e "\n${RED}✗ There was a problem during finalization${NC}"
+            echo -e "${YELLOW}Try running the script manually:${NC}"
+            echo -e "  cd \"$FULL_TARGET_PATH/god_mode/scripts\" && ./script_complete_response.sh"
+        fi
+    else
+        echo -e "${RED}Error: Finalization script not found at:${NC}"
+        echo -e "$script"
+    fi
 }
 
 # Display header with a welcome message
@@ -1176,6 +1249,14 @@ while true; do
         i|I) install_godmode_shortcut ;;
         b|B)
             setup_database_integration 
+            ;;
+        p|P)
+            echo -e "${YELLOW}Preparing for response...${NC}"
+            prepare_for_response
+            ;;
+        f|F)
+            echo -e "${YELLOW}Finalizing response...${NC}"
+            finalize_response
             ;;
         *) echo -e "${RED}Invalid choice. Please try again.${NC}" ;;
     esac

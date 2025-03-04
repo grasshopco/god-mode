@@ -1,0 +1,12 @@
+
+## Current UTC timestamp: 2025-03-04 23:01 UTC
+ISO format: 2025-03-04T23:01:06.281642+00:00
+Filename format: 20250304_230106
+Log format: 2025-03-04 23:01:06 UTC
+The XML-style tag format provides several advantages:
+1. Clear boundaries for content
+2. Verbatim content preservation
+3. Support for multiple tags on the same content
+4. Better semantic clarity
+
+This test verifies that the message router correctly processes these tags.

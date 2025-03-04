@@ -411,4 +411,31 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 - The Cursor IDE team for creating an amazing AI-powered code editor
-- The AI community for continuous innovation in developer tools 
+- The AI community for continuous innovation in developer tools
+
+## Git Integration and Auto-Commit
+
+God Mode now includes automatic Git integration to track all changes to your project. This ensures that:
+
+1. All your work is automatically versioned
+2. You have a complete history of changes
+3. You can easily collaborate with others
+
+### How It Works
+
+- The system automatically commits changes after each AI response
+- Each commit includes a timestamp
+- If you've connected a remote repository, changes are pushed automatically
+
+### Setting Up Git Integration
+
+1. Initialize Git (already done automatically)
+2. Connect to a remote repository (optional):
+   ```bash
+   git remote add origin <your-repository-url>
+   git push -u origin main
+   ```
+
+3. Auto-commits will now run after each significant change
+
+You can manually trigger an auto-commit by selecting the "Auto-commit changes" option in the God Mode menu. 

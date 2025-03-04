@@ -73,6 +73,13 @@ except ImportError as e:
         if debug_mode:
             return True, "Debug mode - skipping validation"
         
+        # Check if message is string, convert otherwise
+        if not isinstance(message, str):
+            try:
+                message = str(message)
+            except Exception as e:
+                return False, f"Message is not a string and cannot be converted: {e}"
+        
         if not message:
             return False, "Empty message"
         
@@ -186,29 +193,28 @@ MEMORY_SECURITY_FILE = MEMORY_DIR / "memory_security.md"
 MEMORY_PERFORMANCE_FILE = MEMORY_DIR / "memory_performance.md"
 MEMORY_ACCESSIBILITY_FILE = MEMORY_DIR / "memory_accessibility.md"
 
-# Define marker patterns and their corresponding files
-MARKERS = {
-    r"\[LOG_SUMMARY\](.*?)(?=\[|\Z)": LOG_SUMMARY_FILE,
-    r"\[LOG_DETAIL\](.*?)(?=\[|\Z)": LOG_DETAIL_FILE,
-    r"\[MEMORY_UPDATE\](.*?)(?=\[|\Z)": MEMORY_UPDATE_FILE,
-    r"\[MEMORY_LEARNINGS\](.*?)(?=\[|\Z)": MEMORY_LEARNINGS_FILE,
-    r"\[MEMORY_UPDATES\](.*?)(?=\[|\Z)": MEMORY_UPDATES_FILE,
-    r"\[MEMORY_REQUIREMENTS\](.*?)(?=\[|\Z)": MEMORY_REQUIREMENTS_FILE,
-    r"\[MEMORY_ROADMAP\](.*?)(?=\[|\Z)": MEMORY_ROADMAP_FILE,
-    r"\[MEMORY_ARCHITECTURE\](.*?)(?=\[|\Z)": MEMORY_ARCHITECTURE_FILE,
-    r"\[MEMORY_CONVENTIONS\](.*?)(?=\[|\Z)": MEMORY_CONVENTIONS_FILE,
-    r"\[MEMORY_DEPENDENCIES\](.*?)(?=\[|\Z)": MEMORY_DEPENDENCIES_FILE,
-    r"\[MEMORY_GLOSSARY\](.*?)(?=\[|\Z)": MEMORY_GLOSSARY_FILE,
-    r"\[MEMORY_TESTING\](.*?)(?=\[|\Z)": MEMORY_TESTING_FILE,
-    r"\[MEMORY_SECURITY\](.*?)(?=\[|\Z)": MEMORY_SECURITY_FILE,
-    r"\[MEMORY_PERFORMANCE\](.*?)(?=\[|\Z)": MEMORY_PERFORMANCE_FILE,
-    r"\[MEMORY_ACCESSIBILITY\](.*?)(?=\[|\Z)": MEMORY_ACCESSIBILITY_FILE,
-    r"\[FEATURE_LOG\s*:\s*([^]]+)\](.*?)(?=\[|\Z)": '',  # Special case for feature logs
-    r"\[DOC_UPDATE\s*:\s*([^]]+)\](.*?)(?=\[|\Z)": '',   # Special case for documentation updates
+# Define the patterns for each marker type
+patterns = {
+    'LOG_SUMMARY': r"\[LOG_SUMMARY\](.*?)(?=\[|\Z)",
+    'LOG_DETAIL': r"\[LOG_DETAIL\](.*?)(?=\[|\Z)",
+    'MEMORY_UPDATE': r"\[MEMORY_UPDATE\](.*?)(?=\[|\Z)",
+    'MEMORY_LEARNINGS': r"\[MEMORY_LEARNINGS\](.*?)(?=\[|\Z)",
+    'MEMORY_UPDATES': r"\[MEMORY_UPDATES\](.*?)(?=\[|\Z)",
+    'MEMORY_REQUIREMENTS': r"\[MEMORY_REQUIREMENTS\](.*?)(?=\[|\Z)",
+    'MEMORY_ROADMAP': r"\[MEMORY_ROADMAP\](.*?)(?=\[|\Z)",
+    'MEMORY_ARCHITECTURE': r"\[MEMORY_ARCHITECTURE\](.*?)(?=\[|\Z)",
+    'MEMORY_CONVENTIONS': r"\[MEMORY_CONVENTIONS\](.*?)(?=\[|\Z)",
+    'MEMORY_DEPENDENCIES': r"\[MEMORY_DEPENDENCIES\](.*?)(?=\[|\Z)",
+    'MEMORY_GLOSSARY': r"\[MEMORY_GLOSSARY\](.*?)(?=\[|\Z)",
+    'MEMORY_TESTING': r"\[MEMORY_TESTING\](.*?)(?=\[|\Z)",
+    'MEMORY_SECURITY': r"\[MEMORY_SECURITY\](.*?)(?=\[|\Z)",
+    'MEMORY_PERFORMANCE': r"\[MEMORY_PERFORMANCE\](.*?)(?=\[|\Z)",
+    'MEMORY_ACCESSIBILITY': r"\[MEMORY_ACCESSIBILITY\](.*?)(?=\[|\Z)",
+    'DOCUMENTATION': r"\[DOCUMENTATION\s*:\s*([^]]+)\](.*?)(?=\[|\Z)",
+    'FEATURE': r"\[FEATURE\s*:\s*([^]]+)\](.*?)(?=\[|\Z)",  # Special case for feature logs
+    'DOC_UPDATE': r"\[DOC_UPDATE\s*:\s*([^]]+)\](.*?)(?=\[|\Z)",  # Special case for documentation updates
+    'MULTI_TAG': r"\[MULTI_TAG\s*:\s*([^]]+)\](.*?)(?=\[|\Z)"  # Special case for multi-tags
 }
-
-# New multi-tag pattern
-MULTI_TAG_PATTERN = r"\[MULTI_TAG\s*:\s*([^]]+)\](.*?)(?=\[|\Z)"
 
 def send_notification(title, message):
     """
@@ -497,83 +503,70 @@ def ensure_file_exists(filepath):
 
 def append_to_file(file_path, content):
     """
-    Append content to a file with proper formatting and timestamps.
+    Append content to a file with a timestamp
     
     Args:
-        file_path (Path): Path to the file to append to
-        content (str): Content to append
+        file_path (Path or str): Path to the file to append to
+        content (str): Content to append to the file
         
     Returns:
-        bool: True if content was successfully appended, False otherwise
+        bool: True if successful, False otherwise
     """
-    ensure_directory_exists(file_path.parent)
-    
-    # Don't write if the content is empty
-    content = content.strip()
-    if not content:
-        debug_log(f"Not writing empty content to {file_path}")
-        return False
-    
-    # Check if the content only contains metadata or placeholders
-    metadata_only = False
-    if re.match(r'^\s*- For .*updates\s*$', content) or re.match(r'^\s*-\s*$', content):
-        metadata_only = True
-        debug_log(f"Content appears to be metadata-only: {content[:50]}...")
-    
-    # If it's metadata-only, try to make it more meaningful
-    if metadata_only:
-        # Get the name of the file without the path
-        file_name = file_path.name
-        # Create a more meaningful entry based on file type
-        if 'roadmap' in file_name.lower():
-            content = f"## Roadmap Update\n\n{get_timestamp()}\n\nPlanning new features and improvements for the God Mode system. Key focus areas include:\n- Enhancing notification system\n- Improving database integration capabilities\n- Expanding customization options\n- Refining documentation automation"
-        elif 'architecture' in file_name.lower():
-            content = f"## Architecture Update\n\n{get_timestamp()}\n\nRefining the system architecture to improve modularity and extensibility. Key components:\n- Core message routing system\n- Notification subsystem\n- Memory management\n- Integration interfaces"
-        elif 'learning' in file_name.lower():
-            content = f"## Learning Entry\n\n{get_timestamp()}\n\nImportant system learning: The notification system should have fallback mechanisms for different platforms and provide both visual and audio feedback."
-        else:
-            # For other file types, add a generic meaningful entry
-            content = f"## Update Entry\n\n{get_timestamp()}\n\nUpdating documentation and system components for better performance and reliability."
-    
-    timestamp = get_timestamp()
     try:
-        with open(file_path, 'a+') as f:
-            # Add a timestamp if the file is new or empty
-            f.seek(0)
-            file_content = f.read()
-            
-            if not file_content.strip():
-                f.write(f"## {timestamp}\n\n")
-            else:
-                # Add a separator and timestamp before new content
-                f.write(f"\n\n## {timestamp}\n\n")
-            
-            # Add the content
-            f.write(content)
-            debug_log(f"✅ Content appended to {file_path}")
-            
-            # Track the routing event if available
-            if TRACKING_AVAILABLE:
-                # Get the line number where content was added
-                f.seek(0)
-                lines = f.read().split('\n')
-                line_number = len(lines) - content.count('\n') - 1
-                
-                # The 'tag' argument is derived from the file name, not ideal but workable
-                tag = file_path.stem.replace('memory_', '').replace('_', ' ').upper()
-                add_routing_event(tag, file_path, content, line_number)
-            
-            return True
+        # Convert to Path object if it's a string
+        if isinstance(file_path, str):
+            file_path = Path(file_path)
+        
+        # Create parent directories if they don't exist
+        ensure_directory_exists(file_path.parent)
+        
+        # Get timestamp
+        timestamp = get_timestamp()
+        
+        # Create the file if it doesn't exist
+        if not file_path.exists():
+            with open(file_path, 'w') as f:
+                # If it's a .md file, add a title based on the filename
+                if str(file_path).endswith('.md'):
+                    title = file_path.stem.replace('_', ' ').title()
+                    f.write(f"# {title}\n\n")
+        
+        # Add the timestamp and content
+        with open(file_path, 'a') as f:
+            f.write(f"\n## {timestamp}\n")
+            f.write(content.strip())
+            f.write("\n")
+        
+        # Log the success
+        debug_log(f"Content appended to {file_path}")
+        
+        # Track the routing event if possible
+        try:
+            line_number = count_lines(file_path) - 1  # Approximate line number
+            add_routing_event(extract_tag_from_path(file_path), file_path, content, line_number)
+        except Exception as e:
+            debug_log(f"Error tracking routing event: {e}")
+        
+        # Show notification
+        settings = get_notification_settings()
+        if settings.get("notifications_enabled", True):
+            send_notification("Content Routed", f"Content added to {file_path.name}")
+            play_sound()
+        
+        return True
     except Exception as e:
         debug_log(f"Error appending to {file_path}: {e}")
-        traceback.print_exc()
         return False
 
 def process_feature_log(feature_name, content):
     """Process a feature log entry"""
     # Sanitize the feature name for file naming
+    if not feature_name or not isinstance(feature_name, str):
+        debug_log(f"Invalid feature name: {repr(feature_name)}")
+        return False
+        
     sanitized_name = feature_name.lower().replace(' ', '_')
-    file_name = f"memory_log_feature_{sanitized_name}.md"
+    file_name = f"memory_feature_{sanitized_name}.md"
     
     # Use the memory directory for feature logs to match expectations
     feature_logs_dir = MEMORY_DIR
@@ -584,15 +577,22 @@ def process_feature_log(feature_name, content):
     
     # Create the file if it doesn't exist
     if not file_path.exists():
-        with open(file_path, 'w') as f:
-            f.write(f"# Feature Log: {feature_name}\n\n")
-            f.write("This file tracks development and changes related to this feature.\n\n")
-        debug_log(f"Created new feature log file: {file_path}")
+        try:
+            with open(file_path, 'w') as f:
+                f.write(f"# Feature Log: {feature_name}\n\n")
+                f.write("This log tracks the development and changes related to this feature.\n\n")
+            debug_log(f"Created new feature log file: {file_path}")
+        except Exception as e:
+            debug_log(f"Error creating feature log file: {e}")
+            return False
     
     # Append content to the file
-    success = append_to_file(file_path, content)
-    
-    return success
+    try:
+        success = append_to_file(file_path, content)
+        return success
+    except Exception as e:
+        debug_log(f"Error appending to feature log: {e}")
+        return False
 
 def process_doc_update(doc_type, content):
     """Process a documentation update entry"""
@@ -635,7 +635,7 @@ def process_single_tag(tag, content):
             return
 
         # Handle standard tags
-        for pattern, file_path in MARKERS.items():
+        for pattern, file_path in patterns.items():
             # Convert regex pattern to a simple tag name for comparison
             # This is a heuristic approach - it may need refinement
             simple_pattern = pattern.replace(r"\[", "").replace(r"\]", "").split("\\")[0]
@@ -654,108 +654,187 @@ def process_single_tag(tag, content):
 
 def route_message(message):
     """Process a message and extract/route content based on markers."""
+    if not message or not isinstance(message, str):
+        debug_log(f"Invalid message: {repr(message)}")
+        return 0
+        
     updated_files = []
     
-    # Validate message structure before routing
-    if TAG_FEEDBACK_AVAILABLE:
-        is_valid, reason = validate_message(message)
-        log_tag_validation(is_valid, reason)
-        if not is_valid:
-            debug_log(f"⚠️ Message validation failed: {reason}")
-            # We still process the message even if validation fails
-            # This ensures content isn't lost, but the feedback loop will improve future messages
-    
-    # Process multi-tag content first
-    debug_log("Processing multi-tag content")
-    multi_tag_matches = re.finditer(MULTI_TAG_PATTERN, message, re.DOTALL)
-    for match in multi_tag_matches:
-        tags_str = match.group(1).strip()
-        content = match.group(2).strip()
+    # Process XML-style tags first - new format <TAG>content</TAG>
+    try:
+        debug_log("Processing XML-style tags")
         
-        if not content:
-            debug_log(f"Multi-tag content for '{tags_str}' is empty, skipping")
-            continue
-            
-        debug_log(f"Found multi-tag: {tags_str}")
-        # Parse the tags (comma-separated list)
-        tags = [tag.strip() for tag in tags_str.split(',')]
+        # Find all XML-style tags
+        xml_pattern = r"<([A-Z_]+(?:\s*:\s*[^>]+)?)>(.*?)</\1>"
+        xml_matches = list(re.finditer(xml_pattern, message, re.DOTALL | re.IGNORECASE))
         
-        for tag in tags:
-            debug_log(f"Processing tag '{tag}' from multi-tag")
-            # Handle standard memory tags
-            if tag.upper() in [
-                "LOG_SUMMARY", "LOG_DETAIL", "MEMORY_UPDATE",
-                "MEMORY_LEARNINGS", "MEMORY_UPDATES", "MEMORY_REQUIREMENTS",
-                "MEMORY_ROADMAP", "MEMORY_ARCHITECTURE", "MEMORY_CONVENTIONS",
-                "MEMORY_DEPENDENCIES", "MEMORY_GLOSSARY", "MEMORY_TESTING",
-                "MEMORY_SECURITY", "MEMORY_PERFORMANCE", "MEMORY_ACCESSIBILITY"
-            ]:
-                # Find the corresponding file for this tag
-                for pattern, file_path in MARKERS.items():
-                    if tag.upper() in pattern:
-                        if append_to_file(file_path, content):
-                            updated_files.append(file_path.name)
-                        break
+        # Track which content blocks have been processed to avoid duplication
+        processed_blocks = set()
+        
+        for match in xml_matches:
+            if len(match.groups()) < 2:
+                debug_log(f"XML tag match doesn't have enough groups: {match.groups()}")
+                continue
+                
+            tag = match.group(1).strip()
+            content = match.group(2).strip()
+            content_hash = hash(content)
             
-            # Handle feature logs (format: FEATURE_LOG:Name)
-            elif tag.upper().startswith("FEATURE_LOG:"):
+            if not content:
+                debug_log(f"XML tag {tag} content is empty, skipping")
+                continue
+            
+            # Process the tag
+            debug_log(f"Processing XML tag: {tag}")
+            
+            # For FEATURE tags, handle the special format
+            if tag.upper().startswith("FEATURE:") or tag.upper().startswith("FEATURE :"):
                 parts = tag.split(":", 1)
                 if len(parts) == 2:
                     feature_name = parts[1].strip()
-                    process_feature_log(feature_name, content)
-                    updated_files.append(f"feature_log_{feature_name.lower().replace(' ', '_')}.md")
-            
-            # Handle documentation updates (format: DOC_UPDATE:Type)
-            elif tag.upper().startswith("DOC_UPDATE:"):
+                    debug_log(f"Processing feature log for: {feature_name}")
+                    if process_feature_log(feature_name, content):
+                        updated_files.append(f"memory_feature_{feature_name.lower().replace(' ', '_')}.md")
+            # For DOC_UPDATE tags
+            elif tag.upper().startswith("DOC_UPDATE:") or tag.upper().startswith("DOC_UPDATE :"):
                 parts = tag.split(":", 1)
                 if len(parts) == 2:
                     doc_type = parts[1].strip()
-                    process_doc_update(doc_type, content)
-                    updated_files.append(f"documentation_{doc_type.lower()}_main.md")
+                    debug_log(f"Processing doc update for: {doc_type}")
+                    if process_doc_update(doc_type, content):
+                        updated_files.append(f"documentation_{doc_type}_main.md")
+            # For standard memory tags
+            else:
+                tag = tag.upper()  # Normalize tag name
+                # Find the appropriate file for this tag
+                for pattern, file_path in patterns.items():
+                    if tag == pattern or tag in pattern:
+                        if file_path and append_to_file(file_path, content):
+                            # Make sure file_path is a Path object before accessing name
+                            if isinstance(file_path, str):
+                                file_name = Path(file_path).name
+                            else:
+                                file_name = file_path.name
+                            updated_files.append(file_name)
+                            break
+            
+            # Mark this content as processed
+            processed_blocks.add(content_hash)
+    except Exception as e:
+        debug_log(f"Error processing XML-style tags: {e}")
+        debug_log(traceback.format_exc())
     
-    # Process standard markers
-    debug_log("Processing standard markers")
-    for pattern, file_path in MARKERS.items():
-        debug_log(f"Checking pattern {pattern}")
-        matches = re.finditer(pattern, message, re.DOTALL)
-        for match in matches:
-            content = match.group(1).strip()
-            debug_log(f"Found pattern match for {pattern}, saving to {file_path}")
-            if content and append_to_file(file_path, content):
-                updated_files.append(file_path.name)
+    # Process multi-tag content (bracket style)
+    try:
+        debug_log("Processing multi-tag markers")
+        multi_tag_matches = re.finditer(r"\[MULTI_TAG\s*:\s*([^]]+)\](.*?)(?=\[|\Z)", message, re.DOTALL)
+        for match in multi_tag_matches:
+            if len(match.groups()) < 2:
+                debug_log(f"Multi-tag match doesn't have enough groups: {match.groups()}")
+                continue
+                
+            tags_str = match.group(1).strip()
+            content = match.group(2).strip()
+            
+            if not content:
+                debug_log("Multi-tag content is empty, skipping")
+                continue
+                
+            # Parse the tags (comma-separated list)
+            tags = [tag.strip() for tag in tags_str.split(',')]
+            
+            for tag in tags:
+                debug_log(f"Processing multi-tag component: {tag}")
+                process_single_tag(tag, content)
+    except Exception as e:
+        debug_log(f"Error processing multi-tags: {e}")
+        debug_log(traceback.format_exc())
     
-    # Special case for feature logs
-    debug_log("Processing feature logs")
-    feature_pattern = r"\[FEATURE_LOG\s*:\s*([^]]+)\](.*?)(?=\[|\Z)"
-    for match in re.finditer(feature_pattern, message, re.DOTALL):
-        feature_name = match.group(1).strip()
-        content = match.group(2).strip()
-        if feature_name and content:
-            process_feature_log(feature_name, content)
-            updated_files.append(f"feature_log_{feature_name.lower().replace(' ', '_')}.md")
+    # Special case for feature logs - process these separately
+    try:
+        debug_log("Processing feature logs")
+        feature_pattern = r"\[FEATURE\s*:\s*([^]]+)\](.*?)(?=\[|\Z)"
+        feature_matches = list(re.finditer(feature_pattern, message, re.DOTALL))
+        
+        for match in feature_matches:
+            if len(match.groups()) < 2:
+                debug_log(f"Feature log match doesn't have enough groups: {match.groups()}")
+                continue
+                
+            feature_name = match.group(1).strip()
+            content = match.group(2).strip()
+            
+            if feature_name and content:
+                debug_log(f"Processing feature log: {feature_name}")
+                if process_feature_log(feature_name, content):
+                    updated_files.append(f"memory_feature_{feature_name.lower().replace(' ', '_')}.md")
+    except Exception as e:
+        debug_log(f"Error processing feature logs: {e}")
+        debug_log(traceback.format_exc())
     
     # Special case for documentation updates
-    debug_log("Processing documentation updates")
-    doc_pattern = r"\[DOC_UPDATE\s*:\s*([^]]+)\](.*?)(?=\[|\Z)"
-    for match in re.finditer(doc_pattern, message, re.DOTALL):
-        doc_type = match.group(1).strip()
-        content = match.group(2).strip()
-        if doc_type and content:
-            process_doc_update(doc_type, content)
-            updated_files.append(f"documentation_{doc_type.lower()}_main.md")
+    try:
+        debug_log("Processing documentation updates")
+        doc_pattern = r"\[DOC_UPDATE\s*:\s*([^]]+)\](.*?)(?=\[|\Z)"
+        doc_matches = list(re.finditer(doc_pattern, message, re.DOTALL))
+        
+        for match in doc_matches:
+            if len(match.groups()) < 2:
+                debug_log(f"Doc update match doesn't have enough groups: {match.groups()}")
+                continue
+                
+            doc_type = match.group(1).strip()
+            content = match.group(2).strip()
+            
+            if doc_type and content:
+                debug_log(f"Processing doc update: {doc_type}")
+                process_doc_update(doc_type, content)
+                updated_files.append(f"documentation_{doc_type.lower()}_main.md")
+    except Exception as e:
+        debug_log(f"Error processing doc updates: {e}")
+        debug_log(traceback.format_exc())
+    
+    # Process standard markers
+    try:
+        debug_log("Processing standard markers")
+        for pattern, file_path in patterns.items():
+            if not file_path:  # Skip special case patterns that were handled above
+                continue
+                
+            debug_log(f"Checking pattern {pattern}")
+            
+            try:
+                matches = re.finditer(pattern, message, re.DOTALL)
+                for match in matches:
+                    if len(match.groups()) < 1:
+                        debug_log(f"Standard match doesn't have enough groups: {match.groups()}")
+                        continue
+                        
+                    content = match.group(1).strip()
+                    debug_log(f"Found pattern match for {pattern}, saving to {file_path}")
+                    if content and append_to_file(file_path, content):
+                        updated_files.append(file_path.name)
+            except Exception as pattern_error:
+                debug_log(f"Error processing pattern {pattern}: {pattern_error}")
+    except Exception as e:
+        debug_log(f"Error processing standard markers: {e}")
+        debug_log(traceback.format_exc())
     
     # Show notification with summary of updated files
     if updated_files:
         title = "God Mode: Content Routed"
+        notification_message = ""
+        
         if len(updated_files) == 1:
-            message = f"Updated file: {updated_files[0]}"
+            notification_message = f"Updated file: {updated_files[0]}"
         else:
-            message = f"Updated {len(updated_files)} files"
+            notification_message = f"Updated {len(updated_files)} files"
             if len(updated_files) <= 5:  # Show all files if 5 or fewer
-                message += ":\n" + "\n".join(f"- {f}" for f in updated_files)
+                notification_message += ":\n" + "\n".join(f"- {f}" for f in updated_files)
             else:  # Show just the first 3 if more than 5
-                message += f" including:\n" + "\n".join(f"- {f}" for f in updated_files[:3]) + "\n- ..."
-        send_notification(title, message)
+                notification_message += f" including:\n" + "\n".join(f"- {f}" for f in updated_files[:3]) + "\n- ..."
+        
+        send_notification(title, notification_message)
     else:
         debug_log("No content found to route")
     
@@ -764,10 +843,20 @@ def route_message(message):
 def read_from_file(filepath):
     """Read content from a file"""
     try:
+        # Handle special case for stdin
+        if filepath == '-':
+            import sys
+            return sys.stdin.read()
+            
         with open(filepath, 'r') as f:
-            return f.read()
+            content = f.read()
+            if not content:
+                print("❌ Input file is empty")
+                return None
+            return content
     except Exception as e:
         print(f"❌ Error reading file: {e}")
+        debug_log(f"Exception in read_from_file: {traceback.format_exc()}")
         return None
 
 def read_from_clipboard():
@@ -813,17 +902,17 @@ def watch_clipboard(interval=2.0):
                     contains_marker = False
                     
                     # Check for any marker pattern
-                    for pattern in MARKERS.keys():
+                    for pattern in patterns.keys():
                         if re.search(pattern, current_content, re.DOTALL):
                             contains_marker = True
                             break
                     
                     # Check for multi-tag pattern
-                    if not contains_marker and re.search(MULTI_TAG_PATTERN, current_content, re.DOTALL):
+                    if not contains_marker and re.search(r"\[MULTI_TAG\s*:\s*([^]]+)\]", current_content, re.DOTALL):
                         contains_marker = True
                     
                     # Check for feature log pattern
-                    if not contains_marker and re.search(r"\[FEATURE_LOG\s*:\s*([^]]+)\]", current_content, re.DOTALL):
+                    if not contains_marker and re.search(r"\[FEATURE\s*:\s*([^]]+)\]", current_content, re.DOTALL):
                         contains_marker = True
                     
                     # Check for doc update pattern
@@ -908,6 +997,58 @@ def should_add_tags_to_message(message):
     
     # Return True if the message is substantial or has substantive formatting
     return substantial_content or has_substantive_formatting
+
+def count_lines(file_path):
+    """
+    Count the number of lines in a file
+    
+    Args:
+        file_path (Path or str): Path to the file
+        
+    Returns:
+        int: Number of lines in the file
+    """
+    try:
+        with open(file_path, 'r') as f:
+            return sum(1 for _ in f)
+    except Exception as e:
+        debug_log(f"Error counting lines in {file_path}: {e}")
+        return 0
+
+def extract_tag_from_path(file_path):
+    """
+    Extract a tag name from a file path
+    
+    Args:
+        file_path (Path or str): Path to the file
+        
+    Returns:
+        str: Tag name derived from the file path
+    """
+    # Convert to Path object if it's a string
+    if isinstance(file_path, str):
+        file_path = Path(file_path)
+    
+    # Extract the base filename without extension
+    base_name = file_path.stem
+    
+    # Handle specific patterns
+    if base_name.startswith('memory_feature_'):
+        feature_name = base_name.replace('memory_feature_', '')
+        feature_name = feature_name.replace('.md', '').replace('_', ' ').title()
+        return f"FEATURE: {feature_name}"
+    elif base_name.startswith('memory_'):
+        return f"MEMORY_{base_name.replace('memory_', '').upper()}"
+    elif base_name.startswith('documentation_'):
+        doc_type = base_name.replace('documentation_', '').split('_')[0]
+        return f"DOC_UPDATE: {doc_type}"
+    elif base_name == 'memory_logs_all':
+        return "LOG_SUMMARY"
+    elif base_name == 'memory_logs_detailed':
+        return "LOG_DETAIL"
+    else:
+        # Default case - convert filename to uppercase tag
+        return base_name.upper()
 
 def main():
     """Main entry point for the message router script."""

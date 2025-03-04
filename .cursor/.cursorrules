@@ -87,54 +87,89 @@
 - Follow TypeScript best practices, including proper typing and interface definitions.
 - Consider mobile responsiveness in all UI implementations. 
 
-
-# Message Router Markers
-All comprehensive responses that contain significant code changes, design decisions, 
-or insights MUST include markup with appropriate markers for the message router:
-
-1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
-2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
-3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
-4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
-5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
-6. Use specific memory markers for specialized updates:
-   - [MEMORY_LEARNINGS] - For insights and lessons learned
-   - [MEMORY_ARCHITECTURE] - For architecture changes
-   - [MEMORY_REQUIREMENTS] - For requirement changes
-   - [MEMORY_ROADMAP] - For roadmap updates
-   - [MEMORY_CONVENTIONS] - For convention changes
-   - [MEMORY_DEPENDENCIES] - For dependency changes
-   - [MEMORY_GLOSSARY] - For terminology updates
-   - [MEMORY_TESTING] - For testing updates
-   - [MEMORY_SECURITY] - For security updates
-   - [MEMORY_PERFORMANCE] - For performance updates
-   - [MEMORY_ACCESSIBILITY] - For accessibility updates
-7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
-   without repeating yourself. For example:
-   
-   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
-   Implemented JWT authentication with refresh token rotation.
-
-These markers must be formatted exactly as shown (with square brackets) and must be placed
-on their own lines, followed by the relevant content. This markup enables automatic 
-documentation and persistent memory across sessions.
+## MESSAGE ROUTER TAGS
+- ALWAYS include the following message router markers in EVERY comprehensive response:
+  - [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
+  - [LOG_DETAIL] with comprehensive explanation of the changes.
+  - [MEMORY_UPDATE] for relevant project context updates that should be remembered.
+  - [FEATURE_LOG: FeatureName] for specific feature updates.
+  - [DOC_UPDATE: project/feature/design/data] for documentation updates.
+- ALWAYS run the script_auto_commit.sh script after completing a response with changes.
+- These markers MUST be formatted exactly as shown (with square brackets) and must be placed
+  on their own lines, followed by the relevant content.
+- For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations.
 
 Example format:
 [LOG_SUMMARY]
-Brief summary of the changes in 1-2 sentences.
+Brief summary of the changes made.
 
 [LOG_DETAIL]
-Detailed explanation of changes with markdown formatting.
-- What was implemented
-- Why it was done this way
-- Any alternatives considered
+Detailed explanation of the changes with reasoning and context.
 
 [MEMORY_UPDATE]
-Important architectural decisions or context that future sessions should be aware of.
+Important information that should be remembered for future sessions.
 
-Example with multi-tag:
-[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
-The system now uses a microservice architecture with service discovery.
+[FEATURE_LOG: FeatureName]
+Specific updates related to this feature.
+
+# XML-STYLE MESSAGE TAGGING SYSTEM
+- ALWAYS use the following XML-style tags in your responses for better content delineation:
+  - <LOG_SUMMARY>Brief summary of changes</LOG_SUMMARY>
+  - <LOG_DETAIL>Detailed explanation of what was changed and why</LOG_DETAIL>
+  - <MEMORY_UPDATE>Key architectural decisions and context for future reference</MEMORY_UPDATE>
+  
+- For feature-specific work, include:
+  - <FEATURE: FeatureName>Feature-specific updates</FEATURE: FeatureName>
+
+- For documentation updates, include:
+  - <DOC_UPDATE: DocumentType>Updates to project documentation</DOC_UPDATE: DocumentType>
+
+- For specialized memory updates, use:
+  - <MEMORY_LEARNINGS>For insights and lessons learned</MEMORY_LEARNINGS>
+  - <MEMORY_ARCHITECTURE>For architecture changes</MEMORY_ARCHITECTURE>
+  - <MEMORY_REQUIREMENTS>For requirement changes</MEMORY_REQUIREMENTS>
+  - <MEMORY_ROADMAP>For roadmap updates</MEMORY_ROADMAP>
+  - <MEMORY_CONVENTIONS>For convention changes</MEMORY_CONVENTIONS>
+  - <MEMORY_DEPENDENCIES>For dependency changes</MEMORY_DEPENDENCIES>
+  - <MEMORY_GLOSSARY>For terminology updates</MEMORY_GLOSSARY>
+  - <MEMORY_TESTING>For testing updates</MEMORY_TESTING>
+  - <MEMORY_SECURITY>For security updates</MEMORY_SECURITY>
+  - <MEMORY_PERFORMANCE>For performance updates</MEMORY_PERFORMANCE>
+  - <MEMORY_ACCESSIBILITY>For accessibility updates</MEMORY_ACCESSIBILITY>
+
+- These XML-style tags clearly delineate the content for each tag, ensuring the exact content is routed to the correct files
+- Each tag must have a matching closing tag containing the exact same tag name
+- Content between the opening and closing tags will be saved verbatim to the corresponding files
+- You can apply multiple different tags to the same content block if it's relevant to multiple categories
+
+Example with XML-style tags:
+
+<LOG_SUMMARY>
+Implemented JWT authentication with refresh token rotation and enhanced security.
+</LOG_SUMMARY>
+
+<LOG_DETAIL>
+The authentication system has been updated to use JWT tokens with the following enhancements:
+
+1. Added refresh token rotation for improved security
+2. Implemented HttpOnly cookies for token storage
+3. Added CSRF protection mechanisms
+4. Created middleware for role-based access control
+
+This approach improves security while maintaining good user experience.
+</LOG_DETAIL>
+
+<MEMORY_UPDATE>
+The authentication system now uses JWT tokens with refresh rotation. Tokens are stored in HttpOnly cookies for XSS protection, and we've implemented CSRF protection measures.
+</MEMORY_UPDATE>
+
+<FEATURE: Authentication>
+Enhanced the authentication system with JWT tokens, refresh token rotation, and improved security measures. The implementation now uses HttpOnly cookies and includes CSRF protection.
+</FEATURE: Authentication>
+
+<MEMORY_SECURITY>
+Authentication tokens are now stored in HttpOnly cookies instead of localStorage to prevent XSS attacks. Added CSRF protection with double-submit pattern.
+</MEMORY_SECURITY>
 
 
 

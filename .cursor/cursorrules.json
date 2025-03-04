@@ -10,69 +10,6 @@
           "rule": "Always include appropriate tags when generating important information. Use exactly one of these tag formats in your responses when appropriate:\n\n1. [LOG_SUMMARY]: Brief, high-level summary of key decisions or insights\n2. [LOG_DETAIL]: Detailed technical discussions or explorations\n3. [MEMORY_UPDATE]: Important facts to remember for future discussions\n4. [REFERENCE: Name]: Technical details that should be saved for reference\n5. [FEATURE_LOG: Name]: Notes about a specific feature's implementation\n6. [DOCUMENTATION: Path]: Documentation for a specific component\n7. [DOC_UPDATE: project/feature/design/data]: Documentation updates for specific areas\n8. Use specific memory markers for specialized updates:\n   - [MEMORY_LEARNINGS]: For insights and lessons learned\n   - [MEMORY_ARCHITECTURE]: For architecture changes\n   - [MEMORY_REQUIREMENTS]: For requirement changes\n   - [MEMORY_ROADMAP]: For roadmap updates\n   - [MEMORY_CONVENTIONS]: For convention changes\n   - [MEMORY_DEPENDENCIES]: For dependency changes\n   - [MEMORY_GLOSSARY]: For terminology updates\n   - [MEMORY_TESTING]: For testing updates\n   - [MEMORY_SECURITY]: For security updates\n   - [MEMORY_PERFORMANCE]: For performance updates\n   - [MEMORY_ACCESSIBILITY]: For accessibility updates\n9. [MULTI_TAG: TAG1, TAG2, ...]: Route the same content to multiple tags at once\n\nExample usage: [LOG_SUMMARY] Today we implemented the authentication system using JWT tokens, which will allow us to securely identify users."
         }
       ]
-    },
-    {
-      "name": "Include structured tags in your answers",
-      "description": "When providing information that should be saved for future reference, include special tags",
-      "prompts": [
-        {
-          "rule": "Always include appropriate tags when generating important information. Use exactly one of these tag formats in your responses when appropriate:\n\n1. [LOG_SUMMARY]: Brief, high-level summary of key decisions or insights\n2. [LOG_DETAIL]: Detailed technical discussions or explorations\n3. [MEMORY_UPDATE]: Important facts to remember for future discussions\n4. [REFERENCE: Name]: Technical details that should be saved for reference\n5. [FEATURE_LOG: Name]: Notes about a specific feature's implementation\n6. [DOCUMENTATION: Path]: Documentation for a specific component\n7. [DOC_UPDATE: project/feature/design/data]: Documentation updates for specific areas\n8. Use specific memory markers for specialized updates:\n   - [MEMORY_LEARNINGS]: For insights and lessons learned\n   - [MEMORY_ARCHITECTURE]: For architecture changes\n   - [MEMORY_REQUIREMENTS]: For requirement changes\n   - [MEMORY_ROADMAP]: For roadmap updates\n   - [MEMORY_CONVENTIONS]: For convention changes\n   - [MEMORY_DEPENDENCIES]: For dependency changes\n   - [MEMORY_GLOSSARY]: For terminology updates\n   - [MEMORY_TESTING]: For testing updates\n   - [MEMORY_SECURITY]: For security updates\n   - [MEMORY_PERFORMANCE]: For performance updates\n   - [MEMORY_ACCESSIBILITY]: For accessibility updates\n9. [MULTI_TAG: TAG1, TAG2, ...]: Route the same content to multiple tags at once\n\nExample usage: [LOG_SUMMARY] Today we implemented the authentication system using JWT tokens, which will allow us to securely identify users."
-        }
-      ]
-    },
-    {
-      "name": "Include structured tags in your answers",
-      "description": "When providing information that should be saved for future reference, include special tags",
-      "prompts": [
-        {
-          "rule": "Always include appropriate tags when generating important information. Use exactly one of these tag formats in your responses when appropriate:\n\n1. [LOG_SUMMARY]: Brief, high-level summary of key decisions or insights\n2. [LOG_DETAIL]: Detailed technical discussions or explorations\n3. [MEMORY_UPDATE]: Important facts to remember for future discussions\n4. [REFERENCE: Name]: Technical details that should be saved for reference\n5. [FEATURE_LOG: Name]: Notes about a specific feature's implementation\n6. [DOCUMENTATION: Path]: Documentation for a specific component\n7. [DOC_UPDATE: project/feature/design/data]: Documentation updates for specific areas\n8. Use specific memory markers for specialized updates:\n   - [MEMORY_LEARNINGS]: For insights and lessons learned\n   - [MEMORY_ARCHITECTURE]: For architecture changes\n   - [MEMORY_REQUIREMENTS]: For requirement changes\n   - [MEMORY_ROADMAP]: For roadmap updates\n   - [MEMORY_CONVENTIONS]: For convention changes\n   - [MEMORY_DEPENDENCIES]: For dependency changes\n   - [MEMORY_GLOSSARY]: For terminology updates\n   - [MEMORY_TESTING]: For testing updates\n   - [MEMORY_SECURITY]: For security updates\n   - [MEMORY_PERFORMANCE]: For performance updates\n   - [MEMORY_ACCESSIBILITY]: For accessibility updates\n9. [MULTI_TAG: TAG1, TAG2, ...]: Route the same content to multiple tags at once\n\nExample usage: [LOG_SUMMARY] Today we implemented the authentication system using JWT tokens, which will allow us to securely identify users."
-        }
-      ]
-    },
-    {
-      "name": "Include structured tags in your answers",
-      "description": "When providing information that should be saved for future reference, include special tags",
-      "prompts": [
-        {
-          "rule": "Always include appropriate tags when generating important information. Use exactly one of these tag formats in your responses when appropriate:\n\n1. [LOG_SUMMARY]: Brief, high-level summary of key decisions or insights\n2. [LOG_DETAIL]: Detailed technical discussions or explorations\n3. [MEMORY_UPDATE]: Important facts to remember for future discussions\n4. [REFERENCE: Name]: Technical details that should be saved for reference\n5. [FEATURE_LOG: Name]: Notes about a specific feature's implementation\n6. [DOCUMENTATION: Path]: Documentation for a specific component\n7. [DOC_UPDATE: project/feature/design/data]: Documentation updates for specific areas\n8. Use specific memory markers for specialized updates:\n   - [MEMORY_LEARNINGS]: For insights and lessons learned\n   - [MEMORY_ARCHITECTURE]: For architecture changes\n   - [MEMORY_REQUIREMENTS]: For requirement changes\n   - [MEMORY_ROADMAP]: For roadmap updates\n   - [MEMORY_CONVENTIONS]: For convention changes\n   - [MEMORY_DEPENDENCIES]: For dependency changes\n   - [MEMORY_GLOSSARY]: For terminology updates\n   - [MEMORY_TESTING]: For testing updates\n   - [MEMORY_SECURITY]: For security updates\n   - [MEMORY_PERFORMANCE]: For performance updates\n   - [MEMORY_ACCESSIBILITY]: For accessibility updates\n9. [MULTI_TAG: TAG1, TAG2, ...]: Route the same content to multiple tags at once\n\nExample usage: [LOG_SUMMARY] Today we implemented the authentication system using JWT tokens, which will allow us to securely identify users."
-        }
-      ]
-    },
-    {
-      "name": "Include structured tags in your answers",
-      "description": "When providing information that should be saved for future reference, include special tags",
-      "prompts": [
-        {
-          "rule": "Always include appropriate tags when generating important information. Use exactly one of these tag formats in your responses when appropriate:\n\n1. [LOG_SUMMARY]: Brief, high-level summary of key decisions or insights\n2. [LOG_DETAIL]: Detailed technical discussions or explorations\n3. [MEMORY_UPDATE]: Important facts to remember for future discussions\n4. [REFERENCE: Name]: Technical details that should be saved for reference\n5. [FEATURE_LOG: Name]: Notes about a specific feature's implementation\n6. [DOCUMENTATION: Path]: Documentation for a specific component\n7. [DOC_UPDATE: project/feature/design/data]: Documentation updates for specific areas\n8. Use specific memory markers for specialized updates:\n   - [MEMORY_LEARNINGS]: For insights and lessons learned\n   - [MEMORY_ARCHITECTURE]: For architecture changes\n   - [MEMORY_REQUIREMENTS]: For requirement changes\n   - [MEMORY_ROADMAP]: For roadmap updates\n   - [MEMORY_CONVENTIONS]: For convention changes\n   - [MEMORY_DEPENDENCIES]: For dependency changes\n   - [MEMORY_GLOSSARY]: For terminology updates\n   - [MEMORY_TESTING]: For testing updates\n   - [MEMORY_SECURITY]: For security updates\n   - [MEMORY_PERFORMANCE]: For performance updates\n   - [MEMORY_ACCESSIBILITY]: For accessibility updates\n9. [MULTI_TAG: TAG1, TAG2, ...]: Route the same content to multiple tags at once\n\nExample usage: [LOG_SUMMARY] Today we implemented the authentication system using JWT tokens, which will allow us to securely identify users."
-        }
-      ]
-    },
-    {
-      "name": "Include structured tags in your answers",
-      "description": "When providing information that should be saved for future reference, include special tags",
-      "prompts": [
-        {
-          "rule": "Always include appropriate tags when generating important information. Use exactly one of these tag formats in your responses when appropriate:\n\n1. [LOG_SUMMARY]: Brief, high-level summary of key decisions or insights\n2. [LOG_DETAIL]: Detailed technical discussions or explorations\n3. [MEMORY_UPDATE]: Important facts to remember for future discussions\n4. [REFERENCE: Name]: Technical details that should be saved for reference\n5. [FEATURE_LOG: Name]: Notes about a specific feature's implementation\n6. [DOCUMENTATION: Path]: Documentation for a specific component\n7. [DOC_UPDATE: project/feature/design/data]: Documentation updates for specific areas\n8. Use specific memory markers for specialized updates:\n   - [MEMORY_LEARNINGS]: For insights and lessons learned\n   - [MEMORY_ARCHITECTURE]: For architecture changes\n   - [MEMORY_REQUIREMENTS]: For requirement changes\n   - [MEMORY_ROADMAP]: For roadmap updates\n   - [MEMORY_CONVENTIONS]: For convention changes\n   - [MEMORY_DEPENDENCIES]: For dependency changes\n   - [MEMORY_GLOSSARY]: For terminology updates\n   - [MEMORY_TESTING]: For testing updates\n   - [MEMORY_SECURITY]: For security updates\n   - [MEMORY_PERFORMANCE]: For performance updates\n   - [MEMORY_ACCESSIBILITY]: For accessibility updates\n9. [MULTI_TAG: TAG1, TAG2, ...]: Route the same content to multiple tags at once\n\nExample usage: [LOG_SUMMARY] Today we implemented the authentication system using JWT tokens, which will allow us to securely identify users."
-        }
-      ]
-    },
-    {
-      "name": "Include structured tags in your answers",
-      "description": "When providing information that should be saved for future reference, include special tags",
-      "prompts": [
-        {
-          "rule": "Always include appropriate tags when generating important information. Use exactly one of these tag formats in your responses when appropriate:\n\n1. [LOG_SUMMARY]: Brief, high-level summary of key decisions or insights\n2. [LOG_DETAIL]: Detailed technical discussions or explorations\n3. [MEMORY_UPDATE]: Important facts to remember for future discussions\n4. [REFERENCE: Name]: Technical details that should be saved for reference\n5. [FEATURE_LOG: Name]: Notes about a specific feature's implementation\n6. [DOCUMENTATION: Path]: Documentation for a specific component\n7. [DOC_UPDATE: project/feature/design/data]: Documentation updates for specific areas\n8. Use specific memory markers for specialized updates:\n   - [MEMORY_LEARNINGS]: For insights and lessons learned\n   - [MEMORY_ARCHITECTURE]: For architecture changes\n   - [MEMORY_REQUIREMENTS]: For requirement changes\n   - [MEMORY_ROADMAP]: For roadmap updates\n   - [MEMORY_CONVENTIONS]: For convention changes\n   - [MEMORY_DEPENDENCIES]: For dependency changes\n   - [MEMORY_GLOSSARY]: For terminology updates\n   - [MEMORY_TESTING]: For testing updates\n   - [MEMORY_SECURITY]: For security updates\n   - [MEMORY_PERFORMANCE]: For performance updates\n   - [MEMORY_ACCESSIBILITY]: For accessibility updates\n9. [MULTI_TAG: TAG1, TAG2, ...]: Route the same content to multiple tags at once\n\nExample usage: [LOG_SUMMARY] Today we implemented the authentication system using JWT tokens, which will allow us to securely identify users."
-        }
-      ]
-    },
-    {
-      "name": "Include structured tags in your answers",
-      "description": "When providing information that should be saved for future reference, include special tags",
-      "prompts": [
-        {
-          "rule": "Always include appropriate tags when generating important information. Use exactly one of these tag formats in your responses when appropriate:\n\n1. [LOG_SUMMARY]: Brief, high-level summary of key decisions or insights\n2. [LOG_DETAIL]: Detailed technical discussions or explorations\n3. [MEMORY_UPDATE]: Important facts to remember for future discussions\n4. [REFERENCE: Name]: Technical details that should be saved for reference\n5. [FEATURE_LOG: Name]: Notes about a specific feature's implementation\n6. [DOCUMENTATION: Path]: Documentation for a specific component\n7. [DOC_UPDATE: project/feature/design/data]: Documentation updates for specific areas\n8. Use specific memory markers for specialized updates:\n   - [MEMORY_LEARNINGS]: For insights and lessons learned\n   - [MEMORY_ARCHITECTURE]: For architecture changes\n   - [MEMORY_REQUIREMENTS]: For requirement changes\n   - [MEMORY_ROADMAP]: For roadmap updates\n   - [MEMORY_CONVENTIONS]: For convention changes\n   - [MEMORY_DEPENDENCIES]: For dependency changes\n   - [MEMORY_GLOSSARY]: For terminology updates\n   - [MEMORY_TESTING]: For testing updates\n   - [MEMORY_SECURITY]: For security updates\n   - [MEMORY_PERFORMANCE]: For performance updates\n   - [MEMORY_ACCESSIBILITY]: For accessibility updates\n9. [MULTI_TAG: TAG1, TAG2, ...]: Route the same content to multiple tags at once\n\nExample usage: [LOG_SUMMARY] Today we implemented the authentication system using JWT tokens, which will allow us to securely identify users."
-        }
-      ]
     }
   ]
 }

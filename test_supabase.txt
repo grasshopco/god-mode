@@ -1,0 +1,1 @@
+[FEATURE_LOG: Supabase] The Supabase feature provides seamless cloud database connectivity for applications. It includes authentication, real-time subscriptions, and automatic API generation.

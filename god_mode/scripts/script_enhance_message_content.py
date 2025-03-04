@@ -259,8 +259,9 @@ def generate_contextual_content(tag_type, filepath, context=None):
         return generate_roadmap_content(filepath, context)
     
     # For feature logs, generate feature-specific content
-    if filepath.name.startswith("memory_log_feature_"):
-        feature_name = filepath.stem.replace("memory_log_feature_", "").replace("_", " ").title()
+    if filepath.name.startswith("memory_feature_"):
+        feature_name = filepath.stem.replace("memory_feature_", "").replace("_", " ").title()
+        file_purpose = f"Feature Log for {feature_name}"
         return generate_feature_log_content(feature_name, filepath, context)
     
     # Generate content based on the specific tag type
@@ -982,6 +983,9 @@ def generate_feature_log_content(feature_name, filepath, context):
 
 def generate_feature_log_update(feature_name):
     """Generate a complete feature log update."""
+    # Check if there's an existing feature log
+    output_file = MEMORY_DIR / f"memory_feature_{feature_name.lower()}.md"
+    
     timestamp = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
     
     updates = [
@@ -1102,12 +1106,12 @@ def enhance_message(message):
     
     # Get a clean message to start with
     enhanced_message = message
-    
+        
     # Keep track of edits (offset tracking for multiple replacements)
     offset = 0
     
     # Process each tag
-    for match in matches:
+        for match in matches:
         tag_full = match.group(1)
         content = match.group(2).strip()
         
@@ -1136,7 +1140,7 @@ def enhance_message(message):
             elif tag_type == "FEATURE_LOG":
                 # Extract feature name if present, default to generic if not
                 feature_name = tag_param or "featurename"
-                output_file = MEMORY_DIR / f"memory_log_feature_{feature_name.lower()}.md"
+                output_file = MEMORY_DIR / f"memory_feature_{feature_name.lower()}.md"
             elif tag_type == "DOC_UPDATE":
                 # Handle documentation updates based on parameter
                 doc_type = tag_param or "project"
@@ -1199,13 +1203,13 @@ def audit_memory_files():
         try:
             # Read the file
             with open(file_path, 'r') as f:
-                content = f.read()
-            
+            content = f.read()
+        
             # Skip if file is completely empty
             if not content.strip():
                 debug_log(f"  Skipping empty file {file_path.name}")
-                continue
-            
+            continue
+        
             # Look for entries that are just timestamps
             entry_pattern = r'(## Current UTC timestamp: \d{4}-\d{2}-\d{2} \d{2}:\d{2} UTC)(\s*\n\s*([^\n#]*))?'
             entries = re.finditer(entry_pattern, content)
@@ -1229,7 +1233,7 @@ def audit_memory_files():
                         tag_type = "LOG_DETAIL"
                     elif "log_feature" in file_path.stem:
                         tag_type = "FEATURE_LOG"
-                    else:
+            else:
                         # Extract the memory type from the filename
                         memory_type = file_path.stem.replace("memory_", "").upper()
                         tag_type = f"MEMORY_{memory_type}"
@@ -1248,7 +1252,7 @@ def audit_memory_files():
                     if entry.group(3):
                         # Replace existing content
                         new_content = new_content[:start_pos] + enhanced_content + new_content[end_pos:]
-                    else:
+            else:
                         # Add new content after timestamp
                         new_content = new_content[:start_pos] + "\n\n" + enhanced_content + new_content[start_pos:]
                     
@@ -1267,10 +1271,7 @@ def audit_memory_files():
                 with open(file_path, 'w') as f:
                     f.write(new_content)
                 
-                files_updated += 1
-            else:
-                debug_log(f"  No empty entries found in {file_path.name}")
-                
+            files_updated += 1
         except Exception as e:
             debug_log(f"Error processing {file_path.name}: {e}")
             traceback.print_exc()
@@ -1290,28 +1291,14 @@ def main():
     args = parser.parse_args()
     
     try:
-        if args.enhance:
+    if args.enhance:
             # Enhance the message
-            enhanced_message = enhance_message(args.enhance)
-            
-            # If router is available, route the enhanced message
-            if ROUTER_AVAILABLE:
-                debug_log("Routing enhanced message...")
-                files_updated = route_message(enhanced_message)
-                
-                # Handle different return types from route_message
-                if isinstance(files_updated, list):
-                    debug_log(f"Enhanced message routed to {len(files_updated)} files: {files_updated}")
-                else:
-                    debug_log(f"Message router completed with result: {files_updated}")
-            else:
-                print(enhanced_message)
-        
+        enhanced_message = enhance_message(args.enhance)
+            print(f"Enhanced message: {enhanced_message[:100]}...")
         elif args.audit:
             # Audit memory files
             files_updated = audit_memory_files()
             print(f"Audit complete. Updated {files_updated} files.")
-        
         elif args.update_roadmap:
             # Update roadmap file
             task_name = args.update_roadmap
@@ -1320,9 +1307,8 @@ def main():
             success = update_roadmap_file(task_name, notes)
             if success:
                 print(f"Successfully marked task '{task_name}' as completed in roadmap.")
-            else:
+        else:
                 print(f"Failed to update roadmap for task '{task_name}'.")
-    
     except Exception as e:
         debug_log(f"Error in main function: {e}")
         traceback.print_exc()

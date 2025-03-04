@@ -1,12 +1,2 @@
-[LOG_SUMMARY]
-
-[LOG_DETAIL]
-
-[MEMORY_ARCHITECTURE]
-
 [FEATURE_LOG: TestFeature]
-
-[MEMORY_LEARNINGS]
-
-[MULTI_TAG: MEMORY_PERFORMANCE, MEMORY_ACCESSIBILITY]
-
+This is a test feature log entry to verify the memory system.

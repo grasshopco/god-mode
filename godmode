@@ -95,7 +95,7 @@ elif [ "$1" == "customize" ]; then
     fi
     
     # Copy this script to the new file
-    cp "$SCRIPT_DIR/god" "$TARGET_FILE"
+    cp "$SCRIPT_DIR/godmode" "$TARGET_FILE"
     
     # Make it executable
     chmod +x "$TARGET_FILE"
