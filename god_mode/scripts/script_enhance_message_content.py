@@ -1298,7 +1298,12 @@ def main():
             if ROUTER_AVAILABLE:
                 debug_log("Routing enhanced message...")
                 files_updated = route_message(enhanced_message)
-                debug_log(f"Enhanced message routed to {len(files_updated)} files: {files_updated}")
+                
+                # Handle different return types from route_message
+                if isinstance(files_updated, list):
+                    debug_log(f"Enhanced message routed to {len(files_updated)} files: {files_updated}")
+                else:
+                    debug_log(f"Message router completed with result: {files_updated}")
             else:
                 print(enhanced_message)
         
