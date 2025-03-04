@@ -22,7 +22,7 @@ This document maps the entire project codebase, providing descriptions of direct
     * 📄 `package_version_check.mdc` - File (0.0KB, 0 lines)
     * 📄 `separation.mdc` - File (1.1KB, 0 lines) - Separation Rules
     * 📄 `test_rules.mdc` - File (2.6KB, 0 lines) - Testing Context
-  * 📄 `.cursorrules` - File (10.3KB, 0 lines) - Cursor IDE "God Mode" Configuration
+  * 📄 `.cursorrules` - File (12.5KB, 0 lines) - Cursor IDE "God Mode" Configuration
   * ⚙️ `cursor.json` - File (0.1KB, 4 lines)
   * ⚙️ `cursorrules.json` - File (1.8KB, 15 lines)
 * **📁 app/** - Directory
@@ -266,4 +266,4 @@ This document maps the entire project codebase, providing descriptions of direct
 
 ---
 
-*This document was automatically generated on 2025-03-04 17:35:46. The AI assistant maintains it to ensure it accurately reflects the current state of the codebase.*
+*This document was automatically generated on 2025-03-04 17:36:24. The AI assistant maintains it to ensure it accurately reflects the current state of the codebase.*

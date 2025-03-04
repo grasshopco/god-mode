@@ -11990,3 +11990,10335 @@ on their own lines, followed by the relevant content. This markup enables automa
 documentation and persistent memory across sessions.
 
 Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:45.051074+00:00
+Filename format: 20250304_233745
+Log format: 2025-03-04 23:37:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:45.051293+00:00
+Filename format: 20250304_233745
+Log format: 2025-03-04 23:37:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:45.051486+00:00
+Filename format: 20250304_233745
+Log format: 2025-03-04 23:37:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:45.140522+00:00
+Filename format: 20250304_233745
+Log format: 2025-03-04 23:37:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:45.141340+00:00
+Filename format: 20250304_233745
+Log format: 2025-03-04 23:37:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:45.142241+00:00
+Filename format: 20250304_233745
+Log format: 2025-03-04 23:37:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:45.227092+00:00
+Filename format: 20250304_233745
+Log format: 2025-03-04 23:37:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:45.227722+00:00
+Filename format: 20250304_233745
+Log format: 2025-03-04 23:37:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:45.227762+00:00
+Filename format: 20250304_233745
+Log format: 2025-03-04 23:37:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:45.273246+00:00
+Filename format: 20250304_233745
+Log format: 2025-03-04 23:37:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:45.302398+00:00
+Filename format: 20250304_233745
+Log format: 2025-03-04 23:37:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:45.360271+00:00
+Filename format: 20250304_233745
+Log format: 2025-03-04 23:37:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:45.381754+00:00
+Filename format: 20250304_233745
+Log format: 2025-03-04 23:37:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:45.448509+00:00
+Filename format: 20250304_233745
+Log format: 2025-03-04 23:37:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:45.473076+00:00
+Filename format: 20250304_233745
+Log format: 2025-03-04 23:37:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:46.038897
+Filename format: 20250304_233746
+Log format: 2025-03-04 23:37:46 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:46.049253
+Filename format: 20250304_233746
+Log format: 2025-03-04 23:37:46 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:46.059314
+Filename format: 20250304_233746
+Log format: 2025-03-04 23:37:46 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:48.239485
+Filename format: 20250304_233748
+Log format: 2025-03-04 23:37:48 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:48.258068
+Filename format: 20250304_233748
+Log format: 2025-03-04 23:37:48 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:48.272736
+Filename format: 20250304_233748
+Log format: 2025-03-04 23:37:48 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:50.425878
+Filename format: 20250304_233750
+Log format: 2025-03-04 23:37:50 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:50.444399
+Filename format: 20250304_233750
+Log format: 2025-03-04 23:37:50 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:50.458040
+Filename format: 20250304_233750
+Log format: 2025-03-04 23:37:50 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:52.610466
+Filename format: 20250304_233752
+Log format: 2025-03-04 23:37:52 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:52.629030
+Filename format: 20250304_233752
+Log format: 2025-03-04 23:37:52 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:52.642898
+Filename format: 20250304_233752
+Log format: 2025-03-04 23:37:52 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:54.793183
+Filename format: 20250304_233754
+Log format: 2025-03-04 23:37:54 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:54.811203
+Filename format: 20250304_233754
+Log format: 2025-03-04 23:37:54 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:54.824638
+Filename format: 20250304_233754
+Log format: 2025-03-04 23:37:54 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:56.973130
+Filename format: 20250304_233756
+Log format: 2025-03-04 23:37:56 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:56.990861
+Filename format: 20250304_233756
+Log format: 2025-03-04 23:37:56 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:57.004131
+Filename format: 20250304_233757
+Log format: 2025-03-04 23:37:57 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:59.153177
+Filename format: 20250304_233759
+Log format: 2025-03-04 23:37:59 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:59.173033
+Filename format: 20250304_233759
+Log format: 2025-03-04 23:37:59 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:37 UTC
+ISO format: 2025-03-04T23:37:59.187612
+Filename format: 20250304_233759
+Log format: 2025-03-04 23:37:59 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:01.340169
+Filename format: 20250304_233801
+Log format: 2025-03-04 23:38:01 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:01.359541
+Filename format: 20250304_233801
+Log format: 2025-03-04 23:38:01 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:01.374336
+Filename format: 20250304_233801
+Log format: 2025-03-04 23:38:01 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:03.526828
+Filename format: 20250304_233803
+Log format: 2025-03-04 23:38:03 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:03.545201
+Filename format: 20250304_233803
+Log format: 2025-03-04 23:38:03 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:03.558720
+Filename format: 20250304_233803
+Log format: 2025-03-04 23:38:03 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:05.709674
+Filename format: 20250304_233805
+Log format: 2025-03-04 23:38:05 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:05.727954
+Filename format: 20250304_233805
+Log format: 2025-03-04 23:38:05 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:05.742118
+Filename format: 20250304_233805
+Log format: 2025-03-04 23:38:05 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:07.887468
+Filename format: 20250304_233807
+Log format: 2025-03-04 23:38:07 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:07.896991
+Filename format: 20250304_233807
+Log format: 2025-03-04 23:38:07 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:07.906634
+Filename format: 20250304_233807
+Log format: 2025-03-04 23:38:07 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:10.062982
+Filename format: 20250304_233810
+Log format: 2025-03-04 23:38:10 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:10.082117
+Filename format: 20250304_233810
+Log format: 2025-03-04 23:38:10 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:10.096025
+Filename format: 20250304_233810
+Log format: 2025-03-04 23:38:10 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:12.249264
+Filename format: 20250304_233812
+Log format: 2025-03-04 23:38:12 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:12.267927
+Filename format: 20250304_233812
+Log format: 2025-03-04 23:38:12 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:12.281577
+Filename format: 20250304_233812
+Log format: 2025-03-04 23:38:12 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:14.436821
+Filename format: 20250304_233814
+Log format: 2025-03-04 23:38:14 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:14.456195
+Filename format: 20250304_233814
+Log format: 2025-03-04 23:38:14 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:14.470044
+Filename format: 20250304_233814
+Log format: 2025-03-04 23:38:14 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:16.622955
+Filename format: 20250304_233816
+Log format: 2025-03-04 23:38:16 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:16.643280
+Filename format: 20250304_233816
+Log format: 2025-03-04 23:38:16 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:16.658063
+Filename format: 20250304_233816
+Log format: 2025-03-04 23:38:16 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:18.811028
+Filename format: 20250304_233818
+Log format: 2025-03-04 23:38:18 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:18.830853
+Filename format: 20250304_233818
+Log format: 2025-03-04 23:38:18 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:18.845737
+Filename format: 20250304_233818
+Log format: 2025-03-04 23:38:18 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:21.009576
+Filename format: 20250304_233821
+Log format: 2025-03-04 23:38:21 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:21.019529
+Filename format: 20250304_233821
+Log format: 2025-03-04 23:38:21 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:21.029522
+Filename format: 20250304_233821
+Log format: 2025-03-04 23:38:21 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:23.187283
+Filename format: 20250304_233823
+Log format: 2025-03-04 23:38:23 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:23.198321
+Filename format: 20250304_233823
+Log format: 2025-03-04 23:38:23 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:23.209123
+Filename format: 20250304_233823
+Log format: 2025-03-04 23:38:23 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:25.356586
+Filename format: 20250304_233825
+Log format: 2025-03-04 23:38:25 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:25.365884
+Filename format: 20250304_233825
+Log format: 2025-03-04 23:38:25 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:25.376038
+Filename format: 20250304_233825
+Log format: 2025-03-04 23:38:25 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:27.519488
+Filename format: 20250304_233827
+Log format: 2025-03-04 23:38:27 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:27.529183
+Filename format: 20250304_233827
+Log format: 2025-03-04 23:38:27 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:27.539177
+Filename format: 20250304_233827
+Log format: 2025-03-04 23:38:27 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:29.679577
+Filename format: 20250304_233829
+Log format: 2025-03-04 23:38:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:29.689750
+Filename format: 20250304_233829
+Log format: 2025-03-04 23:38:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:29.700113
+Filename format: 20250304_233829
+Log format: 2025-03-04 23:38:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:31.846366
+Filename format: 20250304_233831
+Log format: 2025-03-04 23:38:31 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:31.856632
+Filename format: 20250304_233831
+Log format: 2025-03-04 23:38:31 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:31.866558
+Filename format: 20250304_233831
+Log format: 2025-03-04 23:38:31 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:34.020377
+Filename format: 20250304_233834
+Log format: 2025-03-04 23:38:34 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:34.037935
+Filename format: 20250304_233834
+Log format: 2025-03-04 23:38:34 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:34.052451
+Filename format: 20250304_233834
+Log format: 2025-03-04 23:38:34 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:36.199683
+Filename format: 20250304_233836
+Log format: 2025-03-04 23:38:36 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:36.210007
+Filename format: 20250304_233836
+Log format: 2025-03-04 23:38:36 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:36.220430
+Filename format: 20250304_233836
+Log format: 2025-03-04 23:38:36 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:38.372179
+Filename format: 20250304_233838
+Log format: 2025-03-04 23:38:38 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:38.390732
+Filename format: 20250304_233838
+Log format: 2025-03-04 23:38:38 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:38.404975
+Filename format: 20250304_233838
+Log format: 2025-03-04 23:38:38 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:40.553964
+Filename format: 20250304_233840
+Log format: 2025-03-04 23:38:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:40.564076
+Filename format: 20250304_233840
+Log format: 2025-03-04 23:38:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:40.574181
+Filename format: 20250304_233840
+Log format: 2025-03-04 23:38:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:42.718939
+Filename format: 20250304_233842
+Log format: 2025-03-04 23:38:42 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:42.729310
+Filename format: 20250304_233842
+Log format: 2025-03-04 23:38:42 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:42.740271
+Filename format: 20250304_233842
+Log format: 2025-03-04 23:38:42 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:44.890877
+Filename format: 20250304_233844
+Log format: 2025-03-04 23:38:44 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:44.900788
+Filename format: 20250304_233844
+Log format: 2025-03-04 23:38:44 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:44.910809
+Filename format: 20250304_233844
+Log format: 2025-03-04 23:38:44 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:47.056055
+Filename format: 20250304_233847
+Log format: 2025-03-04 23:38:47 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:47.065818
+Filename format: 20250304_233847
+Log format: 2025-03-04 23:38:47 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:47.075716
+Filename format: 20250304_233847
+Log format: 2025-03-04 23:38:47 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:49.228722
+Filename format: 20250304_233849
+Log format: 2025-03-04 23:38:49 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:49.239205
+Filename format: 20250304_233849
+Log format: 2025-03-04 23:38:49 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:49.249769
+Filename format: 20250304_233849
+Log format: 2025-03-04 23:38:49 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:51.554423
+Filename format: 20250304_233851
+Log format: 2025-03-04 23:38:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:51.564694
+Filename format: 20250304_233851
+Log format: 2025-03-04 23:38:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:51.574999
+Filename format: 20250304_233851
+Log format: 2025-03-04 23:38:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:53.724771
+Filename format: 20250304_233853
+Log format: 2025-03-04 23:38:53 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:53.740078
+Filename format: 20250304_233853
+Log format: 2025-03-04 23:38:53 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:53.752604
+Filename format: 20250304_233853
+Log format: 2025-03-04 23:38:53 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:55.899989
+Filename format: 20250304_233855
+Log format: 2025-03-04 23:38:55 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:55.921775
+Filename format: 20250304_233855
+Log format: 2025-03-04 23:38:55 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:55.933082
+Filename format: 20250304_233855
+Log format: 2025-03-04 23:38:55 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:58.081775
+Filename format: 20250304_233858
+Log format: 2025-03-04 23:38:58 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:58.097760
+Filename format: 20250304_233858
+Log format: 2025-03-04 23:38:58 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:38 UTC
+ISO format: 2025-03-04T23:38:58.118524
+Filename format: 20250304_233858
+Log format: 2025-03-04 23:38:58 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:00.267048
+Filename format: 20250304_233900
+Log format: 2025-03-04 23:39:00 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:00.278072
+Filename format: 20250304_233900
+Log format: 2025-03-04 23:39:00 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:00.288686
+Filename format: 20250304_233900
+Log format: 2025-03-04 23:39:00 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:02.438886
+Filename format: 20250304_233902
+Log format: 2025-03-04 23:39:02 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:02.457270
+Filename format: 20250304_233902
+Log format: 2025-03-04 23:39:02 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:02.471063
+Filename format: 20250304_233902
+Log format: 2025-03-04 23:39:02 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:04.630112
+Filename format: 20250304_233904
+Log format: 2025-03-04 23:39:04 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:04.649212
+Filename format: 20250304_233904
+Log format: 2025-03-04 23:39:04 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:04.663626
+Filename format: 20250304_233904
+Log format: 2025-03-04 23:39:04 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:06.820678
+Filename format: 20250304_233906
+Log format: 2025-03-04 23:39:06 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:06.834511
+Filename format: 20250304_233906
+Log format: 2025-03-04 23:39:06 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:06.846305
+Filename format: 20250304_233906
+Log format: 2025-03-04 23:39:06 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:08.997768
+Filename format: 20250304_233908
+Log format: 2025-03-04 23:39:08 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:09.009437
+Filename format: 20250304_233909
+Log format: 2025-03-04 23:39:09 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:09.020544
+Filename format: 20250304_233909
+Log format: 2025-03-04 23:39:09 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:11.175806
+Filename format: 20250304_233911
+Log format: 2025-03-04 23:39:11 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:11.194910
+Filename format: 20250304_233911
+Log format: 2025-03-04 23:39:11 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:11.209443
+Filename format: 20250304_233911
+Log format: 2025-03-04 23:39:11 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:13.363766
+Filename format: 20250304_233913
+Log format: 2025-03-04 23:39:13 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:13.375682
+Filename format: 20250304_233913
+Log format: 2025-03-04 23:39:13 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:13.387146
+Filename format: 20250304_233913
+Log format: 2025-03-04 23:39:13 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:15.540343
+Filename format: 20250304_233915
+Log format: 2025-03-04 23:39:15 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:15.559696
+Filename format: 20250304_233915
+Log format: 2025-03-04 23:39:15 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:15.573488
+Filename format: 20250304_233915
+Log format: 2025-03-04 23:39:15 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:17.729671
+Filename format: 20250304_233917
+Log format: 2025-03-04 23:39:17 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:17.748914
+Filename format: 20250304_233917
+Log format: 2025-03-04 23:39:17 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:17.764338
+Filename format: 20250304_233917
+Log format: 2025-03-04 23:39:17 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:19.918765
+Filename format: 20250304_233919
+Log format: 2025-03-04 23:39:19 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:19.933039
+Filename format: 20250304_233919
+Log format: 2025-03-04 23:39:19 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:19.945391
+Filename format: 20250304_233919
+Log format: 2025-03-04 23:39:19 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:22.096207
+Filename format: 20250304_233922
+Log format: 2025-03-04 23:39:22 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:22.110309
+Filename format: 20250304_233922
+Log format: 2025-03-04 23:39:22 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:22.123093
+Filename format: 20250304_233922
+Log format: 2025-03-04 23:39:22 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:24.274657
+Filename format: 20250304_233924
+Log format: 2025-03-04 23:39:24 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:24.288848
+Filename format: 20250304_233924
+Log format: 2025-03-04 23:39:24 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:24.303988
+Filename format: 20250304_233924
+Log format: 2025-03-04 23:39:24 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:26.465211
+Filename format: 20250304_233926
+Log format: 2025-03-04 23:39:26 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:26.484411
+Filename format: 20250304_233926
+Log format: 2025-03-04 23:39:26 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:26.498540
+Filename format: 20250304_233926
+Log format: 2025-03-04 23:39:26 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:28.647542
+Filename format: 20250304_233928
+Log format: 2025-03-04 23:39:28 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:28.672552
+Filename format: 20250304_233928
+Log format: 2025-03-04 23:39:28 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:28.687678
+Filename format: 20250304_233928
+Log format: 2025-03-04 23:39:28 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:30.891737
+Filename format: 20250304_233930
+Log format: 2025-03-04 23:39:30 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:30.901855
+Filename format: 20250304_233930
+Log format: 2025-03-04 23:39:30 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:30.911979
+Filename format: 20250304_233930
+Log format: 2025-03-04 23:39:30 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:33.062450
+Filename format: 20250304_233933
+Log format: 2025-03-04 23:39:33 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:33.073112
+Filename format: 20250304_233933
+Log format: 2025-03-04 23:39:33 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:33.085685
+Filename format: 20250304_233933
+Log format: 2025-03-04 23:39:33 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:35.253633
+Filename format: 20250304_233935
+Log format: 2025-03-04 23:39:35 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:35.264125
+Filename format: 20250304_233935
+Log format: 2025-03-04 23:39:35 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:35.276123
+Filename format: 20250304_233935
+Log format: 2025-03-04 23:39:35 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:37.431131
+Filename format: 20250304_233937
+Log format: 2025-03-04 23:39:37 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:37.442386
+Filename format: 20250304_233937
+Log format: 2025-03-04 23:39:37 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:37.452359
+Filename format: 20250304_233937
+Log format: 2025-03-04 23:39:37 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:39.607234
+Filename format: 20250304_233939
+Log format: 2025-03-04 23:39:39 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:39.617711
+Filename format: 20250304_233939
+Log format: 2025-03-04 23:39:39 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:39.627915
+Filename format: 20250304_233939
+Log format: 2025-03-04 23:39:39 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:41.777192
+Filename format: 20250304_233941
+Log format: 2025-03-04 23:39:41 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:41.789816
+Filename format: 20250304_233941
+Log format: 2025-03-04 23:39:41 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:41.801606
+Filename format: 20250304_233941
+Log format: 2025-03-04 23:39:41 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:43.957066
+Filename format: 20250304_233943
+Log format: 2025-03-04 23:39:43 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:43.975887
+Filename format: 20250304_233943
+Log format: 2025-03-04 23:39:43 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:43.990190
+Filename format: 20250304_233943
+Log format: 2025-03-04 23:39:43 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:46.150162
+Filename format: 20250304_233946
+Log format: 2025-03-04 23:39:46 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:46.168804
+Filename format: 20250304_233946
+Log format: 2025-03-04 23:39:46 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:46.183228
+Filename format: 20250304_233946
+Log format: 2025-03-04 23:39:46 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:48.337108
+Filename format: 20250304_233948
+Log format: 2025-03-04 23:39:48 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:48.347718
+Filename format: 20250304_233948
+Log format: 2025-03-04 23:39:48 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:48.359310
+Filename format: 20250304_233948
+Log format: 2025-03-04 23:39:48 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:50.509947
+Filename format: 20250304_233950
+Log format: 2025-03-04 23:39:50 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:50.529381
+Filename format: 20250304_233950
+Log format: 2025-03-04 23:39:50 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:50.544073
+Filename format: 20250304_233950
+Log format: 2025-03-04 23:39:50 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:52.700487
+Filename format: 20250304_233952
+Log format: 2025-03-04 23:39:52 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:52.718516
+Filename format: 20250304_233952
+Log format: 2025-03-04 23:39:52 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:52.732364
+Filename format: 20250304_233952
+Log format: 2025-03-04 23:39:52 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:54.889341
+Filename format: 20250304_233954
+Log format: 2025-03-04 23:39:54 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:54.901423
+Filename format: 20250304_233954
+Log format: 2025-03-04 23:39:54 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:54.914331
+Filename format: 20250304_233954
+Log format: 2025-03-04 23:39:54 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:57.074625
+Filename format: 20250304_233957
+Log format: 2025-03-04 23:39:57 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:57.085800
+Filename format: 20250304_233957
+Log format: 2025-03-04 23:39:57 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:57.096789
+Filename format: 20250304_233957
+Log format: 2025-03-04 23:39:57 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:59.260693
+Filename format: 20250304_233959
+Log format: 2025-03-04 23:39:59 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:59.281449
+Filename format: 20250304_233959
+Log format: 2025-03-04 23:39:59 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:39 UTC
+ISO format: 2025-03-04T23:39:59.297574
+Filename format: 20250304_233959
+Log format: 2025-03-04 23:39:59 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:01.481590
+Filename format: 20250304_234001
+Log format: 2025-03-04 23:40:01 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:01.502564
+Filename format: 20250304_234001
+Log format: 2025-03-04 23:40:01 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:01.517977
+Filename format: 20250304_234001
+Log format: 2025-03-04 23:40:01 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:03.674400
+Filename format: 20250304_234003
+Log format: 2025-03-04 23:40:03 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:03.690576
+Filename format: 20250304_234003
+Log format: 2025-03-04 23:40:03 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:03.703480
+Filename format: 20250304_234003
+Log format: 2025-03-04 23:40:03 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:05.858039
+Filename format: 20250304_234005
+Log format: 2025-03-04 23:40:05 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:05.875678
+Filename format: 20250304_234005
+Log format: 2025-03-04 23:40:05 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:05.889896
+Filename format: 20250304_234005
+Log format: 2025-03-04 23:40:05 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:08.050954
+Filename format: 20250304_234008
+Log format: 2025-03-04 23:40:08 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:08.071263
+Filename format: 20250304_234008
+Log format: 2025-03-04 23:40:08 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:08.086959
+Filename format: 20250304_234008
+Log format: 2025-03-04 23:40:08 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:10.242470
+Filename format: 20250304_234010
+Log format: 2025-03-04 23:40:10 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:10.257351
+Filename format: 20250304_234010
+Log format: 2025-03-04 23:40:10 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:10.270322
+Filename format: 20250304_234010
+Log format: 2025-03-04 23:40:10 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:12.429288
+Filename format: 20250304_234012
+Log format: 2025-03-04 23:40:12 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:12.448704
+Filename format: 20250304_234012
+Log format: 2025-03-04 23:40:12 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:12.463029
+Filename format: 20250304_234012
+Log format: 2025-03-04 23:40:12 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:14.623121
+Filename format: 20250304_234014
+Log format: 2025-03-04 23:40:14 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:14.642424
+Filename format: 20250304_234014
+Log format: 2025-03-04 23:40:14 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:14.655859
+Filename format: 20250304_234014
+Log format: 2025-03-04 23:40:14 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:16.807935
+Filename format: 20250304_234016
+Log format: 2025-03-04 23:40:16 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:16.819641
+Filename format: 20250304_234016
+Log format: 2025-03-04 23:40:16 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:16.830951
+Filename format: 20250304_234016
+Log format: 2025-03-04 23:40:16 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:18.992383
+Filename format: 20250304_234018
+Log format: 2025-03-04 23:40:18 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:19.012408
+Filename format: 20250304_234019
+Log format: 2025-03-04 23:40:19 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:19.028004
+Filename format: 20250304_234019
+Log format: 2025-03-04 23:40:19 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:21.192929
+Filename format: 20250304_234021
+Log format: 2025-03-04 23:40:21 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:21.213492
+Filename format: 20250304_234021
+Log format: 2025-03-04 23:40:21 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:21.228558
+Filename format: 20250304_234021
+Log format: 2025-03-04 23:40:21 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:23.380841
+Filename format: 20250304_234023
+Log format: 2025-03-04 23:40:23 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:23.398008
+Filename format: 20250304_234023
+Log format: 2025-03-04 23:40:23 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:23.411300
+Filename format: 20250304_234023
+Log format: 2025-03-04 23:40:23 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:25.562627
+Filename format: 20250304_234025
+Log format: 2025-03-04 23:40:25 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:25.578884
+Filename format: 20250304_234025
+Log format: 2025-03-04 23:40:25 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:25.594468
+Filename format: 20250304_234025
+Log format: 2025-03-04 23:40:25 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:27.743379
+Filename format: 20250304_234027
+Log format: 2025-03-04 23:40:27 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:27.755878
+Filename format: 20250304_234027
+Log format: 2025-03-04 23:40:27 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:27.767127
+Filename format: 20250304_234027
+Log format: 2025-03-04 23:40:27 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:29.917233
+Filename format: 20250304_234029
+Log format: 2025-03-04 23:40:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:29.931986
+Filename format: 20250304_234029
+Log format: 2025-03-04 23:40:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:29.945179
+Filename format: 20250304_234029
+Log format: 2025-03-04 23:40:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:32.094401
+Filename format: 20250304_234032
+Log format: 2025-03-04 23:40:32 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:32.105293
+Filename format: 20250304_234032
+Log format: 2025-03-04 23:40:32 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:32.116529
+Filename format: 20250304_234032
+Log format: 2025-03-04 23:40:32 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:34.282304
+Filename format: 20250304_234034
+Log format: 2025-03-04 23:40:34 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:34.293537
+Filename format: 20250304_234034
+Log format: 2025-03-04 23:40:34 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:34.304788
+Filename format: 20250304_234034
+Log format: 2025-03-04 23:40:34 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:36.462289
+Filename format: 20250304_234036
+Log format: 2025-03-04 23:40:36 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:36.473400
+Filename format: 20250304_234036
+Log format: 2025-03-04 23:40:36 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:36.484099
+Filename format: 20250304_234036
+Log format: 2025-03-04 23:40:36 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:38.645588
+Filename format: 20250304_234038
+Log format: 2025-03-04 23:40:38 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:38.664957
+Filename format: 20250304_234038
+Log format: 2025-03-04 23:40:38 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:38.679424
+Filename format: 20250304_234038
+Log format: 2025-03-04 23:40:38 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:40.846846
+Filename format: 20250304_234040
+Log format: 2025-03-04 23:40:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:40.866267
+Filename format: 20250304_234040
+Log format: 2025-03-04 23:40:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:40.880835
+Filename format: 20250304_234040
+Log format: 2025-03-04 23:40:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:43.041814
+Filename format: 20250304_234043
+Log format: 2025-03-04 23:40:43 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:43.054653
+Filename format: 20250304_234043
+Log format: 2025-03-04 23:40:43 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:43.066774
+Filename format: 20250304_234043
+Log format: 2025-03-04 23:40:43 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:45.223126
+Filename format: 20250304_234045
+Log format: 2025-03-04 23:40:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:45.243985
+Filename format: 20250304_234045
+Log format: 2025-03-04 23:40:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:45.259203
+Filename format: 20250304_234045
+Log format: 2025-03-04 23:40:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:47.414590
+Filename format: 20250304_234047
+Log format: 2025-03-04 23:40:47 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:47.425447
+Filename format: 20250304_234047
+Log format: 2025-03-04 23:40:47 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:47.436389
+Filename format: 20250304_234047
+Log format: 2025-03-04 23:40:47 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:49.589700
+Filename format: 20250304_234049
+Log format: 2025-03-04 23:40:49 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:49.600751
+Filename format: 20250304_234049
+Log format: 2025-03-04 23:40:49 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:49.612346
+Filename format: 20250304_234049
+Log format: 2025-03-04 23:40:49 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:51.769175
+Filename format: 20250304_234051
+Log format: 2025-03-04 23:40:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:51.780674
+Filename format: 20250304_234051
+Log format: 2025-03-04 23:40:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:51.791637
+Filename format: 20250304_234051
+Log format: 2025-03-04 23:40:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:53.947702
+Filename format: 20250304_234053
+Log format: 2025-03-04 23:40:53 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:53.958281
+Filename format: 20250304_234053
+Log format: 2025-03-04 23:40:53 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:53.968865
+Filename format: 20250304_234053
+Log format: 2025-03-04 23:40:53 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:56.125504
+Filename format: 20250304_234056
+Log format: 2025-03-04 23:40:56 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:56.143636
+Filename format: 20250304_234056
+Log format: 2025-03-04 23:40:56 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:56.157150
+Filename format: 20250304_234056
+Log format: 2025-03-04 23:40:56 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:58.320225
+Filename format: 20250304_234058
+Log format: 2025-03-04 23:40:58 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:58.340124
+Filename format: 20250304_234058
+Log format: 2025-03-04 23:40:58 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:40 UTC
+ISO format: 2025-03-04T23:40:58.354813
+Filename format: 20250304_234058
+Log format: 2025-03-04 23:40:58 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:00.513530
+Filename format: 20250304_234100
+Log format: 2025-03-04 23:41:00 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:00.532444
+Filename format: 20250304_234100
+Log format: 2025-03-04 23:41:00 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:00.546927
+Filename format: 20250304_234100
+Log format: 2025-03-04 23:41:00 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:02.709143
+Filename format: 20250304_234102
+Log format: 2025-03-04 23:41:02 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:02.729542
+Filename format: 20250304_234102
+Log format: 2025-03-04 23:41:02 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:02.744513
+Filename format: 20250304_234102
+Log format: 2025-03-04 23:41:02 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:04.900019
+Filename format: 20250304_234104
+Log format: 2025-03-04 23:41:04 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:04.916259
+Filename format: 20250304_234104
+Log format: 2025-03-04 23:41:04 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:04.930486
+Filename format: 20250304_234104
+Log format: 2025-03-04 23:41:04 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:07.088984
+Filename format: 20250304_234107
+Log format: 2025-03-04 23:41:07 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:07.108586
+Filename format: 20250304_234107
+Log format: 2025-03-04 23:41:07 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:07.123957
+Filename format: 20250304_234107
+Log format: 2025-03-04 23:41:07 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:09.285394
+Filename format: 20250304_234109
+Log format: 2025-03-04 23:41:09 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:09.302982
+Filename format: 20250304_234109
+Log format: 2025-03-04 23:41:09 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:09.319772
+Filename format: 20250304_234109
+Log format: 2025-03-04 23:41:09 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:11.488753
+Filename format: 20250304_234111
+Log format: 2025-03-04 23:41:11 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:11.509067
+Filename format: 20250304_234111
+Log format: 2025-03-04 23:41:11 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:11.523940
+Filename format: 20250304_234111
+Log format: 2025-03-04 23:41:11 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:13.682816
+Filename format: 20250304_234113
+Log format: 2025-03-04 23:41:13 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:13.700114
+Filename format: 20250304_234113
+Log format: 2025-03-04 23:41:13 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:13.714682
+Filename format: 20250304_234113
+Log format: 2025-03-04 23:41:13 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:15.870330
+Filename format: 20250304_234115
+Log format: 2025-03-04 23:41:15 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:15.888546
+Filename format: 20250304_234115
+Log format: 2025-03-04 23:41:15 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:15.901842
+Filename format: 20250304_234115
+Log format: 2025-03-04 23:41:15 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:18.061100
+Filename format: 20250304_234118
+Log format: 2025-03-04 23:41:18 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:18.079514
+Filename format: 20250304_234118
+Log format: 2025-03-04 23:41:18 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:18.095667
+Filename format: 20250304_234118
+Log format: 2025-03-04 23:41:18 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:20.261177
+Filename format: 20250304_234120
+Log format: 2025-03-04 23:41:20 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:20.281393
+Filename format: 20250304_234120
+Log format: 2025-03-04 23:41:20 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:20.297828
+Filename format: 20250304_234120
+Log format: 2025-03-04 23:41:20 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:22.458639
+Filename format: 20250304_234122
+Log format: 2025-03-04 23:41:22 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:22.479043
+Filename format: 20250304_234122
+Log format: 2025-03-04 23:41:22 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:22.495776
+Filename format: 20250304_234122
+Log format: 2025-03-04 23:41:22 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:24.657074
+Filename format: 20250304_234124
+Log format: 2025-03-04 23:41:24 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:24.673045
+Filename format: 20250304_234124
+Log format: 2025-03-04 23:41:24 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:24.686948
+Filename format: 20250304_234124
+Log format: 2025-03-04 23:41:24 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:26.845777
+Filename format: 20250304_234126
+Log format: 2025-03-04 23:41:26 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:26.862407
+Filename format: 20250304_234126
+Log format: 2025-03-04 23:41:26 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:26.877084
+Filename format: 20250304_234126
+Log format: 2025-03-04 23:41:26 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:29.038998
+Filename format: 20250304_234129
+Log format: 2025-03-04 23:41:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:29.058884
+Filename format: 20250304_234129
+Log format: 2025-03-04 23:41:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:29.073719
+Filename format: 20250304_234129
+Log format: 2025-03-04 23:41:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:31.235917
+Filename format: 20250304_234131
+Log format: 2025-03-04 23:41:31 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:31.253601
+Filename format: 20250304_234131
+Log format: 2025-03-04 23:41:31 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:31.267922
+Filename format: 20250304_234131
+Log format: 2025-03-04 23:41:31 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:33.431335
+Filename format: 20250304_234133
+Log format: 2025-03-04 23:41:33 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:33.450140
+Filename format: 20250304_234133
+Log format: 2025-03-04 23:41:33 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:33.465323
+Filename format: 20250304_234133
+Log format: 2025-03-04 23:41:33 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:35.622599
+Filename format: 20250304_234135
+Log format: 2025-03-04 23:41:35 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:35.633726
+Filename format: 20250304_234135
+Log format: 2025-03-04 23:41:35 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:35.645106
+Filename format: 20250304_234135
+Log format: 2025-03-04 23:41:35 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:37.823991
+Filename format: 20250304_234137
+Log format: 2025-03-04 23:41:37 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:37.835131
+Filename format: 20250304_234137
+Log format: 2025-03-04 23:41:37 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:37.846704
+Filename format: 20250304_234137
+Log format: 2025-03-04 23:41:37 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:40.037321
+Filename format: 20250304_234140
+Log format: 2025-03-04 23:41:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:40.048429
+Filename format: 20250304_234140
+Log format: 2025-03-04 23:41:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:40.062712
+Filename format: 20250304_234140
+Log format: 2025-03-04 23:41:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:42.225467
+Filename format: 20250304_234142
+Log format: 2025-03-04 23:41:42 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:42.236680
+Filename format: 20250304_234142
+Log format: 2025-03-04 23:41:42 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:42.253282
+Filename format: 20250304_234142
+Log format: 2025-03-04 23:41:42 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:44.421888
+Filename format: 20250304_234144
+Log format: 2025-03-04 23:41:44 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:44.433589
+Filename format: 20250304_234144
+Log format: 2025-03-04 23:41:44 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:44.445225
+Filename format: 20250304_234144
+Log format: 2025-03-04 23:41:44 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:46.610483
+Filename format: 20250304_234146
+Log format: 2025-03-04 23:41:46 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:46.621999
+Filename format: 20250304_234146
+Log format: 2025-03-04 23:41:46 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:46.633408
+Filename format: 20250304_234146
+Log format: 2025-03-04 23:41:46 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:48.804144
+Filename format: 20250304_234148
+Log format: 2025-03-04 23:41:48 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:48.825325
+Filename format: 20250304_234148
+Log format: 2025-03-04 23:41:48 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:48.841846
+Filename format: 20250304_234148
+Log format: 2025-03-04 23:41:48 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:51.002978
+Filename format: 20250304_234151
+Log format: 2025-03-04 23:41:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:51.016162
+Filename format: 20250304_234151
+Log format: 2025-03-04 23:41:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:51.027948
+Filename format: 20250304_234151
+Log format: 2025-03-04 23:41:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:53.186956
+Filename format: 20250304_234153
+Log format: 2025-03-04 23:41:53 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:53.198323
+Filename format: 20250304_234153
+Log format: 2025-03-04 23:41:53 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:53.210506
+Filename format: 20250304_234153
+Log format: 2025-03-04 23:41:53 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:55.373731
+Filename format: 20250304_234155
+Log format: 2025-03-04 23:41:55 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:55.389063
+Filename format: 20250304_234155
+Log format: 2025-03-04 23:41:55 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:55.402331
+Filename format: 20250304_234155
+Log format: 2025-03-04 23:41:55 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:57.558640
+Filename format: 20250304_234157
+Log format: 2025-03-04 23:41:57 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:57.570021
+Filename format: 20250304_234157
+Log format: 2025-03-04 23:41:57 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:57.581798
+Filename format: 20250304_234157
+Log format: 2025-03-04 23:41:57 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:59.740536
+Filename format: 20250304_234159
+Log format: 2025-03-04 23:41:59 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:59.751681
+Filename format: 20250304_234159
+Log format: 2025-03-04 23:41:59 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:41 UTC
+ISO format: 2025-03-04T23:41:59.763180
+Filename format: 20250304_234159
+Log format: 2025-03-04 23:41:59 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:01.923348
+Filename format: 20250304_234201
+Log format: 2025-03-04 23:42:01 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:01.934855
+Filename format: 20250304_234201
+Log format: 2025-03-04 23:42:01 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:01.946256
+Filename format: 20250304_234201
+Log format: 2025-03-04 23:42:01 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:04.101005
+Filename format: 20250304_234204
+Log format: 2025-03-04 23:42:04 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:04.112621
+Filename format: 20250304_234204
+Log format: 2025-03-04 23:42:04 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:04.123995
+Filename format: 20250304_234204
+Log format: 2025-03-04 23:42:04 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:06.289997
+Filename format: 20250304_234206
+Log format: 2025-03-04 23:42:06 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:06.301833
+Filename format: 20250304_234206
+Log format: 2025-03-04 23:42:06 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:06.313744
+Filename format: 20250304_234206
+Log format: 2025-03-04 23:42:06 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:08.504728
+Filename format: 20250304_234208
+Log format: 2025-03-04 23:42:08 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:08.516661
+Filename format: 20250304_234208
+Log format: 2025-03-04 23:42:08 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:08.528824
+Filename format: 20250304_234208
+Log format: 2025-03-04 23:42:08 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:10.688836
+Filename format: 20250304_234210
+Log format: 2025-03-04 23:42:10 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:10.700841
+Filename format: 20250304_234210
+Log format: 2025-03-04 23:42:10 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:10.712478
+Filename format: 20250304_234210
+Log format: 2025-03-04 23:42:10 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:12.873379
+Filename format: 20250304_234212
+Log format: 2025-03-04 23:42:12 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:12.885208
+Filename format: 20250304_234212
+Log format: 2025-03-04 23:42:12 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:12.897158
+Filename format: 20250304_234212
+Log format: 2025-03-04 23:42:12 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:15.056187
+Filename format: 20250304_234215
+Log format: 2025-03-04 23:42:15 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:15.067489
+Filename format: 20250304_234215
+Log format: 2025-03-04 23:42:15 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:15.078941
+Filename format: 20250304_234215
+Log format: 2025-03-04 23:42:15 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:17.234537
+Filename format: 20250304_234217
+Log format: 2025-03-04 23:42:17 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:17.245936
+Filename format: 20250304_234217
+Log format: 2025-03-04 23:42:17 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:17.258555
+Filename format: 20250304_234217
+Log format: 2025-03-04 23:42:17 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:19.422571
+Filename format: 20250304_234219
+Log format: 2025-03-04 23:42:19 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:19.433833
+Filename format: 20250304_234219
+Log format: 2025-03-04 23:42:19 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:19.445659
+Filename format: 20250304_234219
+Log format: 2025-03-04 23:42:19 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:21.608077
+Filename format: 20250304_234221
+Log format: 2025-03-04 23:42:21 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:21.619463
+Filename format: 20250304_234221
+Log format: 2025-03-04 23:42:21 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:21.630899
+Filename format: 20250304_234221
+Log format: 2025-03-04 23:42:21 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:23.788318
+Filename format: 20250304_234223
+Log format: 2025-03-04 23:42:23 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:23.800114
+Filename format: 20250304_234223
+Log format: 2025-03-04 23:42:23 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:23.811609
+Filename format: 20250304_234223
+Log format: 2025-03-04 23:42:23 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:25.976417
+Filename format: 20250304_234225
+Log format: 2025-03-04 23:42:25 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:25.988052
+Filename format: 20250304_234225
+Log format: 2025-03-04 23:42:25 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:25.999593
+Filename format: 20250304_234225
+Log format: 2025-03-04 23:42:25 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:28.157271
+Filename format: 20250304_234228
+Log format: 2025-03-04 23:42:28 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:28.170475
+Filename format: 20250304_234228
+Log format: 2025-03-04 23:42:28 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:28.184820
+Filename format: 20250304_234228
+Log format: 2025-03-04 23:42:28 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:30.559839
+Filename format: 20250304_234230
+Log format: 2025-03-04 23:42:30 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:30.571601
+Filename format: 20250304_234230
+Log format: 2025-03-04 23:42:30 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:30.583230
+Filename format: 20250304_234230
+Log format: 2025-03-04 23:42:30 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:32.745129
+Filename format: 20250304_234232
+Log format: 2025-03-04 23:42:32 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:32.756787
+Filename format: 20250304_234232
+Log format: 2025-03-04 23:42:32 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:32.768836
+Filename format: 20250304_234232
+Log format: 2025-03-04 23:42:32 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:34.930921
+Filename format: 20250304_234234
+Log format: 2025-03-04 23:42:34 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:34.942404
+Filename format: 20250304_234234
+Log format: 2025-03-04 23:42:34 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:34.954807
+Filename format: 20250304_234234
+Log format: 2025-03-04 23:42:34 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:37.116936
+Filename format: 20250304_234237
+Log format: 2025-03-04 23:42:37 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:37.128342
+Filename format: 20250304_234237
+Log format: 2025-03-04 23:42:37 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:37.139685
+Filename format: 20250304_234237
+Log format: 2025-03-04 23:42:37 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:39.316834
+Filename format: 20250304_234239
+Log format: 2025-03-04 23:42:39 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:39.342755
+Filename format: 20250304_234239
+Log format: 2025-03-04 23:42:39 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:39.355476
+Filename format: 20250304_234239
+Log format: 2025-03-04 23:42:39 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:41.534586
+Filename format: 20250304_234241
+Log format: 2025-03-04 23:42:41 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:41.546569
+Filename format: 20250304_234241
+Log format: 2025-03-04 23:42:41 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:41.558133
+Filename format: 20250304_234241
+Log format: 2025-03-04 23:42:41 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:43.720181
+Filename format: 20250304_234243
+Log format: 2025-03-04 23:42:43 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:43.731234
+Filename format: 20250304_234243
+Log format: 2025-03-04 23:42:43 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:43.742687
+Filename format: 20250304_234243
+Log format: 2025-03-04 23:42:43 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:45.908403
+Filename format: 20250304_234245
+Log format: 2025-03-04 23:42:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:45.919763
+Filename format: 20250304_234245
+Log format: 2025-03-04 23:42:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:45.931809
+Filename format: 20250304_234245
+Log format: 2025-03-04 23:42:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:48.089310
+Filename format: 20250304_234248
+Log format: 2025-03-04 23:42:48 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:48.101488
+Filename format: 20250304_234248
+Log format: 2025-03-04 23:42:48 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:48.113969
+Filename format: 20250304_234248
+Log format: 2025-03-04 23:42:48 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:50.277884
+Filename format: 20250304_234250
+Log format: 2025-03-04 23:42:50 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:50.290191
+Filename format: 20250304_234250
+Log format: 2025-03-04 23:42:50 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:50.302516
+Filename format: 20250304_234250
+Log format: 2025-03-04 23:42:50 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:52.463303
+Filename format: 20250304_234252
+Log format: 2025-03-04 23:42:52 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:52.475754
+Filename format: 20250304_234252
+Log format: 2025-03-04 23:42:52 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:52.487770
+Filename format: 20250304_234252
+Log format: 2025-03-04 23:42:52 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:54.651286
+Filename format: 20250304_234254
+Log format: 2025-03-04 23:42:54 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:54.663082
+Filename format: 20250304_234254
+Log format: 2025-03-04 23:42:54 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:54.674819
+Filename format: 20250304_234254
+Log format: 2025-03-04 23:42:54 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:56.835179
+Filename format: 20250304_234256
+Log format: 2025-03-04 23:42:56 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:56.846821
+Filename format: 20250304_234256
+Log format: 2025-03-04 23:42:56 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:56.858620
+Filename format: 20250304_234256
+Log format: 2025-03-04 23:42:56 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:59.023348
+Filename format: 20250304_234259
+Log format: 2025-03-04 23:42:59 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:59.035539
+Filename format: 20250304_234259
+Log format: 2025-03-04 23:42:59 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:42 UTC
+ISO format: 2025-03-04T23:42:59.047712
+Filename format: 20250304_234259
+Log format: 2025-03-04 23:42:59 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:01.212653
+Filename format: 20250304_234301
+Log format: 2025-03-04 23:43:01 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:01.224650
+Filename format: 20250304_234301
+Log format: 2025-03-04 23:43:01 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:01.236694
+Filename format: 20250304_234301
+Log format: 2025-03-04 23:43:01 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:03.397944
+Filename format: 20250304_234303
+Log format: 2025-03-04 23:43:03 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:03.409813
+Filename format: 20250304_234303
+Log format: 2025-03-04 23:43:03 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:03.421241
+Filename format: 20250304_234303
+Log format: 2025-03-04 23:43:03 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:05.585556
+Filename format: 20250304_234305
+Log format: 2025-03-04 23:43:05 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:05.597500
+Filename format: 20250304_234305
+Log format: 2025-03-04 23:43:05 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:05.609822
+Filename format: 20250304_234305
+Log format: 2025-03-04 23:43:05 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:07.775127
+Filename format: 20250304_234307
+Log format: 2025-03-04 23:43:07 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:07.787536
+Filename format: 20250304_234307
+Log format: 2025-03-04 23:43:07 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:07.799305
+Filename format: 20250304_234307
+Log format: 2025-03-04 23:43:07 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:09.964785
+Filename format: 20250304_234309
+Log format: 2025-03-04 23:43:09 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:09.977136
+Filename format: 20250304_234309
+Log format: 2025-03-04 23:43:09 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:09.989252
+Filename format: 20250304_234309
+Log format: 2025-03-04 23:43:09 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:12.157579
+Filename format: 20250304_234312
+Log format: 2025-03-04 23:43:12 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:12.169747
+Filename format: 20250304_234312
+Log format: 2025-03-04 23:43:12 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:12.181565
+Filename format: 20250304_234312
+Log format: 2025-03-04 23:43:12 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:14.348708
+Filename format: 20250304_234314
+Log format: 2025-03-04 23:43:14 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:14.360952
+Filename format: 20250304_234314
+Log format: 2025-03-04 23:43:14 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:14.372955
+Filename format: 20250304_234314
+Log format: 2025-03-04 23:43:14 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:16.538695
+Filename format: 20250304_234316
+Log format: 2025-03-04 23:43:16 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:16.550804
+Filename format: 20250304_234316
+Log format: 2025-03-04 23:43:16 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:16.563425
+Filename format: 20250304_234316
+Log format: 2025-03-04 23:43:16 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:18.727842
+Filename format: 20250304_234318
+Log format: 2025-03-04 23:43:18 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:18.739905
+Filename format: 20250304_234318
+Log format: 2025-03-04 23:43:18 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:18.752002
+Filename format: 20250304_234318
+Log format: 2025-03-04 23:43:18 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:20.921438
+Filename format: 20250304_234320
+Log format: 2025-03-04 23:43:20 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:20.933600
+Filename format: 20250304_234320
+Log format: 2025-03-04 23:43:20 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:20.945775
+Filename format: 20250304_234320
+Log format: 2025-03-04 23:43:20 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:23.124209
+Filename format: 20250304_234323
+Log format: 2025-03-04 23:43:23 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:23.136562
+Filename format: 20250304_234323
+Log format: 2025-03-04 23:43:23 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:23.148852
+Filename format: 20250304_234323
+Log format: 2025-03-04 23:43:23 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:25.487058
+Filename format: 20250304_234325
+Log format: 2025-03-04 23:43:25 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:25.498855
+Filename format: 20250304_234325
+Log format: 2025-03-04 23:43:25 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:25.510942
+Filename format: 20250304_234325
+Log format: 2025-03-04 23:43:25 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:27.673382
+Filename format: 20250304_234327
+Log format: 2025-03-04 23:43:27 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:27.687255
+Filename format: 20250304_234327
+Log format: 2025-03-04 23:43:27 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:27.699429
+Filename format: 20250304_234327
+Log format: 2025-03-04 23:43:27 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:29.872444
+Filename format: 20250304_234329
+Log format: 2025-03-04 23:43:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:29.891585
+Filename format: 20250304_234329
+Log format: 2025-03-04 23:43:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:29.907122
+Filename format: 20250304_234329
+Log format: 2025-03-04 23:43:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:32.076062
+Filename format: 20250304_234332
+Log format: 2025-03-04 23:43:32 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:32.096637
+Filename format: 20250304_234332
+Log format: 2025-03-04 23:43:32 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:32.113416
+Filename format: 20250304_234332
+Log format: 2025-03-04 23:43:32 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:34.288550
+Filename format: 20250304_234334
+Log format: 2025-03-04 23:43:34 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:34.305132
+Filename format: 20250304_234334
+Log format: 2025-03-04 23:43:34 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:34.322142
+Filename format: 20250304_234334
+Log format: 2025-03-04 23:43:34 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:36.495830
+Filename format: 20250304_234336
+Log format: 2025-03-04 23:43:36 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:36.514492
+Filename format: 20250304_234336
+Log format: 2025-03-04 23:43:36 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:36.529457
+Filename format: 20250304_234336
+Log format: 2025-03-04 23:43:36 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:38.698743
+Filename format: 20250304_234338
+Log format: 2025-03-04 23:43:38 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:38.717089
+Filename format: 20250304_234338
+Log format: 2025-03-04 23:43:38 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:38.732162
+Filename format: 20250304_234338
+Log format: 2025-03-04 23:43:38 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:40.893778
+Filename format: 20250304_234340
+Log format: 2025-03-04 23:43:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:40.905527
+Filename format: 20250304_234340
+Log format: 2025-03-04 23:43:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:40.917290
+Filename format: 20250304_234340
+Log format: 2025-03-04 23:43:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:43.081358
+Filename format: 20250304_234343
+Log format: 2025-03-04 23:43:43 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:43.093785
+Filename format: 20250304_234343
+Log format: 2025-03-04 23:43:43 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:43.105931
+Filename format: 20250304_234343
+Log format: 2025-03-04 23:43:43 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:45.287868
+Filename format: 20250304_234345
+Log format: 2025-03-04 23:43:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:45.300409
+Filename format: 20250304_234345
+Log format: 2025-03-04 23:43:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:45.312160
+Filename format: 20250304_234345
+Log format: 2025-03-04 23:43:45 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:47.477031
+Filename format: 20250304_234347
+Log format: 2025-03-04 23:43:47 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:47.490342
+Filename format: 20250304_234347
+Log format: 2025-03-04 23:43:47 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:47.503580
+Filename format: 20250304_234347
+Log format: 2025-03-04 23:43:47 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:49.678298
+Filename format: 20250304_234349
+Log format: 2025-03-04 23:43:49 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:49.697508
+Filename format: 20250304_234349
+Log format: 2025-03-04 23:43:49 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:49.710867
+Filename format: 20250304_234349
+Log format: 2025-03-04 23:43:49 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:51.880093
+Filename format: 20250304_234351
+Log format: 2025-03-04 23:43:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:51.898469
+Filename format: 20250304_234351
+Log format: 2025-03-04 23:43:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:51.913433
+Filename format: 20250304_234351
+Log format: 2025-03-04 23:43:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:54.085355
+Filename format: 20250304_234354
+Log format: 2025-03-04 23:43:54 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:54.105414
+Filename format: 20250304_234354
+Log format: 2025-03-04 23:43:54 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:54.121451
+Filename format: 20250304_234354
+Log format: 2025-03-04 23:43:54 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:56.295636
+Filename format: 20250304_234356
+Log format: 2025-03-04 23:43:56 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:56.313278
+Filename format: 20250304_234356
+Log format: 2025-03-04 23:43:56 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:56.326818
+Filename format: 20250304_234356
+Log format: 2025-03-04 23:43:56 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:58.500906
+Filename format: 20250304_234358
+Log format: 2025-03-04 23:43:58 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:58.513945
+Filename format: 20250304_234358
+Log format: 2025-03-04 23:43:58 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:43 UTC
+ISO format: 2025-03-04T23:43:58.525929
+Filename format: 20250304_234358
+Log format: 2025-03-04 23:43:58 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:00.692963
+Filename format: 20250304_234400
+Log format: 2025-03-04 23:44:00 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:00.713562
+Filename format: 20250304_234400
+Log format: 2025-03-04 23:44:00 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:00.730420
+Filename format: 20250304_234400
+Log format: 2025-03-04 23:44:00 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:02.903266
+Filename format: 20250304_234402
+Log format: 2025-03-04 23:44:02 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:02.924557
+Filename format: 20250304_234402
+Log format: 2025-03-04 23:44:02 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:02.941005
+Filename format: 20250304_234402
+Log format: 2025-03-04 23:44:02 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:05.113761
+Filename format: 20250304_234405
+Log format: 2025-03-04 23:44:05 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:05.135093
+Filename format: 20250304_234405
+Log format: 2025-03-04 23:44:05 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:05.152105
+Filename format: 20250304_234405
+Log format: 2025-03-04 23:44:05 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:07.329086
+Filename format: 20250304_234407
+Log format: 2025-03-04 23:44:07 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:07.350349
+Filename format: 20250304_234407
+Log format: 2025-03-04 23:44:07 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:07.366228
+Filename format: 20250304_234407
+Log format: 2025-03-04 23:44:07 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:09.543457
+Filename format: 20250304_234409
+Log format: 2025-03-04 23:44:09 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:09.565087
+Filename format: 20250304_234409
+Log format: 2025-03-04 23:44:09 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:09.581508
+Filename format: 20250304_234409
+Log format: 2025-03-04 23:44:09 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:11.751869
+Filename format: 20250304_234411
+Log format: 2025-03-04 23:44:11 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:11.772042
+Filename format: 20250304_234411
+Log format: 2025-03-04 23:44:11 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:11.788157
+Filename format: 20250304_234411
+Log format: 2025-03-04 23:44:11 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:13.961275
+Filename format: 20250304_234413
+Log format: 2025-03-04 23:44:13 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:13.982892
+Filename format: 20250304_234413
+Log format: 2025-03-04 23:44:13 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:14.000014
+Filename format: 20250304_234414
+Log format: 2025-03-04 23:44:14 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:16.177311
+Filename format: 20250304_234416
+Log format: 2025-03-04 23:44:16 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:16.198014
+Filename format: 20250304_234416
+Log format: 2025-03-04 23:44:16 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:16.213771
+Filename format: 20250304_234416
+Log format: 2025-03-04 23:44:16 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:18.388943
+Filename format: 20250304_234418
+Log format: 2025-03-04 23:44:18 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:18.409857
+Filename format: 20250304_234418
+Log format: 2025-03-04 23:44:18 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:18.425847
+Filename format: 20250304_234418
+Log format: 2025-03-04 23:44:18 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:20.592010
+Filename format: 20250304_234420
+Log format: 2025-03-04 23:44:20 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:20.604691
+Filename format: 20250304_234420
+Log format: 2025-03-04 23:44:20 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:20.616557
+Filename format: 20250304_234420
+Log format: 2025-03-04 23:44:20 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:22.791816
+Filename format: 20250304_234422
+Log format: 2025-03-04 23:44:22 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:22.804140
+Filename format: 20250304_234422
+Log format: 2025-03-04 23:44:22 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:22.816842
+Filename format: 20250304_234422
+Log format: 2025-03-04 23:44:22 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:24.986096
+Filename format: 20250304_234424
+Log format: 2025-03-04 23:44:24 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:24.999827
+Filename format: 20250304_234424
+Log format: 2025-03-04 23:44:24 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:25.012492
+Filename format: 20250304_234425
+Log format: 2025-03-04 23:44:25 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:27.184899
+Filename format: 20250304_234427
+Log format: 2025-03-04 23:44:27 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:27.201320
+Filename format: 20250304_234427
+Log format: 2025-03-04 23:44:27 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:27.214346
+Filename format: 20250304_234427
+Log format: 2025-03-04 23:44:27 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:29.394391
+Filename format: 20250304_234429
+Log format: 2025-03-04 23:44:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:29.406589
+Filename format: 20250304_234429
+Log format: 2025-03-04 23:44:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:29.420005
+Filename format: 20250304_234429
+Log format: 2025-03-04 23:44:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:31.588630
+Filename format: 20250304_234431
+Log format: 2025-03-04 23:44:31 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:31.601368
+Filename format: 20250304_234431
+Log format: 2025-03-04 23:44:31 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:31.614596
+Filename format: 20250304_234431
+Log format: 2025-03-04 23:44:31 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:33.786499
+Filename format: 20250304_234433
+Log format: 2025-03-04 23:44:33 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:33.799729
+Filename format: 20250304_234433
+Log format: 2025-03-04 23:44:33 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:33.812580
+Filename format: 20250304_234433
+Log format: 2025-03-04 23:44:33 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:35.987800
+Filename format: 20250304_234435
+Log format: 2025-03-04 23:44:35 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:36.000792
+Filename format: 20250304_234436
+Log format: 2025-03-04 23:44:36 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:36.013419
+Filename format: 20250304_234436
+Log format: 2025-03-04 23:44:36 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:38.233086
+Filename format: 20250304_234438
+Log format: 2025-03-04 23:44:38 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:38.245437
+Filename format: 20250304_234438
+Log format: 2025-03-04 23:44:38 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:38.257779
+Filename format: 20250304_234438
+Log format: 2025-03-04 23:44:38 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:40.428614
+Filename format: 20250304_234440
+Log format: 2025-03-04 23:44:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:40.441742
+Filename format: 20250304_234440
+Log format: 2025-03-04 23:44:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:40.454739
+Filename format: 20250304_234440
+Log format: 2025-03-04 23:44:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:42.622222
+Filename format: 20250304_234442
+Log format: 2025-03-04 23:44:42 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:42.634518
+Filename format: 20250304_234442
+Log format: 2025-03-04 23:44:42 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:42.646968
+Filename format: 20250304_234442
+Log format: 2025-03-04 23:44:42 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:44.820095
+Filename format: 20250304_234444
+Log format: 2025-03-04 23:44:44 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:44.838525
+Filename format: 20250304_234444
+Log format: 2025-03-04 23:44:44 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:44.853937
+Filename format: 20250304_234444
+Log format: 2025-03-04 23:44:44 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:47.029538
+Filename format: 20250304_234447
+Log format: 2025-03-04 23:44:47 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:47.052778
+Filename format: 20250304_234447
+Log format: 2025-03-04 23:44:47 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:47.069510
+Filename format: 20250304_234447
+Log format: 2025-03-04 23:44:47 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:49.257163
+Filename format: 20250304_234449
+Log format: 2025-03-04 23:44:49 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:49.279897
+Filename format: 20250304_234449
+Log format: 2025-03-04 23:44:49 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:49.296203
+Filename format: 20250304_234449
+Log format: 2025-03-04 23:44:49 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:51.477861
+Filename format: 20250304_234451
+Log format: 2025-03-04 23:44:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:51.499446
+Filename format: 20250304_234451
+Log format: 2025-03-04 23:44:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:51.514625
+Filename format: 20250304_234451
+Log format: 2025-03-04 23:44:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:53.685353
+Filename format: 20250304_234453
+Log format: 2025-03-04 23:44:53 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:53.702129
+Filename format: 20250304_234453
+Log format: 2025-03-04 23:44:53 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:53.720748
+Filename format: 20250304_234453
+Log format: 2025-03-04 23:44:53 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:55.962641
+Filename format: 20250304_234455
+Log format: 2025-03-04 23:44:55 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:55.984436
+Filename format: 20250304_234455
+Log format: 2025-03-04 23:44:55 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:56.000783
+Filename format: 20250304_234456
+Log format: 2025-03-04 23:44:56 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:58.177043
+Filename format: 20250304_234458
+Log format: 2025-03-04 23:44:58 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:58.201335
+Filename format: 20250304_234458
+Log format: 2025-03-04 23:44:58 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:44 UTC
+ISO format: 2025-03-04T23:44:58.218857
+Filename format: 20250304_234458
+Log format: 2025-03-04 23:44:58 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:00.389950
+Filename format: 20250304_234500
+Log format: 2025-03-04 23:45:00 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:00.402693
+Filename format: 20250304_234500
+Log format: 2025-03-04 23:45:00 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:00.415171
+Filename format: 20250304_234500
+Log format: 2025-03-04 23:45:00 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:02.586895
+Filename format: 20250304_234502
+Log format: 2025-03-04 23:45:02 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:02.599763
+Filename format: 20250304_234502
+Log format: 2025-03-04 23:45:02 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:02.612688
+Filename format: 20250304_234502
+Log format: 2025-03-04 23:45:02 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:04.789048
+Filename format: 20250304_234504
+Log format: 2025-03-04 23:45:04 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:04.801795
+Filename format: 20250304_234504
+Log format: 2025-03-04 23:45:04 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:04.814488
+Filename format: 20250304_234504
+Log format: 2025-03-04 23:45:04 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:06.984729
+Filename format: 20250304_234506
+Log format: 2025-03-04 23:45:06 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:06.998378
+Filename format: 20250304_234506
+Log format: 2025-03-04 23:45:06 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:07.011730
+Filename format: 20250304_234507
+Log format: 2025-03-04 23:45:07 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:09.187638
+Filename format: 20250304_234509
+Log format: 2025-03-04 23:45:09 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:09.199857
+Filename format: 20250304_234509
+Log format: 2025-03-04 23:45:09 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:09.211806
+Filename format: 20250304_234509
+Log format: 2025-03-04 23:45:09 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:11.388785
+Filename format: 20250304_234511
+Log format: 2025-03-04 23:45:11 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:11.401286
+Filename format: 20250304_234511
+Log format: 2025-03-04 23:45:11 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:11.414382
+Filename format: 20250304_234511
+Log format: 2025-03-04 23:45:11 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:13.582755
+Filename format: 20250304_234513
+Log format: 2025-03-04 23:45:13 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:13.595698
+Filename format: 20250304_234513
+Log format: 2025-03-04 23:45:13 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:13.608016
+Filename format: 20250304_234513
+Log format: 2025-03-04 23:45:13 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:15.784331
+Filename format: 20250304_234515
+Log format: 2025-03-04 23:45:15 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:15.801984
+Filename format: 20250304_234515
+Log format: 2025-03-04 23:45:15 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:15.816948
+Filename format: 20250304_234515
+Log format: 2025-03-04 23:45:15 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:17.993634
+Filename format: 20250304_234517
+Log format: 2025-03-04 23:45:17 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:18.012106
+Filename format: 20250304_234518
+Log format: 2025-03-04 23:45:18 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:18.027686
+Filename format: 20250304_234518
+Log format: 2025-03-04 23:45:18 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:20.201802
+Filename format: 20250304_234520
+Log format: 2025-03-04 23:45:20 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:20.220458
+Filename format: 20250304_234520
+Log format: 2025-03-04 23:45:20 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:20.237340
+Filename format: 20250304_234520
+Log format: 2025-03-04 23:45:20 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:22.463055
+Filename format: 20250304_234522
+Log format: 2025-03-04 23:45:22 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:22.484188
+Filename format: 20250304_234522
+Log format: 2025-03-04 23:45:22 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:22.500680
+Filename format: 20250304_234522
+Log format: 2025-03-04 23:45:22 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:24.677756
+Filename format: 20250304_234524
+Log format: 2025-03-04 23:45:24 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:24.695728
+Filename format: 20250304_234524
+Log format: 2025-03-04 23:45:24 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:24.710849
+Filename format: 20250304_234524
+Log format: 2025-03-04 23:45:24 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:26.889256
+Filename format: 20250304_234526
+Log format: 2025-03-04 23:45:26 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:26.910019
+Filename format: 20250304_234526
+Log format: 2025-03-04 23:45:26 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:26.926140
+Filename format: 20250304_234526
+Log format: 2025-03-04 23:45:26 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:29.099449
+Filename format: 20250304_234529
+Log format: 2025-03-04 23:45:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:29.117332
+Filename format: 20250304_234529
+Log format: 2025-03-04 23:45:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:29.131596
+Filename format: 20250304_234529
+Log format: 2025-03-04 23:45:29 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:31.311353
+Filename format: 20250304_234531
+Log format: 2025-03-04 23:45:31 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:31.334811
+Filename format: 20250304_234531
+Log format: 2025-03-04 23:45:31 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:31.351891
+Filename format: 20250304_234531
+Log format: 2025-03-04 23:45:31 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:33.523284
+Filename format: 20250304_234533
+Log format: 2025-03-04 23:45:33 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:33.536007
+Filename format: 20250304_234533
+Log format: 2025-03-04 23:45:33 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:33.548535
+Filename format: 20250304_234533
+Log format: 2025-03-04 23:45:33 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:35.724835
+Filename format: 20250304_234535
+Log format: 2025-03-04 23:45:35 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:35.738721
+Filename format: 20250304_234535
+Log format: 2025-03-04 23:45:35 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:35.754419
+Filename format: 20250304_234535
+Log format: 2025-03-04 23:45:35 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:37.952015
+Filename format: 20250304_234537
+Log format: 2025-03-04 23:45:37 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:37.970508
+Filename format: 20250304_234537
+Log format: 2025-03-04 23:45:37 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:37.986808
+Filename format: 20250304_234537
+Log format: 2025-03-04 23:45:37 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:40.197264
+Filename format: 20250304_234540
+Log format: 2025-03-04 23:45:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:40.212922
+Filename format: 20250304_234540
+Log format: 2025-03-04 23:45:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:40.226592
+Filename format: 20250304_234540
+Log format: 2025-03-04 23:45:40 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:42.398900
+Filename format: 20250304_234542
+Log format: 2025-03-04 23:45:42 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:42.419632
+Filename format: 20250304_234542
+Log format: 2025-03-04 23:45:42 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:42.436095
+Filename format: 20250304_234542
+Log format: 2025-03-04 23:45:42 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:44.614564
+Filename format: 20250304_234544
+Log format: 2025-03-04 23:45:44 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:44.632148
+Filename format: 20250304_234544
+Log format: 2025-03-04 23:45:44 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:44.648069
+Filename format: 20250304_234544
+Log format: 2025-03-04 23:45:44 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:46.834820
+Filename format: 20250304_234546
+Log format: 2025-03-04 23:45:46 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:46.852343
+Filename format: 20250304_234546
+Log format: 2025-03-04 23:45:46 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:46.867910
+Filename format: 20250304_234546
+Log format: 2025-03-04 23:45:46 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:49.040103
+Filename format: 20250304_234549
+Log format: 2025-03-04 23:45:49 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:49.057785
+Filename format: 20250304_234549
+Log format: 2025-03-04 23:45:49 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:49.073986
+Filename format: 20250304_234549
+Log format: 2025-03-04 23:45:49 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:51.249991
+Filename format: 20250304_234551
+Log format: 2025-03-04 23:45:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:51.269249
+Filename format: 20250304_234551
+Log format: 2025-03-04 23:45:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:51.284896
+Filename format: 20250304_234551
+Log format: 2025-03-04 23:45:51 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:53.465932
+Filename format: 20250304_234553
+Log format: 2025-03-04 23:45:53 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:53.483244
+Filename format: 20250304_234553
+Log format: 2025-03-04 23:45:53 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:53.500039
+Filename format: 20250304_234553
+Log format: 2025-03-04 23:45:53 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:55.674933
+Filename format: 20250304_234555
+Log format: 2025-03-04 23:45:55 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:55.687730
+Filename format: 20250304_234555
+Log format: 2025-03-04 23:45:55 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:55.700470
+Filename format: 20250304_234555
+Log format: 2025-03-04 23:45:55 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:57.944212
+Filename format: 20250304_234557
+Log format: 2025-03-04 23:45:57 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:57.956932
+Filename format: 20250304_234557
+Log format: 2025-03-04 23:45:57 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:45 UTC
+ISO format: 2025-03-04T23:45:57.969849
+Filename format: 20250304_234557
+Log format: 2025-03-04 23:45:57 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:00.143084
+Filename format: 20250304_234600
+Log format: 2025-03-04 23:46:00 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:00.155941
+Filename format: 20250304_234600
+Log format: 2025-03-04 23:46:00 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:00.168527
+Filename format: 20250304_234600
+Log format: 2025-03-04 23:46:00 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:02.344484
+Filename format: 20250304_234602
+Log format: 2025-03-04 23:46:02 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:02.358557
+Filename format: 20250304_234602
+Log format: 2025-03-04 23:46:02 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:02.371455
+Filename format: 20250304_234602
+Log format: 2025-03-04 23:46:02 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:04.543198
+Filename format: 20250304_234604
+Log format: 2025-03-04 23:46:04 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:04.557672
+Filename format: 20250304_234604
+Log format: 2025-03-04 23:46:04 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:04.571171
+Filename format: 20250304_234604
+Log format: 2025-03-04 23:46:04 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:06.742186
+Filename format: 20250304_234606
+Log format: 2025-03-04 23:46:06 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:06.754984
+Filename format: 20250304_234606
+Log format: 2025-03-04 23:46:06 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:06.767763
+Filename format: 20250304_234606
+Log format: 2025-03-04 23:46:06 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:08.947977
+Filename format: 20250304_234608
+Log format: 2025-03-04 23:46:08 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:08.960716
+Filename format: 20250304_234608
+Log format: 2025-03-04 23:46:08 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:08.973424
+Filename format: 20250304_234608
+Log format: 2025-03-04 23:46:08 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:11.148181
+Filename format: 20250304_234611
+Log format: 2025-03-04 23:46:11 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:11.162026
+Filename format: 20250304_234611
+Log format: 2025-03-04 23:46:11 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:11.175176
+Filename format: 20250304_234611
+Log format: 2025-03-04 23:46:11 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:13.392444
+Filename format: 20250304_234613
+Log format: 2025-03-04 23:46:13 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:13.406844
+Filename format: 20250304_234613
+Log format: 2025-03-04 23:46:13 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:13.420145
+Filename format: 20250304_234613
+Log format: 2025-03-04 23:46:13 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:15.600664
+Filename format: 20250304_234615
+Log format: 2025-03-04 23:46:15 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:15.620821
+Filename format: 20250304_234615
+Log format: 2025-03-04 23:46:15 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:15.637752
+Filename format: 20250304_234615
+Log format: 2025-03-04 23:46:15 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:17.811531
+Filename format: 20250304_234617
+Log format: 2025-03-04 23:46:17 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:17.826726
+Filename format: 20250304_234617
+Log format: 2025-03-04 23:46:17 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:17.844795
+Filename format: 20250304_234617
+Log format: 2025-03-04 23:46:17 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:20.031627
+Filename format: 20250304_234620
+Log format: 2025-03-04 23:46:20 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:20.053919
+Filename format: 20250304_234620
+Log format: 2025-03-04 23:46:20 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:20.070161
+Filename format: 20250304_234620
+Log format: 2025-03-04 23:46:20 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:22.252643
+Filename format: 20250304_234622
+Log format: 2025-03-04 23:46:22 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:22.273863
+Filename format: 20250304_234622
+Log format: 2025-03-04 23:46:22 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:22.290940
+Filename format: 20250304_234622
+Log format: 2025-03-04 23:46:22 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:24.466117
+Filename format: 20250304_234624
+Log format: 2025-03-04 23:46:24 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:24.479581
+Filename format: 20250304_234624
+Log format: 2025-03-04 23:46:24 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:24.493348
+Filename format: 20250304_234624
+Log format: 2025-03-04 23:46:24 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:26.676756
+Filename format: 20250304_234626
+Log format: 2025-03-04 23:46:26 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:26.690096
+Filename format: 20250304_234626
+Log format: 2025-03-04 23:46:26 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:26.702809
+Filename format: 20250304_234626
+Log format: 2025-03-04 23:46:26 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:28.878966
+Filename format: 20250304_234628
+Log format: 2025-03-04 23:46:28 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:28.891959
+Filename format: 20250304_234628
+Log format: 2025-03-04 23:46:28 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:28.904949
+Filename format: 20250304_234628
+Log format: 2025-03-04 23:46:28 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:31.081615
+Filename format: 20250304_234631
+Log format: 2025-03-04 23:46:31 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:31.094219
+Filename format: 20250304_234631
+Log format: 2025-03-04 23:46:31 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:31.107001
+Filename format: 20250304_234631
+Log format: 2025-03-04 23:46:31 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:33.288006
+Filename format: 20250304_234633
+Log format: 2025-03-04 23:46:33 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:33.304996
+Filename format: 20250304_234633
+Log format: 2025-03-04 23:46:33 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+
+
+## Current UTC timestamp: 2025-03-04 23:46 UTC
+ISO format: 2025-03-04T23:46:33.318151
+Filename format: 20250304_234633
+Log format: 2025-03-04 23:46:33 UTC
+
+Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
