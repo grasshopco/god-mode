@@ -11,6 +11,7 @@ God Mode is a set of configurations, scripts, and templates that enhance Cursor 
 3. **Enhancing AI Context**: Specialized notepads provide domain-specific knowledge
 4. **Streamlining Workflows**: Templates and scripts automate repetitive tasks
 5. **Enabling Advanced Features**: Configuration for autonomous coding, self-review, and continuous improvement
+6. **GitHub Integration**: Seamless version control with automatic commits and repository management
 
 ## Repository Structure
 
