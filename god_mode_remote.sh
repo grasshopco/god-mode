@@ -59,50 +59,141 @@ if [ ! -d "$FULL_TARGET_PATH/god_mode" ]; then
     exit 1
 fi
 
+# Function to refresh memory at startup
+refresh_memory_at_startup() {
+    echo -e "${YELLOW}Refreshing memory...${NC}"
+    
+    # Run critical memory update scripts
+    local update_structure="$FULL_TARGET_PATH/god_mode/scripts/script_update_project_structure.py"
+    local check_memory="$FULL_TARGET_PATH/god_mode/scripts/script_check_memory_files.sh"
+    local check_features="$FULL_TARGET_PATH/god_mode/scripts/script_check_feature_logs.py"
+    
+    if [ -f "$update_structure" ]; then
+        (cd "$FULL_TARGET_PATH" && python "$update_structure")
+        echo -e "${GREEN}✓ Updated project structure${NC}"
+    fi
+    
+    if [ -f "$check_memory" ]; then
+        chmod +x "$check_memory"
+        (cd "$FULL_TARGET_PATH" && "$check_memory")
+        echo -e "${GREEN}✓ Checked memory files${NC}"
+    fi
+    
+    if [ -f "$check_features" ]; then
+        (cd "$FULL_TARGET_PATH" && python "$check_features" --check)
+        echo -e "${GREEN}✓ Checked feature logs${NC}"
+    fi
+    
+    echo -e "${GREEN}Memory refresh complete${NC}"
+}
+
+# Call this function at startup
+refresh_memory_at_startup
+
 # Function to check if a process is running
 is_process_running() {
     pgrep -f "$1" > /dev/null
     return $?
 }
 
-# Check God Mode status for display in header
-check_god_mode_status_header() {
+# Function to restart the cursor watch process
+restart_cursor_watch() {
+    echo -e "${BLUE}Restarting Cursor Watch process...${NC}"
+    
+    # Check if cursor watch is already running
+    if pgrep -f "script_cursor_watch.py" >/dev/null; then
+        # Get the PID
+        local watch_pid=$(pgrep -f "script_cursor_watch.py")
+        
+        # Kill the process
+        echo -e "Stopping existing Cursor Watch process (PID: $watch_pid)..."
+        kill -9 $watch_pid 2>/dev/null
+        
+        # Wait a moment to ensure the process is terminated
+        sleep 1
+    fi
+    
+    # Start a new cursor watch process
+    local cursor_watch_script="$FULL_TARGET_PATH/god_mode/scripts/script_cursor_watch.py"
+    
+    if [ ! -f "$cursor_watch_script" ]; then
+        echo -e "${RED}Error: Cursor Watch script not found at: $cursor_watch_script${NC}"
+        return 1
+    fi
+    
+    echo -e "Starting new Cursor Watch process..."
+    chmod +x "$cursor_watch_script"
+    nohup python3 "$cursor_watch_script" > "$FULL_TARGET_PATH/god_mode/logs/cursor_watch.log" 2>&1 &
+    local new_pid=$!
+    
+    echo -e "${GREEN}Cursor Watch restarted with PID: $new_pid${NC}"
+    return 0
+}
+
+# Update check_god_mode_status function to potentially restart cursor watch if it's not running
+check_god_mode_status() {
+    local verbose=$1
     local router_running=false
     local watch_running=false
     
-    if is_process_running "route --watch"; then
+    # Check if the message router is running
+    if pgrep -f "route --watch" >/dev/null; then
         router_running=true
+        router_pid=$(pgrep -f "route --watch")
+        [ "$verbose" = "true" ] && echo -e "Message Router: ${GREEN}RUNNING${NC} ✓ (PID: $router_pid)"
+        [ "$verbose" = "false" ] && echo -e "  ${GREEN}● Message Router is RUNNING${NC}"
+    else
+        [ "$verbose" = "true" ] && echo -e "Message Router: ${RED}NOT RUNNING${NC} ✗"
+        [ "$verbose" = "false" ] && echo -e "  ${RED}● Message Router is NOT RUNNING${NC}"
     fi
     
-    if is_process_running "script_cursor_watch.py"; then
+    # Check if the cursor watch is running
+    if pgrep -f "script_cursor_watch.py" >/dev/null; then
         watch_running=true
-    fi
-    
-    echo "Component Status:"
-    if $router_running; then
-        echo -e "  ${GREEN}● Message Router is RUNNING${NC}"
+        watch_pid=$(pgrep -f "script_cursor_watch.py")
+        [ "$verbose" = "true" ] && echo -e "Cursor Watch: ${GREEN}RUNNING${NC} ✓ (PID: $watch_pid)"
+        [ "$verbose" = "false" ] && echo -e "  ${GREEN}● Cursor Watch is RUNNING${NC}"
     else
-        echo -e "  ${RED}● Message Router is NOT RUNNING${NC}"
-        echo -e "    ${YELLOW}→ Run option 1 to start, or run the dependency installer (option 8)${NC}"
+        # If cursor watch not running, try to restart it
+        if [ "$verbose" = "true" ]; then
+            echo -e "Cursor Watch: ${RED}NOT RUNNING${NC} ✗"
+            echo -e "${YELLOW}Attempting to restart Cursor Watch...${NC}"
+            restart_cursor_watch
+            
+            # Check again if it's running
+            if pgrep -f "script_cursor_watch.py" >/dev/null; then
+                watch_running=true
+                watch_pid=$(pgrep -f "script_cursor_watch.py")
+                echo -e "Cursor Watch: ${GREEN}NOW RUNNING${NC} ✓ (PID: $watch_pid)"
+            else
+                echo -e "Cursor Watch: ${RED}STILL NOT RUNNING${NC} ✗"
+            fi
+        else
+            # For non-verbose mode
+            echo -e "  ${RED}● Cursor Watch is NOT RUNNING${NC}"
+            restart_cursor_watch > /dev/null 2>&1
+            # Recheck if now running
+            if pgrep -f "script_cursor_watch.py" >/dev/null; then 
+                watch_running=true
+                echo -e "  ${GREEN}● Cursor Watch has been restarted${NC}"
+            fi
+        fi
     fi
     
-    if $watch_running; then
-        echo -e "  ${GREEN}● Cursor Watch is RUNNING${NC}"
-    else
-        echo -e "  ${RED}● Cursor Watch is NOT RUNNING${NC}"
-        echo -e "    ${YELLOW}→ Run option 1 to start${NC}"
-    fi
-    
-    echo
+    # Determine overall status
     if $router_running && $watch_running; then
-        echo -e "Overall Status: ${GREEN}● FULLY ACTIVE${NC}"
+        [ "$verbose" = "true" ] && echo -e "\nOverall Status: ${GREEN}FULLY ACTIVE${NC} ✓"
+        [ "$verbose" = "false" ] && echo -e "Overall Status: ${GREEN}● FULLY ACTIVE${NC}"
     elif $router_running || $watch_running; then
-        echo -e "Overall Status: ${YELLOW}● PARTIALLY ACTIVE${NC}"
+        [ "$verbose" = "true" ] && echo -e "\nOverall Status: ${YELLOW}PARTIALLY ACTIVE${NC} ⚠️"
+        [ "$verbose" = "false" ] && echo -e "Overall Status: ${YELLOW}● PARTIALLY ACTIVE${NC}"
     else
-        echo -e "Overall Status: ${RED}● NOT ACTIVE${NC}"
+        [ "$verbose" = "true" ] && echo -e "\nOverall Status: ${RED}NOT ACTIVE${NC} ✗"
+        [ "$verbose" = "false" ] && echo -e "Overall Status: ${RED}● NOT ACTIVE${NC}"
     fi
+    
+    return 0
 }
-
 
 # Function to manually trigger an auto-commit
 trigger_auto_commit() {
@@ -180,7 +271,7 @@ setup_github_repo() {
 # Function to display the menu
 show_menu() {
     # Display current status in header
-    check_god_mode_status_header
+    check_god_mode_status "false"
     echo
 
     echo -e "${BLUE}=======================================${NC}"
@@ -200,12 +291,12 @@ show_menu() {
     echo -e "7) ${CYAN}Enhance prompt${NC} - Add context to your next AI prompt"
     echo -e "8) ${CYAN}Create/update notepad${NC} - Manage notepads for reference info"
     echo -e "c) ${CYAN}Session continuity${NC} - Generate continuity for new chat sessions"
-    echo -e "n) ${CYAN}Continue conversation${NC} - Use predictive questions to continue"
+    echo -e "n) ${CYAN}Continue conversation${NC} - Choose from preset questions to continue"
     echo -e "t) ${CYAN}TAG compliance${NC} - View TAG usage metrics and reports"
     echo
     echo -e "${YELLOW}SETTINGS & TOOLS:${NC}"
     echo -e "s) ${CYAN}Notification settings${NC} - Manage notifications and sounds"
-    echo -e "i) ${CYAN}Install 'god' shortcut${NC} - Create system-wide 'god' command"
+    echo -e "i) ${CYAN}Install God Mode shortcut${NC} - Create 'godmode' command (option 2 recommended for beginners)"
     echo
     echo -e "${YELLOW}VERSION CONTROL:${NC}"
     echo -e "g) ${CYAN}GitHub repository management${NC} - Setup, connect, or switch GitHub repos"
@@ -270,42 +361,12 @@ show_help() {
     echo -e "   Opens a new terminal window in your project folder."
     echo -e "   Useful if you need to run commands directly in that folder."
     echo
-    echo -e "${CYAN}n) Continue conversation${NC}"
-    echo -e "   Helps you continue the conversation with the AI more easily."
-    echo -e "   Extracts suggested questions from the previous AI response"
-    echo -e "   and lets you quickly select one to continue the conversation."
-    echo -e "   This leverages the predictive capabilities of the AI to"
-    echo -e "   more smoothly progress through complex tasks."
-    echo
-    echo -e "${CYAN}s) Notification settings${NC}"
-    echo -e "   Manage desktop notifications and sound effects."
-    echo -e "   You can enable/disable notifications completely or just the sound."
-    echo -e "   This is useful if you're working in a quiet environment,"
-    echo -e "   or if you want to be alerted when actions are completed."
-    echo -e "   Sound effects can be especially helpful when you're not directly"
-    echo -e "   looking at your computer (like when cooking in the kitchen)."
-    echo
-    echo -e "${CYAN}i) Install 'god' shortcut${NC}"
-    echo -e "   Installs the 'god' command for quick access from anywhere."
-    echo -e "   You can choose to create a symlink in /usr/local/bin (requires sudo)"
-    echo -e "   or add an alias to your shell configuration file."
-    echo -e "   This allows you to use commands like 'god help' or 'god route'"
-    echo -e "   from any directory without specifying the full path."
-    echo -e "   You can also customize the command name to whatever you prefer."
-    echo
     echo -e "${CYAN}r) View routing activity${NC}"
     echo -e "   Shows what content was recently routed to which files."
     echo -e "   Provides clickable links to open files at the exact line where"
     echo -e "   content was added, so you can quickly verify what was saved where."
     echo -e "   Extremely useful when working with [MULTI_TAG] to see where"
     echo -e "   everything went without having to search manually."
-    echo
-    echo -e "${CYAN}t) TAG compliance${NC}"
-    echo -e "   Analyzes how well the TAG system is being used in the project."
-    echo -e "   Provides metrics on TAG usage, compliance rates, and trends."
-    echo -e "   This helps ensure that knowledge is being properly captured and"
-    echo -e "   that the AI's responses are consistently using the correct TAGs."
-    echo -e "   The system will automatically adjust reinforcement based on compliance."
     echo
     echo -e "${CYAN}d) View documentation${NC}"
     echo -e "   Opens helpful guides and documentation about God Mode."
@@ -316,8 +377,7 @@ show_help() {
     echo -e "  Run option 8 (Install dependencies) or run this command:"
     echo -e "  ${GREEN}$FULL_TARGET_PATH/god_mode/scripts/script_install_dependencies.sh${NC}"
     echo -e "• If the AI isn't adding [TAG] markers, try updating Cursor rules (option 7)"
-    echo -e "• If desktop notifications aren't working, check option s (Notification settings)"
-    echo -e "  and run a test to see if your system permissions are set correctly"
+    echo -e "• If desktop notifications aren't working, run option 8 to install the plyer package"
     echo -e "• If having persistent issues, run the file integrity check:"
     echo -e "  ${GREEN}$FULL_TARGET_PATH/god_mode/scripts/script_check_files.sh${NC}"
     echo
@@ -325,6 +385,13 @@ show_help() {
     echo -e "• Tag System Guide: ${GREEN}$FULL_TARGET_PATH/god_mode/system_documentation/README_TAGS.md${NC}"
     echo -e "  This guide explains all available tags and how to use them effectively."
     echo -e "  To open it: ${YELLOW}open \"$FULL_TARGET_PATH/god_mode/system_documentation/README_TAGS.md\"${NC}"
+    echo
+    echo -e "${CYAN}t) TAG compliance${NC}"
+    echo -e "   Analyzes how well the TAG system is being used in the project."
+    echo -e "   Provides metrics on TAG usage, compliance rates, and trends."
+    echo -e "   This helps ensure that knowledge is being properly captured and"
+    echo -e "   that the AI's responses are consistently using the correct TAGs."
+    echo -e "   The system will automatically adjust reinforcement based on compliance."
     echo
     echo -e "Press Enter to return to the main menu..."
     read -r
@@ -906,10 +973,10 @@ manage_notification_settings() {
     read
 }
 
-# Function to install the 'god' shortcut command
-install_god_shortcut() {
+# Function to install the 'godmode' shortcut command
+install_godmode_shortcut() {
     echo -e "${BLUE}=======================================${NC}"
-    echo -e "${BLUE}     Install 'god' Shortcut Command  ${NC}"
+    echo -e "${BLUE}     Install 'godmode' Shortcut Command  ${NC}"
     echo -e "${BLUE}=======================================${NC}"
     echo
     
@@ -937,6 +1004,39 @@ install_god_shortcut() {
     echo
     echo -e "Press Enter to continue..."
     read
+}
+
+# Function to run system verification
+run_system_verification() {
+    echo -e "${BLUE}Running system verification...${NC}"
+    
+    local verify_script="$FULL_TARGET_PATH/god_mode/scripts/script_verify_system.py"
+    
+    if [ ! -f "$verify_script" ]; then
+        echo -e "${RED}Error: System verification script not found at: $verify_script${NC}"
+        return 1
+    fi
+    
+    echo -e "${CYAN}Checking the status of all God Mode components...${NC}"
+    python3 "$verify_script"
+    
+    local exit_code=$?
+    if [ $exit_code -eq 0 ]; then
+        echo -e "${GREEN}All systems operational!${NC}"
+    else
+        echo -e "${YELLOW}Some components need attention. Please follow the recommendations above.${NC}"
+    fi
+    
+    return $exit_code
+}
+
+# Function to verify God Mode is running
+verify_god_mode() {
+    echo -e "${BLUE}Verifying God Mode processes...${NC}"
+    check_god_mode_status "true"
+    
+    echo -e "\nPress Enter to continue..."
+    read -r
 }
 
 # Display header with a welcome message
@@ -972,11 +1072,11 @@ while true; do
         h|H) show_help ;;
         q|Q) echo -e "${GREEN}Goodbye!${NC}"; exit 0 ;;
         c|C) echo -e "${YELLOW}Session continuity feature is not implemented yet.${NC}" ;;
-        v|V) echo -e "${YELLOW}System verification feature is not implemented yet.${NC}" ;;
+        v|V) run_system_verification ;;
         t|T) run_tag_feedback ;;
         n|N) run_continue_conversation ;;
         s|S) manage_notification_settings ;;
-        i|I) install_god_shortcut ;;
+        i|I) install_godmode_shortcut ;;
         *) echo -e "${RED}Invalid choice. Please try again.${NC}" ;;
     esac
     
