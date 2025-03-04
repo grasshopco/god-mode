@@ -103,6 +103,43 @@ check_god_mode_status_header() {
     fi
 }
 
+
+# Function to manually trigger an auto-commit
+trigger_auto_commit() {
+    echo -e "${BLUE}Triggering auto-commit...${NC}"
+    
+    # Check if auto-commit script exists
+    local auto_commit_script="$GOD_MODE_DIR/scripts/script_auto_commit.sh"
+    if [ ! -f "$auto_commit_script" ]; then
+        echo -e "${RED}Error: Auto-commit script not found at $auto_commit_script${NC}"
+        return 1
+    fi
+    
+    # Run the auto-commit script
+    "$auto_commit_script" "Manual commit via God Mode CLI"
+    
+    # Check result
+    if [ $? -eq 0 ]; then
+        echo -e "${GREEN}Auto-commit completed successfully${NC}"
+    else
+        echo -e "${RED}Auto-commit failed${NC}"
+    fi
+}
+
+# Function to set up GitHub repository
+setup_github_repo() {
+    echo -e "${BLUE}Setting up GitHub repository...${NC}"
+    
+    # Check if setup script exists
+    local setup_script="$GOD_MODE_DIR/scripts/script_setup_github.sh"
+    if [ ! -f "$setup_script" ]; then
+        echo -e "${RED}Error: GitHub setup script not found at $setup_script${NC}"
+        return 1
+    fi
+    
+    # Run the setup script
+    "$setup_script"
+}
 # Function to display the menu
 show_menu() {
     # Display current status in header
@@ -120,6 +157,10 @@ show_menu() {
     echo -e "8) ${CYAN}Install dependencies${NC} - Install required Python packages for God Mode"
     echo -e "9) ${CYAN}Navigate to target directory${NC} - Open a terminal in project folder"
     echo -e "r) ${CYAN}View routing activity${NC} - See what content went where with clickable links"
+    echo
+    echo -e "${YELLOW}VERSION CONTROL:${NC}"
+    echo -e "g) ${CYAN}Setup GitHub repository${NC} - Create and connect to a GitHub repository"
+    echo -e "a) ${CYAN}Auto-commit changes${NC} - Manually trigger an auto-commit
     echo -e "d) ${CYAN}View documentation${NC} - Read guides on using God Mode and tags"
     echo -e "h) ${CYAN}Help${NC} - Detailed explanation of all options"
     echo -e "q) ${CYAN}Quit${NC} - Exit this menu"
@@ -530,6 +571,8 @@ while true; do
         9) navigate_to_target ;;
         r|R) view_routing_activity ;;
         d|D) view_readme ;;
+        g|G) setup_github_repo ;;
+        a|A) trigger_auto_commit ;;
         h|H) show_help ;;
         q|Q) echo -e "${GREEN}Goodbye!${NC}"; exit 0 ;;
         *) echo -e "${RED}Invalid choice. Please try again.${NC}" ;;
