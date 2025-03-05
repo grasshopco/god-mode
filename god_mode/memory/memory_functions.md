@@ -1,8 +1,8 @@
 # Project Functions
-*Generated: Current UTC timestamp: 2025-03-04 21:34 UTC
-ISO format: 2025-03-04T21:34:05.179254+00:00
-Filename format: 20250304_213405
-Log format: 2025-03-04 21:34:05 UTC*
+*Generated: Current UTC timestamp: 2025-03-05 02:16 UTC
+ISO format: 2025-03-05T02:16:15.361050+00:00
+Filename format: 20250305_021615
+Log format: 2025-03-05 02:16:15 UTC*
 This document maps all functions and methods in the project.
 
 ## Table of Contents
@@ -14,7 +14,6 @@ This document maps all functions and methods in the project.
 - [god_mode/scripts/script_create_supabase_integration.py](#god_mode_scripts_script_create_supabase_integration_py)
 - [god_mode/scripts/script_cursor_watch.py](#god_mode_scripts_script_cursor_watch_py)
 - [god_mode/scripts/script_debug_router.py](#god_mode_scripts_script_debug_router_py)
-- [god_mode/scripts/script_enhance_message_content.py](#god_mode_scripts_script_enhance_message_content_py)
 - [god_mode/scripts/script_enhance_prompt.py](#god_mode_scripts_script_enhance_prompt_py)
 - [god_mode/scripts/script_generate_roadmap.py](#god_mode_scripts_script_generate_roadmap_py)
 - [god_mode/scripts/script_get_utc_time.py](#god_mode_scripts_script_get_utc_time_py)
@@ -1003,373 +1002,91 @@ Simulate the routing process without actually writing to files
 Main entry point for the debug router script.
 
 
-## god_mode/scripts/script_enhance_message_content.py <a id='god_mode_scripts_script_enhance_message_content_py'></a>
-
-### **debug_log(message)**
-
-- **Type**: function
-- **Line**: 49
-
-*No documentation available.*
-
-### **route_message(message)**
-
-- **Type**: function
-- **Line**: 52
-
-*No documentation available.*
-
-### **ensure_directory_exists(directory)**
-
-- **Type**: function
-- **Line**: 56
-
-Ensure a directory exists, creating it if necessary.
-
-### **get_timestamp()**
-
-- **Type**: function
-- **Line**: 60
-
-Get current timestamp in YYYY-MM-DD HH:MM UTC format.
-
-### **is_empty_content(content)**
-
-- **Type**: function
-- **Line**: 65
-
-Check if content is effectively empty (just a timestamp or metadata).
-
-Args:
-    content (str): The content to check
-    
-Returns:
-    bool: True if the content is empty or just contains metadata
-
-### **find_latest_roadmap_file()**
-
-- **Type**: function
-- **Line**: 98
-
-Find the most recently created or updated roadmap file.
-
-Returns:
-    Path: Path to the most recent roadmap file, or None if none found
-
-### **get_file_context(filepath)**
-
-- **Type**: function
-- **Line**: 119
-
-Extract context about a file to help generate more relevant content.
-
-Args:
-    filepath (Path): Path to the file
-    
-Returns:
-    dict: Context information about the file
-
-### **find_task_in_roadmap(task_name, roadmap_file)**
-
-- **Type**: function
-- **Line**: 146
-
-Find a task in the roadmap file by its name.
-
-Args:
-    task_name (str): The task name to search for
-    roadmap_file (Path): Path to the roadmap file
-    
-Returns:
-    tuple: (line_number, line, is_checked) or (None, None, None) if not found
-
-### **update_roadmap_file(task_name, notes)**
-
-- **Type**: function
-- **Line**: 181
-
-Update the roadmap file to mark a task as completed.
-
-Args:
-    task_name (str): The name of the task to mark as completed
-    notes (str, optional): Additional notes about the completion
-    
-Returns:
-    bool: True if successful, False otherwise
-
-### **generate_contextual_content(tag_type, filepath, context)**
-
-- **Type**: function
-- **Line**: 238
-
-Generate content that's contextually relevant based on file analysis.
-
-Args:
-    tag_type (str): The type of tag (LOG_SUMMARY, MEMORY_ARCHITECTURE, etc.)
-    filepath (Path): The file path for context
-    context (dict, optional): Additional context information
-    
-Returns:
-    str: Generated contextually relevant content
-
-### **generate_log_summary(file_purpose, filepath, context)**
-
-- **Type**: function
-- **Line**: 302
-
-Generate a meaningful log summary based on context.
-
-### **generate_log_detail(file_purpose, filepath, context)**
-
-- **Type**: function
-- **Line**: 316
-
-Generate detailed log content based on context.
-
-### **generate_memory_update(file_purpose, filepath, context)**
-
-- **Type**: function
-- **Line**: 344
-
-Generate a memory update entry based on context.
-
-### **generate_memory_architecture(file_purpose, filepath, context)**
-
-- **Type**: function
-- **Line**: 385
-
-Generate architecture-specific content based on context.
-
-### **generate_memory_requirements(file_purpose, filepath, context)**
-
-- **Type**: function
-- **Line**: 432
-
-Generate requirements-specific content based on context.
-
-### **generate_memory_roadmap(file_purpose, filepath, context)**
-
-- **Type**: function
-- **Line**: 472
-
-Generate roadmap-specific content based on context.
-
-### **generate_memory_conventions(file_purpose, filepath, context)**
-
-- **Type**: function
-- **Line**: 520
-
-Generate conventions-specific content based on context.
-
-### **generate_memory_dependencies(file_purpose, filepath, context)**
-
-- **Type**: function
-- **Line**: 574
-
-Generate dependencies-specific content based on context.
-
-### **generate_memory_glossary(file_purpose, filepath, context)**
-
-- **Type**: function
-- **Line**: 620
-
-Generate glossary-specific content based on context.
-
-### **generate_memory_testing(file_purpose, filepath, context)**
-
-- **Type**: function
-- **Line**: 669
-
-Generate testing-specific content based on context.
-
-### **generate_memory_security(file_purpose, filepath, context)**
-
-- **Type**: function
-- **Line**: 723
-
-Generate security-specific content based on context.
-
-### **generate_memory_performance(file_purpose, filepath, context)**
-
-- **Type**: function
-- **Line**: 773
-
-Generate performance-specific content based on context.
-
-### **generate_memory_accessibility(file_purpose, filepath, context)**
-
-- **Type**: function
-- **Line**: 827
-
-Generate accessibility-specific content based on context.
-
-### **generate_memory_learnings(file_purpose, filepath, context)**
-
-- **Type**: function
-- **Line**: 881
-
-Generate learnings-specific content based on context.
-
-### **generate_doc_update(file_purpose, filepath, context)**
-
-- **Type**: function
-- **Line**: 927
-
-Generate documentation update content based on context.
-
-### **generate_feature_log_content(feature_name, filepath, context)**
-
-- **Type**: function
-- **Line**: 969
-
-Generate content specifically for feature logs.
-
-### **generate_feature_log_update(feature_name)**
-
-- **Type**: function
-- **Line**: 983
-
-Generate a complete feature log update.
-
-### **generate_roadmap_content(filepath, context)**
-
-- **Type**: function
-- **Line**: 1053
-
-Generate content specifically for roadmap files.
-
-### **generate_relevant_content(tag_type, filepath, existing_content)**
-
-- **Type**: function
-- **Line**: 1066
-
-Generate relevant content for a specific tag type and file.
-
-Args:
-    tag_type (str): The type of tag (LOG_SUMMARY, MEMORY_ARCHITECTURE, etc.)
-    filepath (Path): The file path for context
-    existing_content (str): Any existing content for context
-    
-Returns:
-    str: Generated relevant content
-
-### **enhance_message(message)**
-
-- **Type**: function
-- **Line**: 1085
-
-Enhance a message with relevant content.
-
-Args:
-    message (str): The message to enhance
-    
-Returns:
-    str: The enhanced message
-
-### **audit_memory_files()**
-
-- **Type**: function
-- **Line**: 1178
-
-Scan memory files for empty log entries and enhance them.
-
-Returns:
-    int: Number of files updated
-
-### **main()**
-
-- **Type**: function
-- **Line**: 1278
-
-Main entry point for the script.
-
-
 ## god_mode/scripts/script_enhance_prompt.py <a id='god_mode_scripts_script_enhance_prompt_py'></a>
 
 ### **log_message(message, level)**
 
 - **Type**: function
-- **Line**: 29
+- **Line**: 30
 
 Log a message with timestamp and level.
 
 ### **log_debug(message)**
 
 - **Type**: function
-- **Line**: 35
+- **Line**: 36
 
 Log a debug message.
 
 ### **log_error(message)**
 
 - **Type**: function
-- **Line**: 40
+- **Line**: 41
 
 Log an error message.
 
 ### **log_info(message)**
 
 - **Type**: function
-- **Line**: 44
+- **Line**: 45
 
 Log an info message.
 
 ### **log_warning(message)**
 
 - **Type**: function
-- **Line**: 48
+- **Line**: 49
 
 Log a warning message.
 
 ### **get_project_structure()**
 
 - **Type**: function
-- **Line**: 52
+- **Line**: 53
 
-Get a summary of the project structure.
-
-Returns:
-    str: A brief summary of the project structure
+Get a condensed version of the project structure.
 
 ### **get_memory_highlights()**
 
 - **Type**: function
-- **Line**: 84
+- **Line**: 85
 
 Get highlights from memory files.
-
-Returns:
-    str: A summary of key information from memory files
 
 ### **get_recent_logs()**
 
 - **Type**: function
-- **Line**: 132
+- **Line**: 129
 
-Get recent logs for context.
-
-Returns:
-    str: Recent log entries
+Get recent log entries.
 
 ### **enhance_prompt(user_prompt)**
 
 - **Type**: function
-- **Line**: 167
+- **Line**: 177
 
 Enhance a user prompt with relevant context.
 
-Args:
-    user_prompt (str): The original user prompt
-    
-Returns:
-    str: The enhanced prompt with added context
+### **extract_prompt_enhancement_from_clipboard()**
+
+- **Type**: function
+- **Line**: 210
+
+Extract PROMPT_ENHANCEMENT content from clipboard.
+
+### **update_prompt_enhanced_file(enhancement_content)**
+
+- **Type**: function
+- **Line**: 231
+
+Update the prompt_enhanced.md file with new content.
 
 ### **main()**
 
 - **Type**: function
-- **Line**: 216
+- **Line**: 277
 
-Main function to parse arguments and enhance prompts.
+Main entry point for the script.
 
 
 ## god_mode/scripts/script_generate_roadmap.py <a id='god_mode_scripts_script_generate_roadmap_py'></a>
@@ -1513,7 +1230,7 @@ Returns:
 ### **send_notification(title, message)**
 
 - **Type**: function
-- **Line**: 220
+- **Line**: 219
 
 Send a desktop notification with the given title and message.
 Also plays a sound effect to alert the user.
@@ -1525,14 +1242,14 @@ Args:
 ### **play_sound()**
 
 - **Type**: function
-- **Line**: 292
+- **Line**: 291
 
 Play a sound notification.
 
 ### **toggle_notification_settings(sound_enabled, notifications_enabled)**
 
 - **Type**: function
-- **Line**: 340
+- **Line**: 339
 
 Toggle notification settings.
 
@@ -1546,7 +1263,7 @@ Returns:
 ### **get_notification_settings()**
 
 - **Type**: function
-- **Line**: 383
+- **Line**: 382
 
 Get the current notification settings.
 
@@ -1556,14 +1273,14 @@ Returns:
 ### **get_timestamp()**
 
 - **Type**: function
-- **Line**: 407
+- **Line**: 406
 
 Get current timestamp in YYYY-MM-DD HH:MM UTC format.
 
 ### **ensure_directory_exists(directory)**
 
 - **Type**: function
-- **Line**: 427
+- **Line**: 426
 
 Ensure a directory exists, creating it if necessary.
 
@@ -1576,7 +1293,7 @@ Returns:
 ### **ensure_file_exists(filepath)**
 
 - **Type**: function
-- **Line**: 444
+- **Line**: 443
 
 Ensure a file exists, creating it with appropriate headers if necessary.
 
@@ -1589,7 +1306,7 @@ Returns:
 ### **append_to_file(file_path, content)**
 
 - **Type**: function
-- **Line**: 505
+- **Line**: 504
 
 Append content to a file with a timestamp
 
@@ -1603,56 +1320,56 @@ Returns:
 ### **process_feature_log(feature_name, content)**
 
 - **Type**: function
-- **Line**: 562
+- **Line**: 561
 
 Process a feature log entry
 
 ### **process_doc_update(doc_type, content)**
 
 - **Type**: function
-- **Line**: 598
+- **Line**: 597
 
 Process a documentation update entry
 
 ### **process_single_tag(tag, content)**
 
 - **Type**: function
-- **Line**: 619
+- **Line**: 618
 
 Process a single tag from a multi-tag block
 
 ### **route_message(message)**
 
 - **Type**: function
-- **Line**: 656
+- **Line**: 655
 
 Process a message and extract/route content based on markers.
 
 ### **read_from_file(filepath)**
 
 - **Type**: function
-- **Line**: 780
+- **Line**: 843
 
 Read content from a file
 
 ### **read_from_clipboard()**
 
 - **Type**: function
-- **Line**: 799
+- **Line**: 862
 
 Read content from the clipboard
 
 ### **watch_clipboard(interval)**
 
 - **Type**: function
-- **Line**: 807
+- **Line**: 870
 
 Watch clipboard for changes and process routing when markers are detected.
 
 ### **should_add_tags_to_message(message)**
 
 - **Type**: function
-- **Line**: 906
+- **Line**: 969
 
 Determines if a message should have tags based on its content.
 
@@ -1665,7 +1382,7 @@ Returns:
 ### **count_lines(file_path)**
 
 - **Type**: function
-- **Line**: 938
+- **Line**: 1001
 
 Count the number of lines in a file
 
@@ -1678,7 +1395,7 @@ Returns:
 ### **extract_tag_from_path(file_path)**
 
 - **Type**: function
-- **Line**: 955
+- **Line**: 1018
 
 Extract a tag name from a file path
 
@@ -1691,7 +1408,7 @@ Returns:
 ### **main()**
 
 - **Type**: function
-- **Line**: 989
+- **Line**: 1053
 
 Main entry point for the message router script.
 
