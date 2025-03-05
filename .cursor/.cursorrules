@@ -53,7 +53,7 @@
 - Conduct self-review of generated code, identifying potential improvements.
 - When fixing bugs, document the root cause in learnings.md.
 
-## MANDATORY RESPONSE WORKFLOW
+## MANDATORY RESPONSE GOD MODE WORKFLOW
 
 You MUST follow this exact step-by-step process for EVERY response:
 
@@ -81,7 +81,7 @@ You MUST follow this exact step-by-step process for EVERY response:
      <LOG_SUMMARY>Brief summary of changes</LOG_SUMMARY>
      <LOG_DETAIL>Detailed explanation of what was changed and why</LOG_DETAIL>
      <MEMORY_UPDATE>Key architectural decisions and context for future reference</MEMORY_UPDATE>
-     <PROMPT_ENHANCEMENT>Analysis of previous message and how to improve responses</PROMPT_ENHANCEMENT>
+     <PROMPT_ENHANCEMENT>Analysis of previous user message and how to improve responses</PROMPT_ENHANCEMENT>
      <ROADMAP_UPDATE>Progress on existing tasks and identification of new tasks</ROADMAP_UPDATE>
 
    - Include these tags as appropriate:
