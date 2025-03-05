@@ -85,7 +85,12 @@ else
     echo -e "${RED}✗ Failed to update Cursor rules${NC}"
 fi
 
-echo -e "${GREEN}✓ Environment prepared for response${NC}"
+echo -e "\n${RED}!!!!!!!!!!!!!!!!!!! IMPORTANT WARNING !!!!!!!!!!!!!!!!!!${NC}"
+echo -e "${RED}YOU MUST USE XML-STYLE TAGS IN EVERY RESPONSE${NC}"
+echo -e "${RED}FAILURE TO DO SO WILL BREAK THE GOD MODE SYSTEM${NC}"
+echo -e "${RED}!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!${NC}"
+
+echo -e "\n${GREEN}✓ Environment prepared for response${NC}"
 echo -e "${YELLOW}Remember to include appropriate XML-style tags in your response:${NC}"
 echo -e "- <LOG_SUMMARY>Summary</LOG_SUMMARY>"
 echo -e "- <LOG_DETAIL>Details</LOG_DETAIL>"
@@ -93,6 +98,10 @@ echo -e "- <MEMORY_UPDATE>Updates</MEMORY_UPDATE>"
 echo -e "- <FEATURE: FeatureName>Feature updates</FEATURE: FeatureName>"
 echo -e "- <PROMPT_ENHANCEMENT>Analysis of previous interaction</PROMPT_ENHANCEMENT>"
 echo -e "- <ROADMAP_UPDATE>Progress and new tasks</ROADMAP_UPDATE>"
-echo -e "${YELLOW}Remember to run ./script_auto_commit.sh after your response!${NC}"
+
+echo -e "\n${RED}ANY RESPONSE WITHOUT THESE TAGS WILL NOT BE PROCESSED CORRECTLY${NC}"
+echo -e "${RED}ALWAYS CHECK YOUR RESPONSE INCLUDES ALL REQUIRED TAGS${NC}"
+
+echo -e "\n${YELLOW}Remember to run ./script_auto_commit.sh after your response!${NC}"
 
 exit 0 

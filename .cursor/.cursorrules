@@ -55,6 +55,9 @@
 
 ## MANDATORY RESPONSE GOD MODE WORKFLOW
 
+!!!CRITICAL!!! - YOU MUST FOLLOW THIS FORMAT FOR EVERY SINGLE RESPONSE WITHOUT EXCEPTION
+FAILURE TO USE THE REQUIRED XML TAGS WILL BREAK THE ENTIRE GOD MODE SYSTEM
+
 You MUST follow this exact step-by-step process for EVERY response:
 
 1. ** INITIAL SETUP BEFORE RESPONDING **
@@ -84,6 +87,8 @@ You MUST follow this exact step-by-step process for EVERY response:
      <PROMPT_ENHANCEMENT>Analysis of previous user message and how to improve responses</PROMPT_ENHANCEMENT>
      <ROADMAP_UPDATE>Progress on existing tasks and identification of new tasks</ROADMAP_UPDATE>
 
+   !!!IMPORTANT!!! - EVERY SINGLE RESPONSE MUST INCLUDE ALL OF THE ABOVE TAGS
+
    - Include these tags as appropriate:
      <FEATURE: FeatureName>Feature-specific updates</FEATURE: FeatureName>
      <DOC_UPDATE: DocumentType>Updates to project documentation</DOC_UPDATE: DocumentType>
@@ -101,7 +106,13 @@ You MUST follow this exact step-by-step process for EVERY response:
      <MEMORY_PERFORMANCE>For performance updates</MEMORY_PERFORMANCE>
      <MEMORY_ACCESSIBILITY>For accessibility updates</MEMORY_ACCESSIBILITY>
 
-5. ** DOCUMENTATION UPDATES **
+5. ** FINAL CHECK BEFORE SUBMITTING **
+   - Review your response to ensure ALL required XML tags are present
+   - Verify that ALL XML tags are properly closed
+   - Confirm that you have not used any alternative tag formats (e.g., [TAG] instead of <TAG>)
+   - If any required tags are missing, ADD THEM NOW before submitting your response
+
+6. ** DOCUMENTATION UPDATES **
    - BEFORE finishing your response, you MUST:
    
    a) Update the features file:
@@ -119,8 +130,8 @@ You MUST follow this exact step-by-step process for EVERY response:
       - If significant changes were made to the system, update both files
         to reflect the latest architecture, components, and workflows
 
-6. ** COMPLETING YOUR RESPONSE **
-   - After completing steps 1-5, remind the user to run script_auto_commit.sh
+7. ** COMPLETING YOUR RESPONSE **
+   - After completing steps 1-6, remind the user to run script_auto_commit.sh
    - Explain that this script will:
      a) Route all XML-tagged content verbatim to appropriate memory files
      b) Auto-commit all changes to Git

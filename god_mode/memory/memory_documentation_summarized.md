@@ -383,4 +383,36 @@ As development progresses, this system has the potential to transform AI assista
 | XML Tag | Structured marker with opening and closing tags |
 | Message Router | Component that processes and routes tagged content |
 | Memory File | File that stores persistent information across sessions |
-| Prompt Enhancement | Process of improving prompts with relevant context | 
+| Prompt Enhancement | Process of improving prompts with relevant context |
+
+## GodModeConsistency
+
+### Overview
+
+The GodModeConsistency feature ensures that the God Mode system rules are consistently followed across all interactions. It removes the reliance on manual execution of scripts and proper formatting of responses.
+
+### Key Components
+
+- **CLI Command Wrapper**: The `godmode` command function automates the process of preparing the environment, enhancing prompts, and processing responses
+- **godmode-process Command**: Processes AI responses with the auto-commit script
+- **Enhanced Rules Enforcement**: Additional warnings and reminders in script_prepare_response.sh
+- **Automatic Tag Verification**: Built-in checks to ensure all required XML tags are included
+
+### How It Works
+
+1. The user runs `godmode "Your message"` in the terminal
+2. The system automatically:
+   - Runs script_prepare_response.sh
+   - Enhances the prompt with script_enhance_prompt.py
+   - Copies the enhanced prompt to the clipboard
+3. The user pastes the enhanced prompt in Cursor IDE
+4. After receiving the AI response, the user copies it and runs `godmode-process`
+5. The system automatically processes the response and updates all memory files
+
+### Benefits
+
+- Ensures consistent rule enforcement
+- Prevents broken memory files due to missing XML tags
+- Simplifies the workflow for users
+- Maintains system integrity across sessions
+- Reduces the risk of human error 

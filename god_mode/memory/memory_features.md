@@ -51,4 +51,8 @@ The structured communication system uses XML-style tags to explicitly mark diffe
 The auto-documentation feature automatically updates system documentation based on tagged content in AI responses. It maintains both summarized and detailed documentation, ensuring comprehensive system documentation is always current.
 
 ### Component Monitoring
-The component monitoring system verifies that all God Mode components are running properly. It provides status information, starts stopped components, and ensures system integrity for optimal operation. 
+The component monitoring system verifies that all God Mode components are running properly. It provides status information, starts stopped components, and ensures system integrity for optimal operation.
+
+### GodModeConsistency
+
+The GodModeConsistency feature ensures consistent application of God Mode rules across all interactions. It provides a CLI-Based Command Wrapper that automates running preparatory scripts and enforces proper XML tag formatting in responses. This removes the burden of manual script execution and ensures the memory system consistently receives properly formatted data. 

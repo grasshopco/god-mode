@@ -234,11 +234,141 @@ echo -e "  cd $SCRIPT_DIR"
 echo -e "  python script_cursor_watch.py"
 echo -e "This will monitor your Cursor conversations and enhance prompts with relevant context."
 
-echo -e "\n${GREEN}God Mode initialization complete!${NC}"
-echo -e "You can now start using God Mode with Cursor IDE."
-echo -e "Remember to update the MEMORY_CURSOR.md file with your project's specific details."
-echo -e "\nTo use the message router:"
-echo -e "  cd $SCRIPT_DIR"
-echo -e "  ./route --clipboard  # Process clipboard content"
-echo -e "  ./route --watch      # Watch clipboard for changes"
+# Step 8: Create godmode command function
+echo -e "\n${YELLOW}Step 8: Setting up godmode command function...${NC}"
+
+# Determine the user's shell profile file
+SHELL_TYPE=$(basename "$SHELL")
+case "$SHELL_TYPE" in
+  "bash")
+    PROFILE_FILE="$HOME/.bashrc"
+    ;;
+  "zsh")
+    PROFILE_FILE="$HOME/.zshrc"
+    ;;
+  *)
+    echo -e "${RED}Unsupported shell type: $SHELL_TYPE. Please manually add the godmode function to your shell profile.${NC}"
+    PROFILE_FILE=""
+    ;;
+esac
+
+if [ -n "$PROFILE_FILE" ]; then
+    echo -e "Adding godmode function to $PROFILE_FILE"
+    
+    # Check if the function already exists
+    if grep -q "function godmode" "$PROFILE_FILE"; then
+        echo -e "${YELLOW}godmode function already exists in $PROFILE_FILE. Updating...${NC}"
+        # Remove the existing function
+        sed -i '' '/function godmode/,/}/d' "$PROFILE_FILE" 2>/dev/null || sed -i '/function godmode/,/}/d' "$PROFILE_FILE"
+    fi
+    
+    # Add the function to the profile file
+    cat >> "$PROFILE_FILE" << 'EOL'
+
+# God Mode function for Cursor IDE
+function godmode() {
+    # Store the current directory
+    CURRENT_DIR=$(pwd)
+    
+    # Get script directory dynamically based on this function's location
+    GODMODE_FUNC_LINE=$(grep -n "function godmode" "$HOME/.zshrc" 2>/dev/null || grep -n "function godmode" "$HOME/.bashrc")
+    GODMODE_PROJECT_ROOT=$(echo "$GODMODE_FUNC_LINE" | grep -o "GOD_MODE_PROJECT_STARTER_TEMPLATE")
+    
+    if [ -z "$GODMODE_PROJECT_ROOT" ]; then
+        echo "Error: Cannot determine God Mode project location"
+        return 1
+    fi
+    
+    # Construct paths
+    for dir in $(find $HOME -type d -name "GOD_MODE_PROJECT_STARTER_TEMPLATE" 2>/dev/null); do
+        if [ -d "$dir/god_mode/scripts" ]; then
+            SCRIPT_DIR="$dir/god_mode/scripts"
+            GOD_MODE_DIR="$dir/god_mode"
+            PROJECT_ROOT="$dir"
+            break
+        fi
+    done
+    
+    if [ -z "$SCRIPT_DIR" ]; then
+        echo "Error: God Mode scripts directory not found"
+        return 1
+    fi
+    
+    # Check if a message was provided
+    if [ "$#" -eq 0 ]; then
+        echo "Usage: godmode \"Your message to Cursor AI\""
+        return 1
+    fi
+    
+    # Get user's message
+    USER_MESSAGE="$*"
+    
+    # Create temp file for the message
+    TEMP_MSG_FILE=$(mktemp)
+    echo "$USER_MESSAGE" > "$TEMP_MSG_FILE"
+    
+    # Run prepare response script
+    cd "$SCRIPT_DIR"
+    ./script_prepare_response.sh
+    
+    # Enhance the prompt
+    ENHANCED_PROMPT=$(python "$SCRIPT_DIR/script_enhance_prompt.py" "$USER_MESSAGE")
+    
+    # Copy enhanced prompt to clipboard
+    echo "$ENHANCED_PROMPT" | pbcopy 2>/dev/null || echo "$ENHANCED_PROMPT" | xclip -selection clipboard 2>/dev/null || echo "$ENHANCED_PROMPT" | xsel --clipboard 2>/dev/null
+    
+    echo "==================================="
+    echo "Enhanced prompt copied to clipboard"
+    echo "==================================="
+    echo "Please paste this in Cursor IDE, then after receiving the AI response:"
+    echo "1. Select the entire AI response"
+    echo "2. Copy it to the clipboard"
+    echo "3. Run 'godmode-process' in your terminal"
+    
+    # Return to the original directory
+    cd "$CURRENT_DIR"
+}
+
+# Process God Mode response
+function godmode-process() {
+    # Store the current directory
+    CURRENT_DIR=$(pwd)
+    
+    # Find God Mode scripts directory
+    for dir in $(find $HOME -type d -name "GOD_MODE_PROJECT_STARTER_TEMPLATE" 2>/dev/null); do
+        if [ -d "$dir/god_mode/scripts" ]; then
+            SCRIPT_DIR="$dir/god_mode/scripts"
+            break
+        fi
+    done
+    
+    if [ -z "$SCRIPT_DIR" ]; then
+        echo "Error: God Mode scripts directory not found"
+        return 1
+    fi
+    
+    # Run auto commit script to process the response
+    cd "$SCRIPT_DIR"
+    ./script_auto_commit.sh
+    
+    # Return to the original directory
+    cd "$CURRENT_DIR"
+}
+EOL
+
+    # Source the profile file to make the function available immediately
+    echo -e "Sourcing $PROFILE_FILE to make the godmode function available"
+    source "$PROFILE_FILE"
+    
+    echo -e "${GREEN}✓ godmode function has been added to your shell profile${NC}"
+    echo -e "Usage:"
+    echo -e "  godmode \"Your message to Cursor AI\"     # Enhance and send a message"
+    echo -e "  godmode-process                         # Process AI response"
+else
+    echo -e "${RED}Could not determine shell profile file. Please manually add the godmode function to your shell profile.${NC}"
+fi
+
+echo -e "\n${GREEN}God Mode installation and setup complete!${NC}"
+echo -e "You can now use 'godmode' to interact with Cursor AI with enhanced context and proper formatting."
+echo -e "After receiving an AI response, use 'godmode-process' to process the response and update all memory files."
 echo -e "\nEnjoy your enhanced AI coding experience!" 
