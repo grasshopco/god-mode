@@ -91,8 +91,26 @@
      <MEMORY_PERFORMANCE>For performance updates</MEMORY_PERFORMANCE>
      <MEMORY_ACCESSIBILITY>For accessibility updates</MEMORY_ACCESSIBILITY>
 
-4. ** AFTER COMPLETING YOUR RESPONSE **
-   - Ask the user to run script_auto_commit.sh 
+4. ** DOCUMENTATION UPDATES **
+   - BEFORE running the auto-commit script, you MUST:
+   
+   a) Update the features file:
+      - Open memory_features.md
+      - For each <FEATURE: FeatureName> tag in your response:
+        - Check if the feature already exists in memory_features.md
+        - If it doesn't exist, add a new section with a brief summary of the feature
+        - If it exists, ensure the information is current and accurate
+        - DO NOT duplicate existing feature entries
+   
+   b) Update the documentation files:
+      - Ensure memory_documentation_summarized.md is current
+      - Ensure memory_documentation_detailed.md is current
+      - These files should be based on their respective templates
+      - If significant changes were made to the system, update both files
+        to reflect the latest architecture, components, and workflows
+
+5. ** AFTER COMPLETING YOUR RESPONSE **
+   - After completing steps 1-4, ask the user to run script_auto_commit.sh 
    - This script will:
      a) Route content in XML tags to appropriate files
      b) Auto-commit changes to Git
@@ -110,6 +128,29 @@
   - Latest version at the top
   - Version history preserved below
   - Automatic dating and timestamping
+
+## FEATURE DOCUMENTATION SYSTEM
+- When documenting features in memory_features.md:
+  1. Use the exact feature name as the heading (### FeatureName)
+  2. Provide a concise 2-3 sentence summary of what the feature does
+  3. Focus on capabilities, not implementation details
+  4. DO NOT duplicate existing feature entries
+  5. If a feature already exists, only update it if your response adds new capabilities
+
+## DOCUMENTATION SYSTEM
+- The memory_documentation_summarized.md file should:
+  1. Provide a high-level overview of the entire system
+  2. Focus on core concepts and capabilities
+  3. Be accessible to new users of the system
+  4. Include key components and their interactions
+  5. Be updated when significant changes are made to the system architecture
+
+- The memory_documentation_detailed.md file should:
+  1. Provide comprehensive details about all aspects of the system
+  2. Include implementation details and technical specifications
+  3. Serve as a reference for experienced users
+  4. Document all components, workflows, and integration points
+  5. Be updated when implementation details change
 
 ## ROADMAP TRACKING SYSTEM
 - The <ROADMAP_UPDATE> tag must include:
@@ -183,8 +224,9 @@ Authentication tokens are now stored in HttpOnly cookies instead of localStorage
 ## CRITICALLY IMPORTANT WORKFLOW INSTRUCTIONS:
 1. BEFORE responding to the user, ALWAYS run: ./script_prepare_response.sh
 2. Structure your response using XML-style tags as shown above
-3. AFTER completing your response, ALWAYS remind the user to run: ./script_auto_commit.sh
-4. At least once per session, update the project roadmap
+3. BEFORE running the auto-commit script, update memory_features.md and documentation files as specified
+4. AFTER completing your response, ALWAYS remind the user to run: ./script_auto_commit.sh
+5. At least once per session, update the project roadmap
 
 ## SELF-IMPROVEMENT
 - Limit self-improvement iterations to 3 attempts before requesting human intervention.
@@ -201,6 +243,56 @@ Authentication tokens are now stored in HttpOnly cookies instead of localStorage
 - Key technologies include: React, Next.js, TypeScript, Supabase, and various modern web technologies.
 - Follow TypeScript best practices, including proper typing and interface definitions.
 - Consider mobile responsiveness in all UI implementations.
+
+
+
+# Message Router Markers
+All comprehensive responses that contain significant code changes, design decisions, 
+or insights MUST include markup with appropriate markers for the message router:
+
+1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
+2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
+3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
+4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
+5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
+6. Use specific memory markers for specialized updates:
+   - [MEMORY_LEARNINGS] - For insights and lessons learned
+   - [MEMORY_ARCHITECTURE] - For architecture changes
+   - [MEMORY_REQUIREMENTS] - For requirement changes
+   - [MEMORY_ROADMAP] - For roadmap updates
+   - [MEMORY_CONVENTIONS] - For convention changes
+   - [MEMORY_DEPENDENCIES] - For dependency changes
+   - [MEMORY_GLOSSARY] - For terminology updates
+   - [MEMORY_TESTING] - For testing updates
+   - [MEMORY_SECURITY] - For security updates
+   - [MEMORY_PERFORMANCE] - For performance updates
+   - [MEMORY_ACCESSIBILITY] - For accessibility updates
+7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
+   without repeating yourself. For example:
+   
+   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
+   Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+[LOG_SUMMARY]
+Brief summary of the changes in 1-2 sentences.
+
+[LOG_DETAIL]
+Detailed explanation of changes with markdown formatting.
+- What was implemented
+- Why it was done this way
+- Any alternatives considered
+
+[MEMORY_UPDATE]
+Important architectural decisions or context that future sessions should be aware of.
+
+Example with multi-tag:
+[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
+The system now uses a microservice architecture with service discovery.
 
 
 

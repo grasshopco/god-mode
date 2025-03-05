@@ -22,7 +22,7 @@ This document maps the entire project codebase, providing descriptions of direct
     * 📄 `package_version_check.mdc` - File (0.0KB, 0 lines)
     * 📄 `separation.mdc` - File (1.1KB, 0 lines) - Separation Rules
     * 📄 `test_rules.mdc` - File (2.6KB, 0 lines) - Testing Context
-  * 📄 `.cursorrules` - File (6.9KB, 0 lines) - Cursor IDE "God Mode" Configuration
+  * 📄 `.cursorrules` - File (11.5KB, 0 lines) - Cursor IDE "God Mode" Configuration
   * ⚙️ `cursor.json` - File (0.1KB, 4 lines)
   * ⚙️ `cursorrules.json` - File (1.8KB, 15 lines)
 * **📁 app/** - Directory
@@ -51,7 +51,7 @@ This document maps the entire project codebase, providing descriptions of direct
     * 📄 `cursor_watch.log` - File (0.0KB, 0 lines)
     * 📄 `debug_router.log` - File (8.0KB, 0 lines)
     * 📄 `message_router.log` - File (23649.1KB, 0 lines)
-    * 📄 `route_wrapper.log` - File (9.3KB, 0 lines)
+    * 📄 `route_wrapper.log` - File (9.7KB, 0 lines)
   * **📁 memory/** - Directory
     * **📁 continuity/** - Directory
       * 📝 `continuity_summary_20250304_094546.md` - File (1.2KB, 43 lines) - God Mode Continuity Summary
@@ -68,8 +68,8 @@ This document maps the entire project codebase, providing descriptions of direct
         * 📝 `memory_log_feature_routertracker.md` - File (2.7KB, 129 lines) - Feature Log: Routertracker
     * 📝 `feature_log.md` - File (0.9KB, 23 lines) - Feature Log
     * 📝 `log_summary.md` - File (1.6KB, 19 lines) - Log Summary
-    * 📝 `memory_accessibility.md` - File (1228.1KB, 43020 lines) - Accessibility Guidelines
-    * 📝 `memory_architecture.md` - File (1734.8KB, 63681 lines) - Project Architecture
+    * 📝 `memory_accessibility.md` - File (10.7KB, 299 lines) - Accessibility Guidelines
+    * 📝 `memory_architecture.md` - File (15.0KB, 536 lines) - Project Architecture
     * 📝 `memory_continue_questions.md` - File (0.3KB, 7 lines) - Continuation Questions
     * 📝 `memory_conventions.md` - File (1139.8KB, 43146 lines) - Project Conventions
     * 📝 `MEMORY_CURSOR.md` - File (1773.2KB, 66426 lines) - Cursor Memory: Project Context
@@ -77,27 +77,25 @@ This document maps the entire project codebase, providing descriptions of direct
     * 📝 `memory_feature_authentication.md` - File (2.7KB, 128 lines) - Feature Log: Authentication
     * 📝 `memory_feature_godmode.md` - File (2.7KB, 128 lines) - Feature Log: Godmode
     * 📝 `memory_feature_memory.md` - File (2.8KB, 79 lines) - Feature Log: Memory
-    * 📝 `memory_feature_messagerouter.md` - File (0.3KB, 10 lines) - Feature Log: MessageRouter
     * 📝 `memory_feature_routertracker.md` - File (2.7KB, 128 lines) - Feature Log: Routertracker
     * 📝 `memory_feature_supabase.md` - File (1.0KB, 33 lines) - Feature Log: Supabase
     * 📝 `memory_feature_tagsystem.md` - File (0.4KB, 10 lines) - Feature Log: TagSystem
     * 📝 `memory_feature_testdetection.md` - File (1.0KB, 33 lines) - Feature Log: Testdetection
     * 📝 `memory_functions.md` - File (54.6KB, 2715 lines) - Project Functions
-    * 📝 `memory_glossary.md` - File (1122.8KB, 40430 lines) - Project Glossary
-    * 📝 `memory_learnings.md` - File (1267.7KB, 38735 lines) - Learnings
-    * 📝 `memory_log_feature_authentication.md` - File (818.6KB, 24802 lines) - Feature Log: Authentication
-    * 📝 `memory_log_feature_featurename.md` - File (6.9KB, 317 lines) - Added: {timestamp}
-    * 📝 `memory_logs_all.md` - File (1867.5KB, 64422 lines) - All Logs
-    * 📝 `memory_logs_detailed.md` - File (2591.4KB, 81306 lines) - Current UTC timestamp: 2025-03-04 05:39 UTC
-    * 📝 `memory_logs_in_depth.md` - File (9.4KB, 204 lines) - In-Depth Logs
-    * 📝 `memory_performance.md` - File (1164.7KB, 42998 lines) - Performance Guidelines
-    * 📝 `memory_project_structure.md` - File (133.9KB, 269 lines) - Project Structure
-    * 📝 `memory_requirements.md` - File (1042.2KB, 35905 lines) - Project Requirements
-    * 📝 `memory_roadmap.md` - File (374.1KB, 18286 lines) - Project Roadmap
-    * 📝 `memory_security.md` - File (1125.5KB, 40917 lines) - Security Guidelines
-    * 📝 `memory_testing.md` - File (1120.3KB, 42993 lines) - Testing Strategy
+    * 📝 `memory_glossary.md` - File (11.0KB, 336 lines) - Project Glossary
+    * 📝 `memory_learnings.md` - File (6.2KB, 143 lines) - Learnings
+    * 📝 `memory_log_feature_authentication.md` - File (0.1KB, 5 lines) - Feature Log: Authentication
+    * 📝 `memory_logs_all.md` - File (61.7KB, 803 lines) - All Logs
+    * 📝 `memory_logs_detailed.md` - File (2.9KB, 82 lines) - Current UTC timestamp: 2025-03-04 05:39 UTC
+    * 📝 `memory_performance.md` - File (9.4KB, 278 lines) - Performance Guidelines
+    * 📝 `memory_project_structure.md` - File (21.0KB, 264 lines) - Project Structure
+    * 📝 `memory_requirements.md` - File (7.8KB, 196 lines) - Project Requirements
+    * 📝 `memory_roadmap.md` - File (2.5KB, 106 lines) - Project Roadmap
+    * 📝 `memory_security.md` - File (8.9KB, 257 lines) - Security Guidelines
+    * 📝 `memory_testing.md` - File (12.8KB, 404 lines) - Testing Strategy
     * 📝 `memory_types.md` - File (1.6KB, 59 lines) - Project Types
     * 📝 `memory_updates.md` - File (1.1KB, 30 lines) - Memory Updates Log
+    * 📝 `prompt_enhanced.md` - File (1.9KB, 45 lines) - Enhanced Prompts History
   * **📁 notepads/** - Directory
     * 📝 `notepad_architecture.md` - File (5.9KB, 163 lines) - Project Architecture Overview
     * 📝 `notepad_common_patterns.md` - File (13.0KB, 576 lines) - Common Patterns and Best Practices
@@ -158,6 +156,7 @@ This document maps the entire project codebase, providing descriptions of direct
     * 📝 `roadmap_god_mode_test_roadmap_20250304_095957_20250304_095957.md` - File (4.1KB, 137 lines) - God Mode System: Test Roadmap 20250304_095957
     * 📝 `roadmap_god_mode_test_roadmap_20250304_210932_20250304_210932.md` - File (4.1KB, 137 lines) - God Mode System: Test Roadmap 20250304_210932
     * 📝 `roadmap_god_mode_test_roadmap_20250304_220205_20250304_220205.md` - File (4.1KB, 137 lines) - God Mode System: Test Roadmap 20250304_220205
+    * 📝 `ROADMAP_OVERHAULED_SYSTEM.md` - File (0.0KB, 0 lines)
   * **📁 scripts/** - Directory
     * **📁 examples/** - Directory
       * 🐍 `demo_router_usage.py` - File (3.4KB, 111 lines) - Demo script showing how to use the message router from within another Python script.
@@ -170,7 +169,7 @@ This document maps the entire project codebase, providing descriptions of direct
     * 📄 `route` - File (5.6KB, 0 lines) - route - Wrapper script for the Message Router
     * 🐍 `script_analyze_patterns.py` - File (33.9KB, 827 lines) - Query Pattern Analysis Script
     * 🐍 `script_auto_commit.py` - File (6.7KB, 209 lines) - Auto Commit Script for God Mode
-    * 📄 `script_auto_commit.sh` - File (0.8KB, 0 lines) - Auto-commit changes to Git repository
+    * 📄 `script_auto_commit.sh` - File (3.3KB, 0 lines) - script_auto_commit.sh
     * 📄 `script_auto_iteration.sh` - File (2.4KB, 0 lines) - Auto-iteration script for continuous improvement of code
     * 🐍 `script_check_feature_logs.py` - File (16.8KB, 439 lines) - Feature Log Checker Script
     * 📄 `script_check_files.sh` - File (9.9KB, 0 lines) - script_check_files.sh
@@ -183,7 +182,7 @@ This document maps the entire project codebase, providing descriptions of direct
     * 📄 `script_cursor_watch.py.backup` - File (23.8KB, 0 lines) - Cursor Watch Script - SQLite Edition
     * 🐍 `script_debug_router.py` - File (5.3KB, 160 lines) - Debug Router Script for God Mode
     * 🐍 `script_enhance_message_content.py` - File (47.7KB, 1320 lines) - Message Content Enhancer Script
-    * 🐍 `script_enhance_prompt.py` - File (7.7KB, 240 lines) - Prompt Enhancement Script
+    * 🐍 `script_enhance_prompt.py` - File (11.5KB, 314 lines) - Prompt Enhancement Script
     * 🐍 `script_generate_roadmap.py` - File (3.1KB, 99 lines) - Roadmap Update Generator Script
     * 🐍 `script_get_utc_time.py` - File (0.6KB, 22 lines) - Script to get current UTC (Greenwich) time in a format suitable for changelog entries
     * 📄 `script_get_utc_time.sh` - File (0.3KB, 0 lines) - Script to get current UTC (Greenwich) time in a format suitable for changelog entries
@@ -261,4 +260,4 @@ This document maps the entire project codebase, providing descriptions of direct
 
 ---
 
-*This document was automatically generated on 2025-03-04 18:06:08. The AI assistant maintains it to ensure it accurately reflects the current state of the codebase.*
+*This document was automatically generated on 2025-03-04 18:37:58. The AI assistant maintains it to ensure it accurately reflects the current state of the codebase.*
