@@ -22,7 +22,7 @@ This document maps the entire project codebase, providing descriptions of direct
     * 📄 `package_version_check.mdc` - File (0.0KB, 0 lines)
     * 📄 `separation.mdc` - File (1.1KB, 0 lines) - Separation Rules
     * 📄 `test_rules.mdc` - File (2.6KB, 0 lines) - Testing Context
-  * 📄 `.cursorrules` - File (15.7KB, 0 lines) - Cursor IDE "God Mode" Configuration
+  * 📄 `.cursorrules` - File (17.9KB, 0 lines) - Cursor IDE "God Mode" Configuration
   * ⚙️ `cursor.json` - File (0.1KB, 4 lines)
   * ⚙️ `cursorrules.json` - File (1.8KB, 15 lines)
 * **📁 app/** - Directory
@@ -51,7 +51,7 @@ This document maps the entire project codebase, providing descriptions of direct
     * 📄 `cursor_watch.log` - File (0.8KB, 0 lines)
     * 📄 `debug_router.log` - File (8.0KB, 0 lines)
     * 📄 `message_router.log` - File (23657.1KB, 0 lines)
-    * 📄 `route_wrapper.log` - File (10.1KB, 0 lines)
+    * 📄 `route_wrapper.log` - File (10.5KB, 0 lines)
   * **📁 memory/** - Directory
     * **📁 continuity/** - Directory
       * 📝 `continuity_summary_20250304_094546.md` - File (1.2KB, 43 lines) - God Mode Continuity Summary
@@ -91,7 +91,7 @@ This document maps the entire project codebase, providing descriptions of direct
     * 📝 `memory_logs_all.md` - File (61.7KB, 803 lines) - All Logs
     * 📝 `memory_logs_detailed.md` - File (2.9KB, 82 lines) - Current UTC timestamp: 2025-03-04 05:39 UTC
     * 📝 `memory_performance.md` - File (9.4KB, 278 lines) - Performance Guidelines
-    * 📝 `memory_project_structure.md` - File (133.2KB, 263 lines) - Project Structure
+    * 📝 `memory_project_structure.md` - File (133.5KB, 266 lines) - Project Structure
     * 📝 `memory_requirements.md` - File (7.8KB, 196 lines) - Project Requirements
     * 📝 `memory_roadmap.md` - File (2.5KB, 106 lines) - Project Roadmap
     * 📝 `memory_security.md` - File (8.9KB, 257 lines) - Security Guidelines
@@ -263,4 +263,4 @@ This document maps the entire project codebase, providing descriptions of direct
 
 ---
 
-*This document was automatically generated on 2025-03-04 19:00:58. The AI assistant maintains it to ensure it accurately reflects the current state of the codebase.*
+*This document was automatically generated on 2025-03-04 19:09:33. The AI assistant maintains it to ensure it accurately reflects the current state of the codebase.*

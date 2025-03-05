@@ -86,12 +86,13 @@ else
 fi
 
 echo -e "${GREEN}✓ Environment prepared for response${NC}"
-echo -e "${YELLOW}Remember to include appropriate tags in your response:${NC}"
-echo -e "- [LOG_SUMMARY]"
-echo -e "- [LOG_DETAIL]"
-echo -e "- [MEMORY_UPDATE]"
-echo -e "- [FEATURE_LOG: Feature]"
-echo -e "- Use [MULTI_TAG: TAG1, TAG2] for efficiency"
+echo -e "${YELLOW}Remember to include appropriate XML-style tags in your response:${NC}"
+echo -e "- <LOG_SUMMARY>Summary</LOG_SUMMARY>"
+echo -e "- <LOG_DETAIL>Details</LOG_DETAIL>"
+echo -e "- <MEMORY_UPDATE>Updates</MEMORY_UPDATE>"
+echo -e "- <FEATURE: FeatureName>Feature updates</FEATURE: FeatureName>"
+echo -e "- <PROMPT_ENHANCEMENT>Analysis of previous interaction</PROMPT_ENHANCEMENT>"
+echo -e "- <ROADMAP_UPDATE>Progress and new tasks</ROADMAP_UPDATE>"
 echo -e "${YELLOW}Remember to run ./script_auto_commit.sh after your response!${NC}"
 
 exit 0 

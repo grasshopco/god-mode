@@ -53,28 +53,38 @@
 - Conduct self-review of generated code, identifying potential improvements.
 - When fixing bugs, document the root cause in learnings.md.
 
-## COMPREHENSIVE GOD MODE WORKFLOW
+## MANDATORY RESPONSE WORKFLOW
 
-1. ** BEGINNING OF INTERACTION **
-   - Run script_prepare_response.sh to ensure components are running
-   - Check prompt_enhanced.md for context about the conversation
-   - Review current roadmap for pending tasks and progress
+You MUST follow this exact step-by-step process for EVERY response:
 
-2. ** WHEN RECEIVING A USER MESSAGE **
-   - Store the message verbatim in user_messages.md
-   - Create enhanced version using script_enhance_prompt.py
-   - Use the enhanced version as the basis for your response
+1. ** INITIAL SETUP BEFORE RESPONDING **
+   - Run script_prepare_response.sh to ensure all components are running
 
-3. ** WHEN CRAFTING YOUR RESPONSE **
-   - Structure ALL responses using XML-STYLE TAGS ONLY (not bracket-style)
-   - ALWAYS include ALL of the following required XML-style tags:
+2. ** PROMPT ENHANCEMENT PROCESS **
+   - Open and read prompt_enhanced.md
+   - Read the "Current Enhanced Prompt" section at the top of the file
+   - Take the user's verbatim message and add it to the end of the Version History
+   - Create an enhanced version of the user's message with additional context
+   - Update prompt_enhanced.md with:
+     a. The enhanced version at the top in "Current Enhanced Prompt"
+     b. The user's verbatim message and enhanced version at the bottom in Version History
+
+3. ** ROADMAP REVIEW **
+   - Review the current roadmap file
+   - Identify tasks that have been completed based on the user's message
+   - Identify new tasks that need to be added
+   - Prepare updates for the roadmap
+
+4. ** CREATING YOUR RESPONSE **
+   - Use the enhanced prompt as the basis for your response
+   - Structure your response using ONLY XML-STYLE TAGS with these required tags:
      <LOG_SUMMARY>Brief summary of changes</LOG_SUMMARY>
      <LOG_DETAIL>Detailed explanation of what was changed and why</LOG_DETAIL>
      <MEMORY_UPDATE>Key architectural decisions and context for future reference</MEMORY_UPDATE>
-     <PROMPT_ENHANCEMENT>Analysis of previous user message and how to improve responses</PROMPT_ENHANCEMENT>
+     <PROMPT_ENHANCEMENT>Analysis of previous message and how to improve responses</PROMPT_ENHANCEMENT>
      <ROADMAP_UPDATE>Progress on existing tasks and identification of new tasks</ROADMAP_UPDATE>
 
-   - Include the following tags as appropriate for the content:
+   - Include these tags as appropriate:
      <FEATURE: FeatureName>Feature-specific updates</FEATURE: FeatureName>
      <DOC_UPDATE: DocumentType>Updates to project documentation</DOC_UPDATE: DocumentType>
 
@@ -91,8 +101,8 @@
      <MEMORY_PERFORMANCE>For performance updates</MEMORY_PERFORMANCE>
      <MEMORY_ACCESSIBILITY>For accessibility updates</MEMORY_ACCESSIBILITY>
 
-4. ** DOCUMENTATION UPDATES **
-   - BEFORE running the auto-commit script, you MUST:
+5. ** DOCUMENTATION UPDATES **
+   - BEFORE finishing your response, you MUST:
    
    a) Update the features file:
       - Open memory_features.md
@@ -109,12 +119,12 @@
       - If significant changes were made to the system, update both files
         to reflect the latest architecture, components, and workflows
 
-5. ** AFTER COMPLETING YOUR RESPONSE **
-   - After completing steps 1-4, ask the user to run script_auto_commit.sh 
-   - This script will:
-     a) Route content in XML tags to appropriate files
-     b) Auto-commit changes to Git
-     c) Update prompt_enhanced.md with latest analysis
+6. ** COMPLETING YOUR RESPONSE **
+   - After completing steps 1-5, remind the user to run script_auto_commit.sh
+   - Explain that this script will:
+     a) Route all XML-tagged content verbatim to appropriate memory files
+     b) Auto-commit all changes to Git
+     c) Update prompt_enhanced.md with the latest analysis
      d) Update roadmap files with progress
 
 ## PROMPT ENHANCEMENT SYSTEM
@@ -124,10 +134,24 @@
   3. Assessment of how well the previous AI response addressed the user's needs
   4. Improvement suggestions for future responses
 
-- The content will be stored in prompt_enhanced.md with:
-  - Latest version at the top
-  - Version history preserved below
+- The content in prompt_enhanced.md MUST be structured as:
+  - "Current Enhanced Prompt" at the top (latest version)
+  - "Version History" below with all previous versions
+  - Each version includes the user's verbatim message and your enhanced version
   - Automatic dating and timestamping
+
+## VERBATIM CONTENT ROUTING
+- All content within XML tags will be routed VERBATIM to appropriate files
+- No interpretation or transformation of content is performed
+- The entire user message is also copied to relevant files
+- Each XML tag corresponds to a specific destination file:
+  1. <LOG_SUMMARY> → memory_logs_all.md
+  2. <LOG_DETAIL> → memory_logs_detailed.md
+  3. <MEMORY_UPDATE> → MEMORY_CURSOR.md
+  4. <FEATURE: Name> → memory_features.md
+  5. <ROADMAP_UPDATE> → appropriate roadmap file
+  6. <PROMPT_ENHANCEMENT> → prompt_enhanced.md
+  7. Other specialized tags to their respective files
 
 ## FEATURE DOCUMENTATION SYSTEM
 - When documenting features in memory_features.md:
@@ -222,11 +246,11 @@ Authentication tokens are now stored in HttpOnly cookies instead of localStorage
 </MEMORY_SECURITY>
 
 ## CRITICALLY IMPORTANT WORKFLOW INSTRUCTIONS:
-1. BEFORE responding to the user, ALWAYS run: ./script_prepare_response.sh
-2. Structure your response using XML-style tags as shown above
-3. BEFORE running the auto-commit script, update memory_features.md and documentation files as specified
-4. AFTER completing your response, ALWAYS remind the user to run: ./script_auto_commit.sh
-5. At least once per session, update the project roadmap
+1. Run script_prepare_response.sh BEFORE responding to the user
+2. Read and use the enhanced prompt at the top of prompt_enhanced.md
+3. Structure your response using XML-style tags EXACTLY as shown above
+4. Update memory_features.md and documentation files BEFORE completing your response
+5. Remind the user to run script_auto_commit.sh AFTER your response
 
 ## SELF-IMPROVEMENT
 - Limit self-improvement iterations to 3 attempts before requesting human intervention.
@@ -243,153 +267,3 @@ Authentication tokens are now stored in HttpOnly cookies instead of localStorage
 - Key technologies include: React, Next.js, TypeScript, Supabase, and various modern web technologies.
 - Follow TypeScript best practices, including proper typing and interface definitions.
 - Consider mobile responsiveness in all UI implementations.
-
-
-
-# Message Router Markers
-All comprehensive responses that contain significant code changes, design decisions, 
-or insights MUST include markup with appropriate markers for the message router:
-
-1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
-2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
-3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
-4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
-5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
-6. Use specific memory markers for specialized updates:
-   - [MEMORY_LEARNINGS] - For insights and lessons learned
-   - [MEMORY_ARCHITECTURE] - For architecture changes
-   - [MEMORY_REQUIREMENTS] - For requirement changes
-   - [MEMORY_ROADMAP] - For roadmap updates
-   - [MEMORY_CONVENTIONS] - For convention changes
-   - [MEMORY_DEPENDENCIES] - For dependency changes
-   - [MEMORY_GLOSSARY] - For terminology updates
-   - [MEMORY_TESTING] - For testing updates
-   - [MEMORY_SECURITY] - For security updates
-   - [MEMORY_PERFORMANCE] - For performance updates
-   - [MEMORY_ACCESSIBILITY] - For accessibility updates
-7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
-   without repeating yourself. For example:
-   
-   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
-   Implemented JWT authentication with refresh token rotation.
-
-These markers must be formatted exactly as shown (with square brackets) and must be placed
-on their own lines, followed by the relevant content. This markup enables automatic 
-documentation and persistent memory across sessions.
-
-Example format:
-[LOG_SUMMARY]
-Brief summary of the changes in 1-2 sentences.
-
-[LOG_DETAIL]
-Detailed explanation of changes with markdown formatting.
-- What was implemented
-- Why it was done this way
-- Any alternatives considered
-
-[MEMORY_UPDATE]
-Important architectural decisions or context that future sessions should be aware of.
-
-Example with multi-tag:
-[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
-The system now uses a microservice architecture with service discovery.
-
-
-
-# Message Router Markers
-All comprehensive responses that contain significant code changes, design decisions, 
-or insights MUST include markup with appropriate markers for the message router:
-
-1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
-2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
-3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
-4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
-5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
-6. Use specific memory markers for specialized updates:
-   - [MEMORY_LEARNINGS] - For insights and lessons learned
-   - [MEMORY_ARCHITECTURE] - For architecture changes
-   - [MEMORY_REQUIREMENTS] - For requirement changes
-   - [MEMORY_ROADMAP] - For roadmap updates
-   - [MEMORY_CONVENTIONS] - For convention changes
-   - [MEMORY_DEPENDENCIES] - For dependency changes
-   - [MEMORY_GLOSSARY] - For terminology updates
-   - [MEMORY_TESTING] - For testing updates
-   - [MEMORY_SECURITY] - For security updates
-   - [MEMORY_PERFORMANCE] - For performance updates
-   - [MEMORY_ACCESSIBILITY] - For accessibility updates
-7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
-   without repeating yourself. For example:
-   
-   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
-   Implemented JWT authentication with refresh token rotation.
-
-These markers must be formatted exactly as shown (with square brackets) and must be placed
-on their own lines, followed by the relevant content. This markup enables automatic 
-documentation and persistent memory across sessions.
-
-Example format:
-[LOG_SUMMARY]
-Brief summary of the changes in 1-2 sentences.
-
-[LOG_DETAIL]
-Detailed explanation of changes with markdown formatting.
-- What was implemented
-- Why it was done this way
-- Any alternatives considered
-
-[MEMORY_UPDATE]
-Important architectural decisions or context that future sessions should be aware of.
-
-Example with multi-tag:
-[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
-The system now uses a microservice architecture with service discovery.
-
-
-
-# Message Router Markers
-All comprehensive responses that contain significant code changes, design decisions, 
-or insights MUST include markup with appropriate markers for the message router:
-
-1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
-2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
-3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
-4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
-5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
-6. Use specific memory markers for specialized updates:
-   - [MEMORY_LEARNINGS] - For insights and lessons learned
-   - [MEMORY_ARCHITECTURE] - For architecture changes
-   - [MEMORY_REQUIREMENTS] - For requirement changes
-   - [MEMORY_ROADMAP] - For roadmap updates
-   - [MEMORY_CONVENTIONS] - For convention changes
-   - [MEMORY_DEPENDENCIES] - For dependency changes
-   - [MEMORY_GLOSSARY] - For terminology updates
-   - [MEMORY_TESTING] - For testing updates
-   - [MEMORY_SECURITY] - For security updates
-   - [MEMORY_PERFORMANCE] - For performance updates
-   - [MEMORY_ACCESSIBILITY] - For accessibility updates
-7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
-   without repeating yourself. For example:
-   
-   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
-   Implemented JWT authentication with refresh token rotation.
-
-These markers must be formatted exactly as shown (with square brackets) and must be placed
-on their own lines, followed by the relevant content. This markup enables automatic 
-documentation and persistent memory across sessions.
-
-Example format:
-[LOG_SUMMARY]
-Brief summary of the changes in 1-2 sentences.
-
-[LOG_DETAIL]
-Detailed explanation of changes with markdown formatting.
-- What was implemented
-- Why it was done this way
-- Any alternatives considered
-
-[MEMORY_UPDATE]
-Important architectural decisions or context that future sessions should be aware of.
-
-Example with multi-tag:
-[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
-The system now uses a microservice architecture with service discovery.
