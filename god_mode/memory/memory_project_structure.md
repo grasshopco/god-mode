@@ -22,7 +22,7 @@ This document maps the entire project codebase, providing descriptions of direct
     * 📄 `package_version_check.mdc` - File (0.0KB, 0 lines)
     * 📄 `separation.mdc` - File (1.1KB, 0 lines) - Separation Rules
     * 📄 `test_rules.mdc` - File (2.6KB, 0 lines) - Testing Context
-  * 📄 `.cursorrules` - File (11.5KB, 0 lines) - Cursor IDE "God Mode" Configuration
+  * 📄 `.cursorrules` - File (15.7KB, 0 lines) - Cursor IDE "God Mode" Configuration
   * ⚙️ `cursor.json` - File (0.1KB, 4 lines)
   * ⚙️ `cursorrules.json` - File (1.8KB, 15 lines)
 * **📁 app/** - Directory
@@ -48,10 +48,10 @@ This document maps the entire project codebase, providing descriptions of direct
   * **📁 instructions/** - Directory
   * **📁 issues/** - Directory
   * **📁 logs/** - Directory
-    * 📄 `cursor_watch.log` - File (0.0KB, 0 lines)
+    * 📄 `cursor_watch.log` - File (0.8KB, 0 lines)
     * 📄 `debug_router.log` - File (8.0KB, 0 lines)
-    * 📄 `message_router.log` - File (23649.1KB, 0 lines)
-    * 📄 `route_wrapper.log` - File (9.7KB, 0 lines)
+    * 📄 `message_router.log` - File (23657.1KB, 0 lines)
+    * 📄 `route_wrapper.log` - File (10.1KB, 0 lines)
   * **📁 memory/** - Directory
     * **📁 continuity/** - Directory
       * 📝 `continuity_summary_20250304_094546.md` - File (1.2KB, 43 lines) - God Mode Continuity Summary
@@ -71,9 +71,11 @@ This document maps the entire project codebase, providing descriptions of direct
     * 📝 `memory_accessibility.md` - File (10.7KB, 299 lines) - Accessibility Guidelines
     * 📝 `memory_architecture.md` - File (15.0KB, 536 lines) - Project Architecture
     * 📝 `memory_continue_questions.md` - File (0.3KB, 7 lines) - Continuation Questions
-    * 📝 `memory_conventions.md` - File (1139.8KB, 43146 lines) - Project Conventions
+    * 📝 `memory_conventions.md` - File (11.5KB, 426 lines) - Project Conventions
     * 📝 `MEMORY_CURSOR.md` - File (1773.2KB, 66426 lines) - Cursor Memory: Project Context
     * 📝 `memory_dependencies.md` - File (1045.2KB, 38926 lines) - Project Dependencies
+    * 📝 `memory_documentation_detailed.md` - File (30.0KB, 772 lines) - God Mode System: The Definitive Documentation
+    * 📝 `memory_documentation_summarized.md` - File (14.5KB, 386 lines) - God Mode System: A Comprehensive Framework
     * 📝 `memory_feature_authentication.md` - File (2.7KB, 128 lines) - Feature Log: Authentication
     * 📝 `memory_feature_godmode.md` - File (2.7KB, 128 lines) - Feature Log: Godmode
     * 📝 `memory_feature_memory.md` - File (2.8KB, 79 lines) - Feature Log: Memory
@@ -81,6 +83,7 @@ This document maps the entire project codebase, providing descriptions of direct
     * 📝 `memory_feature_supabase.md` - File (1.0KB, 33 lines) - Feature Log: Supabase
     * 📝 `memory_feature_tagsystem.md` - File (0.4KB, 10 lines) - Feature Log: TagSystem
     * 📝 `memory_feature_testdetection.md` - File (1.0KB, 33 lines) - Feature Log: Testdetection
+    * 📝 `memory_features.md` - File (4.0KB, 54 lines) - God Mode Features Summary
     * 📝 `memory_functions.md` - File (54.6KB, 2715 lines) - Project Functions
     * 📝 `memory_glossary.md` - File (11.0KB, 336 lines) - Project Glossary
     * 📝 `memory_learnings.md` - File (6.2KB, 143 lines) - Learnings
@@ -88,7 +91,7 @@ This document maps the entire project codebase, providing descriptions of direct
     * 📝 `memory_logs_all.md` - File (61.7KB, 803 lines) - All Logs
     * 📝 `memory_logs_detailed.md` - File (2.9KB, 82 lines) - Current UTC timestamp: 2025-03-04 05:39 UTC
     * 📝 `memory_performance.md` - File (9.4KB, 278 lines) - Performance Guidelines
-    * 📝 `memory_project_structure.md` - File (21.0KB, 264 lines) - Project Structure
+    * 📝 `memory_project_structure.md` - File (133.2KB, 263 lines) - Project Structure
     * 📝 `memory_requirements.md` - File (7.8KB, 196 lines) - Project Requirements
     * 📝 `memory_roadmap.md` - File (2.5KB, 106 lines) - Project Roadmap
     * 📝 `memory_security.md` - File (8.9KB, 257 lines) - Security Guidelines
@@ -156,7 +159,7 @@ This document maps the entire project codebase, providing descriptions of direct
     * 📝 `roadmap_god_mode_test_roadmap_20250304_095957_20250304_095957.md` - File (4.1KB, 137 lines) - God Mode System: Test Roadmap 20250304_095957
     * 📝 `roadmap_god_mode_test_roadmap_20250304_210932_20250304_210932.md` - File (4.1KB, 137 lines) - God Mode System: Test Roadmap 20250304_210932
     * 📝 `roadmap_god_mode_test_roadmap_20250304_220205_20250304_220205.md` - File (4.1KB, 137 lines) - God Mode System: Test Roadmap 20250304_220205
-    * 📝 `ROADMAP_OVERHAULED_SYSTEM.md` - File (0.0KB, 0 lines)
+    * 📝 `ROADMAP_OVERHAULED_SYSTEM.md` - File (8.2KB, 159 lines) - God Mode System: Verbatim Content Routing Overhaul
   * **📁 scripts/** - Directory
     * **📁 examples/** - Directory
       * 🐍 `demo_router_usage.py` - File (3.4KB, 111 lines) - Demo script showing how to use the message router from within another Python script.
@@ -260,4 +263,4 @@ This document maps the entire project codebase, providing descriptions of direct
 
 ---
 
-*This document was automatically generated on 2025-03-04 18:37:58. The AI assistant maintains it to ensure it accurately reflects the current state of the codebase.*
+*This document was automatically generated on 2025-03-04 19:00:58. The AI assistant maintains it to ensure it accurately reflects the current state of the codebase.*
