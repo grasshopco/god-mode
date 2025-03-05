@@ -235,8 +235,18 @@ def update_prompt_enhanced_file(enhancement_content):
         return False
     
     prompt_enhanced_file = GOD_MODE_DIR / "memory" / "prompt_enhanced.md"
+    last_message_file = GOD_MODE_DIR / "memory" / ".last_user_message"
     
     try:
+        # Get the last user message if available
+        user_message = ""
+        if last_message_file.exists():
+            try:
+                with open(last_message_file, 'r') as f:
+                    user_message = f.read().strip()
+            except Exception as e:
+                log_warning(f"Could not read last user message: {e}")
+        
         # Create file if it doesn't exist
         if not prompt_enhanced_file.exists():
             prompt_enhanced_file.parent.mkdir(parents=True, exist_ok=True)
@@ -253,8 +263,11 @@ def update_prompt_enhanced_file(enhancement_content):
         # Update current enhanced prompt
         current_section = f"## Current Enhanced Prompt\n\n*Last Updated: {timestamp}*\n\n{enhancement_content}"
         
-        # Add to version history
-        version_entry = f"### Version {int(time.time())} - {timestamp}\n\n{enhancement_content}"
+        # Add to version history with user message
+        version_entry = f"### Version {int(time.time())} - {timestamp}\n\n"
+        if user_message:
+            version_entry += f"**User's Message:**\n```\n{user_message}\n```\n\n"
+        version_entry += f"**Enhanced Prompt:**\n{enhancement_content}"
         
         # Find where to insert the version
         if "## Version History" in existing_content:

@@ -15,6 +15,7 @@ NC='\033[0m' # No Color
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 GOD_MODE_DIR="$SCRIPT_DIR/god_mode"
 SCRIPTS_DIR="$GOD_MODE_DIR/scripts"
+MEMORY_DIR="$GOD_MODE_DIR/memory"
 
 # Check if message was provided
 if [ "$#" -eq 0 ]; then
@@ -25,6 +26,10 @@ fi
 
 # Get user's message (combine all arguments)
 USER_MESSAGE="$*"
+
+# Save user message for later use by godmode-process.sh
+echo "$USER_MESSAGE" > "$MEMORY_DIR/.last_user_message"
+echo -e "${BLUE}Saved user message for processing with the response${NC}"
 
 # Create temp file for the message
 TEMP_MSG_FILE=$(mktemp)
@@ -48,7 +53,7 @@ echo -e "${GREEN}==================================${NC}"
 echo -e "Please paste this in Cursor IDE, then after receiving the AI response:"
 echo -e "1. Select the entire AI response"
 echo -e "2. Copy it to the clipboard"
-echo -e "3. Run './godmode-process.sh' in your terminal"
+echo -e "3. Run './godmode-process' in your terminal"
 
 # Clean up temp file
 rm "$TEMP_MSG_FILE"

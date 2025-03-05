@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "godmode": {
+      "command": "python3",
+      "args": [
+        "${workspaceRoot}/god_mode/scripts/script_mcp_server.py",
+        "--debug"
+      ]
+    }
+  }
+} 

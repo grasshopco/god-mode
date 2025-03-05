@@ -1,2 +1,0 @@
-[FEATURE_LOG: TestDetection]
-This is a test to see if the cursor_watch script is properly detecting and processing feature logs.

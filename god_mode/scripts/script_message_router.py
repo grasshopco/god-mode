@@ -98,9 +98,14 @@ except ImportError as e:
         return False, "No tags found in message"
     
     def log_tag_validation(is_valid, reason):
-        # Stub that does nothing
-        debug_log(f"Would log validation: {is_valid}, reason: {reason}")
-        pass
+        """
+        Logs tag validation results
+        
+        Args:
+            is_valid (bool): Whether the message is valid
+            reason (str): Reason for validity status
+        """
+        debug_log(f"Tag validation: {is_valid}, reason: {reason}")
 
 # Check for required dependencies
 def check_dependencies():
@@ -175,23 +180,23 @@ DISCUSSION_DIR = Path(script_dir).parent / "discussion"
 CACHE_DIR = Path(script_dir).parent / ".cache"
 
 # Define the log files
-LOG_SUMMARY_FILE = MEMORY_DIR / "memory_logs_all.md"
-LOG_DETAIL_FILE = MEMORY_DIR / "memory_logs_detailed.md"
+LOG_SUMMARY = MEMORY_DIR / "memory_logs_all.md"
+LOG_DETAIL = MEMORY_DIR / "memory_logs_detailed.md"
 
 # Define memory files
-MEMORY_UPDATE_FILE = MEMORY_DIR / "MEMORY_CURSOR.md"
-MEMORY_LEARNINGS_FILE = MEMORY_DIR / "memory_learnings.md"
-MEMORY_UPDATES_FILE = MEMORY_DIR / "memory_updates.md"
-MEMORY_REQUIREMENTS_FILE = MEMORY_DIR / "memory_requirements.md"
-MEMORY_ROADMAP_FILE = MEMORY_DIR / "memory_roadmap.md"
-MEMORY_ARCHITECTURE_FILE = MEMORY_DIR / "memory_architecture.md"
-MEMORY_CONVENTIONS_FILE = MEMORY_DIR / "memory_conventions.md"
-MEMORY_DEPENDENCIES_FILE = MEMORY_DIR / "memory_dependencies.md"
-MEMORY_GLOSSARY_FILE = MEMORY_DIR / "memory_glossary.md"
-MEMORY_TESTING_FILE = MEMORY_DIR / "memory_testing.md"
-MEMORY_SECURITY_FILE = MEMORY_DIR / "memory_security.md"
-MEMORY_PERFORMANCE_FILE = MEMORY_DIR / "memory_performance.md"
-MEMORY_ACCESSIBILITY_FILE = MEMORY_DIR / "memory_accessibility.md"
+MEMORY_UPDATE = MEMORY_DIR / "MEMORY_CURSOR.md"
+MEMORY_LEARNINGS = MEMORY_DIR / "memory_learnings.md"
+MEMORY_UPDATES = MEMORY_DIR / "memory_updates.md"
+MEMORY_REQUIREMENTS = MEMORY_DIR / "memory_requirements.md"
+MEMORY_ROADMAP = MEMORY_DIR / "memory_roadmap.md"
+MEMORY_ARCHITECTURE = MEMORY_DIR / "memory_architecture.md"
+MEMORY_CONVENTIONS = MEMORY_DIR / "memory_conventions.md"
+MEMORY_DEPENDENCIES = MEMORY_DIR / "memory_dependencies.md"
+MEMORY_GLOSSARY = MEMORY_DIR / "memory_glossary.md"
+MEMORY_TESTING = MEMORY_DIR / "memory_testing.md"
+MEMORY_SECURITY = MEMORY_DIR / "memory_security.md"
+MEMORY_PERFORMANCE = MEMORY_DIR / "memory_performance.md"
+MEMORY_ACCESSIBILITY = MEMORY_DIR / "memory_accessibility.md"
 
 # Define the patterns for each marker type
 patterns = {
@@ -214,6 +219,25 @@ patterns = {
     'FEATURE': r"\[FEATURE\s*:\s*([^]]+)\](.*?)(?=\[|\Z)",  # Special case for feature logs
     'DOC_UPDATE': r"\[DOC_UPDATE\s*:\s*([^]]+)\](.*?)(?=\[|\Z)",  # Special case for documentation updates
     'MULTI_TAG': r"\[MULTI_TAG\s*:\s*([^]]+)\](.*?)(?=\[|\Z)"  # Special case for multi-tags
+}
+
+# Define a mapping from tag names to file paths
+tag_to_file_mapping = {
+    'LOG_SUMMARY': LOG_SUMMARY,
+    'LOG_DETAIL': LOG_DETAIL,
+    'MEMORY_UPDATE': MEMORY_UPDATE,
+    'MEMORY_LEARNINGS': MEMORY_LEARNINGS,
+    'MEMORY_UPDATES': MEMORY_UPDATES,
+    'MEMORY_REQUIREMENTS': MEMORY_REQUIREMENTS,
+    'MEMORY_ROADMAP': MEMORY_ROADMAP,
+    'MEMORY_ARCHITECTURE': MEMORY_ARCHITECTURE,
+    'MEMORY_CONVENTIONS': MEMORY_CONVENTIONS,
+    'MEMORY_DEPENDENCIES': MEMORY_DEPENDENCIES,
+    'MEMORY_GLOSSARY': MEMORY_GLOSSARY,
+    'MEMORY_TESTING': MEMORY_TESTING,
+    'MEMORY_SECURITY': MEMORY_SECURITY,
+    'MEMORY_PERFORMANCE': MEMORY_PERFORMANCE,
+    'MEMORY_ACCESSIBILITY': MEMORY_ACCESSIBILITY
 }
 
 def send_notification(title, message):
@@ -635,13 +659,22 @@ def process_single_tag(tag, content):
             return
 
         # Handle standard tags
-        for pattern, file_path in patterns.items():
+        # First try direct match in the tag_to_file_mapping
+        if tag in tag_to_file_mapping:
+            file_path = tag_to_file_mapping[tag]
+            debug_log(f"Direct match - tag {tag} to file {file_path}")
+            append_to_file(file_path, content)
+            send_notification("Content Routed", f"Content added to {os.path.basename(file_path)}")
+            return
+        
+        # If not found, try to match using patterns (for backward compatibility)
+        for pattern, regex in patterns.items():
             # Convert regex pattern to a simple tag name for comparison
-            # This is a heuristic approach - it may need refinement
             simple_pattern = pattern.replace(r"\[", "").replace(r"\]", "").split("\\")[0]
             if tag == simple_pattern or tag == simple_pattern.replace("_", " "):
-                if file_path:
-                    debug_log(f"Matched tag {tag} to file {file_path}")
+                if pattern in tag_to_file_mapping:
+                    file_path = tag_to_file_mapping[pattern]
+                    debug_log(f"Pattern match - tag {tag} to file {file_path}")
                     append_to_file(file_path, content)
                     send_notification("Content Routed", f"Content added to {os.path.basename(file_path)}")
                     return
@@ -705,18 +738,22 @@ def route_message(message):
                         updated_files.append(f"documentation_{doc_type}_main.md")
             # For standard memory tags
             else:
-                tag = tag.upper()  # Normalize tag name
-                # Find the appropriate file for this tag
-                for pattern, file_path in patterns.items():
-                    if tag == pattern or tag in pattern:
-                        if file_path and append_to_file(file_path, content):
-                            # Make sure file_path is a Path object before accessing name
-                            if isinstance(file_path, str):
-                                file_name = Path(file_path).name
-                            else:
-                                file_name = file_path.name
-                            updated_files.append(file_name)
-                            break
+                tag_name = tag.upper()  # Normalize tag name
+                
+                # Check if this tag is in our mapping
+                if tag_name in tag_to_file_mapping:
+                    file_path = tag_to_file_mapping[tag_name]
+                    debug_log(f"Mapped XML tag {tag_name} to file {file_path}")
+                    
+                    if append_to_file(file_path, content):
+                        # Make sure file_path is a Path object before accessing name
+                        if isinstance(file_path, str):
+                            file_name = Path(file_path).name
+                        else:
+                            file_name = file_path.name
+                        updated_files.append(file_name)
+                else:
+                    debug_log(f"No file mapping found for XML tag: {tag_name}")
             
             # Mark this content as processed
             processed_blocks.add(content_hash)

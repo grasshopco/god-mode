@@ -428,3 +428,403 @@ Important architectural decisions or context that future sessions should be awar
 Example with multi-tag:
 [MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
 The system now uses a microservice architecture with service discovery.
+
+
+
+# Message Router Markers
+All comprehensive responses that contain significant code changes, design decisions, 
+or insights MUST include markup with appropriate markers for the message router:
+
+1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
+2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
+3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
+4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
+5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
+6. Use specific memory markers for specialized updates:
+   - [MEMORY_LEARNINGS] - For insights and lessons learned
+   - [MEMORY_ARCHITECTURE] - For architecture changes
+   - [MEMORY_REQUIREMENTS] - For requirement changes
+   - [MEMORY_ROADMAP] - For roadmap updates
+   - [MEMORY_CONVENTIONS] - For convention changes
+   - [MEMORY_DEPENDENCIES] - For dependency changes
+   - [MEMORY_GLOSSARY] - For terminology updates
+   - [MEMORY_TESTING] - For testing updates
+   - [MEMORY_SECURITY] - For security updates
+   - [MEMORY_PERFORMANCE] - For performance updates
+   - [MEMORY_ACCESSIBILITY] - For accessibility updates
+7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
+   without repeating yourself. For example:
+   
+   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
+   Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+[LOG_SUMMARY]
+Brief summary of the changes in 1-2 sentences.
+
+[LOG_DETAIL]
+Detailed explanation of changes with markdown formatting.
+- What was implemented
+- Why it was done this way
+- Any alternatives considered
+
+[MEMORY_UPDATE]
+Important architectural decisions or context that future sessions should be aware of.
+
+Example with multi-tag:
+[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
+The system now uses a microservice architecture with service discovery.
+
+
+
+# Message Router Markers
+All comprehensive responses that contain significant code changes, design decisions, 
+or insights MUST include markup with appropriate markers for the message router:
+
+1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
+2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
+3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
+4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
+5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
+6. Use specific memory markers for specialized updates:
+   - [MEMORY_LEARNINGS] - For insights and lessons learned
+   - [MEMORY_ARCHITECTURE] - For architecture changes
+   - [MEMORY_REQUIREMENTS] - For requirement changes
+   - [MEMORY_ROADMAP] - For roadmap updates
+   - [MEMORY_CONVENTIONS] - For convention changes
+   - [MEMORY_DEPENDENCIES] - For dependency changes
+   - [MEMORY_GLOSSARY] - For terminology updates
+   - [MEMORY_TESTING] - For testing updates
+   - [MEMORY_SECURITY] - For security updates
+   - [MEMORY_PERFORMANCE] - For performance updates
+   - [MEMORY_ACCESSIBILITY] - For accessibility updates
+7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
+   without repeating yourself. For example:
+   
+   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
+   Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+[LOG_SUMMARY]
+Brief summary of the changes in 1-2 sentences.
+
+[LOG_DETAIL]
+Detailed explanation of changes with markdown formatting.
+- What was implemented
+- Why it was done this way
+- Any alternatives considered
+
+[MEMORY_UPDATE]
+Important architectural decisions or context that future sessions should be aware of.
+
+Example with multi-tag:
+[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
+The system now uses a microservice architecture with service discovery.
+
+
+
+# Message Router Markers
+All comprehensive responses that contain significant code changes, design decisions, 
+or insights MUST include markup with appropriate markers for the message router:
+
+1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
+2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
+3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
+4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
+5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
+6. Use specific memory markers for specialized updates:
+   - [MEMORY_LEARNINGS] - For insights and lessons learned
+   - [MEMORY_ARCHITECTURE] - For architecture changes
+   - [MEMORY_REQUIREMENTS] - For requirement changes
+   - [MEMORY_ROADMAP] - For roadmap updates
+   - [MEMORY_CONVENTIONS] - For convention changes
+   - [MEMORY_DEPENDENCIES] - For dependency changes
+   - [MEMORY_GLOSSARY] - For terminology updates
+   - [MEMORY_TESTING] - For testing updates
+   - [MEMORY_SECURITY] - For security updates
+   - [MEMORY_PERFORMANCE] - For performance updates
+   - [MEMORY_ACCESSIBILITY] - For accessibility updates
+7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
+   without repeating yourself. For example:
+   
+   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
+   Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+[LOG_SUMMARY]
+Brief summary of the changes in 1-2 sentences.
+
+[LOG_DETAIL]
+Detailed explanation of changes with markdown formatting.
+- What was implemented
+- Why it was done this way
+- Any alternatives considered
+
+[MEMORY_UPDATE]
+Important architectural decisions or context that future sessions should be aware of.
+
+Example with multi-tag:
+[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
+The system now uses a microservice architecture with service discovery.
+
+
+
+# Message Router Markers
+All comprehensive responses that contain significant code changes, design decisions, 
+or insights MUST include markup with appropriate markers for the message router:
+
+1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
+2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
+3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
+4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
+5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
+6. Use specific memory markers for specialized updates:
+   - [MEMORY_LEARNINGS] - For insights and lessons learned
+   - [MEMORY_ARCHITECTURE] - For architecture changes
+   - [MEMORY_REQUIREMENTS] - For requirement changes
+   - [MEMORY_ROADMAP] - For roadmap updates
+   - [MEMORY_CONVENTIONS] - For convention changes
+   - [MEMORY_DEPENDENCIES] - For dependency changes
+   - [MEMORY_GLOSSARY] - For terminology updates
+   - [MEMORY_TESTING] - For testing updates
+   - [MEMORY_SECURITY] - For security updates
+   - [MEMORY_PERFORMANCE] - For performance updates
+   - [MEMORY_ACCESSIBILITY] - For accessibility updates
+7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
+   without repeating yourself. For example:
+   
+   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
+   Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+[LOG_SUMMARY]
+Brief summary of the changes in 1-2 sentences.
+
+[LOG_DETAIL]
+Detailed explanation of changes with markdown formatting.
+- What was implemented
+- Why it was done this way
+- Any alternatives considered
+
+[MEMORY_UPDATE]
+Important architectural decisions or context that future sessions should be aware of.
+
+Example with multi-tag:
+[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
+The system now uses a microservice architecture with service discovery.
+
+
+
+# Message Router Markers
+All comprehensive responses that contain significant code changes, design decisions, 
+or insights MUST include markup with appropriate markers for the message router:
+
+1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
+2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
+3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
+4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
+5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
+6. Use specific memory markers for specialized updates:
+   - [MEMORY_LEARNINGS] - For insights and lessons learned
+   - [MEMORY_ARCHITECTURE] - For architecture changes
+   - [MEMORY_REQUIREMENTS] - For requirement changes
+   - [MEMORY_ROADMAP] - For roadmap updates
+   - [MEMORY_CONVENTIONS] - For convention changes
+   - [MEMORY_DEPENDENCIES] - For dependency changes
+   - [MEMORY_GLOSSARY] - For terminology updates
+   - [MEMORY_TESTING] - For testing updates
+   - [MEMORY_SECURITY] - For security updates
+   - [MEMORY_PERFORMANCE] - For performance updates
+   - [MEMORY_ACCESSIBILITY] - For accessibility updates
+7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
+   without repeating yourself. For example:
+   
+   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
+   Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+[LOG_SUMMARY]
+Brief summary of the changes in 1-2 sentences.
+
+[LOG_DETAIL]
+Detailed explanation of changes with markdown formatting.
+- What was implemented
+- Why it was done this way
+- Any alternatives considered
+
+[MEMORY_UPDATE]
+Important architectural decisions or context that future sessions should be aware of.
+
+Example with multi-tag:
+[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
+The system now uses a microservice architecture with service discovery.
+
+
+
+# Message Router Markers
+All comprehensive responses that contain significant code changes, design decisions, 
+or insights MUST include markup with appropriate markers for the message router:
+
+1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
+2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
+3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
+4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
+5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
+6. Use specific memory markers for specialized updates:
+   - [MEMORY_LEARNINGS] - For insights and lessons learned
+   - [MEMORY_ARCHITECTURE] - For architecture changes
+   - [MEMORY_REQUIREMENTS] - For requirement changes
+   - [MEMORY_ROADMAP] - For roadmap updates
+   - [MEMORY_CONVENTIONS] - For convention changes
+   - [MEMORY_DEPENDENCIES] - For dependency changes
+   - [MEMORY_GLOSSARY] - For terminology updates
+   - [MEMORY_TESTING] - For testing updates
+   - [MEMORY_SECURITY] - For security updates
+   - [MEMORY_PERFORMANCE] - For performance updates
+   - [MEMORY_ACCESSIBILITY] - For accessibility updates
+7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
+   without repeating yourself. For example:
+   
+   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
+   Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+[LOG_SUMMARY]
+Brief summary of the changes in 1-2 sentences.
+
+[LOG_DETAIL]
+Detailed explanation of changes with markdown formatting.
+- What was implemented
+- Why it was done this way
+- Any alternatives considered
+
+[MEMORY_UPDATE]
+Important architectural decisions or context that future sessions should be aware of.
+
+Example with multi-tag:
+[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
+The system now uses a microservice architecture with service discovery.
+
+
+
+# Message Router Markers
+All comprehensive responses that contain significant code changes, design decisions, 
+or insights MUST include markup with appropriate markers for the message router:
+
+1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
+2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
+3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
+4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
+5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
+6. Use specific memory markers for specialized updates:
+   - [MEMORY_LEARNINGS] - For insights and lessons learned
+   - [MEMORY_ARCHITECTURE] - For architecture changes
+   - [MEMORY_REQUIREMENTS] - For requirement changes
+   - [MEMORY_ROADMAP] - For roadmap updates
+   - [MEMORY_CONVENTIONS] - For convention changes
+   - [MEMORY_DEPENDENCIES] - For dependency changes
+   - [MEMORY_GLOSSARY] - For terminology updates
+   - [MEMORY_TESTING] - For testing updates
+   - [MEMORY_SECURITY] - For security updates
+   - [MEMORY_PERFORMANCE] - For performance updates
+   - [MEMORY_ACCESSIBILITY] - For accessibility updates
+7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
+   without repeating yourself. For example:
+   
+   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
+   Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+[LOG_SUMMARY]
+Brief summary of the changes in 1-2 sentences.
+
+[LOG_DETAIL]
+Detailed explanation of changes with markdown formatting.
+- What was implemented
+- Why it was done this way
+- Any alternatives considered
+
+[MEMORY_UPDATE]
+Important architectural decisions or context that future sessions should be aware of.
+
+Example with multi-tag:
+[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
+The system now uses a microservice architecture with service discovery.
+
+
+
+# Message Router Markers
+All comprehensive responses that contain significant code changes, design decisions, 
+or insights MUST include markup with appropriate markers for the message router:
+
+1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
+2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
+3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
+4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
+5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
+6. Use specific memory markers for specialized updates:
+   - [MEMORY_LEARNINGS] - For insights and lessons learned
+   - [MEMORY_ARCHITECTURE] - For architecture changes
+   - [MEMORY_REQUIREMENTS] - For requirement changes
+   - [MEMORY_ROADMAP] - For roadmap updates
+   - [MEMORY_CONVENTIONS] - For convention changes
+   - [MEMORY_DEPENDENCIES] - For dependency changes
+   - [MEMORY_GLOSSARY] - For terminology updates
+   - [MEMORY_TESTING] - For testing updates
+   - [MEMORY_SECURITY] - For security updates
+   - [MEMORY_PERFORMANCE] - For performance updates
+   - [MEMORY_ACCESSIBILITY] - For accessibility updates
+7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
+   without repeating yourself. For example:
+   
+   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
+   Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+[LOG_SUMMARY]
+Brief summary of the changes in 1-2 sentences.
+
+[LOG_DETAIL]
+Detailed explanation of changes with markdown formatting.
+- What was implemented
+- Why it was done this way
+- Any alternatives considered
+
+[MEMORY_UPDATE]
+Important architectural decisions or context that future sessions should be aware of.
+
+Example with multi-tag:
+[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
+The system now uses a microservice architecture with service discovery.
