@@ -13,6 +13,7 @@ import json
 import argparse
 import sqlite3
 import time
+import pyperclip
 from pathlib import Path
 from datetime import datetime
 
@@ -50,189 +51,262 @@ def log_warning(message):
     log_message(message, "WARNING")
 
 def get_project_structure():
-    """
-    Get a summary of the project structure.
+    """Get a condensed version of the project structure."""
+    structure_file = GOD_MODE_DIR / "memory" / "memory_project_structure.md"
     
-    Returns:
-        str: A brief summary of the project structure
-    """
-    try:
-        # Get the project structure from the memory file
-        structure_file = GOD_MODE_DIR / "memory" / "memory_project_structure.md"
-        if structure_file.exists():
-            with open(structure_file, 'r') as f:
-                content = f.read()
-                
-                # Extract just the top-level directories and some key files
-                summary_lines = []
-                for line in content.splitlines():
-                    if '📁' in line and '/' not in line.split('📁')[1]:
-                        summary_lines.append(line.strip())
-                    elif '📄' in line and line.count('/') <= 1:
-                        summary_lines.append(line.strip())
-                
-                # Limit to 15 lines max
-                if len(summary_lines) > 15:
-                    summary_lines = summary_lines[:12] + ["..."] + summary_lines[-2:]
-                
-                return "## Project Structure Summary\n" + "\n".join(summary_lines)
-        return ""
-    except Exception as e:
-        log_error(f"Error getting project structure: {e}")
-        return ""
-
-def get_memory_highlights():
-    """
-    Get highlights from memory files.
+    if not structure_file.exists():
+        log_debug(f"Project structure file not found at {structure_file}")
+        return f"[Project structure file not found at {structure_file}]"
     
-    Returns:
-        str: A summary of key information from memory files
-    """
     try:
-        memory_dir = GOD_MODE_DIR / "memory"
-        
-        if not memory_dir.exists():
-            return ""
-        
-        # List of important memory files
-        memory_files = [
-            "MEMORY_CURSOR.md",
-            "memory_architecture.md",
-            "memory_conventions.md",
-            "memory_requirements.md",
-            "memory_logs_all.md"
-        ]
-        
-        highlights = []
-        
-        for file_name in memory_files:
-            file_path = memory_dir / file_name
-            if file_path.exists():
-                with open(file_path, 'r') as f:
-                    content = f.read()
-                    # Get the title and a brief excerpt
-                    title = file_name.replace('.md', '').replace('_', ' ').title()
-                    
-                    # Extract the most recent entry if possible
-                    entry_matches = re.findall(r'##\s.*?\n(.*?)(?=##|\Z)', content, re.DOTALL)
-                    if entry_matches:
-                        latest_entry = entry_matches[-1].strip()
-                        # Truncate long entries
-                        if len(latest_entry) > 200:
-                            latest_entry = latest_entry[:197] + "..."
-                        highlights.append(f"### {title}\n{latest_entry}")
-        
-        if highlights:
-            return "## Memory Highlights\n" + "\n\n".join(highlights)
-        return ""
-    except Exception as e:
-        log_error(f"Error getting memory highlights: {e}")
-        return ""
-
-def get_recent_logs():
-    """
-    Get recent logs for context.
-    
-    Returns:
-        str: Recent log entries
-    """
-    try:
-        log_file = GOD_MODE_DIR / "memory" / "memory_logs_all.md"
-        
-        if not log_file.exists():
-            return ""
-        
-        with open(log_file, 'r') as f:
+        with open(structure_file, 'r') as f:
             content = f.read()
             
-            # Extract the most recent few log entries
-            entry_matches = re.findall(r'##\s.*?\n(.*?)(?=##|\Z)', content, re.DOTALL)
-            if entry_matches:
-                # Get the 3 most recent entries
-                recent_entries = entry_matches[-3:]
+        # Extract just the directory structure part (simplified)
+        if "## Directory Structure" in content:
+            parts = content.split("## Directory Structure")
+            if len(parts) > 1:
+                structure_part = parts[1].split("##")[0].strip()
+                # Limit to first 1000 chars to avoid overloading the prompt
+                if len(structure_part) > 1000:
+                    structure_part = structure_part[:1000] + "\n[... truncated ...]"
+                return structure_part
+            
+        # Fall back to a simpler approach if the section isn't found
+        lines = content.split("\n")
+        # Get first 30 lines
+        simplified = "\n".join(lines[:30])
+        simplified += "\n[... truncated ...]"
+        return simplified
+    except Exception as e:
+        log_error(f"Error reading project structure: {e}")
+        return f"[Error reading project structure: {e}]"
+
+def get_memory_highlights():
+    """Get highlights from memory files."""
+    memory_dir = GOD_MODE_DIR / "memory"
+    
+    if not memory_dir.exists() or not memory_dir.is_dir():
+        log_debug(f"Memory directory not found at {memory_dir}")
+        return f"[Memory directory not found at {memory_dir}]"
+    
+    try:
+        highlights = []
+        
+        # Try to read the main memory file
+        cursor_memory = memory_dir / "MEMORY_CURSOR.md"
+        if cursor_memory.exists():
+            with open(cursor_memory, 'r') as f:
+                content = f.read()
+                # Extract 5 random lines that might be meaningful
+                lines = [line.strip() for line in content.split("\n") 
+                         if line.strip() and not line.startswith("#") and len(line) > 20]
+                if lines:
+                    import random
+                    sample_size = min(5, len(lines))
+                    highlights.append("From MEMORY_CURSOR.md:")
+                    highlights.extend(random.sample(lines, sample_size))
+        
+        # Recent learnings
+        learnings = memory_dir / "memory_learnings.md"
+        if learnings.exists():
+            with open(learnings, 'r') as f:
+                content = f.read()
+                # Try to extract the most recent learning
+                if "## " in content:
+                    latest_section = content.split("## ")[-1]
+                    # Limit to first 300 chars
+                    if len(latest_section) > 300:
+                        latest_section = latest_section[:300] + "..."
+                    highlights.append("\nLatest learning:")
+                    highlights.append(latest_section)
+        
+        return "\n".join(highlights) if highlights else "[No memory highlights found]"
+    except Exception as e:
+        log_error(f"Error getting memory highlights: {e}")
+        return f"[Error getting memory highlights: {e}]"
+
+def get_recent_logs():
+    """Get recent log entries."""
+    logs_dir = GOD_MODE_DIR / "logs"
+    
+    if not logs_dir.exists() or not logs_dir.is_dir():
+        log_debug(f"Logs directory not found at {logs_dir}")
+        return f"[Logs directory not found at {logs_dir}]"
+    
+    try:
+        # Try to read from the all logs file
+        all_logs = GOD_MODE_DIR / "memory" / "memory_logs_all.md"
+        if all_logs.exists():
+            with open(all_logs, 'r') as f:
+                content = f.read()
+                # Extract the 5 most recent log entries
+                lines = content.split("\n")
                 
-                logs = []
-                for entry in recent_entries:
-                    # Truncate long entries
-                    if len(entry) > 150:
-                        entry = entry[:147] + "..."
-                    logs.append(entry.strip())
+                # Find lines with timestamps (YYYY-MM-DD)
+                timestamp_lines = []
+                for i, line in enumerate(lines):
+                    if re.search(r'\d{4}-\d{2}-\d{2}', line):
+                        timestamp_lines.append(i)
                 
-                return "## Recent Activity\n" + "\n\n".join(logs)
-        return ""
+                # Get the 5 most recent entries
+                recent_entries = []
+                for i in timestamp_lines[:5]:
+                    # Get this line and up to 2 lines after it
+                    entry = "\n".join(lines[i:i+3])
+                    recent_entries.append(entry)
+                
+                if recent_entries:
+                    return "Recent log entries:\n" + "\n\n".join(recent_entries)
+        
+        # Fall back to looking for log files
+        log_files = list(logs_dir.glob("*.log"))
+        if log_files:
+            # Get the most recently modified log file
+            latest_log = max(log_files, key=os.path.getmtime)
+            with open(latest_log, 'r') as f:
+                # Get the last 10 lines
+                content = f.read().split("\n")[-10:]
+                return f"Latest logs from {latest_log.name}:\n" + "\n".join(content)
+        
+        return "[No recent logs found]"
     except Exception as e:
         log_error(f"Error getting recent logs: {e}")
-        return ""
+        return f"[Error getting recent logs: {e}]"
 
 def enhance_prompt(user_prompt):
-    """
-    Enhance a user prompt with relevant context.
+    """Enhance a user prompt with relevant context."""
+    log_info(f"Enhancing prompt: {user_prompt[:50]}{'...' if len(user_prompt) > 50 else ''}")
     
-    Args:
-        user_prompt (str): The original user prompt
-        
-    Returns:
-        str: The enhanced prompt with added context
-    """
-    # Don't enhance very short prompts or those that seem like commands
-    if len(user_prompt) < 20 or user_prompt.startswith('/'):
-        log_info("Not enhancing short prompt or command")
-        return user_prompt
-    
-    # Collect context
-    context_parts = []
-    
+    # Get context information
     project_structure = get_project_structure()
-    if project_structure:
-        context_parts.append(project_structure)
-    
     memory_highlights = get_memory_highlights()
-    if memory_highlights:
-        context_parts.append(memory_highlights)
-    
     recent_logs = get_recent_logs()
-    if recent_logs:
-        context_parts.append(recent_logs)
-    
-    # If no context was collected, just return the original prompt
-    if not context_parts:
-        log_info("No context available for enhancement")
-        return user_prompt
     
     # Build the enhanced prompt
-    context = "\n\n".join(context_parts)
+    separator = "\n\n" + "=" * 40 + "\n\n"
+    enhanced_prompt = f"""
+{user_prompt}
+
+{separator}
+CONTEXT: You're working on a project with the following structure:
+
+{project_structure}
+
+{separator}
+MEMORY HIGHLIGHTS:
+
+{memory_highlights}
+
+{separator}
+RECENT ACTIVITY:
+
+{recent_logs}
+"""
     
-    # Save the context to a file for debugging
+    log_info("Prompt enhanced with project context")
+    return enhanced_prompt
+
+def extract_prompt_enhancement_from_clipboard():
+    """Extract PROMPT_ENHANCEMENT content from clipboard."""
     try:
-        with open(GOD_MODE_DIR / ".cache" / "last_prompt_context.md", 'w') as f:
-            f.write(context)
+        # Get clipboard content
+        clipboard_content = pyperclip.paste()
+        
+        # Extract content between PROMPT_ENHANCEMENT tags
+        pattern = r'<PROMPT_ENHANCEMENT>(.*?)</PROMPT_ENHANCEMENT>'
+        match = re.search(pattern, clipboard_content, re.DOTALL)
+        
+        if match:
+            enhancement_content = match.group(1).strip()
+            log_info("Successfully extracted PROMPT_ENHANCEMENT content from clipboard")
+            return enhancement_content
+        else:
+            log_warning("No PROMPT_ENHANCEMENT tags found in clipboard")
+            return None
     except Exception as e:
-        log_error(f"Error saving context: {e}")
+        log_error(f"Error extracting PROMPT_ENHANCEMENT from clipboard: {e}")
+        return None
+
+def update_prompt_enhanced_file(enhancement_content):
+    """Update the prompt_enhanced.md file with new content."""
+    if not enhancement_content:
+        log_warning("No enhancement content provided")
+        return False
     
-    log_info(f"Enhanced prompt with {len(context_parts)} context sections")
+    prompt_enhanced_file = GOD_MODE_DIR / "memory" / "prompt_enhanced.md"
     
-    return f"{context}\n\n{user_prompt}"
+    try:
+        # Create file if it doesn't exist
+        if not prompt_enhanced_file.exists():
+            prompt_enhanced_file.parent.mkdir(parents=True, exist_ok=True)
+            with open(prompt_enhanced_file, 'w') as f:
+                f.write("# Enhanced Prompts History\n\n## Current Enhanced Prompt\n\n*Last Updated: Never*\n\n[No enhanced prompts yet]\n\n## Version History\n\n")
+        
+        # Read existing content
+        with open(prompt_enhanced_file, 'r') as f:
+            existing_content = f.read()
+        
+        # Current timestamp
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        # Update current enhanced prompt
+        current_section = f"## Current Enhanced Prompt\n\n*Last Updated: {timestamp}*\n\n{enhancement_content}"
+        
+        # Add to version history
+        version_entry = f"### Version {int(time.time())} - {timestamp}\n\n{enhancement_content}"
+        
+        # Find where to insert the version
+        if "## Version History" in existing_content:
+            parts = existing_content.split("## Version History")
+            new_content = parts[0].split("## Current Enhanced Prompt")[0] + current_section + "\n\n## Version History\n\n" + version_entry + "\n\n" + parts[1].strip()
+        else:
+            new_content = existing_content.split("## Current Enhanced Prompt")[0] + current_section + "\n\n## Version History\n\n" + version_entry
+        
+        # Write updated content
+        with open(prompt_enhanced_file, 'w') as f:
+            f.write(new_content)
+        
+        log_info(f"Successfully updated {prompt_enhanced_file}")
+        return True
+    
+    except Exception as e:
+        log_error(f"Error updating prompt_enhanced.md: {e}")
+        return False
 
 def main():
-    """
-    Main function to parse arguments and enhance prompts.
-    """
-    parser = argparse.ArgumentParser(description='Enhance user prompts with context from the project.')
-    parser.add_argument('--message', type=str, help='The message to enhance')
-    parser.add_argument('--message-id', type=str, help='The ID of the message to enhance (for database lookup)')
+    """Main entry point for the script."""
+    parser = argparse.ArgumentParser(description='Enhance user prompts with project context')
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument('--prompt', help='User prompt to enhance')
+    group.add_argument('--update-from-clipboard', action='store_true', help='Extract PROMPT_ENHANCEMENT from clipboard and update prompt_enhanced.md')
+    
     args = parser.parse_args()
     
-    if args.message:
-        # Enhance the provided message
-        enhanced_prompt = enhance_prompt(args.message)
-        print(enhanced_prompt)
-    elif args.message_id:
-        # This would look up the message in the database and update it directly
-        # Currently a placeholder for future implementation
-        log_warning(f"Direct database update not implemented. ID: {args.message_id}")
-    else:
-        log_error("No message provided to enhance. Use --message or --message-id")
-        return 1
+    if args.prompt:
+        enhanced = enhance_prompt(args.prompt)
+        print("\nEnhanced prompt:")
+        print(enhanced)
+        try:
+            pyperclip.copy(enhanced)
+            print("\nThe enhanced prompt has been copied to your clipboard!")
+        except Exception as e:
+            log_error(f"Error copying to clipboard: {e}")
+            print("\nError copying to clipboard. Please manually copy the enhanced prompt.")
+    
+    elif args.update_from_clipboard:
+        enhancement_content = extract_prompt_enhancement_from_clipboard()
+        if enhancement_content:
+            success = update_prompt_enhanced_file(enhancement_content)
+            if success:
+                print("Successfully updated prompt enhancement file!")
+                return 0
+            else:
+                print("Failed to update prompt enhancement file.")
+                return 1
+        else:
+            print("No PROMPT_ENHANCEMENT content found in clipboard.")
+            return 1
     
     return 0
 

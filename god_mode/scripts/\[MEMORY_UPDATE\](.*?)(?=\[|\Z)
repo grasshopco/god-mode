@@ -1,6 +1,0 @@
-
-## Current UTC timestamp: 2025-03-04 23:01 UTC
-ISO format: 2025-03-04T23:01:08.125659+00:00
-Filename format: 20250304_230108
-Log format: 2025-03-04 23:01:08 UTC
-The message router now supports XML-style tags with explicit opening and closing tags.

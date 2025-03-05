@@ -53,42 +53,78 @@
 - Conduct self-review of generated code, identifying potential improvements.
 - When fixing bugs, document the root cause in learnings.md.
 
-## RESPONSE WORKFLOW AND MESSAGE TAGGING
-- EVERY COMPREHENSIVE RESPONSE must follow this exact workflow:
-  1. BEFORE responding, ensure the prepare_response.sh script has been run
-  2. Structure your response using XML-STYLE TAGS ONLY (not bracket-style)
-  3. AFTER completing your response, run the complete_response.sh script
+## COMPREHENSIVE GOD MODE WORKFLOW
 
-- ALWAYS use the following XML-style tags in your responses:
-  - <LOG_SUMMARY>Brief summary of changes</LOG_SUMMARY>
-  - <LOG_DETAIL>Detailed explanation of what was changed and why</LOG_DETAIL>
-  - <MEMORY_UPDATE>Key architectural decisions and context for future reference</MEMORY_UPDATE>
-  
-- For feature-specific work, include:
-  - <FEATURE: FeatureName>Feature-specific updates</FEATURE: FeatureName>
+1. ** BEGINNING OF INTERACTION **
+   - Run script_prepare_response.sh to ensure components are running
+   - Check prompt_enhanced.md for context about the conversation
+   - Review current roadmap for pending tasks and progress
 
-- For documentation updates, include:
-  - <DOC_UPDATE: DocumentType>Updates to project documentation</DOC_UPDATE: DocumentType>
+2. ** WHEN RECEIVING A USER MESSAGE **
+   - Store the message verbatim in user_messages.md
+   - Create enhanced version using script_enhance_prompt.py
+   - Use the enhanced version as the basis for your response
 
-- For specialized memory updates, use:
-  - <MEMORY_LEARNINGS>For insights and lessons learned</MEMORY_LEARNINGS>
-  - <MEMORY_ARCHITECTURE>For architecture changes</MEMORY_ARCHITECTURE>
-  - <MEMORY_REQUIREMENTS>For requirement changes</MEMORY_REQUIREMENTS>
-  - <MEMORY_ROADMAP>For roadmap updates</MEMORY_ROADMAP>
-  - <MEMORY_CONVENTIONS>For convention changes</MEMORY_CONVENTIONS>
-  - <MEMORY_DEPENDENCIES>For dependency changes</MEMORY_DEPENDENCIES>
-  - <MEMORY_GLOSSARY>For terminology updates</MEMORY_GLOSSARY>
-  - <MEMORY_TESTING>For testing updates</MEMORY_TESTING>
-  - <MEMORY_SECURITY>For security updates</MEMORY_SECURITY>
-  - <MEMORY_PERFORMANCE>For performance updates</MEMORY_PERFORMANCE>
-  - <MEMORY_ACCESSIBILITY>For accessibility updates</MEMORY_ACCESSIBILITY>
+3. ** WHEN CRAFTING YOUR RESPONSE **
+   - Structure ALL responses using XML-STYLE TAGS ONLY (not bracket-style)
+   - ALWAYS include ALL of the following required XML-style tags:
+     <LOG_SUMMARY>Brief summary of changes</LOG_SUMMARY>
+     <LOG_DETAIL>Detailed explanation of what was changed and why</LOG_DETAIL>
+     <MEMORY_UPDATE>Key architectural decisions and context for future reference</MEMORY_UPDATE>
+     <PROMPT_ENHANCEMENT>Analysis of previous user message and how to improve responses</PROMPT_ENHANCEMENT>
+     <ROADMAP_UPDATE>Progress on existing tasks and identification of new tasks</ROADMAP_UPDATE>
 
-- These XML-style tags clearly delineate the content for each tag, ensuring the exact content is routed to the correct files
-- Each tag must have a matching closing tag containing the exact same tag name
-- Content between the opening and closing tags will be saved verbatim to the corresponding files
-- You can apply multiple different tags to the same content block if it's relevant to multiple categories
+   - Include the following tags as appropriate for the content:
+     <FEATURE: FeatureName>Feature-specific updates</FEATURE: FeatureName>
+     <DOC_UPDATE: DocumentType>Updates to project documentation</DOC_UPDATE: DocumentType>
 
-## EXAMPLE RESPONSE WITH XML-STYLE TAGS:
+   - For specialized memory updates, use as needed:
+     <MEMORY_LEARNINGS>For insights and lessons learned</MEMORY_LEARNINGS>
+     <MEMORY_ARCHITECTURE>For architecture changes</MEMORY_ARCHITECTURE>
+     <MEMORY_REQUIREMENTS>For requirement changes</MEMORY_REQUIREMENTS>
+     <MEMORY_ROADMAP>For roadmap updates</MEMORY_ROADMAP>
+     <MEMORY_CONVENTIONS>For convention changes</MEMORY_CONVENTIONS>
+     <MEMORY_DEPENDENCIES>For dependency changes</MEMORY_DEPENDENCIES>
+     <MEMORY_GLOSSARY>For terminology updates</MEMORY_GLOSSARY>
+     <MEMORY_TESTING>For testing updates</MEMORY_TESTING>
+     <MEMORY_SECURITY>For security updates</MEMORY_SECURITY>
+     <MEMORY_PERFORMANCE>For performance updates</MEMORY_PERFORMANCE>
+     <MEMORY_ACCESSIBILITY>For accessibility updates</MEMORY_ACCESSIBILITY>
+
+4. ** AFTER COMPLETING YOUR RESPONSE **
+   - Ask the user to run script_auto_commit.sh 
+   - This script will:
+     a) Route content in XML tags to appropriate files
+     b) Auto-commit changes to Git
+     c) Update prompt_enhanced.md with latest analysis
+     d) Update roadmap files with progress
+
+## PROMPT ENHANCEMENT SYSTEM
+- The <PROMPT_ENHANCEMENT> tag must include:
+  1. Analysis of the user's previous message
+  2. Identification of key requirements or questions
+  3. Assessment of how well the previous AI response addressed the user's needs
+  4. Improvement suggestions for future responses
+
+- The content will be stored in prompt_enhanced.md with:
+  - Latest version at the top
+  - Version history preserved below
+  - Automatic dating and timestamping
+
+## ROADMAP TRACKING SYSTEM
+- The <ROADMAP_UPDATE> tag must include:
+  1. Recently completed tasks with:
+     - Checkmarks [x] for completed items
+     - Brief description of the work done
+     - Files that were modified
+
+  2. New/pending tasks with:
+     - Unchecked boxes [ ] for pending items
+     - Implementation approach
+     - Files that need modification
+     - Success criteria for completion
+
+## EXAMPLE COMPLETE RESPONSE WITH XML-STYLE TAGS:
 
 <LOG_SUMMARY>
 Implemented JWT authentication with refresh token rotation and enhanced security.
@@ -109,6 +145,33 @@ This approach improves security while maintaining good user experience.
 The authentication system now uses JWT tokens with refresh rotation. Tokens are stored in HttpOnly cookies for XSS protection, and we've implemented CSRF protection measures.
 </MEMORY_UPDATE>
 
+<PROMPT_ENHANCEMENT>
+The user requested enhanced security for the authentication system. Their message specifically mentioned concerns about token storage and CSRF vulnerabilities. 
+
+My previous response didn't fully address CSRF protection, which is now implemented. For future responses, I should:
+1. Be more thorough in addressing security concerns
+2. Provide code examples when implementing security features
+3. Explain the rationale behind security decisions
+</PROMPT_ENHANCEMENT>
+
+<ROADMAP_UPDATE>
+## Completed Tasks:
+- [x] **Implement JWT Authentication**: Added secure token-based authentication
+  - Files Modified: `auth/jwt.ts`, `middleware/auth.ts`
+  - Impact: Improved security and user session management
+
+## New/Pending Tasks:
+- [ ] **Add Rate Limiting**: Implement protection against brute force attacks
+  - Implementation Approach: Use express-rate-limit middleware
+  - Files to Modify: `server.ts`, `middleware/security.ts`
+  - Success Criteria: Failed login attempts are limited to 5 per minute
+
+- [ ] **Security Audit**: Conduct comprehensive review of auth implementation
+  - Implementation Approach: Use OWASP guidelines to verify all security measures
+  - Files to Review: All files in `auth/` and `middleware/` directories
+  - Success Criteria: No critical or high vulnerabilities identified
+</ROADMAP_UPDATE>
+
 <FEATURE: Authentication>
 Enhanced the authentication system with JWT tokens, refresh token rotation, and improved security measures. The implementation now uses HttpOnly cookies and includes CSRF protection.
 </FEATURE: Authentication>
@@ -120,7 +183,7 @@ Authentication tokens are now stored in HttpOnly cookies instead of localStorage
 ## CRITICALLY IMPORTANT WORKFLOW INSTRUCTIONS:
 1. BEFORE responding to the user, ALWAYS run: ./script_prepare_response.sh
 2. Structure your response using XML-style tags as shown above
-3. AFTER completing your response, ALWAYS run: ./script_auto_commit.sh
+3. AFTER completing your response, ALWAYS remind the user to run: ./script_auto_commit.sh
 4. At least once per session, update the project roadmap
 
 ## SELF-IMPROVEMENT
@@ -138,3 +201,53 @@ Authentication tokens are now stored in HttpOnly cookies instead of localStorage
 - Key technologies include: React, Next.js, TypeScript, Supabase, and various modern web technologies.
 - Follow TypeScript best practices, including proper typing and interface definitions.
 - Consider mobile responsiveness in all UI implementations.
+
+
+
+# Message Router Markers
+All comprehensive responses that contain significant code changes, design decisions, 
+or insights MUST include markup with appropriate markers for the message router:
+
+1. Include a [LOG_SUMMARY] with a brief description of the changes (1-2 sentences).
+2. Include a [LOG_DETAIL] with comprehensive explanation of the changes.
+3. Include a [MEMORY_UPDATE] for relevant project context updates that should be remembered.
+4. Use [FEATURE_LOG: FeatureName] for specific feature updates.
+5. Use [DOC_UPDATE: project/feature/design/data] for documentation updates.
+6. Use specific memory markers for specialized updates:
+   - [MEMORY_LEARNINGS] - For insights and lessons learned
+   - [MEMORY_ARCHITECTURE] - For architecture changes
+   - [MEMORY_REQUIREMENTS] - For requirement changes
+   - [MEMORY_ROADMAP] - For roadmap updates
+   - [MEMORY_CONVENTIONS] - For convention changes
+   - [MEMORY_DEPENDENCIES] - For dependency changes
+   - [MEMORY_GLOSSARY] - For terminology updates
+   - [MEMORY_TESTING] - For testing updates
+   - [MEMORY_SECURITY] - For security updates
+   - [MEMORY_PERFORMANCE] - For performance updates
+   - [MEMORY_ACCESSIBILITY] - For accessibility updates
+7. For efficiency, use [MULTI_TAG: TAG1, TAG2, ...] to route the same content to multiple destinations
+   without repeating yourself. For example:
+   
+   [MULTI_TAG: LOG_SUMMARY, FEATURE_LOG: Authentication]
+   Implemented JWT authentication with refresh token rotation.
+
+These markers must be formatted exactly as shown (with square brackets) and must be placed
+on their own lines, followed by the relevant content. This markup enables automatic 
+documentation and persistent memory across sessions.
+
+Example format:
+[LOG_SUMMARY]
+Brief summary of the changes in 1-2 sentences.
+
+[LOG_DETAIL]
+Detailed explanation of changes with markdown formatting.
+- What was implemented
+- Why it was done this way
+- Any alternatives considered
+
+[MEMORY_UPDATE]
+Important architectural decisions or context that future sessions should be aware of.
+
+Example with multi-tag:
+[MULTI_TAG: MEMORY_UPDATE, MEMORY_ARCHITECTURE]
+The system now uses a microservice architecture with service discovery.
